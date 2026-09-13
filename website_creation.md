@@ -2,6 +2,11 @@
 
 Instructions for creating the fake website for each business.
 
+# Selecting a Business
+
+1. Choose a business from "business_ideas.md" that does not already have a website.
+2. If there are no available business ideas use the instructions in "generate_ideas.md" to generate five more business ideas.
+
 # Requirements
 
 1. Hosting.  This site will be hosted and deployed from Github pages from the index.html file.
@@ -11,6 +16,13 @@ Instructions for creating the fake website for each business.
 6. Language and AI Feel.  Do not use EM dashes.  Use the "humanizer" skill, which is installed in this project, to check all text used on the site.
 7. Name Check.  Before creating, please do a quick search to make sure there isn't an obvious real company with this name.
 8. Purchasing.  Each business website should list pricing options and offer some way to purchase.  For some products this may be actually adding to a cart, for others (like enterprise) this may be a contact form or just call us for a quote.
+9. Logo. Generate a logo using the OpenAI image API.  This should be relatively small and be used to linking to it from the main site.
+
+# Site Structure
+
+1. Each site should be created in its own directory.
+2. The root of the entire site is index.html.  This is the "business directory".
+3. Add an entry to the business directory for the new business.  It should list the name, short description, and have the logo.  It should link to the business site.
 
 # Image Generation Rules
 
@@ -21,9 +33,10 @@ Instructions for creating the fake website for each business.
 
 # Site Design and Features
 
-Each business is different and requires different pages, but consider the following as appropropriate:
+Each business is different and requires different pages, but consider the following as needed:
 
 1. Large marketing images at the top of the page that illustrate the purpose of the company.
 2. Testimonials page with interesting or funny testimonials.
 3. Some sort of interactive widget or tool, whether it be a slider or something more complex, if possible.
+4. A customer image gallery, instagram style. Use this as a more image heavy alternative to testimonials.
 
