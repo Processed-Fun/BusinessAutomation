@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Bird Hydration | Post-Feast Performance Drinks</title>
+  <meta name="description" content="Sports drinks in Thanksgiving dinner flavors. 22 grams of electrolytes and the unmistakable essence of a food coma.">
+  <link rel="icon" type="image/webp" href="images/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #0e1a33;
+      --navy-2: #16264a;
+      --orange: #ff6a1f;
+      --orange-hot: #ff8c42;
+      --teal: #2ec8d8;
+      --cream: #f5ecd7;
+      --muted: #a8b3c9;
+      --red: #d64545;
+      --green: #8bc34a;
+      --gold: #e8b64c;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--navy);
+      color: var(--cream);
+      font-family: 'Inter', Arial, sans-serif;
+      line-height: 1.5;
+    }
+
+    h1, h2, h3, .display {
+      font-family: 'Archivo Black', Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      line-height: 1.1;
+    }
+
+    img { max-width: 100%; display: block; }
+
+    a { color: var(--teal); }
+
+    .wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Nav */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(14, 26, 51, 0.95);
+      border-bottom: 2px solid var(--orange);
+      backdrop-filter: blur(6px);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 10px 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .nav-inner img { width: 46px; height: 46px; border-radius: 50%; }
+
+    .brand {
+      font-family: 'Archivo Black', Arial, sans-serif;
+      font-size: 1rem;
+      text-transform: uppercase;
+      color: var(--cream);
+      text-decoration: none;
+      line-height: 1.1;
+    }
+
+    .brand span { color: var(--orange); }
+
+    .nav-links {
+      margin-left: auto;
+      display: flex;
+      gap: 18px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .nav-links a:hover { color: var(--cream); }
+
+    .cart-btn {
+      background: var(--orange);
+      color: var(--navy);
+      border: none;
+      font-family: 'Inter', Arial, sans-serif;
+      font-weight: 800;
+      font-size: 0.9rem;
+      padding: 9px 16px;
+      border-radius: 999px;
+      cursor: pointer;
+    }
+
+    .cart-btn:hover { background: var(--orange-hot); }
+
+    @media (max-width: 720px) {
+      .nav-links a:not(.cart-btn) { display: none; }
+    }
+
+    /* Hero */
+    .hero {
+      position: relative;
+      min-height: 78vh;
+      display: flex;
+      align-items: flex-end;
+      background: url('images/hero.webp') center 30% / cover no-repeat;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(14,26,51,0.15) 30%, rgba(14,26,51,0.92) 90%);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      padding: 60px 20px 50px;
+      max-width: 1100px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.2rem, 6vw, 4.2rem);
+      margin: 0 0 12px;
+      text-shadow: 0 4px 24px rgba(0,0,0,0.6);
+    }
+
+    .hero h1 em {
+      font-style: normal;
+      color: var(--orange);
+    }
+
+    .hero p {
+      font-size: clamp(1rem, 2.2vw, 1.3rem);
+      max-width: 560px;
+      margin: 0 0 24px;
+      color: var(--cream);
+      text-shadow: 0 2px 12px rgba(0,0,0,0.7);
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--orange);
+      color: var(--navy);
+      font-weight: 800;
+      text-decoration: none;
+      border: none;
+      font-size: 1rem;
+      padding: 14px 28px;
+      border-radius: 999px;
+      cursor: pointer;
+      font-family: 'Inter', Arial, sans-serif;
+    }
+
+    .btn:hover { background: var(--orange-hot); }
+
+    .btn.ghost {
+      background: transparent;
+      color: var(--cream);
+      border: 2px solid var(--cream);
+      margin-left: 10px;
+    }
+
+    /* Stat strip */
+    .strip {
+      background: var(--orange);
+      color: var(--navy);
+      font-weight: 800;
+      overflow: hidden;
+      white-space: nowrap;
+      padding: 10px 0;
+      font-size: 0.95rem;
+    }
+
+    .strip-track {
+      display: inline-block;
+      animation: scroll 28s linear infinite;
+    }
+
+    @keyframes scroll {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    .strip span { margin: 0 26px; }
+
+    /* Sections */
+    section { padding: 70px 0; }
+
+    .kicker {
+      color: var(--teal);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.8rem;
+      margin: 0 0 8px;
+    }
+
+    section h2 {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      margin: 0 0 10px;
+    }
+
+    .section-intro {
+      color: var(--muted);
+      max-width: 640px;
+      margin: 0 0 40px;
+    }
+
+    /* Flavor cards */
+    .flavors {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 22px;
+    }
+
+    .flavor {
+      background: var(--navy-2);
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.08);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .flavor .img-box {
+      position: relative;
+      background: #0a1226;
+    }
+
+    .flavor .tag {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: var(--gold);
+      color: var(--navy);
+      font-weight: 800;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 999px;
+    }
+
+    .flavor-body {
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .flavor h3 { font-size: 1.02rem; margin: 0 0 8px; }
+
+    .flavor .note {
+      color: var(--muted);
+      font-size: 0.88rem;
+      margin: 0 0 16px;
+      flex: 1;
+    }
+
+    .flavor-foot {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .price { font-weight: 800; font-size: 1.1rem; }
+
+    .add-btn {
+      background: var(--teal);
+      color: var(--navy);
+      border: none;
+      font-weight: 800;
+      padding: 9px 14px;
+      border-radius: 999px;
+      cursor: pointer;
+      font-family: 'Inter', Arial, sans-serif;
+      font-size: 0.85rem;
+    }
+
+    .add-btn:hover { filter: brightness(1.12); }
+
+    /* Calculator */
+    #calculator { background: var(--navy-2); }
+
+    .calc-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+
+    @media (max-width: 800px) {
+      .calc-grid { grid-template-columns: 1fr; }
+    }
+
+    .calc-controls label {
+      display: block;
+      font-weight: 600;
+      margin: 22px 0 6px;
+    }
+
+    .calc-controls label:first-child { margin-top: 0; }
+
+    .calc-controls output {
+      color: var(--orange);
+      font-weight: 800;
+    }
+
+    input[type="range"] {
+      width: 100%;
+      accent-color: var(--orange);
+    }
+
+    .calc-result {
+      background: var(--navy);
+      border: 2px solid var(--orange);
+      border-radius: 14px;
+      padding: 28px;
+      text-align: center;
+    }
+
+    .calc-result .big {
+      font-family: 'Archivo Black', Arial, sans-serif;
+      font-size: 4rem;
+      color: var(--orange);
+      line-height: 1;
+    }
+
+    .calc-result .unit {
+      text-transform: uppercase;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      font-size: 0.8rem;
+      color: var(--teal);
+      margin-bottom: 14px;
+    }
+
+    .calc-result p {
+      color: var(--muted);
+      font-size: 0.92rem;
+      min-height: 3.2em;
+    }
+
+    /* Pricing */
+    .plans {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 22px;
+    }
+
+    .plan {
+      background: var(--navy-2);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 14px;
+      padding: 26px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .plan.featured { border: 2px solid var(--orange); position: relative; }
+
+    .plan.featured::before {
+      content: 'Most gobbled';
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--orange);
+      color: var(--navy);
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      padding: 3px 12px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    .plan h3 { margin: 0 0 6px; font-size: 1rem; }
+
+    .plan .plan-price {
+      font-family: 'Archivo Black', Arial, sans-serif;
+      font-size: 2rem;
+      margin: 6px 0 2px;
+    }
+
+    .plan .per { color: var(--muted); font-size: 0.85rem; margin-bottom: 14px; }
+
+    .plan ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 22px;
+      color: var(--muted);
+      font-size: 0.9rem;
+      flex: 1;
+    }
+
+    .plan ul li {
+      padding: 6px 0 6px 22px;
+      position: relative;
+    }
+
+    .plan ul li::before {
+      content: '\2713';
+      position: absolute;
+      left: 0;
+      color: var(--teal);
+      font-weight: 800;
+    }
+
+    .plan .btn { text-align: center; }
+
+    /* Testimonials */
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: 340px 1fr;
+      gap: 30px;
+      align-items: start;
+    }
+
+    @media (max-width: 800px) {
+      .testimonials-grid { grid-template-columns: 1fr; }
+    }
+
+    .testimonials-grid img { border-radius: 14px; }
+
+    .photo-cap {
+      color: var(--muted);
+      font-size: 0.8rem;
+      margin-top: 8px;
+      font-style: italic;
+    }
+
+    blockquote {
+      background: var(--navy-2);
+      border-left: 4px solid var(--teal);
+      margin: 0 0 18px;
+      padding: 18px 22px;
+      border-radius: 0 12px 12px 0;
+    }
+
+    blockquote p { margin: 0 0 10px; font-size: 1rem; }
+
+    blockquote footer {
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    /* Contact */
+    .contact-box {
+      background: var(--navy-2);
+      border-radius: 14px;
+      padding: 30px;
+      max-width: 560px;
+    }
+
+    .contact-box label {
+      display: block;
+      font-weight: 600;
+      font-size: 0.88rem;
+      margin: 14px 0 4px;
+    }
+
+    .contact-box input, .contact-box select, .contact-box textarea {
+      width: 100%;
+      background: var(--navy);
+      border: 1px solid rgba(255,255,255,0.15);
+      color: var(--cream);
+      border-radius: 8px;
+      padding: 10px 12px;
+      font-family: 'Inter', Arial, sans-serif;
+      font-size: 0.95rem;
+    }
+
+    .contact-box textarea { resize: vertical; min-height: 80px; }
+
+    .contact-box .btn { margin-top: 18px; }
+
+    .form-done {
+      color: var(--green);
+      font-weight: 600;
+      margin-top: 14px;
+    }
+
+    /* Cart drawer */
+    .drawer-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.55);
+      z-index: 90;
+    }
+
+    .drawer {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: min(380px, 92vw);
+      background: var(--navy-2);
+      z-index: 100;
+      padding: 22px;
+      overflow-y: auto;
+      box-shadow: -8px 0 30px rgba(0,0,0,0.5);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .drawer h3 { margin: 0; }
+
+    .drawer-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+    }
+
+    .drawer-close {
+      background: none;
+      border: none;
+      color: var(--muted);
+      font-size: 1.6rem;
+      cursor: pointer;
+      line-height: 1;
+    }
+
+    .cart-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      font-size: 0.92rem;
+    }
+
+    .cart-line .qty-controls {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .qty-controls button {
+      background: var(--navy);
+      color: var(--cream);
+      border: 1px solid rgba(255,255,255,0.2);
+      width: 26px;
+      height: 26px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 800;
+    }
+
+    .cart-total {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 800;
+      font-size: 1.1rem;
+      padding: 18px 0;
+    }
+
+    .cart-empty { color: var(--muted); padding: 30px 0; text-align: center; }
+
+    .drawer .btn { width: 100%; text-align: center; }
+
+    /* Checkout modal */
+    .modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.65);
+      z-index: 120;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .modal-box {
+      background: var(--navy-2);
+      border: 2px solid var(--orange);
+      border-radius: 16px;
+      padding: 36px;
+      max-width: 440px;
+      text-align: center;
+    }
+
+    .modal-box h3 { margin: 0 0 12px; font-size: 1.3rem; }
+
+    .modal-box p { color: var(--muted); }
+
+    /* Toast */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--teal);
+      color: var(--navy);
+      font-weight: 800;
+      padding: 12px 22px;
+      border-radius: 999px;
+      z-index: 130;
+      transition: opacity 0.3s;
+    }
+
+    /* Footer */
+    footer.site {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding: 40px 0 50px;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    footer.site a { color: var(--teal); }
+
+    [hidden] { display: none !important; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <img src="images/logo.webp" alt="Full Bird Hydration logo">
+      <a class="brand" href="#">Full Bird<br><span>Hydration</span></a>
+      <div class="nav-links">
+        <a href="#flavors">Flavors</a>
+        <a href="#calculator">Coma Calculator</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#testimonials">Athletes</a>
+        <button class="cart-btn" id="cartOpen">Cart (<span id="cartCount">0</span>)</button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Hydrate like you<br><em>mean dinner.</em></h1>
+      <p>Every bottle delivers 22 grams of electrolytes and the unmistakable essence of a food coma. Built for serious athletes with serious appetites.</p>
+      <a class="btn" href="#flavors">Shop the lineup</a>
+      <a class="btn ghost" href="#calculator">Calculate your coma</a>
+    </div>
+  </header>
+
+  <div class="strip" aria-hidden="true">
+    <div class="strip-track">
+      <span>22g ELECTROLYTES</span><span>0g RESTRAINT</span><span>4 FEAST FLAVORS</span><span>1 CONFUSED MARATHON RUNNER</span><span>REAL BREAD CRUMB PARTICLES</span><span>NOVEMBER, BOTTLED</span>
+      <span>22g ELECTROLYTES</span><span>0g RESTRAINT</span><span>4 FEAST FLAVORS</span><span>1 CONFUSED MARATHON RUNNER</span><span>REAL BREAD CRUMB PARTICLES</span><span>NOVEMBER, BOTTLED</span>
+    </div>
+  </div>
+
+  <section id="flavors">
+    <div class="wrap">
+      <p class="kicker">The lineup</p>
+      <h2>Four flavors. One holiday. Zero apologies.</h2>
+      <p class="section-intro">Each 20 oz bottle is triple filtered, gravy forward, and lab tested by people who asked us to stop sending samples.</p>
+      <div class="flavors">
+        <div class="flavor">
+          <div class="img-box"><img src="images/bottle-turkey-gravy.webp" alt="Turkey &amp; Gravy Surge bottle" loading="lazy"></div>
+          <div class="flavor-body">
+            <h3>Turkey &amp; Gravy Surge</h3>
+            <p class="note">Our flagship. Savory, opaque, and 9% drippings by volume. Tastes like a second helping feels.</p>
+            <div class="flavor-foot">
+              <span class="price">$3.99</span>
+              <button class="add-btn" data-add="turkey">Add to cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="flavor">
+          <div class="img-box"><img src="images/bottle-cranberry.webp" alt="Cranberry Stuffing Splash bottle" loading="lazy"></div>
+          <div class="flavor-body">
+            <h3>Cranberry Stuffing Splash</h3>
+            <p class="note">Tart cranberry with real bread crumb particles in suspension. Shake well. Then reconsider. Then shake again.</p>
+            <div class="flavor-foot">
+              <span class="price">$3.99</span>
+              <button class="add-btn" data-add="cranberry">Add to cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="flavor">
+          <div class="img-box"><img src="images/bottle-greenbean.webp" alt="Green Bean Casserole Chill bottle" loading="lazy"></div>
+          <div class="flavor-body">
+            <h3>Green Bean Casserole Chill</h3>
+            <p class="note">Cool, murky, and topped with a crispy onion float that our lawyers made us call "sediment."</p>
+            <div class="flavor-foot">
+              <span class="price">$3.99</span>
+              <button class="add-btn" data-add="greenbean">Add to cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="flavor">
+          <div class="img-box">
+            <span class="tag">Limited holiday release</span>
+            <img src="images/bottle-giblet.webp" alt="Giblet Blast limited release bottle" loading="lazy">
+          </div>
+          <div class="flavor-body">
+            <h3>Giblet Blast</h3>
+            <p class="note">We won't say which giblets. Collectors call it "the amber one." Available November through whenever we run out.</p>
+            <div class="flavor-foot">
+              <span class="price">$5.99</span>
+              <button class="add-btn" data-add="giblet">Add to cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="calculator">
+    <div class="wrap">
+      <p class="kicker">Interactive tool</p>
+      <h2>The Food Coma Calculator</h2>
+      <p class="section-intro">Science tells us a food coma is just dehydration wearing a bib. Dial in your feast and we'll prescribe your bottle count.</p>
+      <div class="calc-grid">
+        <div class="calc-controls">
+          <label for="plates">Plates of Thanksgiving dinner: <output id="platesOut">3</output></label>
+          <input type="range" id="plates" min="1" max="8" value="3">
+
+          <label for="nap">Nap ambition: <output id="napOut">Recliner doze</output></label>
+          <input type="range" id="nap" min="1" max="4" value="2">
+
+          <label for="event">Athletic event within 24 hours: <output id="eventOut">Charity 5K</output></label>
+          <input type="range" id="event" min="1" max="4" value="1">
+        </div>
+        <div class="calc-result">
+          <div class="big" id="bottleCount">4</div>
+          <div class="unit">Bottles prescribed</div>
+          <p id="calcMsg">A sensible feast. Four bottles keeps the gravy flowing without alarming your physician.</p>
+          <button class="btn" id="calcAdd">Add 4 bottles to cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <div class="wrap">
+      <p class="kicker">Pricing</p>
+      <h2>Pick your portion size</h2>
+      <p class="section-intro">Every option ships in a thermally insulated box lined with a picture of a fireplace.</p>
+      <div class="plans">
+        <div class="plan">
+          <h3>Single Bottle</h3>
+          <div class="plan-price">$3.99</div>
+          <div class="per">per bottle</div>
+          <ul>
+            <li>Any core flavor</li>
+            <li>22g electrolytes</li>
+            <li>One serving of courage</li>
+          </ul>
+          <button class="btn" data-add="turkey">Add to cart</button>
+        </div>
+        <div class="plan featured">
+          <h3>The Full Spread 12-Pack</h3>
+          <div class="plan-price">$39.99</div>
+          <div class="per">per case</div>
+          <ul>
+            <li>Three bottles of each flavor</li>
+            <li>Free wishbone keychain</li>
+            <li>Saves $7.89 vs. singles</li>
+          </ul>
+          <button class="btn" data-add="case">Add to cart</button>
+        </div>
+        <div class="plan">
+          <h3>Feast Mode Monthly</h3>
+          <div class="plan-price">$28.99</div>
+          <div class="per">per month, cancel whenever</div>
+          <ul>
+            <li>12 bottles, your mix</li>
+            <li>Members-only gravy packet</li>
+            <li>Early access to Giblet Blast</li>
+          </ul>
+          <button class="btn" data-add="sub">Subscribe</button>
+        </div>
+        <div class="plan">
+          <h3>Team &amp; Enterprise</h3>
+          <div class="plan-price">Call us</div>
+          <div class="per">bulk, sponsorships, sideline coolers</div>
+          <ul>
+            <li>Pallet pricing</li>
+            <li>Custom label with your mascot</li>
+            <li>A Poultry Performance Consultant</li>
+          </ul>
+          <a class="btn" href="#contact">Request a quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <div class="wrap">
+      <p class="kicker">Sponsored athletes</p>
+      <h2>Fueling champions, confusing others</h2>
+      <div class="testimonials-grid">
+        <div>
+          <img src="images/eater.webp" alt="Sponsored competitive eater holding a trophy and a bottle" loading="lazy">
+          <p class="photo-cap">Big Tony Passarelli, 4-time Gravy Boat Invitational champion, moments after his record 41-plate performance.</p>
+        </div>
+        <div>
+          <blockquote>
+            <p>"Other drinks replace what you sweat out. Full Bird replaces what you ate. There's a difference, and I've built a career on it."</p>
+            <footer>Big Tony Passarelli, competitive eater</footer>
+          </blockquote>
+          <blockquote>
+            <p>"My agent signed the sponsorship before I tasted the product. I drank Turkey &amp; Gravy Surge at mile 19 of Boston and saw my grandmother's dining room. I finished the race out of respect."</p>
+            <footer>Deacon Reyes, marathon runner</footer>
+          </blockquote>
+          <blockquote>
+            <p>"I put the Green Bean one in a glass at Thanksgiving and nobody noticed. Nobody. This family eats anything."</p>
+            <footer>Verified customer, name withheld by request</footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <p class="kicker">Enterprise</p>
+      <h2>Talk to a Poultry Performance Consultant</h2>
+      <p class="section-intro">For teams, leagues, corporate feasts, and anyone who needs gravy delivered by the pallet. You can also call 1-800-FULLBRD and ask for Craig.</p>
+      <form class="contact-box" id="quoteForm">
+        <label for="qName">Name</label>
+        <input id="qName" type="text" required placeholder="Coach Winters">
+        <label for="qOrg">Organization</label>
+        <input id="qOrg" type="text" placeholder="Mid-Valley Regional Eating League">
+        <label for="qSize">Estimated monthly volume</label>
+        <select id="qSize">
+          <option>1 to 5 cases</option>
+          <option>6 to 20 cases</option>
+          <option>A pallet</option>
+          <option>Multiple pallets, do not ask why</option>
+        </select>
+        <label for="qMsg">What are you fueling?</label>
+        <textarea id="qMsg" placeholder="Tell us about your team, event, or unresolved appetite."></textarea>
+        <button class="btn" type="submit">Request quote</button>
+        <p class="form-done" id="formDone" hidden>Request received. A consultant will call you within two business days, possibly mid-bite.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site">
+    <div class="wrap">
+      <p><strong>Full Bird Hydration</strong> is a fictional company. No turkeys were consulted. Giblet Blast contents remain a trade secret protected by federal law and common decency.</p>
+      <p>Not a meal replacement. Not a beverage replacement. Legally, we are still working out what it is.</p>
+      <p><a href="../">Back to the Business Directory</a></p>
+    </div>
+  </footer>
+
+  <!-- Cart drawer -->
+  <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
+  <aside class="drawer" id="drawer" hidden aria-label="Shopping cart">
+    <div class="drawer-head">
+      <h3>Your cart</h3>
+      <button class="drawer-close" id="cartClose" aria-label="Close cart">&times;</button>
+    </div>
+    <div id="cartLines"></div>
+    <div class="cart-total" id="cartTotalRow"><span>Total</span><span id="cartTotal">$0.00</span></div>
+    <button class="btn" id="checkoutBtn">Checkout</button>
+  </aside>
+
+  <!-- Checkout modal -->
+  <div class="modal" id="checkoutModal" hidden>
+    <div class="modal-box">
+      <h3>The bird is in flight</h3>
+      <p id="orderSummary"></p>
+      <p>Your order is confirmed. Please allow 3 to 5 business days, longer in November, when demand and our staff both get out of hand.</p>
+      <button class="btn" id="modalClose">Gobble on</button>
+    </div>
+  </div>
+
+  <script>
+    const PRODUCTS = {
+      turkey:    { name: 'Turkey & Gravy Surge',        price: 3.99 },
+      cranberry: { name: 'Cranberry Stuffing Splash',   price: 3.99 },
+      greenbean: { name: 'Green Bean Casserole Chill',  price: 3.99 },
+      giblet:    { name: 'Giblet Blast (Limited)',      price: 5.99 },
+      case:      { name: 'Full Spread 12-Pack',         price: 39.99 },
+      sub:       { name: 'Feast Mode Monthly',          price: 28.99 }
+    };
+
+    let cart = {};
+    try {
+      cart = JSON.parse(localStorage.getItem('fbh-cart')) || {};
+    } catch (e) { cart = {}; }
+
+    function saveCart() {
+      try { localStorage.setItem('fbh-cart', JSON.stringify(cart)); } catch (e) {}
+    }
+
+    function cartQty() {
+      return Object.values(cart).reduce((a, b) => a + b, 0);
+    }
+
+    function renderCart() {
+      document.getElementById('cartCount').textContent = cartQty();
+      const lines = document.getElementById('cartLines');
+      lines.innerHTML = '';
+      const ids = Object.keys(cart).filter(id => cart[id] > 0);
+      if (ids.length === 0) {
+        lines.innerHTML = '<p class="cart-empty">Your cart is empty. Your feast awaits.</p>';
+      }
+      let total = 0;
+      ids.forEach(id => {
+        const p = PRODUCTS[id];
+        total += p.price * cart[id];
+        const row = document.createElement('div');
+        row.className = 'cart-line';
+        row.innerHTML =
+          '<span>' + p.name + '</span>' +
+          '<span class="qty-controls">' +
+            '<button data-dec="' + id + '">-</button>' +
+            '<span>' + cart[id] + '</span>' +
+            '<button data-inc="' + id + '">+</button>' +
+          '</span>' +
+          '<span>$' + (p.price * cart[id]).toFixed(2) + '</span>';
+        lines.appendChild(row);
+      });
+      document.getElementById('cartTotal').textContent = '$' + total.toFixed(2);
+      document.getElementById('checkoutBtn').disabled = ids.length === 0;
+    }
+
+    function addToCart(id, qty) {
+      qty = qty || 1;
+      cart[id] = (cart[id] || 0) + qty;
+      saveCart();
+      renderCart();
+      toast(qty + ' × ' + PRODUCTS[id].name + ' added');
+    }
+
+    let toastTimer;
+    function toast(msg) {
+      let el = document.getElementById('toast');
+      if (!el) {
+        el = document.createElement('div');
+        el.id = 'toast';
+        el.className = 'toast';
+        document.body.appendChild(el);
+      }
+      el.textContent = msg;
+      el.style.opacity = '1';
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => { el.style.opacity = '0'; }, 1800);
+    }
+
+    document.addEventListener('click', e => {
+      const add = e.target.getAttribute('data-add');
+      if (add) addToCart(add);
+      const inc = e.target.getAttribute('data-inc');
+      if (inc) { cart[inc]++; saveCart(); renderCart(); }
+      const dec = e.target.getAttribute('data-dec');
+      if (dec) {
+        cart[dec]--;
+        if (cart[dec] <= 0) delete cart[dec];
+        saveCart(); renderCart();
+      }
+    });
+
+    // Drawer
+    const drawer = document.getElementById('drawer');
+    const backdrop = document.getElementById('drawerBackdrop');
+    document.getElementById('cartOpen').addEventListener('click', () => {
+      drawer.hidden = false; backdrop.hidden = false;
+    });
+    function closeDrawer() { drawer.hidden = true; backdrop.hidden = true; }
+    document.getElementById('cartClose').addEventListener('click', closeDrawer);
+    backdrop.addEventListener('click', closeDrawer);
+
+    // Checkout
+    document.getElementById('checkoutBtn').addEventListener('click', () => {
+      const qty = cartQty();
+      const total = document.getElementById('cartTotal').textContent;
+      document.getElementById('orderSummary').textContent =
+        qty + ' item' + (qty === 1 ? '' : 's') + ' · ' + total;
+      cart = {};
+      saveCart();
+      renderCart();
+      closeDrawer();
+      document.getElementById('checkoutModal').hidden = false;
+    });
+    document.getElementById('modalClose').addEventListener('click', () => {
+      document.getElementById('checkoutModal').hidden = true;
+    });
+
+    // Food Coma Calculator
+    const NAPS = ['Eyes open, barely', 'Recliner doze', 'Couch shutdown', 'Full hibernation'];
+    const EVENTS = ['Charity 5K', 'Half marathon', 'Full marathon', 'Regional buffet qualifier'];
+    const plates = document.getElementById('plates');
+    const nap = document.getElementById('nap');
+    const eventEl = document.getElementById('event');
+
+    function calc() {
+      const p = +plates.value, n = +nap.value, ev = +eventEl.value;
+      document.getElementById('platesOut').textContent = p;
+      document.getElementById('napOut').textContent = NAPS[n - 1];
+      document.getElementById('eventOut').textContent = EVENTS[ev - 1];
+      const bottles = Math.min(24, p + n + ev * 2 - 2);
+      document.getElementById('bottleCount').textContent = bottles;
+      document.getElementById('calcAdd').textContent = 'Add ' + bottles + ' bottles to cart';
+      let msg;
+      if (bottles <= 4) {
+        msg = 'A sensible feast. ' + bottles + ' bottles keeps the gravy flowing without alarming your physician.';
+      } else if (bottles <= 8) {
+        msg = 'Respectable. This is the load our sponsored 10K runners carry, against our advice about running with it.';
+      } else if (bottles <= 14) {
+        msg = 'Big Tony territory. We recommend a spotter and a designated carver.';
+      } else {
+        msg = 'This exceeds the dosage tested on Big Tony. Proceed with pride, and possibly a physician who owes you a favor.';
+      }
+      document.getElementById('calcMsg').textContent = msg;
+      return bottles;
+    }
+
+    [plates, nap, eventEl].forEach(el => el.addEventListener('input', calc));
+    document.getElementById('calcAdd').addEventListener('click', () => {
+      addToCart('turkey', calc());
+    });
+    calc();
+
+    // Enterprise quote form
+    document.getElementById('quoteForm').addEventListener('submit', e => {
+      e.preventDefault();
+      document.getElementById('formDone').hidden = false;
+      e.target.querySelector('button[type="submit"]').disabled = true;
+    });
+
+    renderCart();
+  </script>
+</body>
+</html>
