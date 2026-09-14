@@ -26,10 +26,10 @@ Instructions for creating the fake website for each business.
 
 # Image Generation Rules
 
-1. Use the "gpt-image-2.5" model.
-2. Default to "medium" quality unless specifically asked to override.
-3. Use the "Generations" endpoint documented here: https://developers.openai.com/api/docs/guides/image-generation#generate-images.
-4. Do not create more than 30 images per site.
+1. Use the "gpt-image-2.5-flare" model.
+4. Default to "medium" quality unless specifically asked to override.
+5. Use the "Generations" endpoint documented here: https://developers.openai.com/api/docs/guides/image-generation#generate-images.
+6. Do not create more than 30 images per site.
 
 # Site Design and Features
 
