@@ -17,6 +17,7 @@ Instructions for creating the fake website for each business.
 7. Name Check.  Before creating, please do a quick search to make sure there isn't an obvious real company with this name.
 8. Purchasing.  Each business website should list pricing options and offer some way to purchase.  For some products this may be actually adding to a cart, for others (like enterprise) this may be a contact form or just call us for a quote.
 9. Logo. Generate a logo using the OpenAI image API.  This should be relatively small and be used to linking to it from the main site.
+10. mobile friendly.  each site should be mobile friendly.  do a check after generation to confirm this.
 
 # Site Structure
 
@@ -29,7 +30,7 @@ Instructions for creating the fake website for each business.
 1. Use the "gpt-image-2.5-flare" model.
 4. Default to "medium" quality unless specifically asked to override.
 5. Use the "Generations" endpoint documented here: https://developers.openai.com/api/docs/guides/image-generation#generate-images.
-6. Do not create more than 30 images per site.
+6. Do not create more than 40 images per site during the initial build.  it is fine to go over this limit later if prompted manually.
 
 # Site Design and Features
 
@@ -39,4 +40,5 @@ Each business is different and requires different pages, but consider the follow
 2. Testimonials page with interesting or funny testimonials.
 3. Some sort of interactive widget or tool, whether it be a slider or something more complex, if possible.
 4. A customer image gallery, instagram style. Use this as a more image heavy alternative to testimonials.
+5. if there are flavors or varieties or different types include a large gallery of all the different varieties that couldn't be shown on the home page.  something like "flavors" or "full menu", depending on the offering.  this might even be appropriate for non food based options it there is enough variety.
 
