@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grudge Granite | Memorial Engraving for the Unresolved</title>
+  <meta name="description" content="Family-owned monument engraving. We carve your unresolved grudges into stone so they outlive everyone involved.">
+  <link rel="icon" href="images/logo.webp">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <img class="logo" src="images/logo.webp" alt="Grudge Granite logo">
+      <a class="brand" href="./">GRUDGE GRANITE</a>
+      <nav>
+        <a href="gallery.html">Gallery of Grudges</a>
+        <a href="#previewer">Preview Tool</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+        <button class="cart-pill" id="cartPill" type="button">Cart (0)</button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hero">
+    <div class="bg" style="background-image: url('images/hero.webp');"></div>
+    <div class="inner">
+      <h1>Forgiveness is temporary. Granite is forever.</h1>
+      <p class="tagline">Family-owned monument engraving since 1961. When you go, your grudges shouldn't have to.</p>
+      <a class="btn" href="#previewer">Preview your grudge</a>
+      <a class="btn ghost" href="gallery.html">Browse the gallery</a>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <h2>What we do</h2>
+      <p class="lede">Most headstones say "beloved" and leave it at that. Ours say what you actually spent forty years thinking about.</p>
+      <div class="grid">
+        <div class="card">
+          <img src="images/workshop.webp" alt="A stonemason carving letters into a granite slab" data-zoom data-caption="Every letter cut by hand. Every grievance triple-checked for spelling.">
+          <div class="body">
+            <h3>Hand-carved grievances</h3>
+            <p>Three generations of stonemasons cut every letter by hand. Your complaint about the ladder deserves nothing less.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/showroom.webp" alt="Showroom with rows of polished sample headstones" data-zoom data-caption="Our showroom in Stonewall, Vermont. Walk-ins welcome. Apologies are not.">
+          <div class="body">
+            <h3>Six granites, one message</h3>
+            <p>Charcoal, black, rose, gray, green, and mahogany. Pick the stone that matches the mood of the original incident.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/reading.webp" alt="A man in a suit reading from a scroll at a graveside" data-zoom data-caption="An Eternal Reading Plan visit, performed rain or shine.">
+          <div class="body">
+            <h3>Annual graveside readings</h3>
+            <p>Our Eternal Reading Plan sends a licensed Grievance Officer to read your grudges aloud at the grave once a year, so nobody gets comfortable.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <h2>How it works</h2>
+      <p class="lede">You do the resenting. We handle the paperwork and the chisel.</p>
+      <ol class="steps">
+        <li>
+          <h3>Pre-register your grievances</h3>
+          <p>Sit down with one of our archivists and get it all on record: the ladder, the thermostat, the thing your brother-in-law did. He knows what he did.</p>
+        </li>
+        <li>
+          <h3>Annual review</h3>
+          <p>Grudges age. Some deepen, some get replaced by better ones. We interview you every year to keep your file current.</p>
+        </li>
+        <li>
+          <h3>Choose your stone and lettering</h3>
+          <p>Work with our design team on granite color, typeface, ornaments, and whether the neighbor's full legal name fits on one line.</p>
+        </li>
+        <li>
+          <h3>We set it in stone</h3>
+          <p>When the time comes, we carve your file exactly as registered. We don't soften the wording, we don't take edits from the family, and we certainly don't "let it go." Letting go is what the competition sells.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="previewer" class="dark">
+    <div class="wrap">
+      <h2>The Grudge Previewer</h2>
+      <p class="lede">Type your grievance and see it the way the cemetery will. Engraving is billed at $4.50 per character, spaces included, because the chisel doesn't skip them.</p>
+      <div class="previewer">
+        <div class="stone-scene">
+          <div class="headstone granite-gray" id="previewStone">
+            <div class="rip">HERE LIES</div>
+            <div class="grudge-text" id="previewText">Your grudge here</div>
+            <div class="dates">1948 &ndash; STILL BITTER</div>
+          </div>
+        </div>
+        <div class="controls">
+          <label for="grudgeInput">Your grudge</label>
+          <textarea id="grudgeInput" maxlength="120" placeholder="Example: DALE NEVER PAID FOR THE FENCE"></textarea>
+          <div class="charcount"><span id="charCount">0</span> / 120 characters</div>
+          <label for="graniteSelect">Granite</label>
+          <select id="graniteSelect">
+            <option value="granite-gray">Barre Gray (the sensible one)</option>
+            <option value="granite-black">Midnight Black (for serious grudges)</option>
+            <option value="granite-rose">Rose (passive aggressive)</option>
+            <option value="granite-green">Vermont Green (for lawn disputes)</option>
+          </select>
+          <div class="fee-line">Estimated chisel fee: <strong id="feeTotal">$0.00</strong></div>
+          <p style="margin-top:16px">
+            <button class="btn" id="addEngraving" type="button">Add engraving to cart</button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <div class="wrap">
+      <h2>Pricing</h2>
+      <p class="lede">Every package includes the stone, installation, and a notarized Certificate of Grievance for the family records.</p>
+      <div class="grid tiers">
+        <div class="tier">
+          <h3>The Pebble</h3>
+          <div class="price">$850</div>
+          <div class="per">one-time</div>
+          <ul>
+            <li>One (1) grudge, front face only</li>
+            <li>Up to 40 characters</li>
+            <li>Choice of two granites</li>
+            <li>For the mostly forgiving</li>
+          </ul>
+          <button class="btn" type="button" onclick="ggAddToCart('The Pebble package', 850)">Add to cart</button>
+        </div>
+        <div class="tier featured">
+          <div class="flag">MOST RESENTED</div>
+          <h3>The Classic</h3>
+          <div class="price">$2,400</div>
+          <div class="per">one-time</div>
+          <ul>
+            <li>Up to three grudges, ranked by severity</li>
+            <li>Up to 300 characters</li>
+            <li>Footnotes available</li>
+            <li>One engraved ornament (ladder, thermostat, casserole dish)</li>
+            <li>All six granites</li>
+          </ul>
+          <button class="btn" type="button" onclick="ggAddToCart('The Classic package', 2400)">Add to cart</button>
+        </div>
+        <div class="tier">
+          <h3>The Continued...</h3>
+          <div class="price">$5,900</div>
+          <div class="per">one-time</div>
+          <ul>
+            <li>Double-sided engraving with "CONTINUED ON BACK" panel</li>
+            <li>Unlimited grudges up to 2,000 characters, then $4.50 per character</li>
+            <li>Appendix and index available</li>
+            <li>Complimentary second visit for grudges remembered later</li>
+          </ul>
+          <button class="btn" type="button" onclick="ggAddToCart('The Continued... package', 5900)">Add to cart</button>
+        </div>
+        <div class="tier">
+          <h3>Eternal Reading Plan</h3>
+          <div class="price">$89</div>
+          <div class="per">per year, forever, billed to your estate</div>
+          <ul>
+            <li>Annual graveside reading of your full grudge file</li>
+            <li>Performed by a licensed Grievance Officer</li>
+            <li>Weather does not cancel</li>
+            <li>Named parties notified by postcard</li>
+          </ul>
+          <button class="btn" type="button" onclick="ggAddToCart('Eternal Reading Plan (1 year)', 89)">Subscribe</button>
+        </div>
+      </div>
+      <p style="text-align:center; margin-top:34px; color:var(--stone-light)">
+        Family plot? Multi-generational feud? Estate with more grudges than heirs?<br>
+        <a href="#contact"><strong>Contact us for an Estate quote.</strong></a> Our record is one family, four stones, sixty-one years of material.
+      </p>
+    </div>
+  </section>
+
+  <section class="alt" id="testimonials">
+    <div class="wrap">
+      <h2>Testimonials</h2>
+      <p class="lede">From the families we serve, and occasionally from the people named on the stones.</p>
+      <div class="grid">
+        <div class="quote">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"Dad's stone lists the neighbor's ladder, the 1987 fishing trip, and me. He was right on all three counts. Beautiful lettering."</p>
+          <cite>Doug R., son of a client</cite>
+        </div>
+        <div class="quote">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"Mom pre-registered 41 grievances. The archivist gently talked her down to the twelve load-bearing ones. That kind of service is rare."</p>
+          <cite>Patricia L., Stowe</cite>
+        </div>
+        <div class="quote">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"We do the Eternal Reading every June. The officer reads the thermostat section with real feeling. Grandma would be furious, which is exactly what she wanted."</p>
+          <cite>The Hendricks family</cite>
+        </div>
+        <div class="quote">
+          <div class="stars">&#9733;</div>
+          <p>"I returned that ladder in 2004. I have photos. I have a receipt for the replacement he made me buy anyway. Please call me back."</p>
+          <cite>Gary T., named party</cite>
+        </div>
+        <div class="quote">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"My wife and I got matching stones with our grudges about each other. The salesman called it the most honest marriage he'd ever seen."</p>
+          <cite>Herb &amp; Eleanor M., married 54 years</cite>
+        </div>
+        <div class="quote">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"Four stars only because the footnote font was so small I had to kneel to read what Aunt Ruth said about my casserole. Which, fine. Point taken, Ruth."</p>
+          <cite>Denise W., footnote subject</cite>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>The family behind the feuds</h2>
+      <p class="lede">Grudge Granite was founded in 1961 by Aldo Passero, who wanted his own headstone to mention a specific card game. His grandchildren run the shop today and still won't say who won.</p>
+      <div class="grid">
+        <div class="card">
+          <img src="images/founders.webp" alt="Three generations of stonemasons in front of their workshop" data-zoom data-caption="The Passero family. They have not forgiven each other either, which keeps them sharp.">
+          <div class="body">
+            <h3>Three generations deep</h3>
+            <p>The Passeros have been carving Vermont granite for over sixty years. Each generation inherits the tools, the shop, and several open files.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/hero.webp" alt="A granite headstone reading HE NEVER RETURNED MY LADDER in a misty cemetery" data-zoom data-caption="Our most requested stone. The ladder remains at large.">
+          <div class="body">
+            <h3>Our most famous stone</h3>
+            <p>The original "HE NEVER RETURNED MY LADDER" stone, placed in 1998, still gets visitors. Gary maintains his innocence. See the gallery for the full story.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/stone-continued.webp" alt="The back of a headstone densely engraved with text, headed CONTINUED FROM FRONT" data-zoom data-caption="The back of a Continued... package stone. She remembered more after signing.">
+          <div class="body">
+            <h3>Built for volume</h3>
+            <p>Some clients need the back of the stone. Some need an appendix. One client in Rutland needed a bench. We don't judge, we measure.</p>
+          </div>
+        </div>
+      </div>
+      <p style="text-align:center; margin-top:30px">
+        <a class="btn" href="gallery.html">See the full Gallery of Grudges</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="dark" id="contact">
+    <div class="wrap">
+      <h2>Request an Estate quote</h2>
+      <p class="lede">For family plots, corporate accounts, and grudges that require site surveys. An archivist will reply within two business days.</p>
+      <form class="contact" id="contactForm">
+        <div>
+          <label for="cName">Your name</label>
+          <input id="cName" type="text" required>
+        </div>
+        <div>
+          <label for="cEmail">Email</label>
+          <input id="cEmail" type="email" required>
+        </div>
+        <div>
+          <label for="cWho">Who wronged you? (optional)</label>
+          <input id="cWho" type="text" placeholder="First names are fine. We'll get the rest.">
+        </div>
+        <div>
+          <label for="cGrudge">Tell us about the grudge</label>
+          <textarea id="cGrudge" placeholder="Take your time. We bill by the character, not the hour." required></textarea>
+        </div>
+        <div>
+          <label for="cBudget">Approximate budget</label>
+          <select id="cBudget">
+            <option>Under $1,000 (a minor slight)</option>
+            <option>$1,000 to $5,000 (a proper grudge)</option>
+            <option>$5,000 to $20,000 (a family matter)</option>
+            <option>No limit (he knows what he did)</option>
+          </select>
+        </div>
+        <p class="form-note">We keep all files confidential until the moment of engraving, at which point they become extremely public.</p>
+        <button class="btn" type="submit">Submit grievance</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div>
+        <strong>Grudge Granite</strong><br>
+        4 Bitter Lane, Stonewall, Vermont<br>
+        Est. 1961. Open six days a week.<br>
+        Closed Sundays for family arguments.
+      </div>
+      <div class="fine">
+        Grudge Granite is a fictional business. No stones were carved, no ladders recovered, and Gary has been through enough.
+        <br><br>
+        <a href="../">&larr; Back to The Business Directory</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="modal" id="lightbox" hidden>
+    <button class="close-x" type="button" aria-label="Close">&times;</button>
+    <img src="" alt="Enlarged view">
+    <div class="caption"></div>
+  </div>
+
+  <!-- Checkout modal -->
+  <div class="modal" id="checkoutModal" hidden>
+    <div class="modal-box">
+      <h3>Grievance received</h3>
+      <div id="checkoutBody"></div>
+      <button class="btn" type="button" data-close>Hold that thought</button>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="js/site.js"></script>
+  <script>
+    (function () {
+      'use strict';
+      var input = document.getElementById('grudgeInput');
+      var stone = document.getElementById('previewStone');
+      var text = document.getElementById('previewText');
+      var count = document.getElementById('charCount');
+      var fee = document.getElementById('feeTotal');
+      var select = document.getElementById('graniteSelect');
+      var RATE = 4.5;
+
+      function update() {
+        var v = input.value.trim();
+        text.textContent = v || 'Your grudge here';
+        count.textContent = input.value.length;
+        fee.textContent = '$' + (input.value.length * RATE).toFixed(2);
+      }
+
+      input.addEventListener('input', update);
+
+      select.addEventListener('change', function () {
+        stone.className = 'headstone ' + select.value;
+      });
+
+      document.getElementById('addEngraving').addEventListener('click', function () {
+        var v = input.value.trim();
+        if (!v) {
+          ggToast('Type a grudge first. Everyone has at least one.');
+          return;
+        }
+        var price = Math.round(input.value.length * RATE * 100) / 100;
+        ggAddToCart('Custom engraving: "' + v.slice(0, 40) + (v.length > 40 ? '...' : '') + '"', price);
+      });
+
+      document.getElementById('contactForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+        var box = document.getElementById('checkoutBody');
+        box.innerHTML = '<p>Your grievance has been filed under case number GG-' +
+          Math.floor(1000 + Math.random() * 9000) +
+          '. An archivist will contact you within two business days to verify the details and, if needed, the receipts.</p>';
+        document.getElementById('checkoutModal').hidden = false;
+        e.target.reset();
+      });
+
+      update();
+    })();
+  </script>
+</body>
+</html>
