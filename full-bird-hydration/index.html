@@ -114,8 +114,23 @@
 
     .cart-btn:hover { background: var(--orange-hot); }
 
+    .nav-flavors {
+      border: 2px solid var(--teal);
+      color: var(--teal) !important;
+      padding: 7px 14px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    .nav-flavors:hover {
+      background: var(--teal);
+      color: var(--navy) !important;
+    }
+
     @media (max-width: 720px) {
-      .nav-links a:not(.cart-btn) { display: none; }
+      .nav-links a:not(.nav-flavors) { display: none; }
+      .nav-links { gap: 10px; }
+      .nav-flavors { font-size: 0.8rem; padding: 6px 12px; }
     }
 
     /* Hero */
@@ -182,7 +197,50 @@
       background: transparent;
       color: var(--cream);
       border: 2px solid var(--cream);
-      margin-left: 10px;
+    }
+
+    .btn.teal {
+      background: var(--teal);
+    }
+
+    .hero-content .btn { margin: 0 10px 10px 0; }
+
+    /* Flavor roster banner */
+    .roster-banner {
+      margin-top: 36px;
+      background: linear-gradient(120deg, var(--orange) 0%, #ff9d3f 100%);
+      color: var(--navy);
+      border-radius: 16px;
+      padding: 32px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .roster-banner h3 {
+      margin: 0 0 6px;
+      font-size: clamp(1.2rem, 3vw, 1.6rem);
+    }
+
+    .roster-banner p {
+      margin: 0;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .roster-banner .btn {
+      background: var(--navy);
+      color: var(--cream);
+      flex-shrink: 0;
+    }
+
+    .roster-banner .btn:hover { background: #1d3059; }
+
+    @media (max-width: 720px) {
+      .roster-banner { justify-content: center; text-align: center; }
+      .roster-banner .btn { width: 100%; text-align: center; }
     }
 
     /* Stat strip */
@@ -646,7 +704,7 @@
       <img src="images/logo.webp" alt="Full Bird Hydration logo">
       <a class="brand" href="#">Full Bird<br><span>Hydration</span></a>
       <div class="nav-links">
-        <a href="flavors.html">Our Flavors</a>
+        <a href="flavors.html" class="nav-flavors">Our Flavors</a>
         <a href="#calculator">Coma Calculator</a>
         <a href="#pricing">Pricing</a>
         <a href="#testimonials">Athletes</a>
@@ -659,7 +717,8 @@
     <div class="hero-content">
       <h1>Hydrate like you<br><em>mean dinner.</em></h1>
       <p>Every bottle delivers 22 grams of electrolytes and the unmistakable essence of a food coma. Built for serious athletes with serious appetites.</p>
-      <a class="btn" href="#flavors">Shop the lineup</a>
+      <a class="btn" href="flavors.html">Explore all 20 flavors</a>
+      <a class="btn teal" href="#flavors">Shop the core four</a>
       <a class="btn ghost" href="#calculator">Calculate your coma</a>
     </div>
   </header>
@@ -724,6 +783,13 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="roster-banner">
+        <div>
+          <h3>That's 4 of 20.</h3>
+          <p>The full roster runs from Mashed Potato Glacier to Black Friday Blackout, seasonals and limiteds included.</p>
+        </div>
+        <a class="btn" href="flavors.html">Browse all 20 flavors</a>
       </div>
     </div>
   </section>
@@ -864,7 +930,7 @@
     <div class="wrap">
       <p><strong>Full Bird Hydration</strong> is a fictional company. No turkeys were consulted. Giblet Blast contents remain a trade secret protected by federal law and common decency.</p>
       <p>Not a meal replacement. Not a beverage replacement. Legally, we are still working out what it is.</p>
-      <p><a href="../">Back to the Business Directory</a></p>
+      <p><a href="flavors.html">See all 20 flavors</a> &middot; <a href="../">Back to the Business Directory</a></p>
     </div>
   </footer>
 
