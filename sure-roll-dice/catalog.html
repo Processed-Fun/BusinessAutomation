@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Full Catalog | Sure Roll Dice Co.</title>
+  <meta name="description" content="Every die we make, in every material we trust. Each one rolls the number printed on all six sides.">
+  <link rel="icon" type="image/webp" href="images/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .page-head {
+      padding: 64px 0 10px;
+    }
+
+    .page-head h1 { font-size: clamp(2rem, 5vw, 3.2rem); }
+
+    .page-head p { max-width: 560px; color: var(--muted); }
+
+    .cat-note {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--brass);
+      border-radius: 10px;
+      padding: 14px 18px;
+      font-size: 0.9rem;
+      color: var(--muted);
+      max-width: 560px;
+      margin-top: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <img class="nav-logo" src="images/logo.webp" alt="Sure Roll Dice Co. logo">
+      <a class="brand" href="./">Sure Roll Dice Co.<small>Est. no uncertainty</small></a>
+      <div class="nav-links">
+        <a href="./#dice" class="hide-m">The dice</a>
+        <a href="./#prove" class="hide-m">Try a roll</a>
+        <a href="./#pricing">Pricing</a>
+        <a href="catalog.html">Full catalog</a>
+        <button class="cart-btn" id="cartBtn">Cart (0)</button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-head">
+    <div class="wrap">
+      <p class="kicker">The full catalog</p>
+      <h1>Every die we make</h1>
+      <p>The signature line covers the numbers. This page covers everything else: the materials series, the formats, and the commissions we are willing to discuss. Tap any die for a closer look.</p>
+      <div class="cat-note">A note on choosing: customers sometimes ask which die is right for them. The answer is the number you already had in mind when you asked.</div>
+    </div>
+  </header>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">The materials series</p>
+        <h2>Same certainty, rarer substances</h2>
+        <p>Limited runs in stone, resin, and metal. Numbers are fixed per material and are not negotiable, except through our bespoke desk, where everything is negotiable.</p>
+      </div>
+      <div class="grid">
+        <div class="product">
+          <img class="zoom" src="images/resin-crimson.webp" alt="Crimson Six, a red resin die with silver flecks showing six on every face">
+          <div class="p-body">
+            <h3>Crimson Six</h3>
+            <p class="material">Crimson resin, silver fleck</p>
+            <p class="desc">A six with a temper. Catches the light mid-roll, which gives the other players something to look at besides the result.</p>
+            <div class="p-foot"><span class="price">$48</span><button class="btn small" data-add="resin-crimson">Add to cart</button></div>
+          </div>
+        </div>
+        <div class="product">
+          <img class="zoom" src="images/resin-ocean.webp" alt="Ocean Four, a swirled blue resin die showing four on every face">
+          <div class="p-body">
+            <h3>Ocean Four</h3>
+            <p class="material">Swirled ocean resin</p>
+            <p class="desc">Calm, blue, and permanently a four. Popular with therapists, sailors, and one air traffic controller who buys them by the dozen.</p>
+            <div class="p-foot"><span class="price">$48</span><button class="btn small" data-add="resin-ocean">Add to cart</button></div>
+          </div>
+        </div>
+        <div class="product">
+          <img class="zoom" src="images/resin-smoke.webp" alt="Smoke Two, a translucent grey resin die showing two on every face">
+          <div class="p-body">
+            <h3>Smoke Two</h3>
+            <p class="material">Smoked translucent resin</p>
+            <p class="desc">A moody little two. Looks like it knows something. It does: it knows it will roll a two.</p>
+            <div class="p-foot"><span class="price">$48</span><button class="btn small" data-add="resin-smoke">Add to cart</button></div>
+          </div>
+        </div>
+        <div class="product">
+          <img class="zoom" src="images/marble-white.webp" alt="Carrara Three, a white marble die with charcoal pips showing three on every face">
+          <div class="p-body">
+            <h3>Carrara Three</h3>
+            <p class="material">Italian marble</p>
+            <p class="desc">Cut from the same stone family the old masters used. They carved uncertainty out of marble. We carve it out entirely.</p>
+            <div class="p-foot"><span class="price">$85</span><button class="btn small" data-add="marble-white">Add to cart</button></div>
+          </div>
+        </div>
+        <div class="product">
+          <img class="zoom" src="images/bronze-heirloom.webp" alt="Heirloom Bronze Five, a cast bronze die with aged patina showing five on every face">
+          <div class="p-body">
+            <h3>Heirloom Bronze Five</h3>
+            <p class="material">Cast bronze, aged patina</p>
+            <p class="desc">Built to outlive you and keep rolling fives for your grandchildren. Estate lawyers ask about this one a lot.</p>
+            <div class="p-foot"><span class="price">$95</span><button class="btn small" data-add="bronze-heirloom">Add to cart</button></div>
+          </div>
+        </div>
+        <div class="product">
+          <img class="zoom" src="images/die-boardroom-onyx.webp" alt="The Boardroom Onyx, a black onyx die with gold pips showing six on every face">
+          <div class="p-body">
+            <span class="badge">Executive</span>
+            <h3>The Boardroom Onyx</h3>
+            <p class="material">Black onyx, engraved gold</p>
+            <p class="desc">Ships with a letter of authenticity confirming it will roll a six. The letter is signed before the die is made. We stand by the order of operations.</p>
+            <div class="p-foot"><span class="price">$120</span><button class="btn small" data-add="boardroom-onyx">Add to cart</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Formats</p>
+        <h2>Certainty in other sizes</h2>
+      </div>
+      <div class="grid">
+        <div class="product">
+          <img class="zoom" src="images/desk-six.webp" alt="The Desk Six, an oversized walnut die used as a paperweight">
+          <div class="p-body">
+            <h3>The Desk Six</h3>
+            <p class="material">Walnut, grapefruit sized</p>
+            <p class="desc">A paperweight that settles arguments. Too large to roll casually, which is fine, because you already know how it lands.</p>
+            <div class="p-foot"><span class="price">$150</span><button class="btn small" data-add="desk-six">Add to cart</button></div>
+          </div>
+        </div>
+        <div class="product">
+          <img class="zoom" src="images/pocket-one.webp" alt="The Pocket One, a tiny maple die on a brass keychain">
+          <div class="p-body">
+            <h3>The Pocket One</h3>
+            <p class="material">Maple, brass keyring</p>
+            <p class="desc">A humble one for your keys. A quiet reminder, every time you leave the house, that some things can be counted on.</p>
+            <div class="p-foot"><span class="price">$28</span><button class="btn small" data-add="pocket-one">Add to cart</button></div>
+          </div>
+        </div>
+        <div class="product">
+          <img class="zoom" src="images/collector-set.webp" alt="The Collector's Set, six dice in a velvet lined walnut case">
+          <div class="p-body">
+            <span class="badge">Most popular</span>
+            <h3>The Collector's Set</h3>
+            <p class="material">All six values, walnut case</p>
+            <p class="desc">One of each number in a velvet lined case, so you are prepared for any outcome you already chose. The complete argument settler.</p>
+            <div class="p-foot"><span class="price">$200</span><button class="btn small" data-add="collector-set">Add to cart</button></div>
+          </div>
+        </div>
+        <div class="product">
+          <img class="zoom" src="images/custom-bespoke.webp" alt="A craftsman hand carving pips into a blank walnut die">
+          <div class="p-body">
+            <h3>Bespoke commissions</h3>
+            <p class="material">Your call entirely</p>
+            <p class="desc">Monogrammed pips, exotic hardwoods, unusual numbers. Werner once made a die that rolls a seven. He asks that you not request another.</p>
+            <div class="p-foot"><span class="price"><small>From</small> $300</span><a class="btn small ghost" href="./#bespoke">Get a quote</a></div>
+          </div>
+        </div>
+      </div>
+      <p style="margin-top: 30px;"><a class="btn ghost" href="./">Back to the main page</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div>
+        <strong style="color: #f4efe6;">Sure Roll Dice Co.</strong><br>
+        14 Certainty Lane, Stowbridge, Vermont<br>
+        (802) 555-0166 &middot; ruth@surerolldice.example
+      </div>
+      <div>
+        <a href="./#dice">The dice</a><br>
+        <a href="./#pricing">Pricing</a><br>
+        <a href="../">The Business Directory</a>
+      </div>
+      <p class="fine">Sure Roll Dice Co. is a fictional business. No dice were harmed, and none were random. Not legal for tournament play, casino play, or any setting where the other players can do arithmetic.</p>
+    </div>
+  </footer>
+
+  <!-- Cart drawer -->
+  <div class="drawer-veil" id="drawerVeil" hidden></div>
+  <aside class="drawer" id="cartDrawer" hidden aria-label="Shopping cart">
+    <header>
+      <h3>Your cart</h3>
+      <button class="close-x" id="cartClose" aria-label="Close cart">&times;</button>
+    </header>
+    <div class="items" id="cartItems"></div>
+    <div class="totals">
+      <div class="row"><span>Total</span><strong id="cartTotal">$0</strong></div>
+      <button class="btn" id="checkoutBtn" style="width: 100%;">Check out</button>
+      <p style="font-size: 0.75rem; color: var(--muted); margin: 10px 0 0;">All sales final. See "Returns," or rather, don't, because there isn't one.</p>
+    </div>
+  </aside>
+
+  <!-- Order confirmation -->
+  <div class="note-modal" id="orderModal" hidden>
+    <div class="note-card">
+      <h3>Order placed</h3>
+      <p>Your dice are being polished as we speak. The outcome of your order was never in doubt, and neither is the outcome of your dice.</p>
+      <button class="btn" id="orderClose">Very reassuring</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
