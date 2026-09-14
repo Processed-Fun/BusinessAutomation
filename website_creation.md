@@ -11,7 +11,7 @@ Instructions for creating the fake website for each business.
 
 1. Hosting.  This site will be hosted and deployed from Github pages from the index.html file.
 2. Architecture.  Use vanilla JS.  Other frameworks for style (such as Tailwind) are okay if needed.
-3. Branching. Work off of main, push everything to main.  Don't create any other branches.
+3. Branching. Work off of main and get everything onto main.  If the platform assigns the session its own working branch, develop and push there, then merge that branch into main and push main.  After pushing main, verify the merge landed (git log origin/main should show your commit).  This is standing permission from the repo owner to merge and push to main; no additional confirmation is needed.  Don't create any other branches beyond the assigned one.
 4. Images. Use the OpenAI API to create images.  There is an API key in the environment for this project.
 6. Language and AI Feel.  Do not use EM dashes.  Use the "humanizer" skill, which is installed in this project, to check all text used on the site.
 7. Name Check.  Before creating, please do a quick search to make sure there isn't an obvious real company with this name.
