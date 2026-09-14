@@ -18,6 +18,7 @@ Instructions for creating the fake website for each business.
 8. Purchasing.  Each business website should list pricing options and offer some way to purchase.  For some products this may be actually adding to a cart, for others (like enterprise) this may be a contact form or just call us for a quote.
 9. Logo. Generate a logo using the OpenAI image API.  This should be relatively small and be used to linking to it from the main site.
 10. mobile friendly.  each site should be mobile friendly.  do a check after generation to confirm this.
+11. image display. where possible, clicking or tapping an image should open it in a modal.  this does not need to apply to background images or things like logos or header images.
 
 # Site Structure
 
@@ -31,6 +32,7 @@ Instructions for creating the fake website for each business.
 4. Default to "medium" quality unless specifically asked to override.
 5. Use the "Generations" endpoint documented here: https://developers.openai.com/api/docs/guides/image-generation#generate-images.
 6. Do not create more than 40 images per site during the initial build.  it is fine to go over this limit later if prompted manually.
+7. images showing the product or scenes of the product should have a subtle and tasteful watermark with the business name.
 
 # Site Design and Features
 
