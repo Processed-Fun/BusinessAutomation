@@ -68,23 +68,7 @@ A running list of verified fake business ideas. Append new ideas to the end — 
 
 **Themes and joke:** Extra dark humor (theme 3). The joke is the funeral industry's tasteful, soft-spoken branding wrapped around an idea that is one long circular pun about mortality.
 
-## 9. Threshold Atelier
-
-**Short description:** A luxury house selling hand-woven cashmere doormats starting at $40,000.
-
-**Long description:** Threshold Atelier of Geneva produces doormats woven from baby cashmere, mulberry silk, and thread-of-gold, each requiring nine months of loom work. The flagship Sovereign Welcome mat is monogrammed, insured as fine art, and explicitly designed to be wiped with the filth of shoes. Clients are assigned a personal Entryway Consultant, and the brochure notes that "true wealth is watching guests hesitate." A trade-in program accepts lightly soiled mats for 10% off, which are then destroyed in a private ceremony.
-
-**Themes and joke:** Ultra luxury where no market should exist (theme 4). The joke is maximal craftsmanship and wealth-signaling poured into an object whose entire purpose is to be stepped on.
-
-## 10. Blank Maps Cartography Co.
-
-**Short description:** A heritage map maker whose maps are completely blank.
-
-**Long description:** Blank Maps Cartography Co. sells museum-grade, acid-free, hand-deckled maps with nothing on them, "for the explorer who refuses to be told where things are." The catalog includes the Voyager (blank, cream), the Navigator (blank, ivory), and the limited Antarctic Edition (blank, but colder somehow). Each map ships in a leather tube with a certificate of inauthenticity. The FAQ's only entry is "No."
-
-**Themes and joke:** Useless product (theme 5) sold with heirloom-craft seriousness (theme 4). The joke is premium cartography branding on a product that is, by every measurable standard, paper.
-
-## 11. HOV Buddy
+## 9. HOV Buddy
 
 **Short description:** A rental service supplying realistic mannequin passengers for carpool-lane commuters.
 
@@ -92,15 +76,7 @@ A running list of verified fake business ideas. Append new ideas to the end — 
 
 **Themes and joke:** Dubious legality (theme 6) with a ridiculous subscription layer (theme 7). The joke is a company building tiered pricing, accessories, and customer support around what is straightforwardly a traffic violation.
 
-## 12. Left Behind Hosiery
-
-**Short description:** A subscription that mails you exactly one sock per month — always the left one.
-
-**Long description:** Left Behind Hosiery ships members a single, high-quality left sock every month, on the theory that "the dryer is going to take one anyway — get ahead of it." Tiers include Solo (one left sock), Widower (one left sock plus a condolence card for the right), and Executive (one left sock, expedited). The company's pair-completion program lets you buy the matching right sock for triple the price, but it is perpetually out of stock. Cancellation requires mailing back one sock, which restarts your subscription.
-
-**Themes and joke:** Ridiculous subscription (theme 7) meets useless product (theme 5). The joke is a recurring-revenue business model engineered around a household annoyance, deliberately making the problem it claims to solve.
-
-## 13. Blinkr
+## 10. Blinkr
 
 **Short description:** A venture-backed startup whose app reminds you to blink.
 
@@ -108,7 +84,7 @@ A running list of verified fake business ideas. Append new ideas to the end — 
 
 **Themes and joke:** Incredibly mundane idea played as a hot tech startup (theme 8). The joke is the full startup ceremony — metrics, paywalls, disruption language — around an involuntary reflex.
 
-## 14. Marge's Orbital Launch & Diner
+## 11. Marge's Orbital Launch & Diner
 
 **Short description:** A roadside Kansas diner that also provides commercial satellite launch services.
 
@@ -116,10 +92,3 @@ A running list of verified fake business ideas. Append new ideas to the end — 
 
 **Themes and joke:** Aerospace-scale operation played as a small-town mom-and-pop (theme 9). The joke is billion-dollar space-industry logistics run with diner hospitality, where the biggest scheduling constraint is Sunday service.
 
-## 15. Adopt-A-Cone
-
-**Short description:** A nonprofit that lets you sponsor an orphaned traffic cone with a monthly donation.
-
-**Long description:** Adopt-A-Cone rescues traffic cones abandoned after construction projects and places them in "forever lanes." For $9 a month, sponsors receive a photo of their cone, quarterly updates on its condition ("Waverly has faded slightly but remains upright"), and a certificate of adoption. The Legacy Circle tier lets donors name a cone after a loved one, and the annual gala features a moving slideshow of cones lost to snowplows. The charity's overhead is 98%, which the newsletter calls "cone-forward spending."
-
-**Themes and joke:** Ridiculous subscription (theme 7) wrapped in nonprofit charity tropes. The joke is animal-rescue emotional marketing — adoption photos, updates, memorial tributes — applied to public roadway plastic.
