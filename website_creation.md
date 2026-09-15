@@ -19,6 +19,7 @@ Instructions for creating the fake website for each business.
 9. Logo. Generate a logo using the OpenAI image API.  This should be relatively small and be used to linking to it from the main site.
 10. mobile friendly.  each site should be mobile friendly.  do a check after generation to confirm this.
 11. image display. where possible, clicking or tapping an image should open it in a modal.  this does not need to apply to background images or things like logos or header images.
+12. Marketing Images.  Create 3 marketing images for the business.  One should be portrait, one landscape, and one square. They should all be different, but similar in theme.  Each should be a marketing promotional poster/image for the business with at least one tag line and the business name.  Put the marketing images on a separate page accessible from the footer.  These dont count against the total image limit.
 
 # Site Structure
 
