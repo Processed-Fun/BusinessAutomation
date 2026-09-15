@@ -116,10 +116,21 @@
       font-size: 0.85rem;
     }
 
+    .promo {
+      flex: 0 0 auto;
+      width: 180px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
     @media (max-width: 480px) {
       li.business {
         flex-direction: column;
         align-items: flex-start;
+      }
+
+      .promo {
+        width: 100%;
       }
     }
   </style>
@@ -170,6 +181,14 @@
           <h2><a href="reactor-barn/">Hank &amp; Sons Reactor Barn</a></h2>
           <p>A folksy, family-owned small-town shop that designs and builds nuclear reactors.</p>
         </div>
+      </li>
+      <li class="business">
+        <img class="logo" src="murky-springs/images/logo.webp" alt="Murky Springs Soda Co. logo">
+        <div class="info">
+          <h2><a href="murky-springs/">Murky Springs Soda Co.</a></h2>
+          <p>A craft soda company whose small-batch flavors are all liquids nobody ever wanted to drink.</p>
+        </div>
+        <a href="murky-springs/"><img class="promo" src="murky-springs/images/promo.webp" alt="Murky Springs Soda Co. promotional image"></a>
       </li>
     </ul>
   </main>
