@@ -51,4 +51,4 @@ For each business, come up with the following fields:
 
 # Finalizing
 
-Write each completed idea to "business_ideas.md".  Append, do not delete any ideas.
+Write each completed idea to "business_ideas.md".  Append, do not delete any ideas.  Merge to main when done.
