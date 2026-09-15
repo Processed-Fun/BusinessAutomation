@@ -24,7 +24,8 @@ Instructions for creating the fake website for each business.
 
 1. Each site should be created in its own directory.
 2. The root of the entire site is index.html.  This is the "business directory".
-3. Add an entry to the business directory for the new business.  It should list the name, short description, and have the logo.  It should link to the business site.
+3. For each new business creating a medium size promo image.  It should be a picture with the name of the business, a short tagline that clearly implies what the business does, and an image illustrating the business.
+4. Add an entry to the business directory for the new business.  It should list the name, short description, have the logo, and the promo image.  It should link to the business site.
 
 # Image Generation Rules
 
