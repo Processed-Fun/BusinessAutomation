@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Cellar | Second Wind Air Cellars</title>
+  <meta name="description" content="The complete collection: every vintage of single-origin air currently resting in our Sonoma cellar.">
+  <link rel="icon" type="image/webp" href="images/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .page-head { padding: 64px 0 10px; }
+
+    .page-head h1 { font-size: clamp(2rem, 5vw, 3.2rem); }
+
+    .page-head p { max-width: 580px; color: var(--muted); }
+
+    .reserve-feature {
+      display: grid;
+      grid-template-columns: 380px 1fr;
+      gap: 40px;
+      align-items: center;
+      background: var(--cellar);
+      color: #c9d1cd;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    .reserve-feature img { width: 100%; height: 100%; object-fit: cover; cursor: zoom-in; }
+
+    .reserve-feature .txt { padding: 34px 36px 34px 0; }
+
+    .reserve-feature h2 { color: var(--mist); font-size: 1.9rem; }
+
+    @media (max-width: 860px) {
+      .reserve-feature { grid-template-columns: 1fr; }
+      .reserve-feature .txt { padding: 0 26px 28px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <img class="nav-logo" src="images/logo.webp" alt="Second Wind Air Cellars logo">
+      <a class="brand" href="./">Second Wind Air Cellars<small>Bottled nothing since 2016</small></a>
+      <div class="nav-links">
+        <a href="./#vintages" class="hide-m">Vintages</a>
+        <a href="./#nose" class="hide-m">The nose</a>
+        <a href="./#membership">Membership</a>
+        <a href="cellar.html">The cellar</a>
+        <button class="cart-btn" id="cartBtn">Cellar (0)</button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-head">
+    <div class="wrap">
+      <p class="kicker">The complete collection</p>
+      <h1>The cellar</h1>
+      <p>Every vintage currently resting in Sonoma, kept at fourteen degrees and absolute stillness. Prices are per 750 ml jar. Quantities are limited by weather, which we do not control, yet.</p>
+    </div>
+  </header>
+
+  <section>
+    <div class="wrap">
+      <div class="reserve-feature">
+        <img class="zoom" src="images/jar-pre-everything.webp" alt="The Pre-Everything Reserve 2019 under a glass museum dome" data-caption="The Pre-Everything Reserve 2019. Eleven jars remain. We open none of them.">
+        <div class="txt">
+          <p class="kicker">Auction only</p>
+          <h2>The Pre-Everything Reserve, 2019</h2>
+          <p>Harvested from an ordinary office in late 2019, between a birthday party and a quarterly planning meeting. Nose of sheet cake, handshakes, and unearned confidence. The cellar's crown, offered exclusively at the Cellar Club spring auction.</p>
+          <p style="font-size: 0.9rem; color: #94a4a0;">Last hammer price: undisclosed. The buyer's family has learned not to ask.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Open stock</p>
+        <h2>Resting and ready</h2>
+        <p>Tap any jar to admire the label. All jars ship in straw, by ground, because altitude changes them and we will not apologize for saying so.</p>
+      </div>
+      <div class="grid">
+        <div class="product">
+          <img class="zoom" src="images/jar-alpine-meadow.webp" alt="Jar of Swiss Alpine Meadow 2024">
+          <div class="p-body">
+            <h3>Swiss Alpine Meadow</h3>
+            <p class="vintage">2024</p>
+            <p class="notes">Pine, distant cowbell, moral superiority.</p>
+            <div class="p-foot"><span class="price">$60</span><button class="btn small" data-add="alpine-meadow">Add to cellar</button></div>
+          </div>
+        </div>
+        <div class="product">
+          <img class="zoom" src="images/jar-portland-coffee.webp" alt="Jar of Portland Coffee Shop, 7 A.M. 2025">
+          <div class="p-body">
+            <h3>Portland Coffee Shop, 7 A.M.</h3>
+            <p class="vintage">2025</p>
+            <p class="notes">Burr grinder, damp wool, unfinished screenplay.</p>
+            <div class="p-foot"><span class="price">$48</span><button class="btn small" data-add="portland-coffee">Add to cellar</button></div>
+          </div>
+        </div>
+        <div class="product">
+          <img class="zoom" src="images/jar-casino-lot.webp" alt="Jar of Mid-Tier Casino Parking Lot 2023">
+          <div class="p-body">
+            <h3>Mid-Tier Casino Parking Lot</h3>
+            <p class="vintage">2023</p>
+            <p class="notes">Asphalt, menthol, a long finish of regret.</p>
+            <div class="p-foot"><span class="price">$38</span><button class="btn small" data-add="casino-lot">Add to cellar</button></div>
+          </div>
+        </div>
+        <div class="product">
+          <img class="zoom" src="images/jar-grandma-kitchen.webp" alt="Jar of A Grandmother's Kitchen, Sunday 2022">
+          <div class="p-body">
+            <h3>A Grandmother's Kitchen, Sunday</h3>
+            <p class="vintage">2022</p>
+            <p class="notes">Chicken stock, dish soap, unconditional approval.</p>
+            <div class="p-foot"><span class="price">$75</span><button class="btn small" data-add="grandma-kitchen">Add to cellar</button></div>
+          </div>
+        </div>
+        <div class="product">
+          <img class="zoom" src="images/jar-maine-fog.webp" alt="Jar of Penobscot Bay Fog 2024">
+          <div class="p-body">
+            <h3>Penobscot Bay Fog</h3>
+            <p class="vintage">2024</p>
+            <p class="notes">Salt, spruce, an unverified lighthouse.</p>
+            <div class="p-foot"><span class="price">$55</span><button class="btn small" data-add="maine-fog">Add to cellar</button></div>
+          </div>
+        </div>
+        <div class="product">
+          <img class="zoom" src="images/jar-paris-metro.webp" alt="Jar of Paris Metro, Rush Hour 2023">
+          <div class="p-body">
+            <h3>Paris Metro, Rush Hour</h3>
+            <p class="vintage">2023</p>
+            <p class="notes">Brakes, a perfume counterattack, one continental shrug.</p>
+            <div class="p-foot"><span class="price">$42</span><button class="btn small" data-add="paris-metro">Add to cellar</button></div>
+          </div>
+        </div>
+        <div class="product">
+          <img class="zoom" src="images/jar-old-library.webp" alt="Jar of Special Collections Reading Room 2021">
+          <div class="p-body">
+            <h3>Special Collections Reading Room</h3>
+            <p class="vintage">2021</p>
+            <p class="notes">Foxed paper, pencil shavings, an institutional hush.</p>
+            <div class="p-foot"><span class="price">$65</span><button class="btn small" data-add="old-library">Add to cellar</button></div>
+          </div>
+        </div>
+        <div class="product">
+          <img class="zoom" src="images/jar-new-car.webp" alt="Jar of New Car Interior 2025">
+          <div class="p-body">
+            <h3>New Car Interior</h3>
+            <p class="vintage">2025</p>
+            <p class="notes">Adhesive, ambition, immediate depreciation.</p>
+            <div class="p-foot"><span class="price">$58</span><button class="btn small" data-add="new-car">Add to cellar</button></div>
+          </div>
+        </div>
+        <div class="product">
+          <img class="zoom" src="images/jar-thunderstorm.webp" alt="Jar of Minnesota Thunderstorm, August 2024">
+          <div class="p-body">
+            <h3>Minnesota Thunderstorm, August</h3>
+            <p class="vintage">2024</p>
+            <p class="notes">Ozone, cut grass, a screen door in the wind.</p>
+            <div class="p-foot"><span class="price">$52</span><button class="btn small" data-add="thunderstorm">Add to cellar</button></div>
+          </div>
+        </div>
+        <div class="product">
+          <img class="zoom" src="images/jar-bakery-dawn.webp" alt="Jar of Village Bakery, 5 A.M. 2024">
+          <div class="p-body">
+            <h3>Village Bakery, 5 A.M.</h3>
+            <p class="vintage">2024</p>
+            <p class="notes">Proofing dough, butter, quiet pride.</p>
+            <div class="p-foot"><span class="price">$49</span><button class="btn small" data-add="bakery-dawn">Add to cellar</button></div>
+          </div>
+        </div>
+        <div class="product">
+          <img class="zoom" src="images/jar-vermont-autumn.webp" alt="Jar of Vermont Back Road, October 2023">
+          <div class="p-body">
+            <h3>Vermont Back Road, October</h3>
+            <p class="vintage">2023</p>
+            <p class="notes">Fallen leaves, woodsmoke, out-of-state plates.</p>
+            <div class="p-foot"><span class="price">$54</span><button class="btn small" data-add="vermont-autumn">Add to cellar</button></div>
+          </div>
+        </div>
+        <div class="product">
+          <img class="zoom" src="images/jar-locker-room.webp" alt="Jar of Championship Locker Room 2020">
+          <div class="p-body">
+            <h3>Championship Locker Room</h3>
+            <p class="vintage">2020</p>
+            <p class="notes">Champagne mist, athletic tape, borrowed glory.</p>
+            <div class="p-foot"><span class="price">$88</span><button class="btn small" data-add="locker-room">Add to cellar</button></div>
+          </div>
+        </div>
+        <div class="product">
+          <img class="zoom" src="images/jar-midnight-desert.webp" alt="Jar of Mojave Desert, Midnight 2022">
+          <div class="p-body">
+            <h3>Mojave Desert, Midnight</h3>
+            <p class="vintage">2022</p>
+            <p class="notes">Creosote, cold stone, an enormous silence.</p>
+            <div class="p-foot"><span class="price">$61</span><button class="btn small" data-add="midnight-desert">Add to cellar</button></div>
+          </div>
+        </div>
+        <div class="product">
+          <img class="zoom" src="images/jar-hotel-lobby.webp" alt="Jar of Grand Hotel Lobby 1998, a library vintage in a straw-lined crate">
+          <div class="p-body">
+            <span class="badge dark">Library vintage</span>
+            <h3>Grand Hotel Lobby</h3>
+            <p class="vintage">1998</p>
+            <p class="notes">Brass polish, lilies, old money. Aged twenty-eight years in its own company.</p>
+            <div class="p-foot"><span class="price">$220</span><button class="btn small" data-add="hotel-lobby">Add to cellar</button></div>
+          </div>
+        </div>
+        <div class="product">
+          <img class="zoom" src="images/jar-own-backyard.webp" alt="Jar of Your Own Backyard">
+          <div class="p-body">
+            <span class="badge">Bespoke</span>
+            <h3>Your Own Backyard</h3>
+            <p class="vintage">Harvested to order</p>
+            <p class="notes">Familiar, faintly disappointing, free range. A gatherer visits your property and takes some of your air. You then buy it back.</p>
+            <div class="p-foot"><span class="price">$95</span><button class="btn small" data-add="own-backyard">Add to cellar</button></div>
+          </div>
+        </div>
+        <div class="product">
+          <img class="zoom" src="images/scene-sommelier.webp" alt="The house sommelier nosing a freshly opened jar in the cellar">
+          <div class="p-body">
+            <h3>Not for sale: our nose</h3>
+            <p class="notes">Cellar master Aurelio DiSanto evaluates every harvest. He has described his own palate as "a burden." We pay him accordingly.</p>
+            <div class="p-foot"><a class="btn small ghost" href="./#nose">Consult the digital sommelier</a></div>
+          </div>
+        </div>
+      </div>
+      <p style="margin-top: 30px;"><a class="btn ghost" href="./">Back to the house</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div>
+        <strong style="color: var(--mist);">Second Wind Air Cellars</strong><br>
+        3 Draft Lane, Sonoma Rim, California<br>
+        (707) 555-0142 &middot; cellar@secondwindair.example
+      </div>
+      <div>
+        <a href="./#membership">Membership</a><br>
+        <a href="./#club">The Cellar Club</a><br>
+        <a href="../">The Business Directory</a>
+      </div>
+      <p class="fine">Second Wind Air Cellars is a fictional business. Jars contain air. All air is, in the strictest sense, the same air. Tasting notes describe feelings, not contents. Please breathe responsibly.</p>
+    </div>
+  </footer>
+
+  <!-- Cart drawer -->
+  <div class="drawer-veil" id="drawerVeil" hidden></div>
+  <aside class="drawer" id="cartDrawer" hidden aria-label="Shopping cellar">
+    <header>
+      <h3>Your cellar</h3>
+      <button class="close-x" id="cartClose" aria-label="Close cellar">&times;</button>
+    </header>
+    <div class="items" id="cartItems"></div>
+    <div class="totals">
+      <div class="row"><span>Total</span><strong id="cartTotal">$0</strong></div>
+      <button class="btn gold" id="checkoutBtn" style="width: 100%;">Check out</button>
+      <p style="font-size: 0.75rem; color: var(--muted); margin: 10px 0 0;">Shipping is calculated by weight, so it is nearly nothing, like the product.</p>
+    </div>
+  </aside>
+
+  <!-- Order confirmation -->
+  <div class="note-modal" id="orderModal" hidden>
+    <div class="note-card">
+      <h3>Laid down</h3>
+      <p>Your jars are being wrapped in straw by someone wearing gloves for no practical reason. A tasting card follows by post. Breathe nothing until it arrives.</p>
+      <button class="btn" id="orderClose">I shall wait</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

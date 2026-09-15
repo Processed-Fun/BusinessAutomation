@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sure Roll Dice Co. | Handcrafted dice for people who hate uncertainty</title>
+  <meta name="description" content="Premium hardwood and resin dice, hand polished and guaranteed to roll the number printed on all six sides. Returns not accepted. You knew exactly what you were getting.">
+  <link rel="icon" type="image/webp" href="images/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* ---------- Hero ---------- */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url('images/hero.webp') center 40% / cover no-repeat;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(100deg, rgba(30, 22, 14, 0.85) 0%, rgba(30, 22, 14, 0.55) 50%, rgba(30, 22, 14, 0.2) 100%);
+    }
+
+    .hero .wrap {
+      position: relative;
+      z-index: 2;
+      padding-top: 110px;
+      padding-bottom: 120px;
+      color: #f4efe6;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.4rem, 6vw, 4.2rem);
+      max-width: 620px;
+      margin-bottom: 16px;
+    }
+
+    .hero p.sub {
+      max-width: 480px;
+      font-size: 1.1rem;
+      margin: 0 0 28px;
+      color: #e6dcc8;
+    }
+
+    .hero .cta-row { display: flex; gap: 14px; flex-wrap: wrap; }
+
+    .hero .btn { background: var(--brass); }
+    .hero .btn:hover { background: var(--brass-light); }
+    .hero .btn.ghost { background: transparent; color: #f4efe6; border-color: #f4efe6; }
+    .hero .btn.ghost:hover { border-color: var(--brass-light); color: var(--brass-light); }
+
+    /* ---------- Guarantee strip ---------- */
+    .strip {
+      background: var(--green);
+      color: #e8e2d2;
+      text-align: center;
+      padding: 14px 20px;
+      font-size: 0.95rem;
+      letter-spacing: 0.04em;
+    }
+
+    /* ---------- Story ---------- */
+    .story-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 44px;
+      align-items: center;
+    }
+
+    .story-grid img { border-radius: 12px; box-shadow: var(--shadow); cursor: zoom-in; }
+
+    .story-grid .stack { display: grid; gap: 22px; }
+
+    blockquote.founder {
+      margin: 22px 0 0;
+      padding-left: 18px;
+      border-left: 3px solid var(--brass);
+      font-style: italic;
+      color: var(--muted);
+    }
+
+    blockquote.founder cite { display: block; font-style: normal; margin-top: 8px; font-size: 0.85rem; }
+
+    /* ---------- Proving table (roller widget) ---------- */
+    .prove {
+      display: grid;
+      grid-template-columns: 340px 1fr;
+      gap: 44px;
+      align-items: center;
+    }
+
+    .table-felt {
+      background: radial-gradient(circle at 50% 35%, #3b5c49, #253d30 75%);
+      border: 10px solid var(--walnut);
+      border-radius: 18px;
+      padding: 38px 20px 30px;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+
+    .die-face {
+      width: 130px;
+      height: 130px;
+      margin: 0 auto 22px;
+      background: linear-gradient(145deg, #f7f0e2, #e3d6bd);
+      border-radius: 20px;
+      border: 1px solid #c9b489;
+      box-shadow: inset 0 -6px 10px rgba(0, 0, 0, 0.12), 0 10px 22px rgba(0, 0, 0, 0.35);
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      padding: 18px;
+      gap: 4px;
+      transition: transform 0.12s;
+    }
+
+    .die-face.rolling { animation: tumble 0.09s linear infinite; }
+
+    @keyframes tumble {
+      0% { transform: rotate(-6deg) translateY(0); }
+      50% { transform: rotate(5deg) translateY(-7px); }
+      100% { transform: rotate(-6deg) translateY(0); }
+    }
+
+    .pip { border-radius: 50%; background: var(--walnut); opacity: 0; }
+
+    .pip.on { opacity: 1; }
+
+    .prove select {
+      font-family: inherit;
+      font-size: 0.95rem;
+      padding: 9px 12px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: var(--card);
+      color: var(--ink);
+      max-width: 100%;
+    }
+
+    .prove .roll-controls { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+
+    .scoreboard {
+      margin-top: 18px;
+      color: #cfe0d2;
+      font-size: 0.88rem;
+      line-height: 1.9;
+    }
+
+    .scoreboard strong { color: #fff; }
+
+    #verdict { min-height: 1.4em; color: var(--brass-light); font-style: italic; margin-top: 10px; }
+
+    /* ---------- Pricing ---------- */
+    .plans { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 22px; }
+
+    .plan {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 26px 24px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow);
+    }
+
+    .plan.featured { border: 2px solid var(--brass); }
+
+    .plan h3 { font-size: 1.45rem; margin-bottom: 2px; }
+
+    .plan .p-price { font-size: 1.9rem; font-weight: 700; margin: 8px 0 2px; }
+
+    .plan .p-price small { font-size: 0.85rem; color: var(--muted); font-weight: 400; }
+
+    .plan ul {
+      list-style: none;
+      padding: 0;
+      margin: 14px 0 20px;
+      color: var(--muted);
+      font-size: 0.92rem;
+      flex: 1;
+    }
+
+    .plan ul li { padding: 5px 0 5px 22px; position: relative; }
+
+    .plan ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 12px;
+      width: 8px;
+      height: 8px;
+      border-radius: 2px;
+      background: var(--brass);
+    }
+
+    /* ---------- Bespoke form ---------- */
+    .bespoke {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 44px;
+      align-items: start;
+    }
+
+    .bespoke form { display: grid; gap: 12px; }
+
+    .bespoke label { font-size: 0.82rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+
+    .bespoke input, .bespoke select, .bespoke textarea {
+      font-family: inherit;
+      font-size: 0.95rem;
+      padding: 11px 12px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: var(--card);
+      color: var(--ink);
+      width: 100%;
+    }
+
+    .bespoke textarea { min-height: 90px; resize: vertical; }
+
+    .phone-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 22px 24px;
+      margin-top: 18px;
+      box-shadow: var(--shadow);
+    }
+
+    .phone-card .num { font-size: 1.5rem; font-weight: 700; color: var(--walnut); }
+
+    /* ---------- Testimonials ---------- */
+    .quotes { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 22px; }
+
+    .quote {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .quote p { margin: 0 0 14px; font-style: italic; }
+
+    .quote cite { font-style: normal; font-size: 0.85rem; color: var(--muted); }
+
+    .stars { color: var(--brass); letter-spacing: 2px; margin-bottom: 10px; }
+
+    /* ---------- Gallery ---------- */
+    .insta { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+
+    .insta figure { margin: 0; }
+
+    .insta img {
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+      border-radius: 10px;
+      cursor: zoom-in;
+      box-shadow: var(--shadow);
+    }
+
+    .insta figcaption { font-size: 0.8rem; color: var(--muted); margin-top: 6px; line-height: 1.4; }
+
+    .insta .likes { color: var(--walnut); font-weight: 600; }
+
+    @media (max-width: 900px) {
+      .prove { grid-template-columns: 1fr; }
+      .story-grid, .bespoke { grid-template-columns: 1fr; }
+      .insta { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <img class="nav-logo" src="images/logo.webp" alt="Sure Roll Dice Co. logo">
+      <a class="brand" href="./">Sure Roll Dice Co.<small>Est. no uncertainty</small></a>
+      <div class="nav-links">
+        <a href="#dice" class="hide-m">The dice</a>
+        <a href="#prove">Try a roll</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#gallery" class="hide-m">Gallery</a>
+        <a href="catalog.html">Full catalog</a>
+        <button class="cart-btn" id="cartBtn">Cart (0)</button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap">
+      <p class="kicker">Handmade in Stowbridge, Vermont</p>
+      <h1>Dice for people who hate uncertainty.</h1>
+      <p class="sub">Every die is cut, polished, and numbered by hand. All six faces carry the number you ordered. You will never be surprised again.</p>
+      <div class="cta-row">
+        <a class="btn" href="#dice">Choose your number</a>
+        <a class="btn ghost" href="#prove">Watch one roll</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="strip">Guaranteed to roll the number printed on all six sides, every time, forever. That is the entire product.</div>
+
+  <section id="story">
+    <div class="wrap story-grid">
+      <div>
+        <p class="kicker">Our story</p>
+        <h2>Thirty years of probability was enough</h2>
+        <p>Werner Alby taught statistics at a small Vermont college for three decades. He spent his career explaining to teenagers that the previous roll tells you nothing about the next one. Nobody ever liked hearing it, and toward the end, neither did he.</p>
+        <p>So he retired to his barn, bought a lathe, and started making dice that keep their promises. Each one is shaped from a single blank, hand polished for forty minutes, and stamped with its number on all six faces. His daughter Ruth runs the shop now. Werner still checks every die before it ships, a process he describes as "brief."</p>
+        <blockquote class="founder">
+          "People say the fun of dice is not knowing what comes next. Those people have never rolled a six on demand in front of their brother-in-law."
+          <cite>Werner Alby, founder</cite>
+        </blockquote>
+      </div>
+      <div class="stack">
+        <img class="zoom" src="images/workshop-polish.webp" alt="Hands polishing a walnut die at the workbench" data-caption="Forty minutes of polishing. The number was never in question.">
+        <img class="zoom" src="images/workshop-inspect.webp" alt="Werner inspecting a die through a jeweler's loupe" data-caption="Werner performing the final inspection. He has yet to find a surprise.">
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="dice">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">The signature line</p>
+        <h2>Six dice. One number each.</h2>
+        <p>Pick the number that matches your life. Each die ships in a cotton pouch with a certificate stating what it will roll, which we print in advance, because we know.</p>
+      </div>
+      <div class="grid">
+        <div class="product">
+          <img class="zoom" src="images/die-humble-one.webp" alt="The Humble One, a pale maple die with a single pip on every face">
+          <div class="p-body">
+            <h3>The Humble One</h3>
+            <p class="material">Hand-rubbed maple</p>
+            <p class="desc">Rolls a one. Always has, always will. Popular with people practicing modesty and people teaching it to others.</p>
+            <div class="p-foot"><span class="price">$45</span><button class="btn small" data-add="humble-one">Add to cart</button></div>
+          </div>
+        </div>
+        <div class="product">
+          <img class="zoom" src="images/die-diplomat-two.webp" alt="The Diplomat, a cherry wood die with two pips on every face">
+          <div class="p-body">
+            <h3>The Diplomat</h3>
+            <p class="material">Vermont cherry</p>
+            <p class="desc">Rolls a two. Never the highest, never the lowest, never blamed for anything. A career civil servant of a die.</p>
+            <div class="p-foot"><span class="price">$45</span><button class="btn small" data-add="diplomat-two">Add to cart</button></div>
+          </div>
+        </div>
+        <div class="product">
+          <img class="zoom" src="images/die-middle-three.webp" alt="The Middle Path, a green resin die with three pips on every face">
+          <div class="p-body">
+            <h3>The Middle Path</h3>
+            <p class="material">Forest resin, gold fleck</p>
+            <p class="desc">Rolls a three. For those who have made peace with average and would like it in writing.</p>
+            <div class="p-foot"><span class="price">$45</span><button class="btn small" data-add="middle-three">Add to cart</button></div>
+          </div>
+        </div>
+        <div class="product">
+          <img class="zoom" src="images/die-steady-four.webp" alt="The Steady Four, a quartersawn oak die with four pips on every face">
+          <div class="p-body">
+            <h3>The Steady Four</h3>
+            <p class="material">Quartersawn oak</p>
+            <p class="desc">Rolls a four. Dependable in the way furniture is dependable. Our most requested die among project managers.</p>
+            <div class="p-foot"><span class="price">$45</span><button class="btn small" data-add="steady-four">Add to cart</button></div>
+          </div>
+        </div>
+        <div class="product">
+          <img class="zoom" src="images/die-almost-five.webp" alt="The Almost, an amber resin die with five pips on every face">
+          <div class="p-body">
+            <h3>The Almost</h3>
+            <p class="material">Amber resin</p>
+            <p class="desc">Rolls a five. For optimists who know their limits. Glows a little when the light hits it, the way you almost did.</p>
+            <div class="p-foot"><span class="price">$45</span><button class="btn small" data-add="almost-five">Add to cart</button></div>
+          </div>
+        </div>
+        <div class="product">
+          <img class="zoom" src="images/die-confidence-six.webp" alt="The Confidence Six, a walnut die with six brass pips on every face">
+          <div class="p-body">
+            <span class="badge">Bestseller</span>
+            <h3>The Confidence Six</h3>
+            <p class="material">Black walnut, brass pips</p>
+            <p class="desc">Rolls a six. Our flagship since day one. Owners report a calm they struggle to explain to their game night friends.</p>
+            <div class="p-foot"><span class="price">$55</span><button class="btn small" data-add="confidence-six">Add to cart</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="prove">
+    <div class="wrap prove">
+      <div>
+        <div class="table-felt">
+          <div class="die-face" id="dieFace" aria-live="polite"></div>
+          <div class="roll-controls">
+            <select id="dieSelect" aria-label="Choose a die to roll">
+              <option value="1">The Humble One</option>
+              <option value="2">The Diplomat</option>
+              <option value="3">The Middle Path</option>
+              <option value="4">The Steady Four</option>
+              <option value="5">The Almost</option>
+              <option value="6" selected>The Confidence Six</option>
+            </select>
+            <button class="btn small" id="rollBtn" style="background: var(--brass);">Roll</button>
+          </div>
+          <div class="scoreboard">
+            Rolls: <strong id="rollCount">0</strong> &nbsp;&middot;&nbsp;
+            Expected result: <strong id="expected">6</strong> &nbsp;&middot;&nbsp;
+            Accuracy: <strong id="accuracy">pending</strong>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="kicker">The proving table</p>
+        <h2>Go ahead. Roll it.</h2>
+        <p>This is a faithful simulation of every die we sell. Pick one, roll it as many times as you like, and watch the accuracy figure refuse to move off one hundred percent. We publish this number with complete confidence, for reasons that should be clear by now.</p>
+        <p id="verdict"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="pricing">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Pricing</p>
+        <h2>Ways to own an outcome</h2>
+        <p>Every purchase ships with our lifetime guarantee. If your die ever rolls a different number, we will frame the die, apologize in person, and shut down the company.</p>
+      </div>
+      <div class="plans">
+        <div class="plan">
+          <h3>Single die</h3>
+          <div class="p-price">$45 <small>($55 for the Six)</small></div>
+          <ul>
+            <li>Any number from our signature line</li>
+            <li>Cotton pouch and outcome certificate</li>
+            <li>Hand polished for forty minutes</li>
+          </ul>
+          <button class="btn" data-add="confidence-six">Add the Confidence Six</button>
+        </div>
+        <div class="plan featured">
+          <h3>The Collector's Set</h3>
+          <div class="p-price">$200</div>
+          <ul>
+            <li>All six values in a walnut presentation case</li>
+            <li>Green velvet lining, brass latch</li>
+            <li>Prepared for any outcome you already chose</li>
+          </ul>
+          <button class="btn" data-add="collector-set">Add the set</button>
+        </div>
+        <div class="plan">
+          <h3>The Certainty Club</h3>
+          <div class="p-price">$25<small>/month</small></div>
+          <ul>
+            <li>Each month, we send you the exact same die</li>
+            <li>Same wood, same number, same pouch</li>
+            <li>Members tell us the consistency is the point</li>
+          </ul>
+          <button class="btn" data-add="certainty-club">Join the club</button>
+        </div>
+        <div class="plan">
+          <h3>Outcome consulting</h3>
+          <div class="p-price">Call us</div>
+          <ul>
+            <li>Volume orders for offices and events</li>
+            <li>We help your organization pick its number</li>
+            <li>Discretion assured, results guaranteed</li>
+          </ul>
+          <a class="btn ghost" href="#bespoke">Request a quote</a>
+        </div>
+      </div>
+      <p style="color: var(--muted); font-size: 0.85rem; margin-top: 22px;">Returns are not accepted. You knew exactly what you were getting.</p>
+    </div>
+  </section>
+
+  <section id="bespoke">
+    <div class="wrap bespoke">
+      <div>
+        <p class="kicker">Bespoke &amp; enterprise</p>
+        <h2>Your number, at scale</h2>
+        <p>Sales team that needs to close on fours? Board of directors that votes six across the board? Our Outcome Consulting desk supplies certainty in volume, with quantity pricing at 500 dice and up.</p>
+        <p>We also cut bespoke commissions: monogrammed pips, exotic hardwoods, and one memorable order of a die that rolls a seven, which took some doing.</p>
+        <div class="phone-card">
+          <p style="margin: 0 0 4px; font-size: 0.82rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted);">Prefer the phone? Ruth answers.</p>
+          <span class="num">(802) 555-0166</span>
+          <p style="margin: 6px 0 0; font-size: 0.85rem; color: var(--muted);">Weekdays 9 to 5 Eastern. If Werner answers, speak slowly and do not mention randomness.</p>
+        </div>
+      </div>
+      <form id="quoteForm">
+        <div>
+          <label for="qName">Name</label>
+          <input id="qName" type="text" required>
+        </div>
+        <div>
+          <label for="qCompany">Company</label>
+          <input id="qCompany" type="text">
+        </div>
+        <div>
+          <label for="qNumber">The number you need</label>
+          <select id="qNumber">
+            <option>One</option>
+            <option>Two</option>
+            <option>Three</option>
+            <option>Four</option>
+            <option>Five</option>
+            <option selected>Six</option>
+            <option>We would like to discuss other numbers</option>
+          </select>
+        </div>
+        <div>
+          <label for="qQty">Quantity</label>
+          <input id="qQty" type="number" min="1" value="500">
+        </div>
+        <div>
+          <label for="qMsg">Anything else</label>
+          <textarea id="qMsg" placeholder="Tell us about the outcome you have in mind."></textarea>
+        </div>
+        <button class="btn" type="submit">Send the request</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Testimonials</p>
+        <h2>Word keeps getting around</h2>
+      </div>
+      <div class="quotes">
+        <div class="quote">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"I have rolled my Confidence Six over four hundred times and it has never let me down once. My family no longer plays board games with me, which has really opened up my weekends."</p>
+          <cite>Doug P., Cedar Rapids</cite>
+        </div>
+        <div class="quote">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"I bought my son the Humble One to build character. He now loses with a grace that frightens his teachers. Beautiful maple, by the way."</p>
+          <cite>Meredith S., Portland</cite>
+        </div>
+        <div class="quote">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"Our whole team estimates with the Steady Four now. Every task is a four. We have not missed a sprint commitment in two years and nobody can prove anything."</p>
+          <cite>Priya K., Columbus</cite>
+        </div>
+        <div class="quote">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+          <p>"Security walked me out of two casinos before I read the card that says these are not for casino play. One star off for burying that on the back. Gorgeous die though."</p>
+          <cite>Ron T., Reno</cite>
+        </div>
+        <div class="quote">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"My book club uses the Middle Path to rate every novel. Three stars, every meeting, total serenity. We have not argued since March."</p>
+          <cite>Elaine V., Sarasota</cite>
+        </div>
+        <div class="quote">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"The dog ate my Almost. The replacement arrived in two days with a handwritten note addressed to the dog. Class operation, start to finish."</p>
+          <cite>Gene W., Tulsa</cite>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="gallery">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">#surethingsix</p>
+        <h2>From our customers</h2>
+        <p>Tap any photo for a closer look at people enjoying outcomes they arranged in advance.</p>
+      </div>
+      <div class="insta">
+        <figure>
+          <img class="zoom" src="images/gallery-gamenight.webp" alt="A man celebrating a dice roll at family game night" data-caption="@dougwins - 'Family game night, week 41 of my winning streak.'">
+          <figcaption><span class="likes">&#9829; 1,204</span> @dougwins &middot; week 41 of the streak</figcaption>
+        </figure>
+        <figure>
+          <img class="zoom" src="images/gallery-poker.webp" alt="A smug player collecting chips at a home dice night" data-caption="@chip_leader - 'They keep inviting me back. I keep bringing my own die.'">
+          <figcaption><span class="likes">&#9829; 892</span> @chip_leader &middot; brought my own die again</figcaption>
+        </figure>
+        <figure>
+          <img class="zoom" src="images/gallery-dnd.webp" alt="A tabletop gaming group inspecting a suspicious die" data-caption="@dm_carol - 'Third natural six this session. The table has questions.'">
+          <figcaption><span class="likes">&#9829; 2,317</span> @dm_carol &middot; the table has questions</figcaption>
+        </figure>
+        <figure>
+          <img class="zoom" src="images/gallery-office.webp" alt="A businesswoman holding up a die in a conference room" data-caption="@lindsay_ops - 'Q3 strategy decided. The die has spoken, as arranged.'">
+          <figcaption><span class="likes">&#9829; 641</span> @lindsay_ops &middot; the die has spoken</figcaption>
+        </figure>
+        <figure>
+          <img class="zoom" src="images/gallery-proposal.webp" alt="A proposal made with a die instead of a ring" data-caption="@mikeandkatie - 'I asked if she was sure. The die was.'">
+          <figcaption><span class="likes">&#9829; 5,048</span> @mikeandkatie &middot; she said six</figcaption>
+        </figure>
+        <figure>
+          <img class="zoom" src="images/gallery-grandma.webp" alt="A grandmother winning at dice against her grandchildren" data-caption="@nana_edith - 'The grandkids think I'm lucky. Let them.'">
+          <figcaption><span class="likes">&#9829; 3,910</span> @nana_edith &middot; let them think it's luck</figcaption>
+        </figure>
+        <figure>
+          <img class="zoom" src="images/gallery-beach.webp" alt="A die standing on a beach towel on vacation" data-caption="@travelingsix - 'It doesn't need a vacation. It never works a day in its life.'">
+          <figcaption><span class="likes">&#9829; 778</span> @travelingsix &middot; out of office</figcaption>
+        </figure>
+        <figure>
+          <img class="zoom" src="images/gallery-dog.webp" alt="A golden retriever with a large wooden die between its paws" data-caption="@biscuit_thegood - 'He fetched a six. He always fetches a six.'">
+          <figcaption><span class="likes">&#9829; 8,455</span> @biscuit_thegood &middot; always fetches a six</figcaption>
+        </figure>
+      </div>
+      <p style="margin-top: 26px;"><a class="btn ghost" href="catalog.html">Browse the full catalog</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div>
+        <strong style="color: #f4efe6;">Sure Roll Dice Co.</strong><br>
+        14 Certainty Lane, Stowbridge, Vermont<br>
+        (802) 555-0166 &middot; ruth@surerolldice.example
+      </div>
+      <div>
+        <a href="#dice">The dice</a><br>
+        <a href="catalog.html">Full catalog</a><br>
+        <a href="../">The Business Directory</a>
+      </div>
+      <p class="fine">Sure Roll Dice Co. is a fictional business. No dice were harmed, and none were random. Not legal for tournament play, casino play, or any setting where the other players can do arithmetic. The lifetime guarantee is enforceable only against the laws of probability, which have declined to comment.</p>
+    </div>
+  </footer>
+
+  <!-- Cart drawer -->
+  <div class="drawer-veil" id="drawerVeil" hidden></div>
+  <aside class="drawer" id="cartDrawer" hidden aria-label="Shopping cart">
+    <header>
+      <h3>Your cart</h3>
+      <button class="close-x" id="cartClose" aria-label="Close cart">&times;</button>
+    </header>
+    <div class="items" id="cartItems"></div>
+    <div class="totals">
+      <div class="row"><span>Total</span><strong id="cartTotal">$0</strong></div>
+      <button class="btn" id="checkoutBtn" style="width: 100%;">Check out</button>
+      <p style="font-size: 0.75rem; color: var(--muted); margin: 10px 0 0;">All sales final. See "Returns," or rather, don't, because there isn't one.</p>
+    </div>
+  </aside>
+
+  <!-- Order confirmation -->
+  <div class="note-modal" id="orderModal" hidden>
+    <div class="note-card">
+      <h3>Order placed</h3>
+      <p>Your dice are being polished as we speak. The outcome of your order was never in doubt, and neither is the outcome of your dice.</p>
+      <button class="btn" id="orderClose">Very reassuring</button>
+    </div>
+  </div>
+
+  <!-- Quote confirmation -->
+  <div class="note-modal" id="quoteModal" hidden>
+    <div class="note-card">
+      <h3>Request received</h3>
+      <p>Ruth will call you within one business day. We already know how the call goes.</p>
+      <button class="btn" id="quoteClose">Of course you do</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  <script>
+    // The proving table. The animation is theater; the result is not.
+    (function () {
+      var face = document.getElementById('dieFace');
+      var select = document.getElementById('dieSelect');
+      var rollBtn = document.getElementById('rollBtn');
+      var rollCount = document.getElementById('rollCount');
+      var expected = document.getElementById('expected');
+      var accuracy = document.getElementById('accuracy');
+      var verdict = document.getElementById('verdict');
+
+      // Pip layout on a 3x3 grid for values 1 through 6.
+      var LAYOUT = {
+        1: [4],
+        2: [0, 8],
+        3: [0, 4, 8],
+        4: [0, 2, 6, 8],
+        5: [0, 2, 4, 6, 8],
+        6: [0, 2, 3, 5, 6, 8]
+      };
+
+      var VERDICTS = [
+        'As expected.',
+        'Again.',
+        'No notes.',
+        'The suspense was manufactured.',
+        'Werner would be proud. Werner would not be surprised.',
+        'Feel free to keep going. It will keep happening.',
+        'This is roll number {n}. It is also roll number one, in every way that matters.'
+      ];
+
+      var rolls = 0;
+
+      for (var i = 0; i < 9; i++) {
+        var pip = document.createElement('span');
+        pip.className = 'pip';
+        face.appendChild(pip);
+      }
+
+      function show(value) {
+        var pips = face.children;
+        for (var i = 0; i < 9; i++) pips[i].classList.remove('on');
+        LAYOUT[value].forEach(function (idx) { pips[idx].classList.add('on'); });
+      }
+
+      function currentValue() { return parseInt(select.value, 10); }
+
+      function roll() {
+        if (face.classList.contains('rolling')) return;
+        var target = currentValue();
+        face.classList.add('rolling');
+        rollBtn.disabled = true;
+        var flickers = 0;
+        var flicker = setInterval(function () {
+          show(1 + Math.floor(Math.random() * 6)); // the only randomness we permit, and only mid-air
+          flickers++;
+          if (flickers > 9) {
+            clearInterval(flicker);
+            face.classList.remove('rolling');
+            rollBtn.disabled = false;
+            show(target);
+            rolls++;
+            rollCount.textContent = rolls;
+            accuracy.textContent = '100%';
+            var line = VERDICTS[Math.min(rolls - 1, VERDICTS.length - 1)];
+            verdict.textContent = line.replace('{n}', rolls);
+          }
+        }, 80);
+      }
+
+      select.addEventListener('change', function () {
+        expected.textContent = select.value;
+        show(currentValue());
+        rolls = 0;
+        rollCount.textContent = '0';
+        accuracy.textContent = 'pending';
+        verdict.textContent = '';
+      });
+
+      rollBtn.addEventListener('click', roll);
+      show(6);
+    })();
+
+    // Bespoke quote form.
+    document.getElementById('quoteForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      document.getElementById('quoteModal').hidden = false;
+      this.reset();
+    });
+    document.getElementById('quoteClose').addEventListener('click', function () {
+      document.getElementById('quoteModal').hidden = true;
+    });
+  </script>
+</body>
+</html>

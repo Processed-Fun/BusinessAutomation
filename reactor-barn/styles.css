@@ -1,0 +1,405 @@
+/* Hank & Sons Reactor Barn - shared styles */
+
+:root {
+  --cream: #f8f3e6;
+  --paper: #fffdf6;
+  --barn-red: #9b2c22;
+  --barn-red-dark: #7c211a;
+  --brown: #5b4632;
+  --ink: #2f2721;
+  --muted: #7a6c5c;
+  --line: #e2d8c3;
+  --gold: #c99a3f;
+  --shadow: 0 10px 24px rgba(47, 39, 33, 0.14);
+}
+
+* { box-sizing: border-box; }
+
+[hidden] { display: none !important; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: 'Bitter', Georgia, serif;
+  background: var(--cream);
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+img { max-width: 100%; display: block; }
+
+h1, h2, h3 {
+  font-family: 'Alfa Slab One', 'Bitter', Georgia, serif;
+  font-weight: 400;
+  line-height: 1.15;
+  margin: 0 0 14px;
+  letter-spacing: 0.01em;
+}
+
+h2 { font-size: clamp(1.5rem, 3.5vw, 2.1rem); }
+h3 { font-size: 1.15rem; }
+
+p { margin: 0 0 14px; }
+
+a { color: var(--barn-red); }
+
+.wrap {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section { padding: 56px 0; }
+
+.kicker {
+  font-family: 'Bitter', Georgia, serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.8rem;
+  color: var(--barn-red);
+  margin: 0 0 8px;
+}
+
+/* ---------- Nav ---------- */
+.topbar {
+  background: var(--barn-red);
+  color: #f6e8d8;
+  text-align: center;
+  font-size: 0.88rem;
+  padding: 8px 14px;
+}
+
+.topbar a { color: #ffe9b8; text-decoration: none; font-weight: 700; }
+
+nav.main {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: var(--paper);
+  border-bottom: 3px solid var(--barn-red);
+}
+
+nav.main .wrap {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--ink);
+  margin-right: auto;
+}
+
+.brand img { width: 44px; height: 44px; border-radius: 50%; }
+
+.brand span {
+  font-family: 'Alfa Slab One', Georgia, serif;
+  font-size: 1.05rem;
+  line-height: 1.1;
+}
+
+nav.main .links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+nav.main .links a {
+  text-decoration: none;
+  color: var(--brown);
+  font-weight: 700;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+nav.main .links a:hover { background: var(--cream); color: var(--barn-red); }
+
+nav.main .links a.active { color: var(--barn-red); }
+
+.btn {
+  display: inline-block;
+  font-family: 'Bitter', Georgia, serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 11px 20px;
+  border-radius: 8px;
+  border: 2px solid var(--barn-red);
+  background: var(--barn-red);
+  color: #fff8ec;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.btn:hover { background: var(--barn-red-dark); border-color: var(--barn-red-dark); }
+
+.btn.ghost { background: transparent; color: var(--barn-red); }
+.btn.ghost:hover { background: var(--barn-red); color: #fff8ec; }
+
+.btn.small { padding: 8px 14px; font-size: 0.88rem; }
+
+/* ---------- Cards ---------- */
+.card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+}
+
+.card img.zoom { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; cursor: zoom-in; }
+
+.card .pad { padding: 18px 20px 20px; display: flex; flex-direction: column; flex: 1; }
+
+.card .pad p { color: var(--muted); font-size: 0.95rem; }
+
+.price-row {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding-top: 12px;
+}
+
+.price {
+  font-family: 'Alfa Slab One', Georgia, serif;
+  font-size: 1.15rem;
+  color: var(--brown);
+}
+
+.price small { font-family: 'Bitter', Georgia, serif; font-weight: 400; color: var(--muted); }
+
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+
+@media (max-width: 860px) {
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 580px) {
+  .grid-3, .grid-2 { grid-template-columns: 1fr; }
+}
+
+/* ---------- Spec lists ---------- */
+ul.specs {
+  list-style: none;
+  margin: 0 0 8px;
+  padding: 0;
+  font-size: 0.92rem;
+  color: var(--brown);
+}
+
+ul.specs li {
+  padding: 6px 0;
+  border-bottom: 1px dashed var(--line);
+}
+
+ul.specs li:last-child { border-bottom: none; }
+
+/* ---------- Wagon drawer ---------- */
+.veil {
+  position: fixed;
+  inset: 0;
+  background: rgba(35, 26, 18, 0.55);
+  z-index: 60;
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: min(400px, 92vw);
+  background: var(--paper);
+  z-index: 70;
+  padding: 22px;
+  overflow-y: auto;
+  border-left: 4px solid var(--barn-red);
+}
+
+.drawer h3 { margin-bottom: 4px; }
+
+.cart-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 0;
+  border-bottom: 1px dashed var(--line);
+  font-size: 0.95rem;
+}
+
+.cart-row .qty { display: inline-flex; align-items: center; gap: 8px; }
+
+.cart-row .qty button {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid var(--brown);
+  background: var(--cream);
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Alfa Slab One', Georgia, serif;
+  font-size: 1.1rem;
+  padding: 16px 0;
+}
+
+/* ---------- Modals ---------- */
+.modal-veil {
+  position: fixed;
+  inset: 0;
+  background: rgba(24, 18, 12, 0.82);
+  z-index: 90;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  cursor: zoom-out;
+}
+
+.modal-veil img {
+  max-width: min(1100px, 94vw);
+  max-height: 82vh;
+  width: auto;
+  border-radius: 10px;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.5);
+}
+
+.modal-veil figcaption {
+  color: #efe4d0;
+  text-align: center;
+  padding-top: 12px;
+  font-size: 0.95rem;
+}
+
+.modal-box {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(35, 26, 18, 0.55);
+}
+
+.modal-box .inner {
+  background: var(--paper);
+  border-radius: 12px;
+  border-top: 6px solid var(--barn-red);
+  max-width: 460px;
+  width: 100%;
+  padding: 26px;
+  box-shadow: var(--shadow);
+  max-height: 88vh;
+  overflow-y: auto;
+}
+
+.modal-box label {
+  display: block;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin: 12px 0 4px;
+  color: var(--brown);
+}
+
+.modal-box input, .modal-box textarea, .modal-box select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  background: var(--cream);
+  color: var(--ink);
+}
+
+/* ---------- Toast ---------- */
+#toast {
+  position: fixed;
+  left: 50%;
+  bottom: 26px;
+  transform: translateX(-50%);
+  background: var(--brown);
+  color: #fff6e6;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-size: 0.92rem;
+  z-index: 100;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+  max-width: 90vw;
+  text-align: center;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background: var(--brown);
+  color: #e8dcc8;
+  padding: 44px 0 30px;
+  font-size: 0.92rem;
+}
+
+footer a { color: #ffd98a; }
+
+footer .cols {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 28px;
+  margin-bottom: 22px;
+}
+
+@media (max-width: 680px) {
+  footer .cols { grid-template-columns: 1fr; }
+}
+
+footer .fine { color: #b9a88e; font-size: 0.8rem; border-top: 1px solid rgba(255, 246, 230, 0.2); padding-top: 16px; }
+
+/* ---------- Little touches ---------- */
+.notice-strip {
+  background: var(--gold);
+  color: #3d2f14;
+  text-align: center;
+  padding: 12px 18px;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.tag {
+  display: inline-block;
+  align-self: flex-start;
+  background: var(--cream);
+  border: 1px solid var(--line);
+  color: var(--brown);
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 10px;
+}
+
+.tag.sale { background: var(--barn-red); border-color: var(--barn-red); color: #fff3df; }
