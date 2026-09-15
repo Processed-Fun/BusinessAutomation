@@ -92,15 +92,7 @@ A running list of verified fake business ideas. Append new ideas to the end — 
 
 **Themes and joke:** A massive enterprise product played as a mom-and-pop roadside business (theme 9). The joke is the collision of global-scale B2B software — deployments, licenses, uptime — with county-fair charm, preserves, and chicken chores.
 
-## 12. The Disappointment Department
-
-**Short description:** A subscription service that sends a stern professional to your home to look disappointed at you until you get things done.
-
-**Long description:** The Disappointment Department dispatches trained Disappointment Officers — retired schoolteachers, former figure-skating judges, and one extremely effective grandmother — to stand in your doorway, sigh, and say "so this is what you've been doing." The Starter tier includes one monthly visit and a follow-up text reading "well." The Executive tier adds unannounced office drop-ins and a framed portrait of your officer for your desk, eyebrows pre-raised. The company reports a 94% task-completion rate and a 100% guilt-retention rate.
-
-**Themes and joke:** Ridiculous subscription business (theme 7). The joke is productizing the most powerful motivator known to science — a disappointed authority figure — complete with tiers, metrics, and recurring billing.
-
-## 13. DrySteep & Co.
+## 12. DrySteep & Co.
 
 **Short description:** An artisanal tea house whose signature innovation is a fully waterproof teabag.
 
@@ -108,7 +100,7 @@ A running list of verified fake business ideas. Append new ideas to the end — 
 
 **Themes and joke:** Useless product (theme 5) wrapped in ultra-luxury craftsmanship (theme 4). The joke is premium tea culture — terroir, tasting notes, sustainability claims — applied to a product engineered to never make tea.
 
-## 14. PreChewed
+## 13. PreChewed
 
 **Short description:** A time-optimization startup that sells packs of gum pre-chewed by trained professionals.
 
