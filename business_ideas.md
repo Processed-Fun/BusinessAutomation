@@ -43,3 +43,43 @@ A running list of verified fake business ideas. Append new ideas to the end — 
 **Long description:** Operating out of a converted feed store in rural Nebraska, Hank & Sons Reactor Barn has been "keepin' the neutrons flowin' since 1987." Hank Sr. handles the thermal hydraulics, Hank Jr. runs the front counter, and cousin Denise does containment domes on weekends. The shop offers free coffee, a punch card (tenth reactor is half off), and a hand-painted sign reading "If we can't fission it, it can't be fissioned." They do not have a website; you have to call, and Hank answers.
 
 **Themes and joke:** Enormous industrial product played as a mom-and-pop business (theme 9), with a wink at dubious legality (theme 6). The joke is the collision of homespun small-town charm with the most heavily regulated, high-stakes engineering on Earth.
+
+## 6. Lint & Loom
+
+**Short description:** A bespoke knitwear atelier that weaves luxury garments entirely from donated belly-button lint.
+
+**Long description:** Lint & Loom is a "fiber reclamation atelier" headquartered in a renovated Brooklyn textile mill, where master weavers hand-spin donated navel lint into scarves, cardigans, and a $4,800 wedding shawl. Donors mail in their harvest using prepaid Lint Envelopes and earn store credit by the gram, while the provenance-obsessed can commission single-origin pieces spun exclusively from one donor ("estate lint"). The waitlist for the winter collection is currently eleven months, and the company insists every garment is "pre-softened by nature."
+
+**Themes and joke:** Simply gross (theme 2) fused with ultra-luxury where no market should exist (theme 4). The joke is applying fashion-house language — ateliers, provenance, waitlists — to the least desirable fiber the human body produces.
+
+## 7. Windowly
+
+**Short description:** A venture-backed weather-tech startup whose app tells you the forecast by instructing you to look out a window.
+
+**Long description:** Windowly has raised $40 million to "disrupt legacy meteorology" with a proprietary three-step platform: the app pings you, tells you to walk to the nearest window, and asks what you see. Premium subscribers unlock Windowly Pro, which also suggests opening the window and sticking a hand out. The founding team of former growth hackers describes the product as "crowdsourced, zero-latency, hyperlocal atmospheric sensing," and the pitch deck projects a billion windows served by 2030.
+
+**Themes and joke:** Incredibly mundane idea played as a hot tech startup (theme 8) selling an essentially useless product (theme 5). The joke is Silicon Valley jargon and a nine-figure valuation wrapped around the act of looking outside.
+
+## 8. Tag Team Removal LLC
+
+**Short description:** A discreet network of "certified technicians" who will remove the do-not-remove tags from your mattresses and pillows.
+
+**Long description:** Tag Team Removal operates out of unmarked vans and communicates only through a phone number printed inside vending machines. For a cash fee, a licensed(?) technician arrives at night, snips the "do not remove under penalty of law" tags from your bedding, and disposes of the evidence at an undisclosed facility. The deluxe package includes a notarized certificate of deniability and a replacement tag that reads "nothing to see here." The company motto: "You didn't remove it. We did. Allegedly."
+
+**Themes and joke:** Dubious legality (theme 6). The joke is treating the most toothless warning label in America as if removing it requires a cartel-level criminal operation, complete with tradecraft and plausible deniability.
+
+## 9. Famous Last Words Ltd.
+
+**Short description:** An on-call ghostwriting agency that punches up your dying words so you don't fumble your final moment.
+
+**Long description:** Famous Last Words keeps a stable of poets, screenwriters, and one retired eulogist on 24/7 standby, ready to rush to any bedside and feed clients a memorable exit line through a tasteful earpiece. Packages range from the budget Quip ("one zinger, no rewrites") to the Legacy Suite, which includes three drafts, a dramatic pause coach, and a backup line in case you rally and have to die twice. Every contract includes a strict confidentiality clause so history believes the words were yours.
+
+**Themes and joke:** Extra dark humor (theme 3) with ultra-luxury tiering (theme 4). The joke is applying the punch-up culture of Hollywood writers' rooms — drafts, coaches, script doctors — to the one line you can never workshop again.
+
+## 10. Rise & Rinse
+
+**Short description:** An oral-care brand whose toothpaste lineup is exclusively breakfast flavors.
+
+**Long description:** Rise & Rinse believes brushing your teeth shouldn't interrupt breakfast — it should be breakfast. The core line features Scrambled Egg Fresh, Maple Sausage Mint, Buttered Toast Tartar Control, and a dark roast Black Coffee Whitening paste that ironically stains. Each tube carries the slogan "Start your morning twice," and the limited Continental line (Croissant, Lukewarm Hotel Yogurt) sold out in minutes to people who never reordered.
+
+**Themes and joke:** Gross flavors (theme 1). The joke is solving a problem nobody has — orange juice ruining toothpaste — by going the other direction and making toothpaste that ruins everything else.
