@@ -68,18 +68,50 @@ A running list of verified fake business ideas. Append new ideas to the end — 
 
 **Themes and joke:** Dubious legality (theme 6). The joke is treating the most toothless warning label in America as if removing it requires a cartel-level criminal operation, complete with tradecraft and plausible deniability.
 
-## 9. Famous Last Words Ltd.
-
-**Short description:** An on-call ghostwriting agency that punches up your dying words so you don't fumble your final moment.
-
-**Long description:** Famous Last Words keeps a stable of poets, screenwriters, and one retired eulogist on 24/7 standby, ready to rush to any bedside and feed clients a memorable exit line through a tasteful earpiece. Packages range from the budget Quip ("one zinger, no rewrites") to the Legacy Suite, which includes three drafts, a dramatic pause coach, and a backup line in case you rally and have to die twice. Every contract includes a strict confidentiality clause so history believes the words were yours.
-
-**Themes and joke:** Extra dark humor (theme 3) with ultra-luxury tiering (theme 4). The joke is applying the punch-up culture of Hollywood writers' rooms — drafts, coaches, script doctors — to the one line you can never workshop again.
-
-## 10. Rise & Rinse
+## 9. Rise & Rinse
 
 **Short description:** An oral-care brand whose toothpaste lineup is exclusively breakfast flavors.
 
 **Long description:** Rise & Rinse believes brushing your teeth shouldn't interrupt breakfast — it should be breakfast. The core line features Scrambled Egg Fresh, Maple Sausage Mint, Buttered Toast Tartar Control, and a dark roast Black Coffee Whitening paste that ironically stains. Each tube carries the slogan "Start your morning twice," and the limited Continental line (Croissant, Lukewarm Hotel Yogurt) sold out in minutes to people who never reordered.
 
 **Themes and joke:** Gross flavors (theme 1). The joke is solving a problem nobody has — orange juice ruining toothpaste — by going the other direction and making toothpaste that ruins everything else.
+
+## 10. Sunset Acres Fractional Interment
+
+**Short description:** A timeshare company for cemetery plots, letting up to twelve "residents" share one grave on a rotating schedule.
+
+**Long description:** Sunset Acres pitches itself as "the smart way to rest," offering fractional ownership of premium burial plots with all the trappings of a resort timeshare: a high-pressure seminar (free continental breakfast included), a points system for upgrading to shadier plots, and a blackout calendar for peak holidays. Owners are assured the rotation logistics are "handled discreetly by our grounds team," and the contract's exit clause famously reads "owners may leave the program at any time, though historically none have." A sister exchange program lets members trade weeks with affiliated cemeteries in Boca Raton.
+
+**Themes and joke:** Extra dark humor (theme 3) with a ridiculous subscription/ownership model (theme 7). The joke is grafting the sleazy mechanics of vacation timeshares — seminars, points, blackout dates — onto the one piece of real estate designed for exactly one permanent occupant.
+
+## 11. Earl & Pearl's Enterprise Software
+
+**Short description:** A husband-and-wife roadside stand that sells enterprise resource planning software to Fortune 500 companies.
+
+**Long description:** From a gingham-draped folding table at the Chatham County fairgrounds, Earl and Pearl Tuttle hand-deliver mission-critical ERP deployments alongside jars of Pearl's peach preserves. Their flagship suite, Pearl's Ledger (motto: "Y'all's data is safe with us"), runs global supply chains for companies that found them through a church bulletin ad. Support tickets are answered by Earl personally between 6 and 7 a.m. before he feeds the chickens, and every million-dollar license includes a free pie. There is no SLA, but Pearl says she'll "pray on your outage."
+
+**Themes and joke:** A massive enterprise product played as a mom-and-pop roadside business (theme 9). The joke is the collision of global-scale B2B software — deployments, licenses, uptime — with county-fair charm, preserves, and chicken chores.
+
+## 12. The Disappointment Department
+
+**Short description:** A subscription service that sends a stern professional to your home to look disappointed at you until you get things done.
+
+**Long description:** The Disappointment Department dispatches trained Disappointment Officers — retired schoolteachers, former figure-skating judges, and one extremely effective grandmother — to stand in your doorway, sigh, and say "so this is what you've been doing." The Starter tier includes one monthly visit and a follow-up text reading "well." The Executive tier adds unannounced office drop-ins and a framed portrait of your officer for your desk, eyebrows pre-raised. The company reports a 94% task-completion rate and a 100% guilt-retention rate.
+
+**Themes and joke:** Ridiculous subscription business (theme 7). The joke is productizing the most powerful motivator known to science — a disappointed authority figure — complete with tiers, metrics, and recurring billing.
+
+## 13. DrySteep & Co.
+
+**Short description:** An artisanal tea house whose signature innovation is a fully waterproof teabag.
+
+**Long description:** DrySteep & Co. hand-sews its teabags from laboratory-grade waterproof membrane, "locking in freshness forever" by ensuring water can never touch the leaves. The tasting menu invites patrons to steep a bag of rare first-flush Darjeeling for one minute or one hour — the result is identically pristine hot water, which the menu describes as "the purest expression of restraint." Bags are never depleted and thus infinitely reusable, which the company touts as the most sustainable model in the beverage industry. A sommelier is on staff to describe what the tea would have tasted like.
+
+**Themes and joke:** Useless product (theme 5) wrapped in ultra-luxury craftsmanship (theme 4). The joke is premium tea culture — terroir, tasting notes, sustainability claims — applied to a product engineered to never make tea.
+
+## 14. PreChewed
+
+**Short description:** A time-optimization startup that sells packs of gum pre-chewed by trained professionals.
+
+**Long description:** PreChewed's pitch deck opens with the statistic that Americans waste 11 minutes a day softening gum, then introduces its solution: single-serve pods of gum brought to "peak chew state" by certified Chew Associates in the company's Austin Chewing Lab. The app lets subscribers dial in preferences like softness, residual flavor percentage, and warmth. A premium Provenance tier reveals your Chew Associate's name and a short bio. The founders describe the product category as "chew-as-a-service" and are currently raising a Series B.
+
+**Themes and joke:** Simply gross (theme 2) played as a hot tech startup (theme 8). The joke is startup efficiency culture solving a nonexistent time problem in the most revolting way possible, then premiumizing the grossness with provenance and personalization.
