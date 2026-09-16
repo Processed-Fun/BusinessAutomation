@@ -15,6 +15,6 @@ The master index of every business idea ever created, built or not. One row per 
 | Murky Springs Soda Co. | A craft soda company whose small-batch flavors are all liquids nobody ever wanted to drink. | built | murky-springs | Craft-brand landing page | Craft-organic serif |
 | Waxing Nostalgic | An artisanal candle company that makes candles from donated human earwax. | built | waxing-nostalgic | Boutique DTC landing page | Warm artisanal serif |
 | Ashes to Ashtrays | A memorial studio that turns your loved one's cremated remains into a decorative ashtray. | built | ashes-to-ashtrays | Funeral services site | Funeral serenity serif |
-| HOV Buddy | A rental service supplying realistic mannequin passengers for carpool-lane commuters. | idea | | | |
+| HOV Buddy | A rental service supplying realistic mannequin passengers for carpool-lane commuters. | built | hov-buddy | Rental subscription landing page | Modern startup sans |
 | Blinkr | A venture-backed startup whose app reminds you to blink. | idea | | | |
-| Marge's Orbital Launch & Diner | A roadside Kansas diner that also provides commercial satellite launch services. | idea | | | |
+| Marge's Orbital Launch & Diner | A roadside Kansas diner that also provides commercial satellite launch services. | built | marges-orbital | Local small-business brochure | Americana roadside (slab display type) |
