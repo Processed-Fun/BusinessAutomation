@@ -19,21 +19,27 @@ Instructions for creating the fake website for each business.
 9. Logo. Generate a logo using the OpenAI image API.  This should be relatively small and be used to linking to it from the main site.
 10. mobile friendly.  each site should be mobile friendly.  do a check after generation to confirm this.
 11. image display. where possible, clicking or tapping an image should open it in a modal.  this does not need to apply to background images or things like logos or header images.
-12. Marketing Images.  Create 3 marketing images for the business.  One should be portrait, one landscape, and one square. They should all be different, but similar in theme.  Each should be a marketing promotional poster/image for the business with at least one tag line and the business name.  Put the marketing images on a separate page accessible from the footer.  These dont count against the total image limit.
+
+# Marketing Images
+
+1. Create 3 marketing images for the business.  One should be portrait, one landscape, and one square. They should all be different, but similar in theme.  Each should be a marketing promotional poster/image for the business with at least one tag line and the business name.
+2. Put the marketing images on a separate page accessible from the footer.  These dont count against the total image limit.
+3. Marketing images must show the site's actual products, using the real product images as reference input per Image Generation Rule 5a, not a newly invented product.
 
 # Site Structure
 
 1. Each site should be created in its own directory.
 2. The root of the entire site is index.html.  This is the "business directory".
-3. For each new business creating a medium size promo image.  It should be a picture with the name of the business, a short tagline that clearly implies what the business does, and an image illustrating the business.
+3. For each new business creating a medium size promo image.  It should be a picture with the name of the business, a short tagline that clearly implies what the business does, and an image illustrating the business.  If the promo depicts products, build it from the site's real product images via the Edits endpoint.
 4. Add an entry to the business directory for the new business.  It should list the name, short description, have the logo, and the promo image.  It should link to the business site.
 
 # Image Generation Rules
 
 1. Use the "gpt-image-2.5-flare" model.
 4. Default to "medium" quality unless specifically asked to override.
-5. Use the "Generations" endpoint documented here: https://developers.openai.com/api/docs/guides/image-generation#generate-images.
-6. Do not create more than 40 images per site during the initial build.  it is fine to go over this limit later if prompted manually.
+5. Use the "Generations" endpoint documented here: https://developers.openai.com/api/docs/guides/image-generation#generate-images for original images (logos, product shots, scenes, heroes).
+5a. Any image that depicts a product already shown elsewhere on the site (marketing images, the directory promo image, lifestyle shots featuring a specific product) must be generated with the "Edits" endpoint documented here: https://developers.openai.com/api/docs/guides/image-generation#edit-images, passing the actual product image(s) as the input image so the product looks the same everywhere. Generate product images first, derivative images after.
+6. Do not create more than 40 images per site during the initial build.  it is fine to go over this limit later if prompted manually.  Marketing images do not count towards this total.
 7. images showing the product or scenes of the product should have a subtle and tasteful watermark with the business name.
 
 # Site Design and Features
