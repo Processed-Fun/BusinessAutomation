@@ -38,7 +38,7 @@ These are examples - do not reproduce as actual ideas.
 
 1. No direct references to existing business or corporations.
 2. Dont use the same name as an existing business.
-3. Do not repeat any ideas.  Read through the list of all ideas in "business_ideas.md" to make sure you are not repeating any.
+3. Do not repeat any ideas.  Read through "ideas_index.md", which lists every idea ever created (both built and unbuilt), to make sure you are not repeating any.  "business_ideas.md" only contains ideas without websites, so it is not the full list.
 
 # Generating the Name
 
@@ -51,4 +51,6 @@ For each business, come up with the following fields:
 
 # Finalizing
 
-Write each completed idea to "business_ideas.md".  Append, do not delete any ideas.  Merge to main when done.
+1. Write each completed idea to "business_ideas.md".  Append, do not delete any ideas.
+2. Add a row for each new idea to the table in "ideas_index.md" with the name, one-line description, and status "idea".  Leave the directory, archetype, and style columns empty; they get filled in when the website is built.
+3. Merge to main when done.

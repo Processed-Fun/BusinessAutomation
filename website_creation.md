@@ -4,8 +4,8 @@ Instructions for creating the fake website for each business.
 
 # Selecting a Business
 
-1. Choose a business from "business_ideas.md" that does not already have a website.
-2. If there are no available business ideas use the instructions in "generate_ideas.md" to generate five more business ideas.
+1. Choose a business from "business_ideas.md". That file only contains ideas that do not yet have websites, so any idea in it is available. ("ideas_index.md" is the master index of all ideas, built and unbuilt, with a status column.)
+2. If "business_ideas.md" is empty, use the instructions in "generate_ideas.md" to generate five more business ideas.
 
 # Requirements
 
@@ -32,6 +32,14 @@ Instructions for creating the fake website for each business.
 2. The root of the entire site is index.html.  This is the "business directory".
 3. For each new business creating a medium size promo image.  It should be a picture with the name of the business, a short tagline that clearly implies what the business does, and an image illustrating the business.  If the promo depicts products, build it from the site's real product images via the Edits endpoint.
 4. Add an entry to the business directory for the new business.  It should list the name, short description, have the logo, and the promo image.  It should link to the business site.
+
+# Bookkeeping
+
+When the website is complete, update the idea tracking files:
+
+1. Copy the idea's full entry from "business_ideas.md" into a new file named "business.md" at the root of the site's directory (e.g. "my-site/business.md").  Also record the site's archetype (what kind of site it is, e.g. SaaS landing page, local brochure, e-commerce catalog) and style (the visual aesthetic) in that file.
+2. Remove the idea's entry from "business_ideas.md".  Do not touch the other entries.
+3. Update the idea's row in "ideas_index.md": set status to "built" and fill in the directory, archetype, and style columns.  Never delete rows from the index.
 
 # Image Generation Rules
 
