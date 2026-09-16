@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOV Buddy</title>
+  <meta name="description" content="HOV Buddy rents hyper-realistic mannequin passengers by the week, so solo drivers can carpool with confidence.">
+  <link rel="icon" href="images/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <img src="images/logo.webp" alt="HOV Buddy logo">
+        <strong>HOV Buddy</strong>
+      </a>
+      <nav class="site-nav">
+        <a href="#lineup">The Lineup</a>
+        <a href="#how">How It Works</a>
+        <a href="#pricing">Plans</a>
+        <a href="gallery.html">The Diamond Lane</a>
+        <button class="cart-btn" id="cartBtn">Manifest (0)</button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hero">
+    <img class="hero-bg" src="images/hero.webp" alt="">
+    <div class="wrap">
+      <span class="eyebrow">Passenger Rentals by the Week</span>
+      <h1>Carpool With Confidence</h1>
+      <p class="tag">HOV Buddy rents hyper-realistic passengers, so the diamond lane is finally yours. Our buddies nod, sleep, and in one case talk. None of them will ask to change the station.</p>
+      <a class="btn" href="#lineup">Meet the Lineup</a>
+      <a class="btn ghost" href="#pricing">See Plans</a>
+    </div>
+  </div>
+
+  <section id="how">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">How It Works</span>
+        <h2>Four Steps to the Fast Lane</h2>
+        <p>The whole thing takes about two days, most of which is shipping.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <span class="num">1</span>
+          <h3>Pick your buddy</h3>
+          <p>Browse the lineup and choose whoever fits your commute. Greg agrees with everything. Tyler ignores you, which some drivers find restful.</p>
+        </div>
+        <div class="step">
+          <span class="num">2</span>
+          <h3>We deliver</h3>
+          <p>Your buddy arrives by van within two days, dressed for the season, with care instructions and a spare collar stay.</p>
+        </div>
+        <div class="step">
+          <span class="num">3</span>
+          <h3>Merge left</h3>
+          <p>Buckle them in and take the diamond. Traffic happens to other people now.</p>
+        </div>
+        <div class="step">
+          <span class="num">4</span>
+          <h3>Swap whenever</h3>
+          <p>Trade outfits each season or trade buddies entirely. Return shipping is free and a little emotional.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="lineup">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">The Lineup</span>
+        <h2>Choose Your Passenger</h2>
+        <p>Every buddy ships belted, posed, and committed to the role. Tap any photo for a closer look.</p>
+      </div>
+      <div class="lineup-grid">
+        <div class="buddy-card">
+          <img class="zoom" src="images/product-greg.webp" alt="Nodding Greg, a business casual mannequin passenger mid-nod" data-caption="Nodding Greg. He has agreed with every driver since 2019.">
+          <div class="body">
+            <span class="badge hot">Most Rented</span>
+            <h3>Nodding Greg</h3>
+            <p class="notes">Business casual, gentle nod, faint smile. Through a window at 65 mph he reads as a coworker who had a long week. Pairs well with talk radio.</p>
+            <div class="row">
+              <span class="price">$39<span>/week</span></span>
+              <button class="btn small" data-add="greg">Add to Manifest</button>
+            </div>
+          </div>
+        </div>
+        <div class="buddy-card">
+          <img class="zoom" src="images/product-carol.webp" alt="Sleeping Aunt Carol, a mannequin passenger asleep on a travel pillow" data-caption="Sleeping Aunt Carol. Asleep since 2019 and committed to it.">
+          <div class="body">
+            <h3>Sleeping Aunt Carol</h3>
+            <p class="notes">Head against the window, glasses slightly askew for realism, deeply asleep. Officers have waved her through out of what we can only describe as respect.</p>
+            <div class="row">
+              <span class="price">$34<span>/week</span></span>
+              <button class="btn small" data-add="carol">Add to Manifest</button>
+            </div>
+          </div>
+        </div>
+        <div class="buddy-card">
+          <img class="zoom" src="images/product-dave.webp" alt="Conversational Dave, a deluxe mannequin passenger caught mid-sentence" data-caption="Conversational Dave. The story is about a boat. It is always about a boat.">
+          <div class="body">
+            <span class="badge">Deluxe</span>
+            <h3>Conversational Dave</h3>
+            <p class="notes">His head turns at stoplights. His mouth is open because he is somewhere in the middle of a story about a boat. Drivers in adjacent lanes have waved back.</p>
+            <div class="row">
+              <span class="price">$89<span>/week</span></span>
+              <button class="btn small" data-add="dave">Add to Manifest</button>
+            </div>
+          </div>
+        </div>
+        <div class="buddy-card">
+          <img class="zoom" src="images/product-tyler.webp" alt="Teen Tyler, a hooded mannequin passenger staring at a phone" data-caption="Teen Tyler. He is not going to look up.">
+          <div class="body">
+            <span class="badge">Budget</span>
+            <h3>Teen Tyler</h3>
+            <p class="notes">Hood up, phone out, no acknowledgment that you exist. Indistinguishable from a real teenager at any speed. Our least expensive humanoid model.</p>
+            <div class="row">
+              <span class="price">$29<span>/week</span></span>
+              <button class="btn small" data-add="tyler">Add to Manifest</button>
+            </div>
+          </div>
+        </div>
+        <div class="buddy-card">
+          <img class="zoom" src="images/product-eleanor.webp" alt="Executive Eleanor, a poised mannequin passenger in a blazer holding a coffee tumbler" data-caption="Executive Eleanor. She is on her way to cancel a meeting.">
+          <div class="body">
+            <h3>Executive Eleanor</h3>
+            <p class="notes">Sits up straight, holds her own coffee, projects quarterly authority. Popular on express lanes near office parks, where she outranks most real passengers.</p>
+            <div class="row">
+              <span class="price">$59<span>/week</span></span>
+              <button class="btn small" data-add="eleanor">Add to Manifest</button>
+            </div>
+          </div>
+        </div>
+        <div class="buddy-card">
+          <img class="zoom" src="images/product-denise.webp" alt="Golden Retriever Denise, a realistic dog figure wearing a seat belt" data-caption="Golden Retriever Denise. Counts as a passenger nowhere. Rented constantly.">
+          <div class="body">
+            <span class="badge">Fan Favorite</span>
+            <h3>Golden Retriever Denise</h3>
+            <p class="notes">A golden retriever. Counts as a passenger in zero states, and every renter knows it. She is our second most rented buddy anyway. We have stopped asking why.</p>
+            <div class="row">
+              <span class="price">$27<span>/week</span></span>
+              <button class="btn small" data-add="denise">Add to Manifest</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="split">
+        <img class="zoom" src="images/scene-commute.webp" alt="Nodding Greg riding in the passenger seat during a morning freeway commute" data-caption="Lane five, 6:40 a.m. Greg nods when the road does.">
+        <div>
+          <span class="eyebrow">The Morning Merge</span>
+          <h2>Traffic Is a Choice Now</h2>
+          <p>The average HOV Buddy member passes 340 stopped cars per commute. Some drivers report guilt. It fades around exit 12, usually about the time Greg's head dips into a fresh nod.</p>
+          <p>Every humanoid buddy is weighted to sway naturally with the car, because a passenger who sits perfectly still is the kind of detail an officer notices twice.</p>
+          <a class="btn dark" href="#calc">Calculate Your Savings</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="calc">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">The Diamond Lane Calculator</span>
+        <h2>What Is Your Time Worth?</h2>
+        <p>Drag the sliders. The math is real. The lane access is, legally speaking, a separate conversation.</p>
+      </div>
+      <div class="calc">
+        <label for="minsSlider">Minutes saved per one-way trip: <span id="minsVal">15</span></label>
+        <input type="range" id="minsSlider" min="5" max="45" step="5" value="15" aria-label="Minutes saved per one-way trip">
+        <label for="daysSlider">Commute days per week: <span id="daysVal">5</span></label>
+        <input type="range" id="daysSlider" min="1" max="7" step="1" value="5" aria-label="Commute days per week">
+        <div class="readout">
+          <div><strong id="hoursYear">120</strong><span>hours saved per year</span></div>
+          <div><strong id="carsPassed">340</strong><span>cars passed per day</span></div>
+          <div><strong id="gregWeeks">$39</strong><span>starting weekly rate</span></div>
+        </div>
+        <p class="verdict" id="calcVerdict"></p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <span class="eyebrow">The Deluxe Experience</span>
+          <h2>Dave's Head Turns at Stoplights</h2>
+          <p>A small servo, a light sensor, and eleven degrees of rotation. When the light goes red, Dave turns toward you like he has been waiting all day to finish the boat story. When it goes green, he returns to the road, satisfied.</p>
+          <p>Renters tell us the motion sells the whole illusion. One reported that after three weeks she started answering him. We told her that was normal. We are not sure it is normal.</p>
+          <a class="btn dark" href="#lineup">Rent Dave</a>
+        </div>
+        <img class="zoom" src="images/scene-stoplight.webp" alt="Conversational Dave turning toward the driver at a red light" data-caption="Red light. Dave turns. The story continues whether you are ready or not.">
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <div class="split">
+        <img class="zoom" src="images/scene-swap.webp" alt="A delivery technician bringing Sleeping Aunt Carol to a front porch with a garment bag" data-caption="A quarterly outfit swap in progress. The neighbors have stopped asking.">
+        <div>
+          <span class="eyebrow">Seasonal Outfit Swaps</span>
+          <h2>Flannel in October, Linen in June</h2>
+          <p>A passenger in a parka in July raises questions. Members on the Commuter plan and up get a quarterly visit from an outfitting technician, who arrives with a garment bag and strong opinions about layering.</p>
+          <p>Carol's cardigan rotation alone includes four florals and a holiday knit. Your neighbors will learn to stop asking. Ours did.</p>
+          <a class="btn dark" href="#pricing">See the Plans</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Member Stories</span>
+        <h2>Heard in the Diamond Lane</h2>
+        <p>Collected from members who agreed to be quoted, and one who insisted.</p>
+      </div>
+      <div class="quotes">
+        <div class="quote">
+          I rented Greg for the commute and kept him through my divorce. He nods at exactly the right times. My therapist says it doesn't count as support. My therapist has never been in traffic with Greg.
+          <footer>Marcus T., Sacramento, member since 2022</footer>
+        </div>
+        <div class="quote">
+          The trooper looked at Carol a long time. Then he looked at me. Then he waved us through, because deep down he wasn't sure, and neither was I. She's that good.
+          <footer>Priya R., I-405, four rentals and counting</footer>
+        </div>
+      </div>
+      <p style="text-align:center; margin-top:34px;">
+        <a class="btn" href="gallery.html">See Member Photos</a>
+      </p>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Plans &amp; Pricing</span>
+        <h2>Commitment, by Degree</h2>
+        <p>Weekly rentals start at $27. Monthly plans add swaps, support, and a second seat belt's worth of loyalty.</p>
+      </div>
+      <div class="price-grid">
+        <div class="price-card">
+          <h3>Weekly Rental</h3>
+          <div class="amount">$27+<span>/week</span></div>
+          <ul>
+            <li>Any buddy in the lineup</li>
+            <li>Belted, posed, and delivered</li>
+            <li>Care card and lint brush</li>
+            <li>Free return shipping</li>
+          </ul>
+          <a class="btn" href="#lineup">Choose a Buddy</a>
+        </div>
+        <div class="price-card featured">
+          <h3>The Commuter</h3>
+          <div class="amount">$79<span>/month</span></div>
+          <ul>
+            <li>One buddy, yours all month</li>
+            <li>Seasonal outfit swaps</li>
+            <li>One buddy trade per quarter</li>
+            <li>Emergency hotline access</li>
+          </ul>
+          <button class="btn" data-add="commuter">Start the Commuter</button>
+        </div>
+        <div class="price-card">
+          <h3>The Committed</h3>
+          <div class="amount">$139<span>/month</span></div>
+          <ul>
+            <li>Two buddies for back-seat depth</li>
+            <li>Priority outfit swaps</li>
+            <li>Traffic Stop Protection Plan included</li>
+            <li>The hold music, available offline</li>
+          </ul>
+          <button class="btn" data-add="committed">Go Committed</button>
+        </div>
+        <div class="price-card">
+          <h3>Fleet &amp; Vanpool</h3>
+          <div class="amount">Let's talk</div>
+          <ul>
+            <li>Four or more passengers per vehicle</li>
+            <li>Mixed casts, arranged naturally</li>
+            <li>Invoicing your accountant will accept</li>
+            <li>Discretion, within reason</li>
+          </ul>
+          <a class="btn" href="#fleet">Request a Quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">The Fine Print</span>
+        <h2>Support, Such as It Is</h2>
+      </div>
+      <div class="split">
+        <div>
+          <h3>The Traffic Stop Protection Plan, $9/month</h3>
+          <p>Our terms of service state plainly that this plan protects nothing. It includes a laminated card that reads "We tried," which members describe as something to hold. Renewal rates are above ninety percent.</p>
+          <button class="btn dark small" data-add="protection">Add the Plan</button>
+        </div>
+        <div>
+          <h3>The Emergency Hotline</h3>
+          <p>Staffed around the clock by a recording of hold music, performed by a jazz trio out of Burbank. There is no menu and no one picks up. Members call it soothing. One calls it weekly, from the shoulder, just to think.</p>
+          <p style="margin-bottom:0;">Our complete legal position is published on the <a href="legal.html">legal page</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark" id="fleet">
+    <div class="wrap">
+      <div class="form-box">
+        <span class="eyebrow">Fleet &amp; Vanpool</span>
+        <h2 style="margin:8px 0 0;">Request a Quote</h2>
+        <p>For shuttle operators, sales teams, and anyone who needs a van to look full. A fleet coordinator replies within one business day, from a personal email address, for reasons.</p>
+        <form id="fleetForm">
+          <div>
+            <label for="fName">Name</label>
+            <input id="fName" type="text" required autocomplete="name" placeholder="Your name">
+          </div>
+          <div>
+            <label for="fEmail">Email</label>
+            <input id="fEmail" type="email" required autocomplete="email" placeholder="you@example.com">
+          </div>
+          <div>
+            <label for="fSize">Fleet size</label>
+            <select id="fSize">
+              <option>Two to five vehicles</option>
+              <option>Six to twenty vehicles</option>
+              <option>An airport shuttle situation</option>
+              <option>Government, asking for a friend</option>
+            </select>
+          </div>
+          <div>
+            <label for="fMsg">Tell us about your routes</label>
+            <textarea id="fMsg" rows="3" placeholder="Lanes, schedules, how many passengers you need to appear to have."></textarea>
+          </div>
+          <button class="btn" type="submit">Send Request</button>
+        </form>
+        <div id="fleetDone" hidden>
+          <p style="margin-top:18px;"><strong>Request received.</strong> A fleet coordinator will be in touch within one business day. In the meantime, drive normally. Wave at no one.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>
+        <strong style="color:#f1f3fb;">HOV Buddy</strong><br>
+        Passenger rentals by the week.<br>
+        Merging left since 2019.
+      </div>
+      <nav>
+        <a href="gallery.html">The Diamond Lane</a>
+        <a href="marketing.html">Posters &amp; Marketing</a>
+        <a href="legal.html">Legal</a>
+        <a href="../index.html">The Business Directory</a>
+      </nav>
+      <div>
+        HOV Buddy is a fictional business.<br>
+        Carpool lanes require actual people.<br>
+        Denise is a good girl.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart drawer -->
+  <div class="drawer-veil" id="drawerVeil" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" hidden aria-label="Your manifest">
+    <button class="cart-close" id="cartClose" aria-label="Close manifest">&times;</button>
+    <h2>Your Manifest</h2>
+    <p class="fine">Every passenger accounted for. On paper, anyway.</p>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-total"><span>Total</span><span id="cartTotal">$0</span></div>
+    <button class="btn" id="checkoutBtn">Confirm Manifest</button>
+  </aside>
+
+  <!-- Order confirmation -->
+  <div class="order-modal" id="orderModal" hidden>
+    <div class="box">
+      <h3>Manifest Confirmed</h3>
+      <p>Your buddy is being dressed and belted as we speak. Delivery in two days. The van driver will wave. So might your buddy, depending on the model.</p>
+      <button class="btn" id="orderClose">Close</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
