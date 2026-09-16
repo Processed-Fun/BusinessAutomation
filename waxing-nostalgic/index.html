@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Waxing Nostalgic</title>
+  <meta name="description" content="Hand-poured artisanal candles made from donated human earwax. The most personal ambiance on the market.">
+  <link rel="icon" href="images/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <img src="images/logo.webp" alt="Waxing Nostalgic logo">
+        <strong>Waxing Nostalgic</strong>
+      </a>
+      <nav class="site-nav">
+        <a href="#collection">Collection</a>
+        <a href="collection.html">Full Collection</a>
+        <a href="#benefactor">Become a Benefactor</a>
+        <a href="#pricing">Pricing</a>
+        <button class="cart-btn" id="cartBtn">Parcel (0)</button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hero">
+    <img class="hero-bg" src="images/hero.webp" alt="">
+    <div class="wrap">
+      <span class="eyebrow">Hand-Poured Heritage, Est. Regrettably</span>
+      <h1>The Most Personal Ambiance on the Market</h1>
+      <p class="tag">Artisanal candles, hand-poured from donated human earwax. Yes, you read that correctly. No, we will not be stopping.</p>
+      <a class="btn" href="#collection">Browse the Collection</a>
+      <a class="btn ghost" href="#benefactor">Donate Your Wax</a>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="split">
+        <img class="zoom" src="images/scene-atelier.webp" alt="An artisan hand-pouring wax in the Waxing Nostalgic atelier" data-caption="The atelier. Every pour is done by hand, in silence, out of respect.">
+        <div>
+          <span class="eyebrow">Our Craft</span>
+          <h2>From Twelve States. From Thousands of Ears. For You.</h2>
+          <p>Our wax benefactors visit donation lounges across twelve states, where their contributions are collected in comfort and, we cannot stress this enough, in private. The wax is then pooled, triple-filtered, and hand-poured into vessels worthy of its journey.</p>
+          <p>Most candle houses buy paraffin by the ton. We built relationships. There is a difference, and you can smell it.</p>
+          <a class="btn dark" href="collection.html">See What We Make</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="collection">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">The Collection</span>
+        <h2>Scents of a Life Well Remembered</h2>
+        <p>Four of our most requested pours. Tap a candle to admire it properly.</p>
+      </div>
+      <div class="candle-grid">
+        <div class="candle-card">
+          <img class="zoom" src="images/candle-sunday-at-grandmas.webp" alt="Sunday at Grandma's candle" data-caption="Sunday at Grandma's. Our gateway candle.">
+          <div class="body">
+            <span class="badge honey">House Favorite</span>
+            <h3>Sunday at Grandma's</h3>
+            <p class="notes">Pot roast, lavender talc, and a doily that has seen things. Burns for 40 gentle hours.</p>
+            <div class="row">
+              <span class="price">$38</span>
+              <button class="btn small" data-add="sunday-at-grandmas">Add to Parcel</button>
+            </div>
+          </div>
+        </div>
+        <div class="candle-card">
+          <img class="zoom" src="images/candle-q-tip-confessional.webp" alt="Q-Tip Confessional candle" data-caption="Q-Tip Confessional. Lit in low light, as intended.">
+          <div class="body">
+            <h3>Q-Tip Confessional</h3>
+            <p class="notes">Cotton, contrition, and the quiet thrill of doing the thing the box told you not to do.</p>
+            <div class="row">
+              <span class="price">$42</span>
+              <button class="btn small" data-add="q-tip-confessional">Add to Parcel</button>
+            </div>
+          </div>
+        </div>
+        <div class="candle-card">
+          <img class="zoom" src="images/candle-single-origin-gary.webp" alt="Single-Origin Gary premium candle" data-caption="Single-Origin Gary, Batch 34. One donor. No blending. Full provenance.">
+          <div class="body">
+            <span class="badge gold">Single-Origin</span>
+            <h3>Single-Origin Gary</h3>
+            <p class="notes">One donor. One batch. Unblended and unapologetic. Each vessel is numbered and includes a certificate Gary signs personally.</p>
+            <div class="row">
+              <span class="price">$120</span>
+              <button class="btn small" data-add="single-origin-gary">Add to Parcel</button>
+            </div>
+          </div>
+        </div>
+        <div class="candle-card">
+          <img class="zoom" src="images/candle-wedding-slow-dance.webp" alt="Wedding Slow Dance candle" data-caption="Wedding Slow Dance. Champagne, hairspray, and a song you will never escape.">
+          <div class="body">
+            <span class="badge">Occasions</span>
+            <h3>Wedding Slow Dance</h3>
+            <p class="notes">Champagne, hairspray, and the exact moment the DJ ruined everything. A popular registry item, somehow.</p>
+            <div class="row">
+              <span class="price">$44</span>
+              <button class="btn small" data-add="wedding-slow-dance">Add to Parcel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p style="text-align:center; margin-top:30px;">
+        <a class="btn dark" href="collection.html">View All Ten Pours</a>
+      </p>
+    </div>
+  </section>
+
+  <section id="benefactor">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">The Benefactor Program</span>
+        <h2>Your Ears Are Sitting on an Asset</h2>
+        <p>Every donation earns store credit. Slide to estimate your monthly yield and discover your benefactor tier.</p>
+      </div>
+      <div class="estimator" id="estimator">
+        <p style="margin:0;"><strong>My estimated monthly contribution is...</strong></p>
+        <input type="range" id="gramSlider" min="0.1" max="5" step="0.1" value="0.8" aria-label="Monthly earwax contribution in grams">
+        <div class="grams">0.8 <span>grams per month</span></div>
+        <div class="tier-name"></div>
+        <p class="tier-desc"></p>
+        <div class="credit"></div>
+        <p style="color:var(--muted); font-size:0.85rem; font-style:italic; margin-top:18px;">Estimates are for entertainment. Actual yield is assessed at your lounge appointment by a certified assessor who has made peace with their career.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <span class="eyebrow">The Lounge Experience</span>
+          <h2>Donation, But Make It Spa</h2>
+          <p>Our benefactor lounges offer warm towels, discretion, and complimentary cucumber water. You arrive as a person with earwax. You leave as a patron of the ambient arts, with store credit.</p>
+          <p>Walk-ins welcome. Appointments preferred. Referrals rewarded, questions discouraged.</p>
+          <a class="btn dark" href="#consult">Book a Consultation</a>
+        </div>
+        <img class="zoom" src="images/scene-donation-center.webp" alt="The Wax Benefactor Lounge" data-caption="The Benefactor Lounge, Portland location. The orchids are real. The serenity is mandatory.">
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="split">
+        <img class="zoom" src="images/scene-gary.webp" alt="Portrait of Gary, our single-origin donor" data-caption="Gary. Donor, gentleman, force of nature. Batch 34 now available.">
+        <div>
+          <span class="eyebrow">Meet the Source</span>
+          <h2>Gary Is Not Like Us</h2>
+          <p>Every house has its legend. Ours is a retired insurance adjuster from Ohio whose yield our assessors describe, in writing, as "frankly unsettling." Gary asked us not to make a fuss. We made a line of candles instead.</p>
+          <p>Single-Origin Gary is released in numbered batches, four times a year, and sells out in hours. Gary remains humble. His ears remain undefeated.</p>
+          <a class="btn dark" href="collection.html">Shop Single-Origin</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Testimonials</span>
+        <h2>Words From the Warmly Lit</h2>
+      </div>
+      <div class="quotes">
+        <div class="quote">
+          I burned Sunday at Grandma's for ten minutes before my husband asked what it was made of. We have now been silent for three days. The throw is incredible.
+          <footer>Marianne T., verified purchaser</footer>
+        </div>
+        <div class="quote">
+          As a Gary Tier benefactor, I can finally say my body is paying for itself. My candle credit covered Christmas. My family does not know, and will never know.
+          <footer>A benefactor in the Pacific Northwest</footer>
+        </div>
+        <div class="quote">
+          I bought Q-Tip Confessional ironically. I reordered it sincerely. I do not know who I am anymore, but my apartment smells like closure.
+          <footer>Devon R., three-time reorderer</footer>
+        </div>
+        <div class="quote">
+          The certificate says Batch 34 and it is signed by Gary himself. It hangs above the mantel. Guests assume it is a diploma. In a way, it is.
+          <footer>Collector, wishes to remain anonymous</footer>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Around the House</span>
+        <h2>Where the Wax Ends Up</h2>
+        <p>From our flagship boutique to your most trusting rooms. Tap to enlarge.</p>
+      </div>
+      <div class="split">
+        <img class="zoom" src="images/scene-shop.webp" alt="Inside the Waxing Nostalgic boutique" data-caption="The flagship boutique. The chalkboard announces Gary drops. Regulars know to check daily.">
+        <img class="zoom" src="images/scene-nightstand.webp" alt="A Waxing Nostalgic candle burning on a nightstand" data-caption="A pour at rest. Someone's memories, warming yours.">
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Pricing</span>
+        <h2>Own the Ambiance</h2>
+        <p>Single pours run $38 to $44 in the collection above. For grander gestures, consider the following.</p>
+      </div>
+      <div class="price-grid">
+        <div class="price-card">
+          <h3>The Memory Flight</h3>
+          <div class="amount">$95</div>
+          <ul>
+            <li>Three votives, curated by mood</li>
+            <li>Cream gift box, gold tissue</li>
+            <li>Wax-sealed card, naturally</li>
+          </ul>
+          <button class="btn" data-add="memory-flight">Add to Parcel</button>
+        </div>
+        <div class="price-card featured">
+          <h3>Single-Origin Gary</h3>
+          <div class="amount">$120</div>
+          <ul>
+            <li>One donor, zero blending</li>
+            <li>Numbered vessel, Batch 34</li>
+            <li>Certificate signed by Gary</li>
+            <li>Sells out in hours, every time</li>
+          </ul>
+          <button class="btn" data-add="single-origin-gary">Add to Parcel</button>
+        </div>
+        <div class="price-card">
+          <h3>The Remembrance Club</h3>
+          <div class="amount">$29<span>/month</span></div>
+          <ul>
+            <li>One surprise pour monthly</li>
+            <li>Members-only seasonal scents</li>
+            <li>Early access to Gary drops</li>
+          </ul>
+          <button class="btn" data-add="club-monthly">Join Monthly</button>
+        </div>
+        <div class="price-card">
+          <h3>Weddings &amp; Corporate</h3>
+          <div class="amount">Let's Talk</div>
+          <ul>
+            <li>Custom labels and scent design</li>
+            <li>Bulk pours for events</li>
+            <li>Estate and legacy commissions</li>
+          </ul>
+          <a class="btn" href="#consult">Request a Consultation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark" id="consult">
+    <div class="wrap">
+      <div class="form-box">
+        <span class="eyebrow">Consultations</span>
+        <h2 style="margin:8px 0 0;">Speak With a Wax Advisor</h2>
+        <p>For weddings, corporate gifting, estate commissions, or benefactor appointments. An advisor will respond within two business days, sooner if you mention Gary.</p>
+        <form id="consultForm">
+          <div>
+            <label for="cName">Name</label>
+            <input id="cName" type="text" required autocomplete="name" placeholder="Your name">
+          </div>
+          <div>
+            <label for="cEmail">Email</label>
+            <input id="cEmail" type="email" required autocomplete="email" placeholder="you@example.com">
+          </div>
+          <div>
+            <label for="cTopic">I am interested in</label>
+            <select id="cTopic">
+              <option>A wedding or event</option>
+              <option>Corporate gifting</option>
+              <option>Becoming a benefactor</option>
+              <option>Single-origin candidacy (yield permitting)</option>
+              <option>Just processing all of this</option>
+            </select>
+          </div>
+          <div>
+            <label for="cMsg">Tell us more</label>
+            <textarea id="cMsg" rows="3" placeholder="Share as much or as little as you are comfortable with."></textarea>
+          </div>
+          <button class="btn" type="submit">Send Inquiry</button>
+        </form>
+        <div id="consultDone" hidden>
+          <p style="margin-top:18px;"><strong>Inquiry received.</strong> A wax advisor will be in touch within two business days. Until then, may your ambiance be personal and your questions few.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>
+        <strong style="color:#f6efdd;">Waxing Nostalgic</strong><br>
+        The most personal ambiance on the market.<br>
+        Donation lounges in twelve states.
+      </div>
+      <nav>
+        <a href="collection.html">The Full Collection</a>
+        <a href="marketing.html">Posters &amp; Marketing</a>
+        <a href="../index.html">The Business Directory</a>
+      </nav>
+      <div>
+        Waxing Nostalgic is a fictional business.<br>
+        No ears were harmed. Gary is thriving.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart drawer -->
+  <div class="drawer-veil" id="drawerVeil" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" hidden aria-label="Shopping parcel">
+    <button class="cart-close" id="cartClose" aria-label="Close parcel">&times;</button>
+    <h2>Your Parcel</h2>
+    <p class="fine">Wrapped in cream paper. Shipped with discretion.</p>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-total"><span>Total</span><span id="cartTotal">$0</span></div>
+    <button class="btn" id="checkoutBtn">Check Out</button>
+  </aside>
+
+  <!-- Order confirmation -->
+  <div class="order-modal" id="orderModal" hidden>
+    <div class="box">
+      <h3>Order Received</h3>
+      <p>Your parcel is being wrapped as we speak. Trim the wick, dim the lights, and let someone else's memories fill the room.</p>
+      <button class="btn" id="orderClose">Close</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
