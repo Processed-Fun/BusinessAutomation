@@ -18,13 +18,4 @@ When a website is built for an idea, its entry is copied to `business.md` in the
 
 **Name check note (Sep 2026):** A real app named Blinkr (getblinkr.com) exists with the same name and the same premise, an app that reminds you to blink. Rename or rework this idea before building it.
 
-## Acquired Taste Academy
-
-**Short description:** An online academy with a full curriculum for learning to love the world's most upsetting flavors.
-
-**Long description:** Acquired Taste Academy offers structured coursework for palate development, from the 101 survey (Warm Milk, Airplane Tomato Juice) through graduate seminars in fermented shark, durian appreciation, and the capstone course, Casseroles of the 1950s. Each course page lists prerequisites, learning outcomes ("by week four, the student will no longer flinch"), and faculty bios of instructors who have eaten things on camera. Students earn stackable credentials toward the Certified Iron Palate designation, and the alumni page features graduates enjoying gas station sushi with visible confidence. Tuition assistance is available; refunds are not, "for reasons that become clear during week one."
-
-**Themes and joke:** Gross flavors (theme 1) processed through higher-education solemnity. The joke is academic infrastructure — prerequisites, learning outcomes, accreditation, alumni pride — built around the single skill of suppressing your gag reflex.
-
-**Archetype:** education
 

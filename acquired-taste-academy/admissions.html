@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admissions &amp; Tuition | Acquired Taste Academy</title>
+  <meta name="description" content="Tuition, the placement examination, and the application form for Acquired Taste Academy.">
+  <link rel="icon" href="images/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="running-head">
+    <div class="rh-inner">
+      <a class="rh-brand" href="index.html">
+        <img src="images/logo.webp" alt="Acquired Taste Academy crest">
+        <span>Acquired Taste Academy</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav class="site-nav" id="nav">
+        <a href="curriculum.html">Curriculum</a>
+        <a href="faculty.html">Faculty</a>
+        <a href="alumni.html">Alumni</a>
+        <a class="cta" href="admissions.html">Admissions</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="title-page">
+    <h1 class="institution" style="font-size: clamp(2rem, 5vw, 3rem);">Admissions &amp; Tuition</h1>
+    <p class="subtitle">Admission is open. The milk is warm. The committee is waiting.</p>
+  </div>
+
+  <main class="paper-body prose">
+    <section class="numbered" id="tuition" style="margin-top: 8px;">
+      <h2><span class="secno">1.</span>Tuition and fees</h2>
+      <p>Tuition is published in full below. Tuition assistance is available through the Hargrove Fund for the Willing. Refunds are not offered; the admissions office refers all refund inquiries to the syllabus for week one, which it considers a complete answer.</p>
+      <table class="tuition-table">
+        <thead>
+          <tr><th>Program</th><th>Cost</th><th>Includes</th><th></th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Single Course</strong><br><span style="color: var(--faded); font-style: italic;">Any one course, taken for credit</span></td>
+            <td class="amount">$390 <small>/ course</small></td>
+            <td>All materials, laboratory samples, one seat at the course defense, and a transcript entry your family can verify.</td>
+            <td><a class="btn" href="#apply" data-program="single">Enroll</a></td>
+          </tr>
+          <tr>
+            <td><strong>Certificate Track</strong><br><span style="color: var(--faded); font-style: italic;">The full 30 credits toward the Certified Iron Palate</span></td>
+            <td class="amount">$2,900 <small>/ year, two years</small></td>
+            <td>Full curriculum, capstone seat, diploma, lapel pin, regalia rental, and standing permission to say "it's an acquired taste."</td>
+            <td><a class="btn" href="#apply" data-program="certificate">Enroll</a></td>
+          </tr>
+          <tr>
+            <td><strong>Institutional Cohorts</strong><br><span style="color: var(--faded); font-style: italic;">Workplaces, culinary schools, in-law groups of eight or more</span></td>
+            <td class="amount">By arrangement</td>
+            <td>Custom curriculum, on-site practica where ventilation permits, and group rates the bursar will discuss by telephone, quietly.</td>
+            <td><a class="btn" href="#apply" data-program="cohort">Request a Quote</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="numbered" id="placement-exam">
+      <h2><span class="secno">2.</span>Placement examination</h2>
+      <p>The instrument below produces a preliminary placement. It is scored instantly, kept confidential, and never wrong by more than one course.</p>
+      <div class="exam" id="exam">
+        <p class="exam-head">Placement Examination, Form B</p>
+        <p class="exam-sub">Answer honestly. The Academy will know.</p>
+
+        <label for="q-milk">1. A glass of milk has reached room temperature. You:</label>
+        <select id="q-milk">
+          <option value="0">Discard it and open a window</option>
+          <option value="1" selected>Drink it with reservations</option>
+          <option value="3">Drink it and note the improvement</option>
+          <option value="4">Prefer it this way and have said so publicly</option>
+        </select>
+
+        <label for="q-licorice">2. Salted black licorice is:</label>
+        <select id="q-licorice">
+          <option value="0">A prank with packaging</option>
+          <option value="1" selected>Someone's heritage, not my snack</option>
+          <option value="3">Defensible after the third piece</option>
+          <option value="4">What I bring to parties, for me</option>
+        </select>
+
+        <label for="q-texture">3. The word "gelatinous," applied to dinner, makes you feel:</label>
+        <select id="q-texture">
+          <option value="0">Concern</option>
+          <option value="1" selected>Caution</option>
+          <option value="3">Curiosity</option>
+          <option value="4">Nostalgia</option>
+        </select>
+
+        <div class="result">
+          <p class="placement" id="placement">Placement: TAST 101</p>
+          <p id="placement-text">Standard placement. You will begin with warm milk, as generations of scholars have before you. By week four, you will no longer flinch.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="numbered" id="apply">
+      <h2><span class="secno">3.</span>Application for admission</h2>
+      <p>Complete the form below. The committee reads every application aloud, at lunch, which it insists is relevant training.</p>
+      <form class="enroll" id="enroll-form">
+        <div class="field">
+          <label for="applicant-name">Full name</label>
+          <input type="text" id="applicant-name" name="name" required autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="applicant-email">Email</label>
+          <input type="email" id="applicant-email" name="email" required autocomplete="email">
+        </div>
+        <div class="field">
+          <label for="program">Program</label>
+          <select id="program" name="program">
+            <option value="single">Single Course ($390)</option>
+            <option value="certificate">Certificate Track ($2,900 per year)</option>
+            <option value="cohort">Institutional Cohort (quoted by the bursar)</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="statement">Personal statement: describe the most difficult thing you have finished eating, and why</label>
+          <textarea id="statement" name="statement" placeholder="Be specific. The committee has read 'my aunt's casserole' four hundred times and wants the recipe details." required></textarea>
+        </div>
+        <div class="field">
+          <label for="placement-claim">Placement result, if taken (e.g., TAST 101)</label>
+          <input type="text" id="placement-claim" name="placement" placeholder="TAST 101">
+        </div>
+        <p class="note">By submitting, you affirm that your palate is your own, that no one is making you do this, and that someone possibly should have.</p>
+        <button class="btn solid" type="submit">Submit Application</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="colophon">
+    <div class="colophon-inner">
+      <p>Acquired Taste Academy &middot; Deglutire est discere &middot; Founded on a dare, accredited on appeal</p>
+      <p class="links">
+        <a href="curriculum.html">Curriculum</a>
+        <a href="faculty.html">Faculty</a>
+        <a href="alumni.html">Alumni</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="marketing.html">Recruitment Materials</a>
+        <a href="../index.html">The Business Directory</a>
+      </p>
+      <p class="fineprint">An entirely fictional institution. No accreditation body has heard of us, which we consider mutual.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
