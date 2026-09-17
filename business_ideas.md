@@ -16,6 +16,8 @@ When a website is built for an idea, its entry is copied to `business.md` in the
 
 **Archetype:** saas-product
 
+**Name check note (Sep 2026):** A real app named Blinkr (getblinkr.com) exists with the same name and the same premise, an app that reminds you to blink. Rename or rework this idea before building it.
+
 ## Alibi & Associates
 
 **Short description:** A white-shoe professional firm that crafts bespoke excuses for getting out of social obligations.
@@ -25,16 +27,6 @@ When a website is built for an idea, its entry is copied to `business.md` in the
 **Themes and joke:** Dubious legality-adjacent services (theme 6) delivered with the hushed gravitas of a prestigious law firm. The joke is white-shoe professional-services culture — practice areas, partner bios, retainers, confidentiality — applied to lying to your friends.
 
 **Archetype:** professional-services
-
-## Lint for Nests
-
-**Short description:** A nonprofit that collects donated belly button lint to insulate nests for orphaned songbirds.
-
-**Long description:** Lint for Nests is a 501(c)(3) fiber-recovery charity whose volunteers collect, sort, and sanitize donated navel lint at drive-up Lint Drives in church parking lots across the Midwest. The site features an impact thermometer ("41 pounds recovered this quarter"), heartbreaking rescue stories with before-and-after nest photos, and giving tiers from Lint Friend to the prestigious Golden Navel Circle. Monthly sustaining donors receive a newsletter, a window decal, and a personalized certificate naming a warbler after them. The FAQ patiently explains, twice, why the lint must come from a navel.
-
-**Themes and joke:** Simply gross (theme 2) wrapped in earnest charity culture. The joke is the full nonprofit apparatus — impact metrics, donor tiers, urgent year-end appeals — mobilized around the least dignified donation a human body can make.
-
-**Archetype:** nonprofit
 
 ## Acquired Taste Academy
 

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lint Drives | Lint for Nests</title>
+  <meta name="description" content="Find a drive-up Lint Drive near you, learn our acceptance standards, and estimate your annual yield.">
+  <link rel="icon" href="images/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Karla:wght@400;700&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <img class="header-logo" src="images/logo.webp" alt="Lint for Nests logo">
+      <a class="site-title" href="index.html">Lint for Nests<small>a fiber-recovery charity</small></a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">&#9776;</button>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="stories.html">Rescue Stories</a></li>
+          <li><a class="current" href="lint-drives.html">Lint Drives</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a class="nav-donate" href="donate.html">Donate</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-head wrap">
+      <span class="handwritten">Drive up, drop off, drive home warm inside</span>
+      <h1>Lint Drives</h1>
+      <p style="max-width:640px;">Our drive-up Lint Drives run every sweater season, mostly on Saturdays, mostly in church parking lots. Stay in your car. A volunteer in a sage vest will come to your window with a clipboard and a kind word.</p>
+    </div>
+
+    <section class="section">
+      <div class="wrap">
+        <img class="zoomable" style="border-radius:14px; border:6px solid var(--cream); box-shadow: var(--shadow);" src="images/lint-drive.webp" alt="Volunteers receiving lint donations at a drive-up Lint Drive" data-caption="The fall drive at Good Shepherd Lutheran, Waverly. A record 4.2 pounds.">
+        <p class="photo-caption">The fall drive at Good Shepherd Lutheran, Waverly. A record morning: 4.2 pounds.</p>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="wrap">
+        <h2>Upcoming drives</h2>
+        <table class="drives">
+          <thead>
+            <tr><th>Date</th><th>Location</th><th>Hours</th><th>Notes</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Sat, Oct 3</td><td>Good Shepherd Lutheran, Waverly, IA</td><td>8 am to noon</td><td>Coffee provided. Decaf only, after the incident.</td></tr>
+            <tr><td>Sat, Oct 10</td><td>St. Norbert's overflow lot, Sheboygan, WI</td><td>9 am to 1 pm</td><td>Enter from the alley. The main lot is for the rummage sale.</td></tr>
+            <tr><td>Sat, Oct 17</td><td>First Methodist, Owatonna, MN</td><td>8 am to noon</td><td>Jar exchange available. Bring a jar, leave with a cleaner jar.</td></tr>
+            <tr><td>Sat, Oct 24</td><td>Cornbelt Community Church, Ames, IA</td><td>9 am to 1 pm</td><td>Our sorting supervisor will be signing certificates.</td></tr>
+            <tr><td>Sat, Nov 7</td><td>Hope Reformed, Pella, IA</td><td>8 am to 11 am</td><td>Final drive before the frost. Bring everything you have.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap" style="display:grid; grid-template-columns: 1.1fr 1fr; gap:36px; align-items:start;" id="standards-grid">
+        <div>
+          <h2>Acceptance standards</h2>
+          <p>We are grateful for every donation, and we are also a certified fiber-recovery facility with standards. Please review before your first drive:</p>
+          <ul style="padding-left:20px;">
+            <li><strong>Navel lint only.</strong> This is our founding rule and it is explained, twice, in the <a href="faq.html#navel-only">FAQ</a>.</li>
+            <li><strong>Any clean jar or paper envelope.</strong> No plastic bags. Lint deserves to breathe, and so do our sorters.</li>
+            <li><strong>All colors welcome.</strong> Blue-gray dominates, and our graders enjoy a surprise.</li>
+            <li><strong>No loose deliveries.</strong> Do not hand a volunteer an unconstrained tuft through a car window on a windy day. We lost most of the 2019 spring harvest this way.</li>
+            <li><strong>Label if known.</strong> Donor name, collection period, and dominant sweater are helpful but optional.</li>
+          </ul>
+          <img class="zoomable" style="border-radius:14px; margin-top:14px;" src="images/sorting.webp" alt="Volunteers grading donated lint at the sorting table" data-caption="The grading line in Oskaloosa. Every tuft is inspected by hand.">
+          <p class="photo-caption">The grading line in Oskaloosa. Every tuft, inspected by hand.</p>
+        </div>
+        <div>
+          <div class="estimator" id="estimator">
+            <span class="handwritten">Interactive tool</span>
+            <h3 style="margin-top:4px;">Lint Yield Estimator</h3>
+            <p style="font-size:0.92rem;">Estimate your annual navel yield and see how many warblers you could warm. Figures reviewed by our sorting supervisor and deemed plausible.</p>
+            <label for="est-days">Days per week you wear a sweater or fleece</label>
+            <input type="range" id="est-days" min="0" max="7" value="4">
+            <div class="range-value" id="est-days-val">4 days a week</div>
+            <label for="est-depth">Navel depth (self-assessed)</label>
+            <select id="est-depth">
+              <option value="shallow">Shallow</option>
+              <option value="average" selected>Average</option>
+              <option value="deep">Deep</option>
+              <option value="cavernous">Cavernous</option>
+            </select>
+            <label for="est-fabric">Primary fabric</label>
+            <select id="est-fabric">
+              <option value="cotton" selected>Cotton</option>
+              <option value="wool">Wool</option>
+              <option value="fleece">Fleece</option>
+              <option value="linen">Linen</option>
+            </select>
+            <div class="estimate-result">
+              <div><span class="big-stat" id="est-grams">1.0 g</span> <small>estimated annual yield</small></div>
+              <div style="margin-top:6px;"><span class="big-stat" id="est-birds">3 warblers</span> <small>warmed per year</small></div>
+              <p style="margin:10px 0 0; font-size:0.92rem;" id="est-verdict"></p>
+            </div>
+          </div>
+          <div class="form-card" style="margin-top:22px; max-width:none;">
+            <h3>Pledge your lint</h3>
+            <form id="pledge-form">
+              <label for="pledge-name">Name</label>
+              <input type="text" id="pledge-name" required>
+              <label for="pledge-drive">Which drive will you attend?</label>
+              <select id="pledge-drive">
+                <option>Waverly, Oct 3</option>
+                <option>Sheboygan, Oct 10</option>
+                <option>Owatonna, Oct 17</option>
+                <option>Ames, Oct 24</option>
+                <option>Pella, Nov 7</option>
+                <option>Undecided, but committed</option>
+              </select>
+              <p style="margin-top:16px;"><button class="btn btn-primary" type="submit">Pledge My Lint</button></p>
+              <div class="form-success" id="pledge-success"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-cols">
+      <div>
+        <h3>Lint for Nests</h3>
+        <p>A 501(c)(3) fiber-recovery charity serving orphaned songbirds across Iowa, Wisconsin, and most of Minnesota. EIN 47-LINTLINE. Donations are tax deductible. Lint is not, and we have stopped asking.</p>
+      </div>
+      <div>
+        <h3>Get involved</h3>
+        <ul>
+          <li><a href="donate.html">Donate money</a></li>
+          <li><a href="lint-drives.html">Donate lint</a></li>
+          <li><a href="stories.html">Rescue stories</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>More</h3>
+        <ul>
+          <li><a href="marketing.html">Marketing materials</a></li>
+          <li><a href="faq.html#navel-only">Why navel lint only?</a></li>
+          <li><a href="../index.html">Business directory</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer-legal">
+      <p>Lint for Nests is a fictional organization. No lint was collected, no warbler was named, and no tax deduction will survive an audit.</p>
+    </div>
+  </footer>
+
+  <div class="img-modal" id="img-modal" role="dialog" aria-modal="true">
+    <button class="modal-close" aria-label="Close image">&times;</button>
+    <img src="" alt="">
+    <p class="modal-caption"></p>
+  </div>
+
+  <script src="app.js"></script>
+  <style>
+    @media (max-width: 860px) {
+      #standards-grid { grid-template-columns: 1fr !important; }
+    }
+  </style>
+</body>
+</html>
