@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Subscribe | The Cul-de-Sac Courant</title>
+<meta name="description" content="Subscription rates for the Cul-de-Sac Courant: digital, print, and the Founding Reader tier.">
+<link rel="icon" type="image/webp" href="images/logo.webp">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span class="ear">Weather: sprinklers at dawn, patchy leaf blower by noon</span>
+    <span class="ear">Circulation: 8 households, 1 disputed</span>
+    <span id="meter" aria-live="polite"></span>
+  </div>
+</div>
+
+<header class="nameplate wrap">
+  <a href="index.html"><img class="crest" src="images/logo.webp" alt="Crest of the Cul-de-Sac Courant"></a>
+  <p class="title"><a href="index.html">The Cul-de-Sac Courant</a></p>
+  <p class="motto">Fearless. Local. Extremely local.</p>
+  <div class="folio">
+    <span>Vol. XVI, No. 37</span>
+    <span>Tuesday, September 15, 2026</span>
+    <span>Page A12</span>
+  </div>
+</header>
+
+<nav class="sections" aria-label="Sections">
+  <ul>
+    <li><a href="index.html">Front Page</a></li>
+    <li><a href="article-gnome.html">The Gnome Files</a></li>
+    <li><a href="opinion.html">Opinion</a></li>
+    <li><a href="corrections.html">Corrections</a></li>
+    <li><a href="subscribe.html" class="current">Subscribe</a></li>
+  </ul>
+</nav>
+
+<main class="wrap">
+
+  <div class="article-page" style="margin-bottom:0">
+    <p class="kicker">Circulation Department</p>
+    <h1 class="headline">Subscribe to the Courant</h1>
+    <p class="subhead">Three articles a month are free, a number every household on this street reached by the 4th. Beyond that, quality journalism about this specific street costs money, and it is the best money you will spend on news about your own lawn.</p>
+  </div>
+
+  <div class="tiers">
+
+    <div class="tier">
+      <h3>Digital</h3>
+      <p class="price">$4<span class="per"> / month</span></p>
+      <ul>
+        <li>Unlimited articles on this website</li>
+        <li>The Gnome Files archive, complete</li>
+        <li>Breaking-news alerts, delivered by whichever Kensington is outside</li>
+        <li>Full access to the corrections page, which you are in</li>
+      </ul>
+      <button class="btn sub-select" data-tier="Digital">Choose Digital</button>
+    </div>
+
+    <div class="tier featured">
+      <h3>Print + Digital</h3>
+      <p class="price">$9<span class="per"> / month</span></p>
+      <ul>
+        <li>Everything in Digital</li>
+        <li>The Tuesday print edition, walked to your door by Kyle, weather permitting</li>
+        <li>Commemorative editions (mailbox, eclipse, egg)</li>
+        <li>Priority placement of your letters, subject to the editor disagreeing with them at equal length</li>
+      </ul>
+      <button class="btn sub-select" data-tier="Print + Digital">Choose Print + Digital</button>
+    </div>
+
+    <div class="tier">
+      <h3>Founding Reader</h3>
+      <p class="price">$250<span class="per"> / year</span></p>
+      <ul>
+        <li>Everything in Print + Digital</li>
+        <li>Your name in the Founding Readers box each week</li>
+        <li>One archival photograph of your house, taken respectfully, at a good angle</li>
+        <li>Does not include favorable coverage. The Courant must be clear about this. It has come up.</li>
+      </ul>
+      <button class="btn sub-select" data-tier="Founding Reader">Choose Founding Reader</button>
+    </div>
+
+  </div>
+
+  <p style="font-size:0.85rem; color:var(--ink-soft)">Households outside Butternut Court may subscribe to Digital only. Print delivery ends at the mouth of the court; Kyle has been clear about his range. Institutional rates available for the school district, which has never asked.</p>
+
+  <form class="sub-form" id="subscribe-form" novalidate>
+    <p class="kicker">Subscription Order Form</p>
+    <label for="sub-name">Name <span class="hint">(as it should appear in the Founding Readers box, if applicable)</span></label>
+    <input type="text" id="sub-name" autocomplete="name">
+    <label for="sub-addr">Address</label>
+    <input type="text" id="sub-addr" autocomplete="street-address" placeholder="No. 1 through No. 8, or elsewhere">
+    <label for="sub-tier">Subscription</label>
+    <select id="sub-tier">
+      <option>Digital</option>
+      <option selected>Print + Digital</option>
+      <option>Founding Reader</option>
+    </select>
+    <label for="sub-referral">How did you hear about the Courant?</label>
+    <select id="sub-referral">
+      <option>I live on the street</option>
+      <option>Carol Fenwick read it to me over the fence</option>
+      <option>I am the subject of an article and wish to monitor the situation</option>
+      <option>Found one at the honor box, did not pay, feel bad</option>
+      <option>Other (explain below, we will check)</option>
+    </select>
+    <p style="margin:16px 0 0"><button class="btn" type="submit">Place Order</button></p>
+    <div class="form-result" id="sub-result"></div>
+  </form>
+
+  <section class="article-page" id="about" style="margin-top:34px">
+    <h2 style="font-size:1.5rem; border-top:2px solid var(--rule); padding-top:12px">The operation</h2>
+    <div class="front" style="margin-top:8px">
+      <div class="lead-col">
+        <figure>
+          <img class="zoomable" src="images/photo-publisher.webp" alt="Marla J. Kensington in the Courant newsroom" data-caption="The editor and publisher in the newsroom at No. 2. The corkboard is the gnome case. The string is load-bearing.">
+          <figcaption>The editor and publisher in the newsroom at No. 2.</figcaption>
+        </figure>
+      </div>
+      <div class="side-col">
+        <figure>
+          <img class="zoomable" src="images/photo-press.webp" alt="The Courant printing facility" data-caption="The press room, also at No. 2. Print runs conclude by 6 AM or when the magenta runs out, whichever is first. The paper is black and white; the printer disagrees.">
+          <figcaption>The press room, also at No. 2.</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="story-text">
+      <p>Every subscription funds the same things it funded in 2011: paper, ink, one police scanner, and the standing archive of everything that has ever happened on Butternut Court, which fills a hall closet and is backed up to two locations, one of which is the other side of the closet. The Courant has never missed a Tuesday. It has come close twice, both times involving the printer, neither time involving the news, of which there is always more than eight houses should produce.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="colophon">
+  <div class="wrap">
+    <div>
+      <h4>The Cul-de-Sac Courant</h4>
+      <p>Newsroom &amp; press: No. 2 Butternut Court<br>
+      Bureau: the mailbox cluster<br>
+      Tips: slide them under the door</p>
+    </div>
+    <div>
+      <h4>Sections</h4>
+      <ul>
+        <li><a href="index.html">Front Page</a></li>
+        <li><a href="article-gnome.html">The Gnome Files</a></li>
+        <li><a href="opinion.html">Opinion &amp; Letters</a></li>
+        <li><a href="corrections.html">Corrections</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>The Company</h4>
+      <ul>
+        <li><a href="subscribe.html">Subscribe</a></li>
+        <li><a href="opinion.html#masthead">Masthead</a></li>
+        <li><a href="marketing.html">Promotion Department</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="fine">
+    &copy; 2026 Cul-de-Sac Courant Publishing Co., a division of the Kensington kitchen table. Member, Association of Newspapers Covering One Street (founding member; sole member). This site is part of <a href="../index.html">The Business Directory</a>.
+  </div>
+</footer>
+
+<div id="paywall" role="dialog" aria-modal="true" aria-label="Subscription notice">
+  <div class="panel">
+    <p class="kicker">Subscriber Notice</p>
+    <h2>You have read your three free articles</h2>
+    <p>Quality journalism about this specific street is not free. Your neighbors subscribe. We have a list.</p>
+    <a class="btn" href="subscribe.html">Subscribe for $4 a month</a>
+    <button class="dismiss" id="paywall-dismiss">No thank you, I will ask Carol Fenwick what it said</button>
+  </div>
+</div>
+
+<div id="img-modal" role="dialog" aria-modal="true" aria-label="Enlarged image">
+  <button class="modal-close" aria-label="Close">&times;</button>
+  <img src="" alt="">
+  <div class="modal-caption"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Business Directory</title>
+  <style>
+    :root {
+      --bg: #f6f4ef;
+      --card-bg: #ffffff;
+      --text: #2b2b2b;
+      --muted: #6b6b6b;
+      --accent: #1f6f5c;
+      --border: #e3ded4;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, 'Times New Roman', serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 0 16px;
+    }
+
+    header {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 0 24px;
+      text-align: center;
+      border-bottom: 2px solid var(--border);
+    }
+
+    header h1 {
+      margin: 0 0 8px;
+      font-size: 2.2rem;
+      letter-spacing: 0.5px;
+    }
+
+    header p {
+      margin: 0;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 24px 0 64px;
+    }
+
+    ul.directory {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    li.business {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px;
+    }
+
+    .logo {
+      flex: 0 0 auto;
+      width: 56px;
+      height: 56px;
+      object-fit: cover;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #ffffff;
+    }
+
+    .info h2 {
+      margin: 0 0 4px;
+      font-size: 1.15rem;
+    }
+
+    .info h2 a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .info h2 a:hover {
+      text-decoration: underline;
+    }
+
+    .info p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+
+    footer {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 0 32px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    .promo {
+      flex: 0 0 auto;
+      width: 180px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    @media (max-width: 480px) {
+      li.business {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .promo {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Business Directory</h1>
+    <p>Fine establishments you never knew you needed.</p>
+  </header>
+
+  <main>
+    <ul class="directory">
+      <li class="business">
+        <img class="logo" src="full-bird-hydration/images/logo.webp" alt="Full Bird Hydration logo">
+        <div class="info">
+          <h2><a href="full-bird-hydration/">Full Bird Hydration</a></h2>
+          <p>A sports drink company whose entire flavor lineup is Thanksgiving dinner.</p>
+        </div>
+      </li>
+
+      <li class="business">
+        <img class="logo" src="grudge-granite/images/logo.webp" alt="Grudge Granite logo">
+        <div class="info">
+          <h2><a href="grudge-granite/">Grudge Granite</a></h2>
+          <p>A memorial engraving company that carves the deceased's unresolved grudges into their headstones.</p>
+        </div>
+      </li>
+
+      <li class="business">
+        <img class="logo" src="sure-roll-dice/images/logo.webp" alt="Sure Roll Dice Co. logo">
+        <div class="info">
+          <h2><a href="sure-roll-dice/">Sure Roll Dice Co.</a></h2>
+          <p>An artisanal dice maker whose handcrafted dice have the same number on every face.</p>
+        </div>
+      </li>
+
+      <li class="business">
+        <img class="logo" src="second-wind/images/logo.webp" alt="Second Wind Air Cellars logo">
+        <div class="info">
+          <h2><a href="second-wind/">Second Wind Air Cellars</a></h2>
+          <p>A subscription service that ships members a monthly jar of artisanal air from exotic locations.</p>
+        </div>
+      </li>
+
+      <li class="business">
+        <img class="logo" src="reactor-barn/images/logo.webp" alt="Hank &amp; Sons Reactor Barn logo">
+        <div class="info">
+          <h2><a href="reactor-barn/">Hank &amp; Sons Reactor Barn</a></h2>
+          <p>A folksy, family-owned small-town shop that designs and builds nuclear reactors.</p>
+        </div>
+      </li>
+      <li class="business">
+        <img class="logo" src="murky-springs/images/logo.webp" alt="Murky Springs Soda Co. logo">
+        <div class="info">
+          <h2><a href="murky-springs/">Murky Springs Soda Co.</a></h2>
+          <p>A craft soda company whose small-batch flavors are all liquids nobody ever wanted to drink.</p>
+        </div>
+        <a href="murky-springs/"><img class="promo" src="murky-springs/images/promo.webp" alt="Murky Springs Soda Co. promotional image"></a>
+      </li>
+
+      <li class="business">
+        <img class="logo" src="waxing-nostalgic/images/logo.webp" alt="Waxing Nostalgic logo">
+        <div class="info">
+          <h2><a href="waxing-nostalgic/">Waxing Nostalgic</a></h2>
+          <p>An artisanal candle company that makes candles from donated human earwax.</p>
+        </div>
+        <a href="waxing-nostalgic/"><img class="promo" src="waxing-nostalgic/images/promo.webp" alt="Waxing Nostalgic promotional image"></a>
+      </li>
+
+      <li class="business">
+        <img class="logo" src="ashes-to-ashtrays/images/logo.webp" alt="Ashes to Ashtrays logo">
+        <div class="info">
+          <h2><a href="ashes-to-ashtrays/">Ashes to Ashtrays</a></h2>
+          <p>A memorial studio that turns your loved one's cremated remains into a decorative ashtray.</p>
+        </div>
+        <a href="ashes-to-ashtrays/"><img class="promo" src="ashes-to-ashtrays/images/promo.webp" alt="Ashes to Ashtrays promotional image"></a>
+      </li>
+
+      <li class="business">
+        <img class="logo" src="hov-buddy/images/logo.webp" alt="HOV Buddy logo">
+        <div class="info">
+          <h2><a href="hov-buddy/">HOV Buddy</a></h2>
+          <p>A rental service supplying realistic mannequin passengers for carpool-lane commuters.</p>
+        </div>
+        <a href="hov-buddy/"><img class="promo" src="hov-buddy/images/promo.webp" alt="HOV Buddy promotional image"></a>
+      </li>
+      <li class="business">
+        <img class="logo" src="marges-orbital/images/logo.webp" alt="Marge's Orbital Launch &amp; Diner logo">
+        <div class="info">
+          <h2><a href="marges-orbital/">Marge's Orbital Launch &amp; Diner</a></h2>
+          <p>A roadside Kansas diner that also provides commercial satellite launch services.</p>
+        </div>
+        <a href="marges-orbital/"><img class="promo" src="marges-orbital/images/promo.webp" alt="Marge's Orbital Launch &amp; Diner promotional image"></a>
+      </li>
+
+      <li class="business">
+        <img class="logo" src="mist-o-meat/images/logo.webp" alt="Mist O' Meat logo">
+        <div class="info">
+          <h2><a href="mist-o-meat/">Mist O' Meat</a></h2>
+          <p>An As-Seen-On-TV aerosol spray that gives any food the flavor of pot roast.</p>
+        </div>
+        <a href="mist-o-meat/"><img class="promo" src="mist-o-meat/images/promo.webp" alt="Mist O' Meat promotional image"></a>
+      </li>
+
+      <li class="business">
+        <img class="logo" src="gravy-district/images/logo.webp" alt="Gravy District No. 3 seal">
+        <div class="info">
+          <h2><a href="gravy-district/">Gravy District No. 3</a></h2>
+          <p>The public gravy utility serving three townships in rural Wisconsin.</p>
+        </div>
+        <a href="gravy-district/"><img class="promo" src="gravy-district/images/promo.webp" alt="Gravy District No. 3 promotional image"></a>
+      </li>
+
+      <li class="business">
+        <img class="logo" src="cul-de-sac-courant/images/logo.webp" alt="The Cul-de-Sac Courant crest">
+        <div class="info">
+          <h2><a href="cul-de-sac-courant/">The Cul-de-Sac Courant</a></h2>
+          <p>A hard-hitting subscription newspaper covering the eight houses of one suburban cul-de-sac.</p>
+        </div>
+        <a href="cul-de-sac-courant/"><img class="promo" src="cul-de-sac-courant/images/promo.webp" alt="The Cul-de-Sac Courant promotional image"></a>
+      </li>
+
+      <li class="business">
+        <img class="logo" src="alibi-associates/images/logo.webp" alt="Alibi &amp; Associates monogram">
+        <div class="info">
+          <h2><a href="alibi-associates/">Alibi &amp; Associates</a></h2>
+          <p>A white-shoe professional firm that crafts bespoke excuses for getting out of social obligations.</p>
+        </div>
+        <a href="alibi-associates/"><img class="promo" src="alibi-associates/images/promo.webp" alt="Alibi &amp; Associates promotional image"></a>
+      </li>
+
+      <li class="business">
+        <img class="logo" src="lint-for-nests/images/logo.webp" alt="Lint for Nests logo">
+        <div class="info">
+          <h2><a href="lint-for-nests/">Lint for Nests</a></h2>
+          <p>A nonprofit that collects donated belly button lint to insulate nests for orphaned songbirds.</p>
+        </div>
+        <a href="lint-for-nests/"><img class="promo" src="lint-for-nests/images/promo.webp" alt="Lint for Nests promotional image"></a>
+      </li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>All businesses listed here are entirely fictional. Any resemblance to a real reactor barn is coincidental.</p>
+  </footer>
+</body>
+</html>

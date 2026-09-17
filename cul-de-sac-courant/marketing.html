@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Promotion Department | The Cul-de-Sac Courant</title>
+<meta name="description" content="House advertisements and promotional posters of the Cul-de-Sac Courant.">
+<link rel="icon" type="image/webp" href="images/logo.webp">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span class="ear">Weather: sprinklers at dawn, patchy leaf blower by noon</span>
+    <span class="ear">Circulation: 8 households, 1 disputed</span>
+    <span id="meter" aria-live="polite"></span>
+  </div>
+</div>
+
+<header class="nameplate wrap">
+  <a href="index.html"><img class="crest" src="images/logo.webp" alt="Crest of the Cul-de-Sac Courant"></a>
+  <p class="title"><a href="index.html">The Cul-de-Sac Courant</a></p>
+  <p class="motto">Fearless. Local. Extremely local.</p>
+  <div class="folio">
+    <span>Vol. XVI, No. 37</span>
+    <span>Tuesday, September 15, 2026</span>
+    <span>Back page</span>
+  </div>
+</header>
+
+<nav class="sections" aria-label="Sections">
+  <ul>
+    <li><a href="index.html">Front Page</a></li>
+    <li><a href="article-gnome.html">The Gnome Files</a></li>
+    <li><a href="opinion.html">Opinion</a></li>
+    <li><a href="corrections.html">Corrections</a></li>
+    <li><a href="subscribe.html">Subscribe</a></li>
+  </ul>
+</nav>
+
+<main class="wrap article-page">
+
+  <p class="kicker">Promotion Department</p>
+  <h1 class="headline">House advertisements</h1>
+  <p class="subhead">The Courant accepts no outside advertising, so the back page runs these. The Promotion Department is the editor, on Sundays, with strong opinions about small caps. Residents may request a poster for their window; the Hendersons have not, and the Courant respects that, publicly.</p>
+
+  <div class="poster-grid">
+    <figure>
+      <img class="zoomable" src="images/marketing-portrait.webp" alt="Subscription poster: Eight houses. A thousand stories." data-caption="The circulation drive poster, autumn 2026. The count of one thousand stories is audited annually and is, if anything, conservative.">
+      <figcaption>Circulation drive, autumn 2026.</figcaption>
+    </figure>
+    <figure>
+      <img class="zoomable" src="images/marketing-landscape.webp" alt="Poster: The truth lives at the end of the street" data-caption="Displayed at the honor box since spring. Weathering has been described as 'dignified.'">
+      <figcaption>The honor box poster.</figcaption>
+    </figure>
+    <figure>
+      <img class="zoomable" src="images/marketing-square.webp" alt="Poster: If we did not cover it, it did not happen" data-caption="The mission statement, suitable for framing. One resident has framed it ironically. The Courant counts the sale.">
+      <figcaption>The mission statement poster.</figcaption>
+    </figure>
+  </div>
+
+  <p style="font-size:0.9rem; color:var(--ink-soft)">Posters are printed on the same machine as the newspaper and are available at the newsroom door for $3, honor system, exact change appreciated because the change jar is also the petty cash system.</p>
+
+</main>
+
+<footer class="colophon">
+  <div class="wrap">
+    <div>
+      <h4>The Cul-de-Sac Courant</h4>
+      <p>Newsroom &amp; press: No. 2 Butternut Court<br>
+      Bureau: the mailbox cluster<br>
+      Tips: slide them under the door</p>
+    </div>
+    <div>
+      <h4>Sections</h4>
+      <ul>
+        <li><a href="index.html">Front Page</a></li>
+        <li><a href="article-gnome.html">The Gnome Files</a></li>
+        <li><a href="opinion.html">Opinion &amp; Letters</a></li>
+        <li><a href="corrections.html">Corrections</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>The Company</h4>
+      <ul>
+        <li><a href="subscribe.html">Subscribe</a></li>
+        <li><a href="opinion.html#masthead">Masthead</a></li>
+        <li><a href="marketing.html">Promotion Department</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="fine">
+    &copy; 2026 Cul-de-Sac Courant Publishing Co., a division of the Kensington kitchen table. Member, Association of Newspapers Covering One Street (founding member; sole member). This site is part of <a href="../index.html">The Business Directory</a>.
+  </div>
+</footer>
+
+<div id="paywall" role="dialog" aria-modal="true" aria-label="Subscription notice">
+  <div class="panel">
+    <p class="kicker">Subscriber Notice</p>
+    <h2>You have read your three free articles</h2>
+    <p>Quality journalism about this specific street is not free. Your neighbors subscribe. We have a list.</p>
+    <a class="btn" href="subscribe.html">Subscribe for $4 a month</a>
+    <button class="dismiss" id="paywall-dismiss">No thank you, I will ask Carol Fenwick what it said</button>
+  </div>
+</div>
+
+<div id="img-modal" role="dialog" aria-modal="true" aria-label="Enlarged image">
+  <button class="modal-close" aria-label="Close">&times;</button>
+  <img src="" alt="">
+  <div class="modal-caption"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

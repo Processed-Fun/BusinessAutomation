@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Posters &amp; Marketing | Waxing Nostalgic</title>
+  <meta name="description" content="Official Waxing Nostalgic campaign art, for boutiques, benefactor lounges, and brave living rooms.">
+  <link rel="icon" href="images/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <img src="images/logo.webp" alt="Waxing Nostalgic logo">
+        <strong>Waxing Nostalgic</strong>
+      </a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="collection.html">Full Collection</a>
+        <a href="index.html#pricing">Pricing</a>
+        <button class="cart-btn" id="cartBtn">Parcel (0)</button>
+      </nav>
+    </div>
+  </header>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Campaign Art</span>
+        <h2>Posters &amp; Marketing</h2>
+        <p>Our official campaign pieces, shot in-house at the atelier. Hang one where guests will ask about it. That is the entire strategy. Tap any poster to view it full size.</p>
+      </div>
+      <div class="poster-stack">
+        <figure>
+          <img class="zoom" src="images/marketing-portrait.webp" alt="Waxing Nostalgic portrait poster: The Most Personal Ambiance on the Market." data-caption="The flagship poster. One candle, one drip, one deeply uncomfortable conversation starter.">
+          <figcaption>The flagship poster. Framing recommended, explaining unavoidable.</figcaption>
+        </figure>
+        <figure>
+          <img class="zoom" src="images/marketing-landscape.webp" alt="Waxing Nostalgic landscape banner: Memories, Rendered and Poured." data-caption="The mantel banner, as displayed in boutiques that trusted us.">
+          <figcaption>The mantel banner. Memories, rendered and poured.</figcaption>
+        </figure>
+        <figure>
+          <img class="zoom" src="images/marketing-square.webp" alt="Waxing Nostalgic square social image: Ambiance With Provenance." data-caption="The social square. Provenance has never been this personal.">
+          <figcaption>The social square. Repost freely, attribute bravely.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>
+        <strong style="color:#f6efdd;">Waxing Nostalgic</strong><br>
+        The most personal ambiance on the market.<br>
+        Donation lounges in twelve states.
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="collection.html">The Full Collection</a>
+        <a href="../index.html">The Business Directory</a>
+      </nav>
+      <div>
+        Waxing Nostalgic is a fictional business.<br>
+        No ears were harmed. Gary is thriving.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart drawer -->
+  <div class="drawer-veil" id="drawerVeil" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" hidden aria-label="Shopping parcel">
+    <button class="cart-close" id="cartClose" aria-label="Close parcel">&times;</button>
+    <h2>Your Parcel</h2>
+    <p class="fine">Wrapped in cream paper. Shipped with discretion.</p>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-total"><span>Total</span><span id="cartTotal">$0</span></div>
+    <button class="btn" id="checkoutBtn">Check Out</button>
+  </aside>
+
+  <!-- Order confirmation -->
+  <div class="order-modal" id="orderModal" hidden>
+    <div class="box">
+      <h3>Order Received</h3>
+      <p>Your parcel is being wrapped as we speak. Trim the wick, dim the lights, and let someone else's memories fill the room.</p>
+      <button class="btn" id="orderClose">Close</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

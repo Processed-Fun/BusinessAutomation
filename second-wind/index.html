@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Second Wind Air Cellars | A boutique atmospheric sommelier house</title>
+  <meta name="description" content="Members receive a monthly jar of single-origin air with tasting notes. Vintage jars trade at auction. A freshness plan sends a technician to re-tighten your lids.">
+  <link rel="icon" type="image/webp" href="images/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* ---------- Hero ---------- */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url('images/hero.webp') center 55% / cover no-repeat;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(100deg, rgba(16, 22, 26, 0.88) 0%, rgba(16, 22, 26, 0.6) 52%, rgba(16, 22, 26, 0.22) 100%);
+    }
+
+    .hero .wrap {
+      position: relative;
+      z-index: 2;
+      padding-top: 110px;
+      padding-bottom: 120px;
+      color: var(--mist);
+    }
+
+    .hero h1 {
+      font-size: clamp(2.3rem, 6vw, 4rem);
+      max-width: 640px;
+      margin-bottom: 16px;
+    }
+
+    .hero p.sub {
+      max-width: 500px;
+      font-size: 1.1rem;
+      margin: 0 0 28px;
+      color: #ccd6d2;
+    }
+
+    .hero .cta-row { display: flex; gap: 14px; flex-wrap: wrap; }
+
+    .hero .btn.ghost { color: var(--mist); border-color: var(--mist); }
+    .hero .btn.ghost:hover { border-color: var(--gold-soft); color: var(--gold-soft); }
+
+    /* ---------- Strip ---------- */
+    .strip {
+      background: var(--cellar);
+      color: #c9d1cd;
+      text-align: center;
+      padding: 14px 20px;
+      font-size: 0.95rem;
+      letter-spacing: 0.04em;
+      font-style: italic;
+    }
+
+    /* ---------- Story ---------- */
+    .story-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 44px;
+      align-items: center;
+    }
+
+    .story-grid img { border-radius: 10px; box-shadow: var(--shadow); cursor: zoom-in; }
+
+    blockquote.founder {
+      margin: 22px 0 0;
+      padding-left: 18px;
+      border-left: 3px solid var(--gold);
+      font-style: italic;
+      color: var(--muted);
+    }
+
+    blockquote.founder cite { display: block; font-style: normal; margin-top: 8px; font-size: 0.85rem; }
+
+    /* ---------- Sommelier widget ---------- */
+    .nose {
+      display: grid;
+      grid-template-columns: 360px 1fr;
+      gap: 44px;
+      align-items: start;
+    }
+
+    .nose-desk {
+      background: var(--cellar);
+      border-radius: 16px;
+      padding: 30px 26px;
+      color: #cdd6d2;
+      box-shadow: var(--shadow);
+    }
+
+    .nose-desk h3 { color: var(--mist); font-size: 1.4rem; }
+
+    .nose-desk select {
+      width: 100%;
+      font-family: inherit;
+      font-size: 0.95rem;
+      padding: 10px 12px;
+      border-radius: 8px;
+      border: 1px solid #3a464d;
+      background: #26313a;
+      color: var(--mist);
+      margin-bottom: 14px;
+    }
+
+    .meter { margin: 12px 0; }
+
+    .meter .label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #94a4a0;
+      margin-bottom: 5px;
+    }
+
+    .meter .bar {
+      height: 8px;
+      background: #2c3840;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .meter .fill {
+      height: 100%;
+      width: 0;
+      background: var(--gold);
+      border-radius: 999px;
+      transition: width 0.9s cubic-bezier(0.2, 0.7, 0.3, 1);
+    }
+
+    #noseOut {
+      min-height: 120px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 22px 24px;
+      font-style: italic;
+      font-size: 1.05rem;
+      color: var(--ink);
+      box-shadow: var(--shadow);
+    }
+
+    #noseOut .cursor {
+      display: inline-block;
+      width: 8px;
+      height: 1.1em;
+      background: var(--gold);
+      vertical-align: text-bottom;
+      animation: blink 0.8s steps(1) infinite;
+    }
+
+    @keyframes blink { 50% { opacity: 0; } }
+
+    /* ---------- Membership plans ---------- */
+    .plans { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 22px; }
+
+    .plan {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 26px 24px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow);
+    }
+
+    .plan.featured { border: 2px solid var(--gold); }
+
+    .plan h3 { font-size: 1.4rem; margin-bottom: 2px; }
+
+    .plan .p-price { font-size: 1.9rem; font-weight: 700; margin: 8px 0 2px; font-family: 'Playfair Display', Georgia, serif; }
+
+    .plan .p-price small { font-size: 0.85rem; color: var(--muted); font-weight: 400; font-family: 'Lora', Georgia, serif; }
+
+    .plan ul {
+      list-style: none;
+      padding: 0;
+      margin: 14px 0 20px;
+      color: var(--muted);
+      font-size: 0.92rem;
+      flex: 1;
+    }
+
+    .plan ul li { padding: 5px 0 5px 22px; position: relative; }
+
+    .plan ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 13px;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--gold);
+    }
+
+    /* ---------- Split features ---------- */
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 44px;
+      align-items: center;
+    }
+
+    .split img { border-radius: 10px; box-shadow: var(--shadow); cursor: zoom-in; }
+
+    /* ---------- Testimonials ---------- */
+    .quotes { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 22px; }
+
+    .quote {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .quote p { margin: 0 0 14px; font-style: italic; }
+
+    .quote cite { font-style: normal; font-size: 0.85rem; color: var(--muted); }
+
+    .stars { color: var(--gold); letter-spacing: 2px; margin-bottom: 10px; }
+
+    @media (max-width: 900px) {
+      .nose, .split, .story-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <img class="nav-logo" src="images/logo.webp" alt="Second Wind Air Cellars logo">
+      <a class="brand" href="./">Second Wind Air Cellars<small>Bottled nothing since 2016</small></a>
+      <div class="nav-links">
+        <a href="#vintages" class="hide-m">Vintages</a>
+        <a href="#nose">The nose</a>
+        <a href="#membership">Membership</a>
+        <a href="#club" class="hide-m">Cellar Club</a>
+        <a href="cellar.html">The cellar</a>
+        <button class="cart-btn" id="cartBtn">Cellar (0)</button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap">
+      <p class="kicker">A boutique atmospheric sommelier house</p>
+      <h1>Air, at its finest.</h1>
+      <p class="sub">Each month, members receive a hand-sealed jar of single-origin air with tasting notes on parchment. Open it once, breathe deeply, and own the moment a place exhaled.</p>
+      <div class="cta-row">
+        <a class="btn gold" href="#membership">Become a member</a>
+        <a class="btn ghost" href="#vintages">Browse vintages</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="strip">Every jar is filled at origin, sealed within the minute, and contains nothing else whatsoever. We are extremely proud of this.</div>
+
+  <section id="story">
+    <div class="wrap story-grid">
+      <img class="zoom" src="images/scene-founder.webp" alt="Founder Marguerite Voss holding a sealed jar in the cellar" data-caption="Marguerite Voss in the estate cellar, holding the first jar she never opened.">
+      <div>
+        <p class="kicker">The house</p>
+        <h2>It began just above the glass</h2>
+        <p>Marguerite Voss spent eleven years as a wine sommelier before admitting the truth to herself: the part she loved was the moment before the sip, when the air above the glass told you everything. The wine, frankly, kept getting in the way.</p>
+        <p>She sold her collection, kept the jars, and went to the mountains. Second Wind now maintains forty harvest sites on four continents, each worked by trained gatherers who seal at origin and carry the jars down by hand. The cellar in Sonoma holds six thousand jars at a constant temperature, for reasons our cellarmaster has asked us not to question.</p>
+        <blockquote class="founder">
+          "People ask what separates our air from the air in their home. Provenance. Also, their air is free, which should tell you something about it."
+          <cite>Marguerite Voss, founder and nose emerita</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="vintages">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">This season's vintages</p>
+        <h2>Currently breathing</h2>
+        <p>Five house favorites, available by the jar while the weather lasts. Members receive first allocation. Tap a jar to admire it properly.</p>
+      </div>
+      <div class="grid">
+        <div class="product">
+          <img class="zoom" src="images/jar-alpine-meadow.webp" alt="Jar of Swiss Alpine Meadow 2024">
+          <div class="p-body">
+            <h3>Swiss Alpine Meadow</h3>
+            <p class="vintage">Vintage 2024 &middot; 750 ml</p>
+            <p class="notes">Pine, distant cowbell, moral superiority. A confident opener with real altitude.</p>
+            <div class="p-foot"><span class="price">$60</span><button class="btn small" data-add="alpine-meadow">Add to cellar</button></div>
+          </div>
+        </div>
+        <div class="product">
+          <img class="zoom" src="images/jar-portland-coffee.webp" alt="Jar of Portland Coffee Shop, 7 A.M. 2025">
+          <div class="p-body">
+            <h3>Portland Coffee Shop, 7 A.M.</h3>
+            <p class="vintage">Vintage 2025 &middot; 750 ml</p>
+            <p class="notes">Burr grinder, damp wool, an unfinished screenplay two tables over. Drinks young.</p>
+            <div class="p-foot"><span class="price">$48</span><button class="btn small" data-add="portland-coffee">Add to cellar</button></div>
+          </div>
+        </div>
+        <div class="product">
+          <img class="zoom" src="images/jar-casino-lot.webp" alt="Jar of Mid-Tier Casino Parking Lot 2023">
+          <div class="p-body">
+            <span class="badge dark">House pick</span>
+            <h3>Mid-Tier Casino Parking Lot</h3>
+            <p class="vintage">Vintage 2023 &middot; 750 ml</p>
+            <p class="notes">Sunbaked asphalt, menthol, a long finish of regret. Divisive. Correct.</p>
+            <div class="p-foot"><span class="price">$38</span><button class="btn small" data-add="casino-lot">Add to cellar</button></div>
+          </div>
+        </div>
+        <div class="product">
+          <img class="zoom" src="images/jar-grandma-kitchen.webp" alt="Jar of A Grandmother's Kitchen, Sunday 2022">
+          <div class="p-body">
+            <h3>A Grandmother's Kitchen, Sunday</h3>
+            <p class="vintage">Vintage 2022 &middot; 750 ml</p>
+            <p class="notes">Chicken stock, dish soap, unconditional approval. Our most requested comfort vintage.</p>
+            <div class="p-foot"><span class="price">$75</span><button class="btn small" data-add="grandma-kitchen">Add to cellar</button></div>
+          </div>
+        </div>
+        <div class="product">
+          <img class="zoom" src="images/jar-maine-fog.webp" alt="Jar of Penobscot Bay Fog 2024">
+          <div class="p-body">
+            <h3>Penobscot Bay Fog</h3>
+            <p class="vintage">Vintage 2024 &middot; 750 ml</p>
+            <p class="notes">Salt, spruce, a lighthouse you cannot see but trust is there. Pairs with sweaters.</p>
+            <div class="p-foot"><span class="price">$55</span><button class="btn small" data-add="maine-fog">Add to cellar</button></div>
+          </div>
+        </div>
+        <div class="product">
+          <img class="zoom" src="images/scene-harvest.webp" alt="Gatherers harvesting air with open jars on an alpine meadow at sunrise">
+          <div class="p-body">
+            <span class="badge">From the harvest</span>
+            <h3>Gathered by hand</h3>
+            <p class="notes">Our gatherers work at dawn, when the air is naive and easiest to catch. Each jar is sealed within sixty seconds of opening, a window we call "the breath."</p>
+            <div class="p-foot"><a class="btn small ghost" href="cellar.html">See the full cellar</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="nose">
+    <div class="wrap nose">
+      <div class="nose-desk">
+        <h3>The digital sommelier</h3>
+        <p style="font-size: 0.9rem; color: #94a4a0;">Select a vintage and let our house nose walk you through it.</p>
+        <select id="noseSelect" aria-label="Choose a vintage to nose">
+          <option value="alpine">Swiss Alpine Meadow 2024</option>
+          <option value="coffee">Portland Coffee Shop, 7 A.M. 2025</option>
+          <option value="casino" selected>Mid-Tier Casino Parking Lot 2023</option>
+          <option value="grandma">A Grandmother's Kitchen, Sunday 2022</option>
+          <option value="fog">Penobscot Bay Fog 2024</option>
+          <option value="reserve">The Pre-Everything Reserve 2019</option>
+        </select>
+        <button class="btn gold" id="noseBtn" style="width: 100%;">Nose it</button>
+        <div class="meter">
+          <div class="label"><span>Body</span><span id="vBody">0%</span></div>
+          <div class="bar"><div class="fill" id="mBody"></div></div>
+        </div>
+        <div class="meter">
+          <div class="label"><span>Finish</span><span id="vFinish">0%</span></div>
+          <div class="bar"><div class="fill" id="mFinish"></div></div>
+        </div>
+        <div class="meter">
+          <div class="label"><span>Regret</span><span id="vRegret">0%</span></div>
+          <div class="bar"><div class="fill" id="mRegret"></div></div>
+        </div>
+      </div>
+      <div>
+        <p class="kicker">Tasting room</p>
+        <h2>Trust the nose</h2>
+        <p>Our tasting panel evaluates every harvest across three dimensions: body, finish, and regret. The panel works blindfolded, in silence, from jars that are, we remind you, empty. Their consistency is remarkable and a little unsettling.</p>
+        <div id="noseOut"><span style="color: var(--muted);">The sommelier is waiting. Choose a vintage and ask.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="membership">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Membership</p>
+        <h2>Join the house</h2>
+        <p>Every tier ships a jar on the first of the month, packed in straw, with tasting notes on parchment. Pause anytime. Members rarely do, and we have stopped pretending to understand why.</p>
+      </div>
+      <div class="plans">
+        <div class="plan">
+          <h3>The Apprentice Nose</h3>
+          <div class="p-price">$39<small>/month</small></div>
+          <ul>
+            <li>One jar of the monthly house selection</li>
+            <li>Tasting card with suggested breathing pace</li>
+            <li>Access to the members' vocabulary list</li>
+          </ul>
+          <button class="btn" data-add="membership-apprentice">Begin</button>
+        </div>
+        <div class="plan featured">
+          <h3>The Connoisseur</h3>
+          <div class="p-price">$89<small>/month</small></div>
+          <ul>
+            <li>Two jars: the house selection plus a regional</li>
+            <li>Full tasting notes on parchment, wax sealed</li>
+            <li>Members' forum, where everyone is lying</li>
+          </ul>
+          <button class="btn gold" data-add="membership-connoisseur">Join at this tier</button>
+        </div>
+        <div class="plan">
+          <h3>The Barometric Reserve</h3>
+          <div class="p-price">$250<small>/month</small></div>
+          <ul>
+            <li>Rare and library vintages, allocated first</li>
+            <li>A numbered auction paddle for the Cellar Club</li>
+            <li>Right of first refusal on the Pre-Everything Reserve</li>
+          </ul>
+          <button class="btn" data-add="membership-reserve">Ascend</button>
+        </div>
+        <div class="plan">
+          <h3>Freshness Assurance</h3>
+          <div class="p-price">$15<small>/month</small></div>
+          <ul>
+            <li>A certified technician visits quarterly</li>
+            <li>Every lid re-tightened to spec, torque logged</li>
+            <li>Written confirmation that nothing has escaped</li>
+          </ul>
+          <button class="btn ghost" data-add="freshness-plan">Add the plan</button>
+        </div>
+      </div>
+      <p style="color: var(--muted); font-size: 0.85rem; margin-top: 22px;">Corporate atmospheres available for offices and events. Call (707) 555-0142 and ask for the desk of large rooms.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap split">
+      <div>
+        <p class="kicker">Freshness assurance</p>
+        <h2>Dale will be there Tuesday</h2>
+        <p>Air does not go bad, but lids can loosen, and a loose lid is a philosophical emergency. Our technicians carry calibrated torque wrenches and speak in reassuring tones. Each visit ends with a signed certificate stating that your nothing remains intact.</p>
+        <p>The plan covers unlimited jars, because once you own forty of them, you will want a professional involved.</p>
+      </div>
+      <img class="zoom" src="images/scene-technician.webp" alt="A technician re-tightening a jar lid with a torque wrench in a customer's kitchen" data-caption="A quarterly freshness visit. The seal held. The seal always holds.">
+    </div>
+  </section>
+
+  <section class="alt" id="club">
+    <div class="wrap split">
+      <img class="zoom" src="images/scene-auction.webp" alt="Bidders raising paddles at a Cellar Club auction for a single jar" data-caption="Lot 4: Grand Hotel Lobby 1998. Hammer price undisclosed, buyer smug.">
+      <div>
+        <p class="kicker">The Cellar Club</p>
+        <h2>Where vintages change hands</h2>
+        <p>Twice a year, Reserve members gather to bid on jars that no longer exist anywhere else. The 1998 Grand Hotel Lobby went for four figures last spring. The buyer described it as "an investment," and his family has learned not to follow up.</p>
+        <p>The crown of the cellar remains the 2019 Pre-Everything Reserve, harvested in an ordinary office in late 2019. Nose of birthday cake, handshakes, and unearned confidence. Eleven jars remain. We open none of them.</p>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 18px;">
+          <a class="btn" href="cellar.html">Visit the cellar</a>
+          <button class="btn ghost" id="bidBtn">Register to bid</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">From our members</p>
+        <h2>Breathing, reviewed</h2>
+      </div>
+      <div class="quotes">
+        <div class="quote">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"I opened my Alpine Meadow too quickly and now it is simply my kitchen. My fault entirely. Ordering two next month and a smaller kitchen."</p>
+          <cite>Bethany R., Austin</cite>
+        </div>
+        <div class="quote">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"The Casino Parking Lot vintage smells exactly like my second marriage. Astonishing terroir. I keep it on the mantel as a warning."</p>
+          <cite>Frank D., Scottsdale</cite>
+        </div>
+        <div class="quote">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"Dale re-tightened eleven lids in nine minutes and never once laughed at me. That kind of professionalism is worth fifteen dollars a month."</p>
+          <cite>Priscilla H., Naperville</cite>
+        </div>
+        <div class="quote">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+          <p>"My jar arrived empty. Support explained, patiently, that it was not. One star off because I still think about this at night."</p>
+          <cite>Marcus L., Denver</cite>
+        </div>
+        <div class="quote">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"Served the 1998 Grand Hotel Lobby at a dinner party. No one could smell anything. Everyone agreed it was magnificent. That is the hobby."</p>
+          <cite>Vivienne C., Charleston</cite>
+        </div>
+        <div class="quote">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"I canceled once. My apartment air felt ordinary, unlabeled, anonymous. I rejoined within the week and apologized to the jars."</p>
+          <cite>Tom B., Minneapolis</cite>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div>
+        <strong style="color: var(--mist);">Second Wind Air Cellars</strong><br>
+        3 Draft Lane, Sonoma Rim, California<br>
+        (707) 555-0142 &middot; cellar@secondwindair.example
+      </div>
+      <div>
+        <a href="#vintages">Vintages</a><br>
+        <a href="cellar.html">The cellar</a><br>
+        <a href="../">The Business Directory</a>
+      </div>
+      <p class="fine">Second Wind Air Cellars is a fictional business. Jars contain air. All air is, in the strictest sense, the same air. Tasting notes describe feelings, not contents. The Freshness Assurance Plan protects a seal on nothing and we consider it our finest product. Please breathe responsibly.</p>
+    </div>
+  </footer>
+
+  <!-- Cart drawer -->
+  <div class="drawer-veil" id="drawerVeil" hidden></div>
+  <aside class="drawer" id="cartDrawer" hidden aria-label="Shopping cellar">
+    <header>
+      <h3>Your cellar</h3>
+      <button class="close-x" id="cartClose" aria-label="Close cellar">&times;</button>
+    </header>
+    <div class="items" id="cartItems"></div>
+    <div class="totals">
+      <div class="row"><span>Total</span><strong id="cartTotal">$0</strong></div>
+      <button class="btn gold" id="checkoutBtn" style="width: 100%;">Check out</button>
+      <p style="font-size: 0.75rem; color: var(--muted); margin: 10px 0 0;">Shipping is calculated by weight, so it is nearly nothing, like the product.</p>
+    </div>
+  </aside>
+
+  <!-- Order confirmation -->
+  <div class="note-modal" id="orderModal" hidden>
+    <div class="note-card">
+      <h3>Laid down</h3>
+      <p>Your jars are being wrapped in straw by someone wearing gloves for no practical reason. A tasting card follows by post. Breathe nothing until it arrives.</p>
+      <button class="btn" id="orderClose">I shall wait</button>
+    </div>
+  </div>
+
+  <!-- Bid registration -->
+  <div class="note-modal" id="bidModal" hidden>
+    <div class="note-card">
+      <h3>Noted with interest</h3>
+      <p>Auction paddles are reserved for Barometric Reserve members. Your interest has been recorded in a leather book that exists.</p>
+      <button class="btn" id="bidClose">Understood</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  <script>
+    // The digital sommelier. The meters are theater; so is the profession.
+    (function () {
+      var NOTES = {
+        alpine: {
+          body: 34, finish: 71, regret: 4,
+          text: "Opens with pine and cold granite. Mid-palate of distant cowbell. The finish is long, clean, and faintly superior, as though the air knows where it summered."
+        },
+        coffee: {
+          body: 58, finish: 44, regret: 31,
+          text: "Immediate burr grinder and damp wool. Beneath that, an unfinished screenplay, two tables over, that will stay unfinished. Best breathed before 9 a.m., like ambition."
+        },
+        casino: {
+          body: 66, finish: 87, regret: 93,
+          text: "Sunbaked asphalt and menthol up front, opening onto valet exhaust and a payphone that still works. The regret is structural here, not a flaw. It is the vintage."
+        },
+        grandma: {
+          body: 49, finish: 90, regret: 8,
+          text: "Chicken stock, dish soap, a radio in another room. The finish is unconditional and lasts for decades. Panelists request this one on their birthdays."
+        },
+        fog: {
+          body: 27, finish: 62, regret: 15,
+          text: "Salt and spruce, carried on almost nothing. A lighthouse appears on the nose but cannot be confirmed. Serve cool, in a sweater you did not buy for yourself."
+        },
+        reserve: {
+          body: 88, finish: 96, regret: 1,
+          text: "Office birthday cake, fresh handshakes, unearned confidence. Harvested in late 2019 from a conference room that had plans. Regret reads near zero because nobody knew yet. We open none of these."
+        }
+      };
+
+      var sel = document.getElementById('noseSelect');
+      var btn = document.getElementById('noseBtn');
+      var out = document.getElementById('noseOut');
+      var typing = null;
+
+      function setMeter(id, valId, pct) {
+        document.getElementById(id).style.width = pct + '%';
+        document.getElementById(valId).textContent = pct + '%';
+      }
+
+      function nose() {
+        var v = NOTES[sel.value];
+        setMeter('mBody', 'vBody', v.body);
+        setMeter('mFinish', 'vFinish', v.finish);
+        setMeter('mRegret', 'vRegret', v.regret);
+        clearInterval(typing);
+        var i = 0;
+        out.innerHTML = '<span class="cursor"></span>';
+        typing = setInterval(function () {
+          i += 2;
+          out.innerHTML = '"' + v.text.slice(0, i) + '"' + (i < v.text.length ? '<span class="cursor"></span>' : '');
+          if (i >= v.text.length) clearInterval(typing);
+        }, 24);
+      }
+
+      btn.addEventListener('click', nose);
+    })();
+
+    document.getElementById('bidBtn').addEventListener('click', function () {
+      document.getElementById('bidModal').hidden = false;
+    });
+    document.getElementById('bidClose').addEventListener('click', function () {
+      document.getElementById('bidModal').hidden = true;
+    });
+  </script>
+</body>
+</html>
