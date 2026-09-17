@@ -28,6 +28,18 @@ Instructions for creating the fake website for each business.
 11. image display. where possible, clicking or tapping an image should open it in a modal.  this does not need to apply to background images or things like logos or header images.
 12. Messaging.  No matter what archtype or style is selected, the purpose of the business should be clear and unambiguous when users first land on the site, above the fold on the main page.  Taglines or slogans are okay, but make sure there is a clear explanation accompanying it.
 
+# Menu of Site Features
+
+Each business is different and will require different pages.  The archetype should drive the site features, but consider including some items from the "menu" where appropriate.  Do not include all of these.
+
+1. A FAQ.  Keep it mostly deadpan with a few subtle winks to the user.
+2. Testimonials page with interesting or funny testimonials.
+3. Some sort of interactive widget or tool, whether it be a slider or something more complex, if possible.
+4. A customer image gallery, instagram style. Use this as a more image heavy alternative to testimonials.
+5. if there are flavors or varieties or different types include a large gallery of all the different varieties that couldn't be shown on the home page.  something like "flavors" or "full menu", depending on the offering.  this might even be appropriate for non food based options it there is enough variety.
+6. A careers page.
+7. A press page with 2-3 blog posts and/or possibly explanations for past "incidents".  Keep any blog posts short but deadpan.
+
 # Marketing Images
 
 1. Create 3 marketing images for the business.  One should be portrait, one landscape, and one square. They should all be different, but similar in theme.  Each should be a marketing promotional poster/image for the business with at least one tag line and the business name.
@@ -58,13 +70,4 @@ When the website is complete, update the idea tracking files:
 6. Do not create more than 40 images per site during the initial build.  it is fine to go over this limit later if prompted manually.  Marketing images do not count towards this total.
 7. images showing the product or scenes of the product should have a subtle and tasteful watermark with the business name.
 
-# Site Design and Features
-
-Each business is different and requires different pages, but consider the following as needed:
-
-1. Large marketing images at the top of the page that illustrate the purpose of the company.
-2. Testimonials page with interesting or funny testimonials.
-3. Some sort of interactive widget or tool, whether it be a slider or something more complex, if possible.
-4. A customer image gallery, instagram style. Use this as a more image heavy alternative to testimonials.
-5. if there are flavors or varieties or different types include a large gallery of all the different varieties that couldn't be shown on the home page.  something like "flavors" or "full menu", depending on the offering.  this might even be appropriate for non food based options it there is enough variety.
 
