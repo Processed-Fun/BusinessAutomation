@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marge's Orbital Launch &amp; Diner</title>
+  <meta name="description" content="A roadside Kansas diner on Route 56 that also provides commercial satellite launch services. Pie and payloads since 1994.">
+  <link rel="icon" href="images/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Public+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <img src="images/logo.webp" alt="Marge's Orbital Launch &amp; Diner logo">
+        <strong>Marge's Orbital Launch &amp; Diner</strong>
+      </a>
+      <nav class="site-nav">
+        <a href="#menu">Menu</a>
+        <a href="#launch">Launch Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="gallery.html">The Counter</a>
+        <button class="cart-btn" id="cartBtn">Tab (0)</button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hero">
+    <img class="hero-bg" src="images/hero.webp" alt="">
+    <div class="wrap">
+      <span class="eyebrow">Route 56, Kansas. Est. 1994</span>
+      <h1>Hot Coffee. Cold Vacuum.</h1>
+      <p class="tag">Marge's is a diner that also puts satellites into low Earth orbit. The pie is baked every morning, the rocket lives out back behind the grain silo, and Tuesday's meatloaf comes with a free payload inspection.</p>
+      <a class="btn" href="#menu">See the Menu</a>
+      <a class="btn ghost" href="#launch">Book a Launch</a>
+    </div>
+  </div>
+
+  <section id="how">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">How It Works</span>
+        <h2>Counter to Orbit in Four Steps</h2>
+        <p>Same routine since 1994, give or take a scrubbed Tuesday.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <span class="num">1</span>
+          <h3>Take a booth</h3>
+          <p>Sit wherever, unless you booked a launch. Launch customers get booth six. It rattles the least, and the window faces the pad.</p>
+        </div>
+        <div class="step">
+          <span class="num">2</span>
+          <h3>Order</h3>
+          <p>Marge takes your eggs and your orbital parameters on the same green pad. If you don't know your inclination, she'll pick one. She's good at it.</p>
+        </div>
+        <div class="step">
+          <span class="num">3</span>
+          <h3>We bake and fuel</h3>
+          <p>Bill fuels Sweet Marge II behind the silo while your pie warms in the case. Neither of those gets rushed. Ask Bill why once, and only once.</p>
+        </div>
+        <div class="step">
+          <span class="num">4</span>
+          <h3>Liftoff</h3>
+          <p>Launches go weather and church permitting. Your satellite goes up, your check comes out, and the regulars clap at the window like they didn't clap last week.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="menu">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">From the Kitchen</span>
+        <h2>Menu Favorites</h2>
+        <p>The stuff regulars order without looking. Tap a photo for a closer look, or see the <a href="menu.html">full menu and flight manifest</a>.</p>
+      </div>
+      <div class="menu-grid">
+        <div class="menu-card">
+          <img class="zoom" src="images/product-pie.webp" alt="A slice of Re-Entry Cherry pie with a lattice crust and a tiny rocket flag" data-caption="Re-Entry Cherry. Named for the glow, and for how fast it disappears.">
+          <div class="body">
+            <span class="badge hot">House Pride</span>
+            <h3>Re-Entry Cherry Pie</h3>
+            <p class="notes">Lattice crust, sour cherries from the Hendersons' orchard, served warm enough to fog your glasses. Named for the glow.</p>
+            <div class="row">
+              <span class="price">$4.50<span>/slice</span></span>
+              <button class="btn small" data-add="pie">Add to Tab</button>
+            </div>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img class="zoom" src="images/product-meatloaf.webp" alt="Tuesday meatloaf special with mashed potatoes, green beans, and a payload inspection clipboard" data-caption="The Tuesday special. The clipboard is not decorative.">
+          <div class="body">
+            <span class="badge">Tuesdays Only</span>
+            <h3>Meatloaf Special</h3>
+            <p class="notes">Two thick slices, mashed potatoes, green beans, roll. Comes with a free payload inspection while you eat. Denise from the co-op does the torque checks.</p>
+            <div class="row">
+              <span class="price">$9.75<span>/plate</span></span>
+              <button class="btn small" data-add="meatloaf">Add to Tab</button>
+            </div>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img class="zoom" src="images/product-breakfast.webp" alt="The Countdown Breakfast: eggs, hash browns, bacon, and pancakes, with a rocket visible out the window" data-caption="The Countdown. Ten items if you count each pancake, which we do.">
+          <div class="body">
+            <h3>The Countdown Breakfast</h3>
+            <p class="notes">Eggs, hash browns, bacon, two pancakes. Served all day, because a launch window doesn't care when you woke up.</p>
+            <div class="row">
+              <span class="price">$8.25<span>/plate</span></span>
+              <button class="btn small" data-add="breakfast">Add to Tab</button>
+            </div>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img class="zoom" src="images/product-coffee.webp" alt="A diner coffee mug sitting on a laminated menu with a hand-drawn delta-v chart" data-caption="Bottomless coffee on the laminate. The delta-v chart is under the saucer.">
+          <div class="body">
+            <h3>Bottomless Coffee</h3>
+            <p class="notes">Refilled before you ask. The menu laminate has a delta-v chart on the back, so you can budget your burn between refills.</p>
+            <div class="row">
+              <span class="price">$2.10<span>/mug</span></span>
+              <button class="btn small" data-add="coffee">Add to Tab</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="launch">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">From the Pad</span>
+        <h2>Launch Services</h2>
+        <p>Behind the grain silo, past the dumpsters, mind the cat. Launches fly Tuesday through Saturday, weather and church permitting.</p>
+      </div>
+      <div class="menu-grid launch">
+        <div class="menu-card">
+          <img class="zoom" src="images/product-rideshare.webp" alt="A small cubesat packed in a wooden crate lined with checkered diner napkins" data-caption="A rideshare payload, packed the way Marge packs everything.">
+          <div class="body">
+            <span class="badge hot">Most Ordered</span>
+            <h3>Rideshare Seat</h3>
+            <p class="notes">Your smallsat rides to low Earth orbit with whoever else is going up that week. Packed in checkered napkins, secured like leftovers, treated better than most passengers.</p>
+            <div class="row">
+              <span class="price">$4,900<span>/kg to LEO</span></span>
+              <button class="btn small" data-add="rideshare">Add to Tab</button>
+            </div>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img class="zoom" src="images/product-integration.webp" alt="A gold-foiled satellite on a stainless steel prep table next to the pie case" data-caption="Payload integration on the clean side of the kitchen. Handle like pie.">
+          <div class="body">
+            <h3>Payload Integration</h3>
+            <p class="notes">We mate your satellite to the adapter on the stainless prep table, the one the health inspector likes. The ticket above the station says HANDLE LIKE PIE, and everyone does.</p>
+            <div class="row">
+              <span class="price">$650<span>/payload</span></span>
+              <button class="btn small" data-add="integration">Add to Tab</button>
+            </div>
+          </div>
+        </div>
+        <div class="menu-card">
+          <img class="zoom tall" src="images/product-dedicated.webp" alt="Sweet Marge II, a slim white and red rocket standing on a small pad behind a grain silo" data-caption="Sweet Marge II on the pad. Sweet Marge I is a longer story.">
+          <div class="body">
+            <span class="badge">Dedicated</span>
+            <h3>Sweet Marge II, Whole Rocket</h3>
+            <p class="notes">The entire vehicle, your orbit, your schedule, within reason. Sundays are out. Second Tuesdays are bingo, so those are out too.</p>
+            <div class="row">
+              <span class="price">Call for quote</span>
+              <a class="btn small" href="#quote">Ask Marge</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <div class="split">
+        <img class="zoom" src="images/marge.webp" alt="Marge behind the counter holding a coffee pot and writing trajectory equations on an order pad" data-caption="Marge, mid-refill, mid-trajectory.">
+        <div>
+          <span class="eyebrow">The Boss</span>
+          <h2>Marge Does the Math</h2>
+          <p>Marge ran the numbers for the co-op for twenty years before she bought the diner, and she never stopped running numbers. She works out your insertion burn on the same pad she takes your order on, usually between refills, usually faster than the software Bill bought her one Christmas.</p>
+          <p>She has scrubbed exactly four launches for weather and one for a pie emergency. She stands by all five calls.</p>
+          <a class="btn dark" href="#quote">Get a Quote From Marge</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <span class="eyebrow">Pad Operations</span>
+          <h2>Bill Runs the Back Lot</h2>
+          <p>Mission control is a feed-store counter in the barn with two monitors older than most of our customers. Bill built the pad himself in '94, pours the propellant like it's syrup, and keeps the big red button under a cover marked ASK MARGE FIRST.</p>
+          <p>He has never once pushed it without asking Marge first. That rule survived two anniversaries and one tornado warning.</p>
+          <a class="btn dark" href="menu.html">See the Flight Manifest</a>
+        </div>
+        <img class="zoom" src="images/bill.webp" alt="Bill in overalls at a barn mission control desk with old monitors and a covered red button" data-caption="Mission control, barn side. The button cover says ASK MARGE FIRST.">
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <div class="split">
+        <img class="zoom" src="images/booth-six.webp" alt="A red vinyl window booth with a Booth Six plaque, pie on the table, and the launch pad visible outside" data-caption="Booth six. Reserved for launch customers and people who tip like launch customers.">
+        <div>
+          <span class="eyebrow">Best Seat in the House</span>
+          <h2>Booth Six</h2>
+          <p>Every launch customer gets booth six for the duration of their campaign. It has the clearest view of the pad, a plaque, and the table that rattles the least at ignition. Regulars know to clear out on launch days. Most of them stand in the parking lot anyway, holding their coffee.</p>
+          <p>If the booth is taken when you arrive, someone lied about having a launch. It happens more than you'd think.</p>
+          <a class="btn dark" href="gallery.html">See Launch Day Photos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="calc">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">The Napkin Estimate</span>
+        <h2>Price Out Your Launch and Lunch</h2>
+        <p>Same math Marge does on the pad, minus her handwriting. The total is an estimate. The pie is a certainty.</p>
+      </div>
+      <div class="calc">
+        <label for="orbitSelect">Where's it going?</label>
+        <select id="orbitSelect" aria-label="Destination orbit">
+          <option value="leo" selected>Low Earth orbit, the usual</option>
+          <option value="sso">Sun-synchronous, for the photographers</option>
+          <option value="gto">Geostationary transfer, the long haul</option>
+          <option value="barn">Just over the Hendersons' barn, we don't ask</option>
+        </select>
+        <label for="massSlider">Payload mass: <span id="massVal">25</span> kg</label>
+        <input type="range" id="massSlider" min="1" max="200" step="1" value="25" aria-label="Payload mass in kilograms">
+        <label for="pieSlider">Pie while you wait: <span id="pieVal">2</span> slices</label>
+        <input type="range" id="pieSlider" min="0" max="8" step="1" value="2" aria-label="Slices of pie">
+        <label class="check" for="sundayCheck">
+          <input type="checkbox" id="sundayCheck">
+          It has to be a Sunday
+        </label>
+        <div class="readout">
+          <div><strong id="launchCost">$122,500</strong><span>launch, estimated</span></div>
+          <div><strong id="lunchCost">$9.00</strong><span>lunch, exact</span></div>
+          <div><strong id="totalCost">$122,509</strong><span>on one check</span></div>
+        </div>
+        <p class="verdict" id="calcVerdict"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Word Around the Counter</span>
+        <h2>What Customers Say</h2>
+        <p>Taken down word for word, mostly by Marge, on the pad.</p>
+      </div>
+      <div class="quotes">
+        <div class="quote">
+          I came in for the Tuesday meatloaf and left with a three-satellite weather constellation. Marge did the coverage analysis on my placemat while I was still on the green beans. Our old launch provider took nine months and never once refilled my coffee.
+          <footer>Carter V., CTO of a startup he'd rather not name, booth six, twice</footer>
+        </div>
+        <div class="quote">
+          They held my launch twenty minutes because Pastor Dan ran long on the sermon. Nobody complained. When it finally went up, the whole congregation was in the parking lot and Bill gave the countdown over the pie case intercom. My cubesat is in a nominal orbit and I cried a little.
+          <footer>Yuki A., grad student, drove down from Manhattan, Kansas</footer>
+        </div>
+      </div>
+      <p style="text-align:center; margin-top:34px;">
+        <a class="btn" href="gallery.html">More From the Counter</a>
+      </p>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Pricing</span>
+        <h2>Ways to Run a Tab</h2>
+        <p>Lunch prices are on the board. Orbit prices are below. Both include coffee.</p>
+      </div>
+      <div class="price-grid">
+        <div class="price-card">
+          <h3>The Counter</h3>
+          <div class="amount">$2.10+<span>/visit</span></div>
+          <ul>
+            <li>Full diner menu, all day</li>
+            <li>Bottomless coffee</li>
+            <li>Launch viewing from the lot, free</li>
+            <li>No reservation, no commitment</li>
+          </ul>
+          <a class="btn" href="#menu">Order Something</a>
+        </div>
+        <div class="price-card featured">
+          <h3>Rideshare</h3>
+          <div class="amount">$4,900<span>/kg to LEO</span></div>
+          <ul>
+            <li>Next available seat on Sweet Marge II</li>
+            <li>Payload integration at the prep table</li>
+            <li>Booth six on launch day</li>
+            <li>One slice of Re-Entry Cherry, on the house</li>
+          </ul>
+          <button class="btn" data-add="rideshare">Book a Seat</button>
+        </div>
+        <div class="price-card">
+          <h3>Dedicated Launch</h3>
+          <div class="amount">Call us<span>, Marge answers</span></div>
+          <ul>
+            <li>The whole rocket, your orbit</li>
+            <li>Trajectory by Marge, on the pad</li>
+            <li>Launch date weather and church permitting</li>
+            <li>Meatloaf for your whole team on inspection day</li>
+          </ul>
+          <a class="btn" href="#quote">Request a Quote</a>
+        </div>
+        <div class="price-card">
+          <h3>The Standing Order</h3>
+          <div class="amount">$140<span>/month</span></div>
+          <ul>
+            <li>Your own mug on the wall</li>
+            <li>Priority launch windows</li>
+            <li>One payload inspection a month, meatloaf included</li>
+            <li>Bill waves when you drive past</li>
+          </ul>
+          <button class="btn" data-add="standing">Start a Standing Order</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark" id="quote">
+    <div class="wrap">
+      <div class="form-box">
+        <span class="eyebrow">Dedicated Launch Quotes</span>
+        <h2 style="margin:8px 0 0;">Ask Marge</h2>
+        <p>You can also call, and Marge answers, but she'll tell you to slow down and eat something first. The form skips that part. She calls back between the lunch rush and the 4:15 static fire.</p>
+        <form id="quoteForm">
+          <div>
+            <label for="qName">Name</label>
+            <input id="qName" type="text" required autocomplete="name" placeholder="Your name">
+          </div>
+          <div>
+            <label for="qEmail">Email</label>
+            <input id="qEmail" type="email" required autocomplete="email" placeholder="you@example.com">
+          </div>
+          <div>
+            <label for="qOrbit">Where's it headed?</label>
+            <select id="qOrbit">
+              <option>Low Earth orbit</option>
+              <option>Sun-synchronous</option>
+              <option>Geostationary transfer</option>
+              <option>I'll know it when Marge says it</option>
+            </select>
+          </div>
+          <div>
+            <label for="qMsg">Tell us about the payload</label>
+            <textarea id="qMsg" rows="3" placeholder="Mass, size, how fragile, and whether it can sit next to a pie warmer for an afternoon."></textarea>
+          </div>
+          <button class="btn" type="submit">Send It to Marge</button>
+        </form>
+        <div id="quoteDone" hidden>
+          <p style="margin-top:18px;"><strong>Got it.</strong> Marge will call you back between the lunch rush and the 4:15 static fire. If a man answers, that's Bill. Tell him anyway, he writes things down.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>
+        <strong style="color:#eef6f2;">Marge's Orbital Launch &amp; Diner</strong><br>
+        Route 56, just past the water tower.<br>
+        Weather and church permitting since 1994.
+      </div>
+      <nav>
+        <a href="menu.html">Full Menu &amp; Flight Manifest</a>
+        <a href="gallery.html">The Counter</a>
+        <a href="marketing.html">Posters &amp; Marketing</a>
+        <a href="../index.html">The Business Directory</a>
+      </nav>
+      <div>
+        Marge's is a fictional business.<br>
+        No pie was harmed in any launch.<br>
+        Booth six is real in our hearts.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Tab drawer -->
+  <div class="drawer-veil" id="drawerVeil" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" hidden aria-label="Your tab">
+    <button class="cart-close" id="cartClose" aria-label="Close tab">&times;</button>
+    <h2>Your Tab</h2>
+    <p class="fine">Marge keeps it on the pad by the register. This is the same tab, only legible.</p>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-total"><span>Total</span><span id="cartTotal">$0</span></div>
+    <button class="btn" id="checkoutBtn">Settle Up</button>
+  </aside>
+
+  <!-- Order confirmation -->
+  <div class="order-modal" id="orderModal" hidden>
+    <div class="box">
+      <h3>Tab Settled</h3>
+      <p>Marge rang it up and wrote your name on the launch calendar in pencil, which around here is binding. Food's up in ten. Orbits take a little longer.</p>
+      <button class="btn" id="orderClose">Close</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

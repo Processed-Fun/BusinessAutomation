@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rates &amp; Service | Gravy District No. 3</title>
+<meta name="description" content="Rate schedules, service applications, billing, and forms for Gravy District No. 3.">
+<link rel="icon" type="image/webp" href="images/logo.webp">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="official-banner">
+  <div class="wrap"><span class="flag" aria-hidden="true"></span> An official website of Gravy District No. 3, a Wisconsin municipal gravy utility. It is not a store, although you can start service here.</div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <img class="seal" src="images/logo.webp" alt="Seal of Gravy District No. 3">
+    <div class="site-title">
+      <a href="index.html"><span class="name">Gravy District No. 3</span></a>
+      <span class="sub">Public Gravy Utility &bull; Townships of Butternut Falls, Roux Prairie, and Lower Giblet, Wisconsin</span>
+    </div>
+  </div>
+</header>
+
+<nav class="main-nav" aria-label="Main">
+  <div class="wrap">
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">&#9776; Menu</button>
+    <ul class="nav-list" id="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="rates.html" class="current">Rates &amp; Service</a></li>
+      <li><a href="outages.html">Outages &amp; Alerts</a></li>
+      <li><a href="board.html">Board &amp; Reports</a></li>
+      <li><a href="notices.html">News &amp; Notices</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <p class="breadcrumb"><a href="index.html">Home</a> &rsaquo; Rates &amp; Service</p>
+
+  <h1>Rates &amp; Service</h1>
+
+  <p>Rates are set by the Board of Gravy Commissioners after a public hearing and apply District-wide. The schedules below took effect January 1, 2026 (Resolution 2025-19). Gravy is billed quarterly by metered volume. All customers pay the base charge whether or not they draw gravy, which comes up at every hearing, and the answer is always the same: the mains must stay hot.</p>
+
+  <h2 id="residential">Residential rate schedule</h2>
+
+  <div class="table-scroll">
+  <table class="data">
+    <caption>Schedule R-1: Residential service, effective January 1, 2026</caption>
+    <thead>
+      <tr><th>Charge</th><th>Turkey system</th><th>Beef system</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Quarterly base charge (per connection)</td><td>$18.40</td><td>$18.40</td></tr>
+      <tr><td>Volumetric charge, first 400 gallons</td><td>$4.85 per 100 gal</td><td>$5.20 per 100 gal</td></tr>
+      <tr><td>Volumetric charge, over 400 gallons</td><td>$6.10 per 100 gal</td><td>$6.55 per 100 gal</td></tr>
+      <tr><td>Dual-system households (both meters)</td><td colspan="2">Base charges apply to each meter. There is no discount. See FAQ.</td></tr>
+      <tr><td>Reduced Viscosity Rate (seniors and fixed incomes)</td><td colspan="2">15 percent off volumetric charges. Apply with Form GD-22.</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="notice-box">
+    <h3>Thanksgiving surge tariff</h3>
+    <p>From November 20 through November 30, volumetric charges on the turkey system are multiplied by 2.5. This is the surge tariff. It exists because in 1994 the entire district drew gravy at 12:40 PM on the same day and the east tank emptied in nine minutes. Customers who pre-order holiday volume by November 1 (Form GD-31) are exempt from the multiplier for the reserved amount. The beef system is not surcharged in November, and the Board would like to gently remind residents that beef gravy is fine on turkey.</p>
+  </div>
+
+  <h2 id="commercial">Commercial and industrial service</h2>
+
+  <p>Restaurants, supper clubs, school kitchens, and the canning plant are served under metered commercial schedules with demand charges based on peak draw. Because commercial loads vary, the District does not publish a flat commercial rate. Call the District office at (715) 555-0162 for a metered quote, or submit Form GD-14C and an engineer will visit your property, look at your equipment, and sigh in a way that tells you roughly what the quote will be.</p>
+
+  <div class="table-scroll">
+  <table class="data">
+    <caption>Connection and miscellaneous fees</caption>
+    <thead>
+      <tr><th>Item</th><th>Fee</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>New residential tap, turkey main</td><td>$410.00</td></tr>
+      <tr><td>New residential tap, beef main</td><td>$455.00 (the beef main runs deeper)</td></tr>
+      <tr><td>Meter test, at customer request</td><td>$35.00, refunded if the meter is wrong</td></tr>
+      <tr><td>Reconnection after disconnection for nonpayment</td><td>$60.00</td></tr>
+      <tr><td>Cross-connection citation (Class B ordinance violation)</td><td>$250.00 first offense, plus decontamination at cost</td></tr>
+      <tr><td>Returned check</td><td>$25.00</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2 id="pay">Pay your bill</h2>
+
+  <p>Bills are mailed the first week of the quarter and are due in 30 days. You can pay by mail, in person at the District office (exact change appreciated, not required), through the drop slot to the left of the door, or online.</p>
+  <div class="btn-row">
+    <button class="btn" id="pay-online-btn">Pay Online (RatePay Portal)</button>
+  </div>
+  <div class="form-result error" id="pay-result">The RatePay portal is offline for scheduled maintenance. Maintenance began in March 2024. Payments by mail and drop slot continue to be processed the traditional way, which is Doris.</div>
+
+  <h2 id="start-service">Start service (Form GD-14)</h2>
+
+  <p>New residents can apply for gravy service below. Applications are processed in the order received, typically within five business days. A deposit is not required if you can name your two nearest neighbors and one of them vouches for you.</p>
+
+  <form class="gov-form" id="service-form" novalidate>
+    <p class="form-id">FORM GD-14 (REV. 3/2026)</p>
+    <fieldset>
+      <legend>Applicant</legend>
+      <label for="sf-name">Full legal name <span class="req">*</span></label>
+      <input type="text" id="sf-name" name="name" required autocomplete="name">
+      <label for="sf-addr">Service address <span class="req">*</span> <span class="hint">(fire number and road)</span></label>
+      <input type="text" id="sf-addr" name="address" required autocomplete="street-address">
+      <label for="sf-town">Township <span class="req">*</span></label>
+      <select id="sf-town" name="township" required>
+        <option value="">Select a township</option>
+        <option>Butternut Falls</option>
+        <option>Roux Prairie</option>
+        <option>Lower Giblet</option>
+        <option>Other (service not available, but we admire the optimism)</option>
+      </select>
+      <label for="sf-phone">Daytime telephone</label>
+      <input type="tel" id="sf-phone" name="phone" autocomplete="tel">
+    </fieldset>
+    <fieldset>
+      <legend>Requested service</legend>
+      <label class="radio-line"><input type="radio" name="system" value="turkey" checked> Turkey system only</label>
+      <label class="radio-line"><input type="radio" name="system" value="beef"> Beef system only</label>
+      <label class="radio-line"><input type="radio" name="system" value="both"> Both systems (two meters, two base charges, one very good December)</label>
+      <label for="sf-est">Estimated quarterly use <span class="hint">(most households use 200 to 300 gallons)</span></label>
+      <select id="sf-est" name="estimate">
+        <option>Under 200 gallons</option>
+        <option selected>200 to 300 gallons</option>
+        <option>300 to 500 gallons</option>
+        <option>Over 500 gallons (a demand study may be required)</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend>Certification</legend>
+      <label class="radio-line"><input type="checkbox" id="sf-cert" name="cert"> I certify that the information above is true and that I will not connect the turkey and beef systems to each other, on purpose or through carelessness, ever. <span class="req">*</span></label>
+    </fieldset>
+    <button class="btn" type="submit">Submit Application</button>
+    <div class="form-result" id="service-result"></div>
+  </form>
+
+  <h2 id="forms">Forms &amp; documents</h2>
+
+  <p>Forms are also available at the District office counter, in the rack by the door.</p>
+
+  <ul class="doc-list">
+    <li><a class="doc-link">Form GD-14: Application for Residential Gravy Service</a> <span class="doc-meta">PDF, 0.3 MB</span></li>
+    <li><a class="doc-link">Form GD-14C: Application for Commercial or Industrial Service</a> <span class="doc-meta">PDF, 0.4 MB</span></li>
+    <li><a class="doc-link">Form GD-22: Reduced Viscosity Rate Application</a> <span class="doc-meta">PDF, 0.2 MB</span></li>
+    <li><a class="doc-link">Form GD-31: Thanksgiving Volume Pre-Order</a> <span class="doc-meta">PDF, 0.2 MB</span></li>
+    <li><a class="doc-link">Form GD-9: Cross-Connection Self-Report (Amnesty Program)</a> <span class="doc-meta">PDF, 0.3 MB</span></li>
+    <li><a class="doc-link">2026 Rate Schedule, Complete (Resolution 2025-19)</a> <span class="doc-meta">PDF, 1.8 MB</span></li>
+    <li><a class="doc-link">Service Territory Map with Main Depths</a> <span class="doc-meta">PDF, 14.6 MB</span></li>
+  </ul>
+  <div class="form-result error" id="doc-result">The District document portal is undergoing scheduled maintenance. Estimated completion: 2019. Paper copies are available at the office counter.</div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <h4>Gravy District No. 3</h4>
+      <p>N4881 County Road H<br>Butternut Falls, WI 54893<br>(715) 555-0162</p>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <ul>
+        <li><a href="rates.html">Rates &amp; Service</a></li>
+        <li><a href="outages.html">Outages &amp; Alerts</a></li>
+        <li><a href="rates.html#forms">Forms &amp; Documents</a></li>
+        <li><a href="faq.html">Frequently Asked Questions</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Government</h4>
+      <ul>
+        <li><a href="board.html">Board of Gravy Commissioners</a></li>
+        <li><a href="board.html#quality">Annual Gravy Quality Report</a></li>
+        <li><a href="notices.html">Public Notices</a></li>
+        <li><a href="marketing.html">Public Outreach Materials</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="fine">
+    Gravy District No. 3 is an equal opportunity provider. Turkey and beef are separate systems. This site is part of <a href="../index.html">The Business Directory</a>.
+  </div>
+</footer>
+
+<div id="img-modal" role="dialog" aria-modal="true" aria-label="Enlarged image">
+  <button class="modal-close" aria-label="Close">&times;</button>
+  <img src="" alt="">
+  <div class="modal-caption"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

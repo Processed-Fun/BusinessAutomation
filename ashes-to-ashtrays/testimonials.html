@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Showroom Wall | Ashes to Ashtrays</title>
+  <meta name="description" content="Testimonials from Ashes to Ashtrays clients. No one has ever read the wall aloud without pausing.">
+  <link rel="icon" href="images/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <img src="images/logo.webp" alt="Ashes to Ashtrays logo">
+        <strong>Ashes to Ashtrays</strong>
+      </a>
+      <nav class="site-nav">
+        <a href="index.html#collection">The Collection</a>
+        <a href="index.html#heirloom">Heirloom Program</a>
+        <a href="index.html#pricing">Pricing</a>
+        <button class="cart-btn" id="cartBtn">Arrangements (0)</button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="alt">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Testimonials</span>
+        <h2>The Showroom Wall</h2>
+        <p>Every word below hangs in our showroom, engraved on small brass plaques. Staff are instructed not to time visitors, though the record for reading it aloud without pausing stands at four plaques.</p>
+      </div>
+      <div class="quotes light">
+        <div class="quote">
+          Dad spent thirty years telling me these things would kill me. Now he attends every cigarette, and I swear the ember burns a little lower out of respect. We have never been closer.
+          <footer>Deborah K., daughter and client</footer>
+        </div>
+        <div class="quote">
+          I ordered the Poetic Justice for my mother-in-law. The plaque says "Some Things Deserve to Burn." Guests laugh, then they read the dates, then they sit down for a while.
+          <footer>Martin H., son-in-law, at peace</footer>
+        </div>
+        <div class="quote">
+          My husband never smoked. Neither do I. We just liked the idea of him holding something for me again. The consultant did not blink. That is why we chose this house.
+          <footer>Ruth A., married 51 years</footer>
+        </div>
+        <div class="quote">
+          The coaster set arrived in velvet. My sister took two, I took two, and for the first time since the funeral we agreed on a division of assets.
+          <footer>The Alvarez estate, settled</footer>
+        </div>
+        <div class="quote">
+          I quit smoking the day the vessel arrived. It sits on the mantel anyway. Empty. Watching. I have never been prouder to disappoint him.
+          <footer>Craig D., eleven months smoke-free</footer>
+        </div>
+        <div class="quote">
+          Grandpa always said he would never leave the porch. The Traveler changed that. He has been to Reno twice and, through a mix-up with my coat pockets, one parent-teacher conference.
+          <footer>A granddaughter, Nevada</footer>
+        </div>
+        <div class="quote">
+          We enrolled in the Heirloom Program in 2004. Four generations in, it seats nine. Thanksgiving is held around it, per the will, and honestly the turkey has never had a better centerpiece.
+          <footer>The Pemberton family, generation four</footer>
+        </div>
+        <div class="quote">
+          I asked the consultant if it was disrespectful. She said "only if you miss." I signed immediately.
+          <footer>Walt F., client since Tuesday</footer>
+        </div>
+        <div class="quote">
+          Mother requested this herself, in writing, years ago. The lawyer read it out and the whole room went quiet. She would have loved that part most.
+          <footer>Her daughters, complying</footer>
+        </div>
+        <div class="quote">
+          It came with a card that explains the concept to guests. I have had to reorder the cards three times. The ashtray is fine. The guests needed the cards.
+          <footer>Simone V., frequent host</footer>
+        </div>
+      </div>
+      <p style="text-align:center; margin-top:40px;">
+        <a class="btn dark" href="index.html#collection">Browse the Collection</a>
+        <a class="btn dark" href="index.html#consult">Arrange a Consultation</a>
+      </p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>
+        <strong style="color:#f1ece3;">Ashes to Ashtrays</strong><br>
+        A legacy ceramics studio.<br>
+        Kiln-fired with care since 1998.
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="marketing.html">Posters &amp; Marketing</a>
+        <a href="../index.html">The Business Directory</a>
+      </nav>
+      <div>
+        Ashes to Ashtrays is a fictional business.<br>
+        No urns were harmed. Grandma is fine.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart drawer -->
+  <div class="drawer-veil" id="drawerVeil" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" hidden aria-label="Your arrangements">
+    <button class="cart-close" id="cartClose" aria-label="Close arrangements">&times;</button>
+    <h2>Your Arrangements</h2>
+    <p class="fine">Packed in velvet. Delivered with condolences.</p>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-total"><span>Total</span><span id="cartTotal">$0</span></div>
+    <button class="btn" id="checkoutBtn">Complete Arrangements</button>
+  </aside>
+
+  <!-- Order confirmation -->
+  <div class="order-modal" id="orderModal" hidden>
+    <div class="box">
+      <h3>Arrangements Complete</h3>
+      <p>Your order is with our studio. A courier will contact you regarding the urn. Handle the coming weeks gently, and the vessel however you like. It has survived worse.</p>
+      <button class="btn" id="orderClose">Close</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
