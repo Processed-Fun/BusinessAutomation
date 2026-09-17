@@ -20,7 +20,8 @@ The master index of every business idea ever created, built or not. One row per 
 | Blinkr | A venture-backed startup whose app reminds you to blink. | idea | | saas-product | |
 | Marge's Orbital Launch & Diner | A roadside Kansas diner that also provides commercial satellite launch services. | built | marges-orbital | landing-page | americana-roadside |
 | Gravy District No. 3 | The public gravy utility serving three townships in rural Wisconsin. | idea | | gov-institutional | |
-| Utensil Labs | A company that publishes complete developer-style technical documentation for the household spoon. | idea | | docs-site | |
 | The Cul-de-Sac Courant | A hard-hitting subscription newspaper covering the eight houses of one suburban cul-de-sac. | idea | | editorial | |
-| Widowed Sock Company | An online store selling single socks that lost their partners, each with documented provenance. | idea | | ecommerce-catalog | |
 | Alibi & Associates | A white-shoe professional firm that crafts bespoke excuses for getting out of social obligations. | idea | | professional-services | |
+| Lint for Nests | A nonprofit that collects donated belly button lint to insulate nests for orphaned songbirds. | idea | | nonprofit | |
+| Mist O' Meat | An As-Seen-On-TV aerosol spray that gives any food the flavor of pot roast. | idea | | infomercial | |
+| Acquired Taste Academy | An online academy with a full curriculum for learning to love the world's most upsetting flavors. | idea | | education | |

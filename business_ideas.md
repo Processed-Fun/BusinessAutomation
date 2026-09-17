@@ -26,16 +26,6 @@ When a website is built for an idea, its entry is copied to `business.md` in the
 
 **Archetype:** gov-institutional
 
-## Utensil Labs
-
-**Short description:** A company that publishes complete developer-style technical documentation for the household spoon.
-
-**Long description:** Utensil Labs maintains the definitive documentation portal for Spoon, currently at version 2.1 LTS. The docs include a Quickstart ("Hold the narrow end"), a full API reference (scoop(), stir(), tap(twice) ), troubleshooting guides ("Spoon returns fork-like behavior"), a migration guide from Fork, release notes with breaking changes ("2.0 deprecates the knuckle grip"), and a security advisory page for the infamous soup overflow. Enterprise customers can purchase a support contract with guaranteed four-hour response for production spoon incidents.
-
-**Themes and joke:** The most mundane object on Earth treated as enterprise software (theme 8, in the shape of theme 5's uselessness). The joke is flawless developer-documentation culture — versioning, LTS releases, migration guides, SLAs — applied to an object whose entire manual is "it's a spoon."
-
-**Archetype:** docs-site
-
 ## The Cul-de-Sac Courant
 
 **Short description:** A hard-hitting subscription newspaper covering the eight houses of one suburban cul-de-sac.
@@ -46,16 +36,6 @@ When a website is built for an idea, its entry is copied to `business.md` in the
 
 **Archetype:** editorial
 
-## Widowed Sock Company
-
-**Short description:** An online store selling single socks that lost their partners, each with documented provenance.
-
-**Long description:** The Widowed Sock Company rescues single socks and rehomes them to people who have lost the opposite sock. Every listing includes the sock's provenance ("separated from its partner at a Days Inn in Tulsa, 2019"), a condition grade from Mint to Well-Loved, and a certificate of singleness. Shoppers browse by size, fiber, tragedy, and estimated compatibility with their own surviving sock. The premium Reunion Service claims a 4% match rate, and the returns policy notes that returned socks "go back into the community, where they belong."
-
-**Themes and joke:** A useless product (theme 5) sold with luxury provenance and estate-sale solemnity (theme 4, with a wisp of theme 3's darkness). The joke is a full e-commerce operation — grading, certificates, matchmaking — built on laundry attrition.
-
-**Archetype:** ecommerce-catalog
-
 ## Alibi & Associates
 
 **Short description:** A white-shoe professional firm that crafts bespoke excuses for getting out of social obligations.
@@ -65,4 +45,34 @@ When a website is built for an idea, its entry is copied to `business.md` in the
 **Themes and joke:** Dubious legality-adjacent services (theme 6) delivered with the hushed gravitas of a prestigious law firm. The joke is white-shoe professional-services culture — practice areas, partner bios, retainers, confidentiality — applied to lying to your friends.
 
 **Archetype:** professional-services
+
+## Lint for Nests
+
+**Short description:** A nonprofit that collects donated belly button lint to insulate nests for orphaned songbirds.
+
+**Long description:** Lint for Nests is a 501(c)(3) fiber-recovery charity whose volunteers collect, sort, and sanitize donated navel lint at drive-up Lint Drives in church parking lots across the Midwest. The site features an impact thermometer ("41 pounds recovered this quarter"), heartbreaking rescue stories with before-and-after nest photos, and giving tiers from Lint Friend to the prestigious Golden Navel Circle. Monthly sustaining donors receive a newsletter, a window decal, and a personalized certificate naming a warbler after them. The FAQ patiently explains, twice, why the lint must come from a navel.
+
+**Themes and joke:** Simply gross (theme 2) wrapped in earnest charity culture. The joke is the full nonprofit apparatus — impact metrics, donor tiers, urgent year-end appeals — mobilized around the least dignified donation a human body can make.
+
+**Archetype:** nonprofit
+
+## Mist O' Meat
+
+**Short description:** An As-Seen-On-TV aerosol spray that gives any food the flavor of pot roast.
+
+**Long description:** Mist O' Meat is "the flavor revolution grandma never asked for": a pressurized can of concentrated pot roast essence that transforms cereal, fruit salad, or a birthday cake into a hearty meat experience. The pitch hits every direct-response beat: a black-and-white "before" clip of a family staring sadly at unsprayed yogurt, a countdown timer that resets when it hits zero, a testimonial from Doug in Ohio who has misted every meal since March, and the inevitable offer to double your order for just the cost of shipping and handling. Flavors include Original Roast, Breakfast Sausage Fog, and the limited Holiday Ham Cloud.
+
+**Themes and joke:** Gross flavors (theme 1) in full infomercial regalia. The joke is direct-response TV's relentless urgency — BUT WAIT, act now, operators standing by — deployed to sell meat vapor nobody wants once, let alone twice.
+
+**Archetype:** infomercial
+
+## Acquired Taste Academy
+
+**Short description:** An online academy with a full curriculum for learning to love the world's most upsetting flavors.
+
+**Long description:** Acquired Taste Academy offers structured coursework for palate development, from the 101 survey (Warm Milk, Airplane Tomato Juice) through graduate seminars in fermented shark, durian appreciation, and the capstone course, Casseroles of the 1950s. Each course page lists prerequisites, learning outcomes ("by week four, the student will no longer flinch"), and faculty bios of instructors who have eaten things on camera. Students earn stackable credentials toward the Certified Iron Palate designation, and the alumni page features graduates enjoying gas station sushi with visible confidence. Tuition assistance is available; refunds are not, "for reasons that become clear during week one."
+
+**Themes and joke:** Gross flavors (theme 1) processed through higher-education solemnity. The joke is academic infrastructure — prerequisites, learning outcomes, accreditation, alumni pride — built around the single skill of suppressing your gag reflex.
+
+**Archetype:** education
 
