@@ -26,6 +26,7 @@ Instructions for creating the fake website for each business.
 9. Logo. Generate a logo using the OpenAI image API.  This should be relatively small and be used to linking to it from the main site.
 10. mobile friendly.  each site should be mobile friendly.  do a check after generation to confirm this.
 11. image display. where possible, clicking or tapping an image should open it in a modal.  this does not need to apply to background images or things like logos or header images.
+12. Messaging.  No matter what archtype or style is selected, the purpose of the business should be clear and unambiguous when users first land on the site, above the fold on the main page.  Taglines or slogans are okay, but make sure there is a clear explanation accompanying it.
 
 # Marketing Images
 
