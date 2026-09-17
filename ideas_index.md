@@ -23,5 +23,5 @@ The master index of every business idea ever created, built or not. One row per 
 | The Cul-de-Sac Courant | A hard-hitting subscription newspaper covering the eight houses of one suburban cul-de-sac. | idea | | editorial | |
 | Alibi & Associates | A white-shoe professional firm that crafts bespoke excuses for getting out of social obligations. | idea | | professional-services | |
 | Lint for Nests | A nonprofit that collects donated belly button lint to insulate nests for orphaned songbirds. | idea | | nonprofit | |
-| Mist O' Meat | An As-Seen-On-TV aerosol spray that gives any food the flavor of pot roast. | idea | | infomercial | |
+| Mist O' Meat | An As-Seen-On-TV aerosol spray that gives any food the flavor of pot roast. | built | mist-o-meat | infomercial | infomercial-max |
 | Acquired Taste Academy | An online academy with a full curriculum for learning to love the world's most upsetting flavors. | idea | | education | |

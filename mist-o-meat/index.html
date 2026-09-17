@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mist O' Meat | Turn Any Food Into Pot Roast</title>
+  <meta name="description" content="Mist O' Meat is a pressurized aerosol spray of concentrated pot roast essence. One spray gives any food the hearty flavor of a slow-cooked Sunday roast.">
+  <link rel="icon" href="images/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- scrolling urgency ticker -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>★ AS SEEN ON TV ★ OPERATORS ARE STANDING BY ★ CALL 1-800-555-MIST ★ NOT SOLD IN STORES ★ SUPPLIES ARE EXTREMELY LIMITED FOR SOME REASON ★ AS SEEN ON TV ★ OPERATORS ARE STANDING BY ★ CALL 1-800-555-MIST ★ NOT SOLD IN STORES ★ SUPPLIES ARE EXTREMELY LIMITED FOR SOME REASON ★&nbsp;</span>
+      <span>★ AS SEEN ON TV ★ OPERATORS ARE STANDING BY ★ CALL 1-800-555-MIST ★ NOT SOLD IN STORES ★ SUPPLIES ARE EXTREMELY LIMITED FOR SOME REASON ★ AS SEEN ON TV ★ OPERATORS ARE STANDING BY ★ CALL 1-800-555-MIST ★ NOT SOLD IN STORES ★ SUPPLIES ARE EXTREMELY LIMITED FOR SOME REASON ★&nbsp;</span>
+    </div>
+  </div>
+
+  <header class="masthead">
+    <img src="images/logo.webp" alt="Mist O' Meat logo" class="masthead-logo">
+    <div class="masthead-title">
+      <h1>MIST O' MEAT<span class="tm">&trade;</span></h1>
+      <p class="masthead-tag">ANY FOOD. NOW POT ROAST.</p>
+    </div>
+    <div class="countdown-box">
+      <p class="countdown-label">THIS OFFER EXPIRES IN</p>
+      <p class="countdown" id="countdown">10:00</p>
+      <p class="countdown-note" id="countdownNote">Act now. We mean it this time.</p>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="burst-line"><span class="mini-burst">NEW!</span> THE FLAVOR REVOLUTION GRANDMA NEVER ASKED FOR</p>
+        <h2>TURN ANY FOOD INTO POT ROAST</h2>
+        <p class="hero-explain">Mist O' Meat is a pressurized aerosol spray of concentrated pot roast essence. One two-second spray gives cereal, fruit salad, even birthday cake the rich, hearty flavor of a slow-cooked Sunday roast. No oven. No grandma. No warning.</p>
+        <ul class="hero-checks">
+          <li>Works on over 6,000 known foods</li>
+          <li>Zero cooking, zero chewing resistance</li>
+          <li>Shelf stable until the year 2109</li>
+        </ul>
+        <a href="#order" class="btn-order">ORDER NOW &raquo;</a>
+        <p class="hero-phone">Or call <strong>1-800-555-MIST</strong>. Operators are standing by and have been for a while.</p>
+      </div>
+      <figure class="hero-media">
+        <img src="images/hero.webp" alt="A hand spraying Mist O' Meat over a bowl of cereal" class="zoomable">
+        <span class="price-burst">ONLY<br>$19.99<sup>*</sup></span>
+      </figure>
+    </section>
+
+    <!-- BEFORE / AFTER -->
+    <section class="section section-dark" id="before-after">
+      <h2 class="section-title">ARE YOU LIVING LIKE <span class="yellow">THIS?</span></h2>
+      <p class="section-sub">Drag the handle and watch one family's plain yogurt become a hearty meat experience.</p>
+      <div class="ba-slider" id="baSlider">
+        <img src="images/after.webp" alt="A family delighted by yogurt misted with Mist O' Meat" class="ba-img" draggable="false">
+        <div class="ba-after-wrap" id="baAfterWrap">
+          <img src="images/before.webp" alt="The same family staring sadly at plain, unsprayed yogurt" class="ba-img" draggable="false">
+        </div>
+        <div class="ba-handle" id="baHandle" role="slider" aria-label="Before and after comparison" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0">
+          <span class="ba-grip">&#9664;&#9654;</span>
+        </div>
+        <span class="ba-tag ba-tag-after">AFTER</span>
+      </div>
+      <p class="ba-caption">Dramatization. The family shown was compensated in product.</p>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section">
+      <h2 class="section-title">SO EASY, IT'S <span class="red">CONCERNING</span></h2>
+      <div class="steps">
+        <div class="step">
+          <span class="step-num">1</span>
+          <h3>POINT</h3>
+          <p>Aim the can at any food. Breakfast, dessert, a smoothie. The can does not judge. Neither do we.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">2</span>
+          <h3>SPRAY</h3>
+          <p>One two-second burst releases a fine cloud of concentrated pot roast essence, aged in the can for maximum heartiness.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">3</span>
+          <h3>POT ROAST</h3>
+          <p>Your food now tastes like it simmered all day in your grandmother's kitchen. It did not. That's the miracle.</p>
+        </div>
+      </div>
+      <figure class="wide-figure">
+        <img src="images/scene-cake.webp" alt="A birthday cake being sprayed with Mist O' Meat" class="zoomable">
+        <figcaption>Little Tyler's seventh birthday. He asked for chocolate. He got pot roast. He'll understand someday.</figcaption>
+      </figure>
+    </section>
+
+    <!-- FLAVORS -->
+    <section class="section section-yellow" id="flavors">
+      <h2 class="section-title">THREE BOLD FLAVORS. ONE BOLD DECISION.</h2>
+      <div class="flavors">
+        <article class="flavor-card">
+          <img src="images/product-original.webp" alt="Mist O' Meat Original Roast can" class="zoomable">
+          <h3>ORIGINAL ROAST</h3>
+          <p>The one that started it all. Slow-cooked chuck roast notes with a carrot-and-onion finish. Goes with everything, whether everything likes it or not.</p>
+        </article>
+        <article class="flavor-card">
+          <img src="images/product-sausage.webp" alt="Mist O' Meat Breakfast Sausage Fog can" class="zoomable">
+          <h3>BREAKFAST SAUSAGE FOG</h3>
+          <p>Wake up to a rolling bank of savory sausage vapor. Turns orange juice into a full country breakfast in under three seconds.</p>
+        </article>
+        <article class="flavor-card">
+          <span class="flavor-flag">LIMITED!</span>
+          <img src="images/product-ham.webp" alt="Mist O' Meat Holiday Ham Cloud limited edition can" class="zoomable">
+          <h3>HOLIDAY HAM CLOUD</h3>
+          <p>Clove-studded, brown-sugar-glazed ham essence. Available for a limited time, which is a decision our legal team supports.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section section-dark">
+      <h2 class="section-title">REAL PEOPLE. REAL MIST. <span class="yellow">REAL QUOTES.</span></h2>
+      <div class="testimonials">
+        <article class="testimonial">
+          <img src="images/doug.webp" alt="Doug from Ohio at his kitchen table" class="zoomable">
+          <blockquote>"I've misted every meal since March. Every single one. My wife left in April, but the flavor stayed."</blockquote>
+          <p class="t-name">Doug &middot; Ohio</p>
+        </article>
+        <article class="testimonial">
+          <img src="images/linda.webp" alt="Linda holding her casserole" class="zoomable">
+          <blockquote>"I spent forty years perfecting my pot roast. Forty years. Anyway, the spray is fine. The spray is fine."</blockquote>
+          <p class="t-name">Linda &middot; Wisconsin</p>
+        </article>
+        <article class="testimonial">
+          <img src="images/gary.webp" alt="Gary at his backyard grill" class="zoomable">
+          <blockquote>"I sprayed it on a steak. So now it's a steak that tastes like pot roast. I keep doing it. I can't explain why."</blockquote>
+          <p class="t-name">Gary &middot; Florida</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- BUT WAIT -->
+    <section class="section but-wait">
+      <p class="but-wait-lead">BUT WAIT!</p>
+      <h2 class="section-title">THERE'S <span class="red">MORE</span></h2>
+      <div class="bonus">
+        <figure>
+          <img src="images/bonus.webp" alt="The free Precision Spray Nozzle attachment next to a can of Mist O' Meat" class="zoomable">
+        </figure>
+        <div class="bonus-copy">
+          <h3>FREE PRECISION SPRAY NOZZLE&trade;</h3>
+          <p>Order in the next <strong><span id="bonusTimer">10:00</span></strong> and we'll throw in the Precision Spray Nozzle, a $14.99 value, absolutely free. Achieve pinpoint pot roast accuracy on individual grapes, single crackers, or one specific bite of your coworker's sandwich.</p>
+          <p class="fine-inline">Nozzle ships separately. Nozzle may arrive first. Do not use the nozzle without a can. You'll know if you did.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ORDER -->
+    <section class="section section-order" id="order">
+      <h2 class="section-title">ORDER NOW. <span class="yellow">THINK LATER.</span></h2>
+      <p class="stock-line">Only <strong id="cansLeft">417</strong> cans left in this warehouse. We do have other warehouses. Still.</p>
+
+      <div class="offers">
+        <article class="offer">
+          <h3>THE STARTER MIST</h3>
+          <p class="offer-price">$19.99</p>
+          <p class="offer-desc">One can of Original Roast. About 200 sprays, or one month of Doug-level commitment.</p>
+          <p class="offer-sh">plus $7.95 shipping &amp; handling</p>
+          <button class="btn-offer" data-offer="starter" data-name="The Starter Mist" data-price="19.99" data-cans="1">ADD TO ORDER</button>
+        </article>
+        <article class="offer offer-featured">
+          <span class="offer-flag">BEST VALUE!</span>
+          <h3>THE DOUBLE MIST</h3>
+          <p class="offer-price">$19.99</p>
+          <p class="offer-desc">Two cans for the price of one. That's right, we'll DOUBLE your order. Just pay separate shipping and handling on the second can.</p>
+          <p class="offer-sh">plus $7.95 shipping &amp; handling, twice</p>
+          <button class="btn-offer" data-offer="double" data-name="The Double Mist" data-price="19.99" data-cans="2">ADD TO ORDER</button>
+        </article>
+        <article class="offer">
+          <h3>THE FULL FOG</h3>
+          <p class="offer-price">$49.99</p>
+          <p class="offer-desc">All three flavors, including the limited Holiday Ham Cloud, plus a laminated card listing foods we've tested. It's most of them.</p>
+          <p class="offer-sh">plus $7.95 shipping &amp; handling per can</p>
+          <button class="btn-offer" data-offer="fog" data-name="The Full Fog" data-price="49.99" data-cans="3">ADD TO ORDER</button>
+        </article>
+      </div>
+
+      <form class="order-form" id="orderForm" hidden>
+        <h3 id="orderFormTitle">YOUR ORDER</h3>
+        <p class="order-summary" id="orderSummary"></p>
+        <div class="order-fields">
+          <label>
+            Full name
+            <input type="text" name="name" required autocomplete="name" placeholder="Doug">
+          </label>
+          <label>
+            Shipping address
+            <input type="text" name="address" required autocomplete="street-address" placeholder="Somewhere in Ohio">
+          </label>
+          <label class="order-check">
+            <input type="checkbox" id="rushShip">
+            RUSH my mist ($9.95, arrives in the same 5 to 9 business days)
+          </label>
+        </div>
+        <p class="order-total">TOTAL: <span id="orderTotal">$0.00</span></p>
+        <button type="submit" class="btn-order btn-wide">COMPLETE MY ORDER</button>
+        <p class="fine-inline">By ordering you agree that flavor is a journey, and that all shipping and handling charges are non-refundable, non-negotiable, and non-explainable.</p>
+      </form>
+
+      <div class="order-confirm" id="orderConfirm" hidden>
+        <h3>ORDER RECEIVED!</h3>
+        <p id="confirmMsg">An operator has stopped standing by and is now sitting down to process your order.</p>
+        <p>Your mist ships in 5 to 9 business days in unmarked packaging, at your request. You didn't request that? Most people do.</p>
+        <button class="btn-offer" id="orderAgain">ORDER AGAIN</button>
+      </div>
+
+      <p class="guarantee"><strong>OUR 30-DAY GUARANTEE:</strong> If you're not completely satisfied, return the unused portion within 30 days for a full refund of the purchase price. Shipping, handling, rush fees, and what the can witnessed are non-refundable.</p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <h2 class="section-title">QUESTIONS PEOPLE KEEP ASKING</h2>
+      <div class="faq-list">
+        <details>
+          <summary>Is Mist O' Meat made from real pot roast?</summary>
+          <p>Mist O' Meat contains concentrated pot roast essence derived from a proprietary process we describe to regulators as "reduction" and to everyone else as "the mist happens."</p>
+        </details>
+        <details>
+          <summary>What foods can I spray it on?</summary>
+          <p>All of them. We've tested over 6,000 foods in our flavor lab. The laminated card that ships with The Full Fog lists the four we recommend against. Ice cream is not one of them, which surprised us too.</p>
+        </details>
+        <details>
+          <summary>Is it vegetarian?</summary>
+          <p>The mist itself is a vapor, and vapor is famously neither plant nor animal. Our legal team asked us to stop there, so we will.</p>
+        </details>
+        <details>
+          <summary>Can I spray it directly into my mouth?</summary>
+          <p>Yes, and this is called "freeroasting." A two-second oral burst delivers the complete pot roast experience with none of the chewing. Popular with commuters.</p>
+        </details>
+        <details>
+          <summary>My whole house now smells like pot roast. How do I make it stop?</summary>
+          <p>That's the Lingering Heartiness&trade; working as intended. Most customers report the aroma fades within 6 to 8 weeks, or becomes their personality, whichever comes first.</p>
+        </details>
+        <details>
+          <summary>Why does the countdown timer keep resetting?</summary>
+          <p>Out of generosity.</p>
+        </details>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <img src="images/logo.webp" alt="Mist O' Meat logo" class="footer-logo">
+    <p class="footer-fine">*Plus $7.95 shipping and handling per can. Mist O' Meat is a flavor product. It is not a meal, a meat, a sauce, or a substitute for human connection. Do not spray toward smoke detectors, open flames, or the officiant. "Pot roast" describes a flavor profile, not a promise. Contents under pressure, emotionally and otherwise. If your mist arrives dented, hearty flavor is unaffected; the can has been through a lot.</p>
+    <p class="footer-links">
+      <a href="marketing.html">Marketing Materials</a>
+      <span aria-hidden="true">&bull;</span>
+      <a href="../index.html">The Business Directory</a>
+    </p>
+    <p class="footer-copy">&copy; 2026 Mist O' Meat LLC, a division of Hearty Vapors Worldwide. All flavors reserved.</p>
+  </footer>
+
+  <!-- image modal -->
+  <div class="img-modal" id="imgModal" hidden>
+    <button class="img-modal-close" id="imgModalClose" aria-label="Close image">&times;</button>
+    <img src="" alt="" id="imgModalImg">
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
