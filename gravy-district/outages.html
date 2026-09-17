@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Outages &amp; Alerts | Gravy District No. 3</title>
+<meta name="description" content="Live outage map, current incidents, and outage reporting for Gravy District No. 3.">
+<link rel="icon" type="image/webp" href="images/logo.webp">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="official-banner">
+  <div class="wrap"><span class="flag" aria-hidden="true"></span> An official website of Gravy District No. 3, a Wisconsin municipal gravy utility. It is not a store, although you can start service here.</div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <img class="seal" src="images/logo.webp" alt="Seal of Gravy District No. 3">
+    <div class="site-title">
+      <a href="index.html"><span class="name">Gravy District No. 3</span></a>
+      <span class="sub">Public Gravy Utility &bull; Townships of Butternut Falls, Roux Prairie, and Lower Giblet, Wisconsin</span>
+    </div>
+  </div>
+</header>
+
+<nav class="main-nav" aria-label="Main">
+  <div class="wrap">
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">&#9776; Menu</button>
+    <ul class="nav-list" id="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="rates.html">Rates &amp; Service</a></li>
+      <li><a href="outages.html" class="current">Outages &amp; Alerts</a></li>
+      <li><a href="board.html">Board &amp; Reports</a></li>
+      <li><a href="notices.html">News &amp; Notices</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <p class="breadcrumb"><a href="index.html">Home</a> &rsaquo; Outages &amp; Alerts</p>
+
+  <h1>Outages &amp; Alerts</h1>
+
+  <p>The map below shows current service conditions across the District. It is updated whenever something changes, or when Doris gets back from lunch, whichever comes second. Tap or click an incident marker for details. To report a new problem, use the form at the bottom of this page or call the after-hours lump line at (715) 555-0163.</p>
+
+  <h2>Live outage map</h2>
+
+  <div class="map-box">
+    <svg id="outage-map" viewBox="0 0 800 520" role="img" aria-label="Outage map of the three townships served by Gravy District No. 3">
+      <!-- Township boundaries -->
+      <polygon class="township" points="20,40 380,25 395,250 210,275 30,260"></polygon>
+      <polygon class="township" points="395,30 770,45 780,240 400,255"></polygon>
+      <polygon class="township" points="35,270 400,262 780,250 770,490 60,500"></polygon>
+      <text x="140" y="130" font-size="20">BUTTERNUT FALLS</text>
+      <text x="510" y="120" font-size="20">ROUX PRAIRIE</text>
+      <text x="330" y="400" font-size="20">LOWER GIBLET</text>
+      <!-- Roads -->
+      <polyline points="60,60 200,150 390,180 600,160 760,200" fill="none" stroke="#a89f8a" stroke-width="3" stroke-dasharray="8 5"></polyline>
+      <text x="230" y="150" font-size="11">County Road H</text>
+      <polyline points="420,50 430,230 420,470" fill="none" stroke="#a89f8a" stroke-width="3" stroke-dasharray="8 5"></polyline>
+      <text x="437" y="330" font-size="11">Vole Road</text>
+      <!-- Plant -->
+      <rect x="300" y="168" width="16" height="16" fill="#4a3319" stroke="#fff" stroke-width="1.5"></rect>
+      <text x="252" y="212" font-size="11">Treatment plant</text>
+      <!-- Incident markers injected by app.js -->
+    </svg>
+    <p class="map-legend">
+      Legend:
+      <span class="key" style="background:#2e7d32"></span> In service
+      <span class="key" style="background:#f2b705"></span> Reduced viscosity
+      <span class="key" style="background:#c62828"></span> Full interruption
+      <span class="key" style="background:#7b5cb8"></span> Planned flush
+    </p>
+    <div id="incident-detail" hidden></div>
+  </div>
+
+  <h2>Current incidents</h2>
+
+  <div class="table-scroll">
+  <table class="data" id="incident-table">
+    <caption>As of 6:12 AM today</caption>
+    <thead>
+      <tr><th>Ref.</th><th>Location</th><th>System</th><th>Condition</th><th>Customers</th><th>Estimated restoration</th></tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  </div>
+
+  <h2>Planned work</h2>
+
+  <p>The annual spring flush of the beef system begins the third Monday of April, township by township, north to south. During the flush, beef customers may notice their gravy arrives lighter, then darker, then briefly as a broth the District does not otherwise sell. This is normal. The turkey system is flushed in October, before the surge season, for reasons the 1994 incident report explains at length.</p>
+
+  <div class="photo-grid">
+    <figure>
+      <img class="zoomable" src="images/crew.webp" alt="A District crew repairs a lump event on a rural road" data-caption="A crew clears a lump event on County Road H. The pipe joint was resealed the same day.">
+      <figcaption>A crew clears a lump event on County Road H.</figcaption>
+    </figure>
+    <figure>
+      <img class="zoomable" src="images/tower.webp" alt="The east elevated storage tank" data-caption="The east tank holds 400,000 gallons of beef gravy at pressure. It was repainted in 2019 after a long discussion.">
+      <figcaption>The east tank (beef), repainted 2019.</figcaption>
+    </figure>
+  </div>
+
+  <h2 id="report">Report an outage</h2>
+
+  <p>Use this form for reduced viscosity, full interruptions, unusual color, unusual confidence in the flow, whistling meters, or gravy where gravy should not be. For emergencies, such as an uncontrolled release near a storm drain, call the lump line first, then fill out the form anyway, because the form is how it becomes real to the District.</p>
+
+  <form class="gov-form" id="outage-form" novalidate>
+    <p class="form-id">FORM GD-40 (REV. 11/2025)</p>
+    <label for="of-addr">Service address <span class="req">*</span></label>
+    <input type="text" id="of-addr" name="address" required>
+    <label for="of-system">System affected <span class="req">*</span></label>
+    <select id="of-system" name="system" required>
+      <option value="">Select one</option>
+      <option>Turkey</option>
+      <option>Beef</option>
+      <option>Both (please also complete Form GD-9 if you know why)</option>
+      <option>Not sure</option>
+    </select>
+    <label for="of-cond">What are you experiencing? <span class="req">*</span></label>
+    <select id="of-cond" name="condition" required>
+      <option value="">Select one</option>
+      <option>No gravy</option>
+      <option>Reduced viscosity (thin)</option>
+      <option>Excess viscosity (proud)</option>
+      <option>Lumps</option>
+      <option>Wrong gravy</option>
+      <option>Whistling meter</option>
+      <option>Other</option>
+    </select>
+    <label for="of-desc">Description <span class="hint">(optional, but the crews do read these aloud in the truck)</span></label>
+    <textarea id="of-desc" name="description" rows="3"></textarea>
+    <button class="btn" type="submit">Submit Report</button>
+    <div class="form-result" id="outage-result"></div>
+  </form>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <h4>Gravy District No. 3</h4>
+      <p>N4881 County Road H<br>Butternut Falls, WI 54893<br>(715) 555-0162</p>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <ul>
+        <li><a href="rates.html">Rates &amp; Service</a></li>
+        <li><a href="outages.html">Outages &amp; Alerts</a></li>
+        <li><a href="rates.html#forms">Forms &amp; Documents</a></li>
+        <li><a href="faq.html">Frequently Asked Questions</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Government</h4>
+      <ul>
+        <li><a href="board.html">Board of Gravy Commissioners</a></li>
+        <li><a href="board.html#quality">Annual Gravy Quality Report</a></li>
+        <li><a href="notices.html">Public Notices</a></li>
+        <li><a href="marketing.html">Public Outreach Materials</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="fine">
+    Gravy District No. 3 is an equal opportunity provider. Turkey and beef are separate systems. This site is part of <a href="../index.html">The Business Directory</a>.
+  </div>
+</footer>
+
+<div id="img-modal" role="dialog" aria-modal="true" aria-label="Enlarged image">
+  <button class="modal-close" aria-label="Close">&times;</button>
+  <img src="" alt="">
+  <div class="modal-caption"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
