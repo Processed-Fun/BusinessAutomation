@@ -21,7 +21,7 @@ The master index of every business idea ever created, built or not. One row per 
 | Marge's Orbital Launch & Diner | A roadside Kansas diner that also provides commercial satellite launch services. | built | marges-orbital | landing-page | americana-roadside |
 | Gravy District No. 3 | The public gravy utility serving three townships in rural Wisconsin. | built | gravy-district | gov-institutional | government-austere |
 | The Cul-de-Sac Courant | A hard-hitting subscription newspaper covering the eight houses of one suburban cul-de-sac. | built | cul-de-sac-courant | editorial | broadsheet |
-| Alibi & Associates | A white-shoe professional firm that crafts bespoke excuses for getting out of social obligations. | idea | | professional-services | |
+| Alibi & Associates | A white-shoe professional firm that crafts bespoke excuses for getting out of social obligations. | built | alibi-associates | professional-services | luxury-minimal |
 | Lint for Nests | A nonprofit that collects donated belly button lint to insulate nests for orphaned songbirds. | built | lint-for-nests | nonprofit | craft-organic |
 | Mist O' Meat | An As-Seen-On-TV aerosol spray that gives any food the flavor of pot roast. | built | mist-o-meat | infomercial | infomercial-max |
 | Acquired Taste Academy | An online academy with a full curriculum for learning to love the world's most upsetting flavors. | idea | | education | |
