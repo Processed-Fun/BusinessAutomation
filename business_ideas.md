@@ -14,3 +14,5 @@ When a website is built for an idea, its entry is copied to `business.md` in the
 
 **Themes and joke:** Incredibly mundane idea played as a hot tech startup (theme 8). The joke is the full startup ceremony — metrics, paywalls, disruption language — around an involuntary reflex.
 
+**Archetype:** saas-product
+

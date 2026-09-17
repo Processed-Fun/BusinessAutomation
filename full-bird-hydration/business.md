@@ -6,6 +6,6 @@
 
 **Themes and joke:** Gross flavors (theme 1). The joke is applying intense sports-nutrition marketing — performance claims, neon labels, athlete sponsorships — to flavors that would make anyone slower.
 
-**Archetype:** DTC product landing page
+**Archetype:** landing-page
 
-**Style:** Bold sports-brand (neon, heavy display sans)
+**Style:** sports-neon

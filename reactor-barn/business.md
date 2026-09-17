@@ -6,6 +6,6 @@
 
 **Themes and joke:** Enormous industrial product played as a mom-and-pop business (theme 9), with a wink at dubious legality (theme 6). The joke is the collision of homespun small-town charm with the most heavily regulated, high-stakes engineering on Earth.
 
-**Archetype:** Local small-business brochure
+**Archetype:** landing-page
 
-**Style:** Americana roadside (slab display type)
+**Style:** americana-roadside

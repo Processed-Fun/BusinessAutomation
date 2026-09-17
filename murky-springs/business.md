@@ -6,6 +6,6 @@
 
 **Themes and joke:** Gross flavors (theme 1). The joke is the full craft-beverage treatment — small batches, tasting notes, seasonal drops — applied to flavors that are technically beverages only in the legal sense.
 
-**Archetype:** Craft-brand landing page
+**Archetype:** landing-page
 
-**Style:** Craft-organic serif
+**Style:** elegant-serif

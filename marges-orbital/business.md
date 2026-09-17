@@ -6,6 +6,6 @@
 
 **Themes and joke:** Aerospace-scale operation played as a small-town mom-and-pop (theme 9). The joke is billion-dollar space-industry logistics run with diner hospitality, where the biggest scheduling constraint is Sunday service.
 
-**Archetype:** Local small-business brochure
+**Archetype:** landing-page
 
-**Style:** Americana roadside (slab display type)
+**Style:** americana-roadside

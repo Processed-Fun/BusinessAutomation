@@ -6,6 +6,6 @@
 
 **Themes and joke:** Extra dark humor (theme 3). The joke is the funeral industry's tasteful, soft-spoken branding wrapped around an idea that is one long circular pun about mortality.
 
-**Archetype:** Funeral services site
+**Archetype:** landing-page
 
-**Style:** Funeral serenity serif
+**Style:** elegant-serif

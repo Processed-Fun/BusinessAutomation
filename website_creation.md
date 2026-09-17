@@ -7,6 +7,13 @@ Instructions for creating the fake website for each business.
 1. Choose a business from "business_ideas.md". That file only contains ideas that do not yet have websites, so any idea in it is available. ("ideas_index.md" is the master index of all ideas, built and unbuilt, with a status column.)
 2. If "business_ideas.md" is empty, use the instructions in "generate_ideas.md" to generate five more business ideas.
 
+# Archetype and Style
+
+1. Archetype.  The idea comes with an archetype (the kind of site: see "archetypes.md"), assigned at idea generation time.  Build the site as that archetype: it dictates the page structure, not just the skin.  A landing-page and an ecommerce-catalog and a gov-institutional portal should feel structurally different, not like the same page in different colors.  If the archetype turns out not to work in practice, you may override it with a different value from "archetypes.md"; update the idea's row in "ideas_index.md" and note the reason in the site's "business.md".  If the idea has no archetype (older ideas), choose one now, avoiding "landing-page".
+2. Style.  Choose the visual style at build time from the style list in "archetypes.md".  Read "ideas_index.md" first: the style must be different from the styles of the last 3 built sites, and avoid any style that dominates the index overall.
+3. Fit.  Default to the archetype and style this business's fictional webmaster would honestly pick; the humor comes from executing a real genre earnestly around an absurd premise.  A deliberate mismatch is allowed only if you can write one in-world sentence explaining why the site looks that way.  The style must serve the site's one joke, never add a second unrelated one.
+4. Record both values (exactly as spelled in "archetypes.md") in the site's "business.md" and in the idea's row in "ideas_index.md".
+
 # Requirements
 
 1. Hosting.  This site will be hosted and deployed from Github pages from the index.html file.
@@ -37,7 +44,7 @@ Instructions for creating the fake website for each business.
 
 When the website is complete, update the idea tracking files:
 
-1. Copy the idea's full entry from "business_ideas.md" into a new file named "business.md" at the root of the site's directory (e.g. "my-site/business.md").  Also record the site's archetype (what kind of site it is, e.g. SaaS landing page, local brochure, e-commerce catalog) and style (the visual aesthetic) in that file.
+1. Copy the idea's full entry from "business_ideas.md" into a new file named "business.md" at the root of the site's directory (e.g. "my-site/business.md").  Also record the site's archetype and style in that file, using the exact values from "archetypes.md".
 2. Remove the idea's entry from "business_ideas.md".  Do not touch the other entries.
 3. Update the idea's row in "ideas_index.md": set status to "built" and fill in the directory, archetype, and style columns.  Never delete rows from the index.
 

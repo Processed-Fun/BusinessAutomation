@@ -6,6 +6,6 @@
 
 **Themes and joke:** Extra dark humor (theme 3) with a ridiculous subscription add-on (theme 7). The joke is treating pettiness as a sacred legacy worth literally setting in stone, complete with a recurring maintenance plan.
 
-**Archetype:** Local services brochure
+**Archetype:** landing-page
 
-**Style:** Somber heritage serif
+**Style:** elegant-serif

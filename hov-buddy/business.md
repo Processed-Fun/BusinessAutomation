@@ -6,6 +6,6 @@
 
 **Themes and joke:** Dubious legality (theme 6) with a ridiculous subscription layer (theme 7). The joke is a company building tiered pricing, accessories, and customer support around what is straightforwardly a traffic violation.
 
-**Archetype:** Rental subscription landing page
+**Archetype:** landing-page
 
-**Style:** Modern startup sans
+**Style:** startup-modern

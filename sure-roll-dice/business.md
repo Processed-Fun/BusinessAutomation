@@ -6,6 +6,6 @@
 
 **Themes and joke:** Useless product (theme 5) with ultra-luxury craftsmanship marketing (theme 4). The joke is lavishing artisanal care and premium pricing on a product that removes the entire point of dice.
 
-**Archetype:** Artisanal e-commerce landing page
+**Archetype:** landing-page
 
-**Style:** Heritage craft serif
+**Style:** elegant-serif

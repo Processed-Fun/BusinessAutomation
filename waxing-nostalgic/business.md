@@ -6,6 +6,6 @@
 
 **Themes and joke:** Simply gross (theme 2) with artisanal luxury branding (theme 4). The joke is boutique candle-shop pretension built on a supply chain nobody should ever think about, plus the words "single-origin" doing horrifying work.
 
-**Archetype:** Boutique DTC landing page
+**Archetype:** landing-page
 
-**Style:** Warm artisanal serif
+**Style:** elegant-serif

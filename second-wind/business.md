@@ -6,6 +6,6 @@
 
 **Themes and joke:** Ridiculous subscription (theme 7) meets ultra-luxury where no market should exist (theme 4). The joke is wine-snob culture applied to literal nothing, plus a maintenance plan for jars that need no maintenance.
 
-**Archetype:** Luxury subscription landing page
+**Archetype:** landing-page
 
-**Style:** Luxury editorial serif
+**Style:** elegant-serif
