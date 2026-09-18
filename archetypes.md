@@ -22,10 +22,8 @@ The archetype is the *kind of website* the business would have: its structure, p
 12. **event**. A conference, festival, or venue: agenda, speakers or lineup, tickets, sponsors.
 13. **education**. An academy, course catalog, bootcamp, or certification body.
 14. **listings**. Inventory to browse that isn't a store: real estate, marketplace, aggregator, comparison site.
-15. **hospitality-venue**. A hotel, resort, or event venue: room and space galleries, amenities, rates, booking inquiry. (Bed and breakfast, wedding venue, campground.)
-16. **tour-operator**. A travel or tour company: destination photography, itineraries, dates and prices, booking. (Adventure outfitter, walking tours, expedition cruises.)
-17. **cpg-brand**. A packaged food or drink brand: product beauty shots, flavor lineup, recipes, store locator.
-18. **studio-portfolio**. A studio or agency that sells through a gallery of its work: projects, process, client list, inquiry form. (Photography studio, design shop, taxidermist.)
+15. **cpg-brand**. A packaged food or drink brand: product beauty shots, flavor lineup, recipes, store locator.
+16. **studio-portfolio**. A studio or agency that sells through a gallery of its work: projects, process, client list, inquiry form. (Photography studio, design shop, taxidermist.)
 
 # Styles
 
