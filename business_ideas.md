@@ -52,3 +52,14 @@ When a website is built for an idea, its entry is copied to `business.md` in the
 **Archetype:** listings
 
 
+## Unfair & Square Dice Works
+
+**Short description:** A dice maker whose enormous, lopsided dice have anywhere from 3 to 100+ sides and are carved from wood, rock, or plastic.
+
+**Long description:** Unfair & Square Dice Works hand-produces "statistically liberated" dice that reject everything dice are supposed to be: uniform, balanced, or holdable in one hand. The catalog runs from the Riverbed Three (a 3-sided lump of unaltered creek stone, "sides identified on delivery") through the Splinter (a fist-sized 7-sided pine wedge that lands on an eighth, unnumbered face about a third of the time) up to the Boulder d104, a 40-pound granite polyhedron that ships freight and doubles as a doorstop. Every die is proudly non-uniform — "no two faces the same size, no two rolls the same odds" — and each product page includes a Fairness Report that just says "No." Materials range from reclaimed barn wood to river rock to a plastic the company describes only as "found." The site warns that dice over 20 pounds should be rolled from a seated position.
+
+**Themes and joke:** A useless product sold with total craft sincerity (theme 5, with a dash of theme 4's artisanal-luxury ceremony). The joke is a maker brand lavishing provenance, spec sheets, and pride on dice that fail at the one job a die has: being fair, and ideally, rollable.
+
+**Archetype:** ecommerce-catalog
+
+
