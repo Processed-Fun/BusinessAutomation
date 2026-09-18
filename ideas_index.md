@@ -27,4 +27,4 @@ The master index of every business idea ever created, built or not. One row per 
 | Acquired Taste Academy | An online academy with a full curriculum for learning to love the world's most upsetting flavors. | built | acquired-taste-academy | education | academic |
 | Fines & Dandy | A premium cereal brand that sells only the crumb dust from the bottom of the bag. | idea | | cpg-brand | |
 | The Parting Shot | A high-end photography studio specializing in divorce shoots. | idea | | studio-portfolio | |
-| Twig & Perch Realty | A luxury real-estate brokerage for birdhouses. | idea | | listings | |
+| Twig & Perch Realty | A luxury real-estate brokerage for birdhouses. | built | twig-and-perch | listings | dark-luxury |

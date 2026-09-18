@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet the Agents | Twig &amp; Perch Realty</title>
+  <meta name="description" content="The agents of Twig &amp; Perch Realty, committed to finding the right fit for you and your flock.">
+  <link rel="icon" href="images/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="index.html">
+        <img src="images/logo.webp" alt="Twig &amp; Perch Realty monogram">
+        <span class="name">Twig &amp; Perch<small>Realty</small></span>
+      </a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="listings.html">Listings</a>
+        <a class="here" href="agents.html">Agents</a>
+        <a href="sell.html">Sell</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="block">
+    <div class="wrap">
+      <p class="kicker">Our People</p>
+      <h2>Meet the Agents</h2>
+      <p style="max-width:640px;color:var(--muted)">Three agents. No teams, no assistants, no lockboxes. Every showing is attended in person, at dawn, in sensible shoes.</p>
+
+      <div class="agents-grid" style="margin-top:2.5rem">
+        <article class="agent-card">
+          <img src="images/agent-meredith.webp" alt="Portrait of Meredith Larkspur holding a jewel-box birdhouse" data-modal>
+          <div class="body">
+            <h3>Meredith Larkspur</h3>
+            <p class="title">Principal Broker</p>
+            <p>Sixteen years placing discerning cavity-nesters in the region&rsquo;s finest addresses. Meredith closed the record-setting sale of the Dovecote at Quail Ridge and has personally walked every canopy she represents. She is committed to finding the right fit for you and your flock.</p>
+            <p class="phone">1-800-TWIG, extension 1</p>
+          </div>
+        </article>
+        <article class="agent-card">
+          <img src="images/agent-theodore.webp" alt="Portrait of Theodore Finch with a chickadee on his finger" data-modal>
+          <div class="body">
+            <h3>Theodore Finch</h3>
+            <p class="title">Senior Associate, Alpine &amp; Woodland</p>
+            <p>A former field ornithologist, Theodore left academia when he realized birds needed representation more than they needed observation. He specializes in high-altitude and treeline properties, and remains committed to finding the right fit for you and your flock.</p>
+            <p class="phone">1-800-TWIG, extension 2</p>
+          </div>
+        </article>
+        <article class="agent-card">
+          <img src="images/agent-constance.webp" alt="Portrait of Constance Dove with a dove on her shoulder" data-modal>
+          <div class="body">
+            <h3>Constance Dove</h3>
+            <p class="title">Associate, Heritage &amp; Gourd</p>
+            <p>Constance leads our heritage practice, covering cured gourds, estate hollows, and homes of unusual provenance. Her staging work with fresh moss is quietly famous. She is, above all, committed to finding the right fit for you and your flock.</p>
+            <p class="phone">1-800-TWIG, extension 3</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="panel" style="max-width:640px;margin-top:3rem">
+        <h3>Reach the Firm</h3>
+        <p style="color:var(--muted)">For general inquiries, whisper listings, or to report a cat, write to us below. We respond within one business dawn.</p>
+        <form class="inquiry" data-confirm="<strong>Received.</strong> An agent will respond within one business dawn. If your matter concerns a cat, please consider it already escalated.">
+          <div><label for="gi-name">Your name</label><input id="gi-name" type="text" required></div>
+          <div><label for="gi-topic">Topic</label>
+            <select id="gi-topic">
+              <option>Buying</option>
+              <option>Selling</option>
+              <option>Whisper listings</option>
+              <option>A cat</option>
+            </select>
+          </div>
+          <div><label for="gi-msg">Message</label><textarea id="gi-msg" required></textarea></div>
+          <button class="btn solid" type="submit">Send Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="cols">
+        <div>
+          <h4>Twig &amp; Perch Realty</h4>
+          <p>Luxury real estate for birdhouses. Every placement begins with a conversation and ends with a song.</p>
+        </div>
+        <div>
+          <h4>Offices</h4>
+          <ul>
+            <li>The Portfolio: <a href="listings.html">Current Listings</a></li>
+            <li>Our People: <a href="agents.html">Meet the Agents</a></li>
+            <li>Sellers: <a href="sell.html">Marketing Your Birdhouse</a></li>
+            <li>Questions: <a href="faq.html">Frequently Asked</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Materials</h4>
+          <ul>
+            <li><a href="marketing.html">Campaign Gallery</a></li>
+            <li><a href="../index.html">Ultra Processed Fun</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="legal">Twig &amp; Perch Realty is an equal opportunity housing brokerage and does not discriminate by species, plumage, or song, except against starlings, where the entry holes speak for themselves. Entirely fictional. No birdhouses were sold in the making of this website.</p>
+    </div>
+  </footer>
+
+  <script src="listings-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

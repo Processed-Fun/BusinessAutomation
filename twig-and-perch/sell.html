@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sell With Us | Twig &amp; Perch Realty</title>
+  <meta name="description" content="Listing packages and seller representation from Twig &amp; Perch Realty, the luxury brokerage for birdhouses.">
+  <link rel="icon" href="images/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="index.html">
+        <img src="images/logo.webp" alt="Twig &amp; Perch Realty monogram">
+        <span class="name">Twig &amp; Perch<small>Realty</small></span>
+      </a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="listings.html">Listings</a>
+        <a href="agents.html">Agents</a>
+        <a class="here" href="sell.html">Sell</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="block">
+    <div class="wrap">
+      <p class="kicker">For Sellers</p>
+      <h2>Your birdhouse is worth more than you think.</h2>
+      <p style="max-width:640px;color:var(--muted)">It has been in the garden for years. Someone built it, someone loved it, and something is living in it right now that has never paid a thing. Let us change that. Choose a listing package below, or request a complimentary valuation and we will tell you a number that will surprise you.</p>
+
+      <div class="tiers" style="margin-top:3rem">
+        <div class="tier">
+          <h3>Fledgling</h3>
+          <div class="rate">5%<small> of sale, in seed</small></div>
+          <p style="color:var(--muted);font-size:0.9rem">For the straightforward sale of a well-kept single-hole residence.</p>
+          <ul>
+            <li>MLS-B listing with dusk photography</li>
+            <li>One open house, held at dawn</li>
+            <li>Square inchage certification</li>
+            <li>Standard woodpecker disclosure</li>
+          </ul>
+          <a class="btn" href="#valuation">Start With Fledgling</a>
+        </div>
+        <div class="tier featured">
+          <h3>Roost</h3>
+          <div class="rate">7%<small> of sale, in seed</small></div>
+          <p style="color:var(--muted);font-size:0.9rem">Full marketing for a residence with real presence.</p>
+          <ul>
+            <li>Everything in Fledgling</li>
+            <li>Professional staging: fresh moss, tasteful millet</li>
+            <li>Twilight flyover video, filmed by an actual bird</li>
+            <li>Open houses at dawn and second dawn</li>
+            <li>Placement in the Campaign Gallery</li>
+          </ul>
+          <a class="btn solid" href="#valuation">Start With Roost</a>
+        </div>
+        <div class="tier">
+          <h3>The Aerie Collection</h3>
+          <div class="rate">Private<small> terms by appointment</small></div>
+          <p style="color:var(--muted);font-size:0.9rem">For estates, dovecotes, and homes of historical consequence.</p>
+          <ul>
+            <li>Off-market whisper listing</li>
+            <li>Buyer vetting, references from two prior landlords or trees</li>
+            <li>Principal broker representation throughout</li>
+            <li>Discretion bordering on silence</li>
+          </ul>
+          <a class="btn" href="#valuation">Request an Appointment</a>
+        </div>
+      </div>
+
+      <div class="panel" style="max-width:640px;margin-top:3.5rem" id="valuation">
+        <h3>Request a Complimentary Valuation</h3>
+        <p style="color:var(--muted)">Tell us about the property. An agent will walk the garden, tap the post twice, and deliver a written valuation within three dawns.</p>
+        <form class="inquiry" data-confirm="<strong>Your valuation is scheduled.</strong> An agent will visit at dawn, tap the post twice, and leave a written figure. Do not be alarmed by the figure. The market is remarkable right now.">
+          <div><label for="v-name">Your name</label><input id="v-name" type="text" required></div>
+          <div><label for="v-style">Architectural style</label>
+            <select id="v-style">
+              <option>Victorian</option>
+              <option>Midcentury Modern</option>
+              <option>Rustic Gourd</option>
+              <option>Alpine Chalet</option>
+              <option>Brutalist</option>
+              <option>Tudor Revival</option>
+              <option>Scandinavian Modern</option>
+              <option>Log Cabin</option>
+              <option>Unclear, it came with the house</option>
+            </select>
+          </div>
+          <div><label for="v-sqin">Approximate square inchage</label><input id="v-sqin" type="text" inputmode="numeric" placeholder="Measure twice; birds will know"></div>
+          <div><label for="v-occ">Current occupancy</label>
+            <select id="v-occ">
+              <option>Vacant</option>
+              <option>Occupied, cooperative</option>
+              <option>Occupied, uncooperative</option>
+              <option>Wasps, we think</option>
+            </select>
+          </div>
+          <div><label for="v-notes">Anything we should know</label><textarea id="v-notes" placeholder="Sun exposure, cat proximity, feelings about the birdhouse"></textarea></div>
+          <button class="btn solid" type="submit">Request Valuation</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="cols">
+        <div>
+          <h4>Twig &amp; Perch Realty</h4>
+          <p>Luxury real estate for birdhouses. Every placement begins with a conversation and ends with a song.</p>
+        </div>
+        <div>
+          <h4>Offices</h4>
+          <ul>
+            <li>The Portfolio: <a href="listings.html">Current Listings</a></li>
+            <li>Our People: <a href="agents.html">Meet the Agents</a></li>
+            <li>Sellers: <a href="sell.html">Marketing Your Birdhouse</a></li>
+            <li>Questions: <a href="faq.html">Frequently Asked</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Materials</h4>
+          <ul>
+            <li><a href="marketing.html">Campaign Gallery</a></li>
+            <li><a href="../index.html">Ultra Processed Fun</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="legal">Twig &amp; Perch Realty is an equal opportunity housing brokerage and does not discriminate by species, plumage, or song, except against starlings, where the entry holes speak for themselves. Entirely fictional. No birdhouses were sold in the making of this website.</p>
+    </div>
+  </footer>
+
+  <script src="listings-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

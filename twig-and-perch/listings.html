@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Current Listings | Twig &amp; Perch Realty</title>
+  <meta name="description" content="Browse the full Twig &amp; Perch portfolio of luxury birdhouses: Victorian, midcentury, alpine, brutalist, and more.">
+  <link rel="icon" href="images/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="index.html">
+        <img src="images/logo.webp" alt="Twig &amp; Perch Realty monogram">
+        <span class="name">Twig &amp; Perch<small>Realty</small></span>
+      </a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a class="here" href="listings.html">Listings</a>
+        <a href="agents.html">Agents</a>
+        <a href="sell.html">Sell</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="block">
+    <div class="wrap">
+      <p class="kicker">The Portfolio</p>
+      <h2>Current Listings</h2>
+      <p style="max-width:640px;color:var(--muted)">Every residence below is represented exclusively by Twig &amp; Perch and photographed at dusk, when serious buyers are asleep and serious birds are thinking about tomorrow. Square inchage per MLS-B standards. All prices in seed.</p>
+
+      <div class="filters" style="margin-top:2rem">
+        <div>
+          <label for="f-style">Architectural style</label>
+          <select id="f-style"><option value="all">All styles</option></select>
+        </div>
+        <div>
+          <label for="f-price">Maximum price</label>
+          <select id="f-price">
+            <option value="all">Any budget</option>
+            <option value="1000000">Under 1,000,000 seed</option>
+            <option value="1500000">Under 1,500,000 seed</option>
+            <option value="2000000">Under 2,000,000 seed</option>
+          </select>
+        </div>
+        <div>
+          <label for="f-perches">Minimum perches</label>
+          <select id="f-perches">
+            <option value="all">Any</option>
+            <option value="1">1+</option>
+            <option value="2">2+</option>
+            <option value="3">3+</option>
+          </select>
+        </div>
+        <div>
+          <label for="f-status">Status</label>
+          <select id="f-status">
+            <option value="all">All</option>
+            <option value="For Sale">For sale</option>
+            <option value="Pending">Pending</option>
+            <option value="Sold">Sold</option>
+          </select>
+        </div>
+        <div>
+          <label for="f-sort">Sort</label>
+          <select id="f-sort">
+            <option value="default">Curated order</option>
+            <option value="price-desc">Price, high to low</option>
+            <option value="price-asc">Price, low to high</option>
+            <option value="sqin-desc">Square inchage</option>
+          </select>
+        </div>
+      </div>
+
+      <p class="result-count" id="result-count"></p>
+      <div class="grid" id="listings-grid"></div>
+      <div class="no-results" id="no-results" hidden>
+        <p>No residence currently matches those requirements. The market at this level is, by design, thin.</p>
+        <p style="margin-bottom:0">Speak with <a href="agents.html">an agent</a> about our off-market whisper listings.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="cols">
+        <div>
+          <h4>Twig &amp; Perch Realty</h4>
+          <p>Luxury real estate for birdhouses. Every placement begins with a conversation and ends with a song.</p>
+        </div>
+        <div>
+          <h4>Offices</h4>
+          <ul>
+            <li>The Portfolio: <a href="listings.html">Current Listings</a></li>
+            <li>Our People: <a href="agents.html">Meet the Agents</a></li>
+            <li>Sellers: <a href="sell.html">Marketing Your Birdhouse</a></li>
+            <li>Questions: <a href="faq.html">Frequently Asked</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Materials</h4>
+          <ul>
+            <li><a href="marketing.html">Campaign Gallery</a></li>
+            <li><a href="../index.html">Ultra Processed Fun</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="legal">Twig &amp; Perch Realty is an equal opportunity housing brokerage and does not discriminate by species, plumage, or song, except against starlings, where the entry holes speak for themselves. Entirely fictional. No birdhouses were sold in the making of this website.</p>
+    </div>
+  </footer>
+
+  <script src="listings-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
