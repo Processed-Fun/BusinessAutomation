@@ -6,19 +6,6 @@ When a website is built for an idea, its entry is copied to `business.md` in the
 
 ---
 
-## Blinkr
-
-**Short description:** A venture-backed startup whose app reminds you to blink.
-
-**Long description:** Blinkr is a Series B "ocular wellness platform" that sends push notifications telling you to blink, something you were already doing. The founders describe blinking as "a legacy manual process ripe for disruption" and tout their proprietary BlinkScore, streak tracking, and a premium tier that reminds you slightly more often. The pitch deck claims a total addressable market of "everyone with eyes," and investors have valued the company at $1.4 billion. The app's only setting is off, which is Pro-only.
-
-**Themes and joke:** Incredibly mundane idea played as a hot tech startup (theme 8). The joke is the full startup ceremony — metrics, paywalls, disruption language — around an involuntary reflex.
-
-**Archetype:** saas-product
-
-**Name check note (Sep 2026):** A real app named Blinkr (getblinkr.com) exists with the same name and the same premise, an app that reminds you to blink. Rename or rework this idea before building it.
-
-
 ## The Parting Shot
 
 **Short description:** A high-end photography studio specializing in divorce shoots.
