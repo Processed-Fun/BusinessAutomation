@@ -57,7 +57,7 @@ The websites have a strong tendency to converge on the same shape, so archetype 
 1. Before assigning archetypes, read "ideas_index.md" and count how often each archetype appears.
 2. No two ideas in the same batch may share an archetype.
 3. Avoid any archetype that already dominates the index.  In particular, "landing-page" is heavily overrepresented; do not assign it to new ideas until the index balances out.
-4. It is fine (and encouraged) to work backwards: pick an underused archetype first, then invent a business whose joke naturally lives in that kind of site.  A gov-institutional portal, a docs-site, or an editorial site each suggest very different kinds of jokes than a landing page does.
+4. It is fine (and encouraged) to work backwards: pick an underused archetype first, then invent a business whose joke naturally lives in that kind of site.  A gov-institutional portal, a hospitality-venue, or a tour-operator site each suggest very different kinds of jokes than a landing page does.
 
 # Finalizing
 
