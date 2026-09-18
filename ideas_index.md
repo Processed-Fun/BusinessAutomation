@@ -28,4 +28,4 @@ The master index of every business idea ever created, built or not. One row per 
 | Fines & Dandy | A premium cereal brand that sells only the crumb dust from the bottom of the bag. | idea | | cpg-brand | |
 | The Parting Shot | A high-end photography studio specializing in divorce shoots. | idea | | studio-portfolio | |
 | Twig & Perch Realty | A luxury real-estate brokerage for birdhouses. | idea | | listings | |
-| Unfair & Square Dice Works | A dice maker whose enormous, lopsided dice have anywhere from 3 to 100+ sides and are carved from wood, rock, or plastic. | idea | | ecommerce-catalog | |
+| Unfair & Square | A dice maker whose enormous, lopsided dice have anywhere from 3 to 100+ sides and are carved from wood, rock, or plastic. | idea | | ecommerce-catalog | |
