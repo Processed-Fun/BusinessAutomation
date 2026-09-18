@@ -19,13 +19,11 @@ The archetype is the *kind of website* the business would have: its structure, p
 9. **nonprofit**. A charity or foundation: donation flow, impact stats, campaigns, giving tiers.
 10. **editorial**. Articles are the primary content: newspaper, magazine, blog, review site.
 11. **infomercial**. Direct-response selling: one relentless page, countdowns, testimonial blocks, ORDER NOW. (As-Seen-On-TV, supplement site, MLM opportunity.)
-12. **portal**. The front of a web app: login, dashboard, booking, or live tracking.
-13. **docs-site**. Documentation, help center, or wiki. Sidebar navigation, articles, search.
-14. **event**. A conference, festival, or venue: agenda, speakers or lineup, tickets, sponsors.
-15. **education**. An academy, course catalog, bootcamp, or certification body.
-16. **association**. A trade body, guild, or awards program: membership, standards, member directory.
-17. **listings**. Inventory to browse that isn't a store: real estate, marketplace, aggregator, comparison site.
-18. **personal**. A one-person operation's personal site: portfolio, bio, "hire me."
+12. **event**. A conference, festival, or venue: agenda, speakers or lineup, tickets, sponsors.
+13. **education**. An academy, course catalog, bootcamp, or certification body.
+14. **listings**. Inventory to browse that isn't a store: real estate, marketplace, aggregator, comparison site.
+15. **cpg-brand**. A packaged food or drink brand: product beauty shots, flavor lineup, recipes, store locator.
+16. **studio-portfolio**. A studio or agency that sells through a gallery of its work: projects, process, client list, inquiry form. (Photography studio, design shop, taxidermist.)
 
 # Styles
 

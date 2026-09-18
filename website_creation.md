@@ -34,7 +34,7 @@ Each business is different and will require different pages.  The archetype shou
 
 1. A FAQ.  Keep it mostly deadpan with a few subtle winks to the user.
 2. Testimonials page with interesting or funny testimonials.
-3. Some sort of interactive widget or tool, whether it be a slider or something more complex, if possible.
+3. An interactive widget or tool, some way to dynamically experience the business.  The output should be something that can be shared or downloaded easily.
 4. A customer image gallery, instagram style. Use this as a more image heavy alternative to testimonials.
 5. if there are flavors or varieties or different types include a large gallery of all the different varieties that couldn't be shown on the home page.  something like "flavors" or "full menu", depending on the offering.  this might even be appropriate for non food based options it there is enough variety.
 6. A careers page.
