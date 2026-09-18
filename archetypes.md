@@ -20,10 +20,9 @@ The archetype is the *kind of website* the business would have: its structure, p
 10. **editorial**. Articles are the primary content: newspaper, magazine, blog, review site.
 11. **infomercial**. Direct-response selling: one relentless page, countdowns, testimonial blocks, ORDER NOW. (As-Seen-On-TV, supplement site, MLM opportunity.)
 12. **event**. A conference, festival, or venue: agenda, speakers or lineup, tickets, sponsors.
-13. **education**. An academy, course catalog, bootcamp, or certification body.
-14. **listings**. Inventory to browse that isn't a store: real estate, marketplace, aggregator, comparison site.
-15. **cpg-brand**. A packaged food or drink brand: product beauty shots, flavor lineup, recipes, store locator.
-16. **studio-portfolio**. A studio or agency that sells through a gallery of its work: projects, process, client list, inquiry form. (Photography studio, design shop, taxidermist.)
+13. **listings**. Inventory to browse that isn't a store: real estate, marketplace, aggregator, comparison site.
+14. **cpg-brand**. A packaged food or drink brand: product beauty shots, flavor lineup, recipes, store locator.
+15. **studio-portfolio**. A studio or agency that sells through a gallery of its work: projects, process, client list, inquiry form. (Photography studio, design shop, taxidermist.)
 
 # Styles
 
