@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ | Perfectly Balanced Dice Co.</title>
+  <meta name="description" content="Questions we are asked, answers we stand behind.">
+  <link rel="icon" href="images/logo.webp">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <img class="site-logo" src="images/logo.webp" alt="Perfectly Balanced Dice Co. logo">
+      <h1 class="site-title">
+        <a href="index.html">Perfectly Balanced Dice Co.</a>
+        <span class="site-sub">Est. behind the quarry. Zip code disputed.</span>
+      </h1>
+      <nav class="nav" aria-label="Main">
+        <a href="catalog.html">Catalog</a>
+        <a href="gallery.html">Customers</a>
+        <a href="faq.html" class="active">FAQ</a>
+      </nav>
+      <button class="cart-btn" id="cart-open">Cart [<span id="cart-count">0</span>]</button>
+    </div>
+  </header>
+
+  <section class="band">
+    <p class="kicker">Asked frequently, answered once</p>
+    <h2>FAQ</h2>
+
+    <details class="faq-item">
+      <summary>Are the dice fair?</summary>
+      <div><p>No. Each die ships with a printed Fairness Report documenting this. The report is one page. The page says No. Framing available for $12.</p></div>
+    </details>
+
+    <details class="faq-item">
+      <summary>Then why is the company called Perfectly Balanced?</summary>
+      <div><p>Naming a company is free. Balancing a 40 pound granite polyhedron is not. We put the budget where it mattered.</p></div>
+    </details>
+
+    <details class="faq-item">
+      <summary>What are the odds of rolling any given number?</summary>
+      <div><p>Unknown, and we ask that you stop measuring. One customer rolled the Splinter 10,000 times and mailed us a spreadsheet. We mailed it back.</p></div>
+    </details>
+
+    <details class="faq-item">
+      <summary>Can I use these in a licensed tabletop game?</summary>
+      <div><p>You can use them anywhere the floor is rated for it. Whether your game group allows the Grandfather is between you and your game group. Most groups fold by the third session.</p></div>
+    </details>
+
+    <details class="faq-item">
+      <summary>How do I read the result on the Erratic d104?</summary>
+      <div><p>Kneel. Use the loupe, which is included. If the result face is against the floor, the roll is a 0, which is not one of the 104 numbers, and is the worst thing that can happen to you in any game.</p></div>
+    </details>
+
+    <details class="faq-item">
+      <summary>My die arrived with a chip in it.</summary>
+      <div><p>That is a new face. Renumber accordingly, or send us a photo and we will assign it a number from our reserve list.</p></div>
+    </details>
+
+    <details class="faq-item">
+      <summary>What is the return policy?</summary>
+      <div><p>Returns accepted within 30 days, freight prepaid, which for the Stump costs more than the Stump. To date this policy has been tested once, by a man with a truck, and honored in full.</p></div>
+    </details>
+
+    <details class="faq-item">
+      <summary>Is the found plastic safe?</summary>
+      <div><p>The Wobbler has passed every test we have thought to run, both of them. Do not microwave it. It did not go well and the microwave now has a favorite number.</p></div>
+    </details>
+
+    <details class="faq-item" id="custom">
+      <summary>Do you take custom commissions?</summary>
+      <div>
+        <p>Yes. Tell us the number of sides, the material, and the maximum weight your floor joists were stamped for. Recent commissions include a d1 for a customer who was done with uncertainty, and a d366 for a leap year themed campaign, delivered on a flatbed.</p>
+        <p>Email <span class="mono">commissions@perfectlybalanced.example</span> or shout toward the quarry.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>Do you offer expedited shipping?</summary>
+      <div><p>The dice weigh what they weigh. Shipping is a negotiation with physics and the carrier, in that order. Nothing about it is expedited. Thank you for understanding, or at minimum, for stopping asking.</p></div>
+    </details>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>Perfectly Balanced Dice Co. All results final, including ours.</span>
+      <span>
+        <a href="catalog.html">Catalog</a> /
+        <a href="gallery.html">Customers</a> /
+        <a href="faq.html">FAQ</a> /
+        <a href="marketing.html">Marketing materials</a> /
+        <a href="../index.html">Directory</a>
+      </span>
+    </div>
+  </footer>
+
+  <aside class="drawer" id="cart-drawer" aria-label="Shopping cart">
+    <div class="drawer-head">
+      <h3>Your cart</h3>
+      <button class="close-x" id="cart-close">X</button>
+    </div>
+    <div class="drawer-body" id="cart-lines"></div>
+    <div class="drawer-foot">
+      <div class="total"><span>Total</span><span id="cart-total">$0</span></div>
+      <div class="total mono"><span>Ship weight</span><span id="cart-weight">0 lb</span></div>
+      <button class="btn" id="cart-checkout" style="width:100%">Checkout</button>
+      <p class="freight-note">Shipping calculated by a person, slowly. Items over 100 lb ship freight and require a conversation.</p>
+    </div>
+  </aside>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

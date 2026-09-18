@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalog | Perfectly Balanced Dice Co.</title>
+  <meta name="description" content="All twelve dice currently in stock, from the two sided Skipping Stone to the 104 sided granite Erratic.">
+  <link rel="icon" href="images/logo.webp">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <img class="site-logo" src="images/logo.webp" alt="Perfectly Balanced Dice Co. logo">
+      <h1 class="site-title">
+        <a href="index.html">Perfectly Balanced Dice Co.</a>
+        <span class="site-sub">Est. behind the quarry. Zip code disputed.</span>
+      </h1>
+      <nav class="nav" aria-label="Main">
+        <a href="catalog.html" class="active">Catalog</a>
+        <a href="gallery.html">Customers</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+      <button class="cart-btn" id="cart-open">Cart [<span id="cart-count">0</span>]</button>
+    </div>
+  </header>
+
+  <section class="band">
+    <p class="kicker">Everything we admit to making</p>
+    <h2>The catalog</h2>
+    <p>
+      Twelve dice, two to 104 sides, in stone, wood, and plastic.
+      Each one is photographed once, because no two are alike and the second photo would be a lie.
+      Prices are per die. Weights are approximate and trending upward.
+    </p>
+    <div class="grid" id="catalog-grid"></div>
+  </section>
+
+  <section class="band">
+    <h2>Custom work</h2>
+    <p>
+      We take commissions for side counts we have not attempted, materials we have not met,
+      and weights that require a structural engineer's signature. Describe the die.
+      We will tell you if it can exist. Historically we have said yes every time, which worries us.
+    </p>
+    <a class="btn" href="faq.html#custom">Commission a die</a>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>Perfectly Balanced Dice Co. All results final, including ours.</span>
+      <span>
+        <a href="catalog.html">Catalog</a> /
+        <a href="gallery.html">Customers</a> /
+        <a href="faq.html">FAQ</a> /
+        <a href="marketing.html">Marketing materials</a> /
+        <a href="../index.html">Directory</a>
+      </span>
+    </div>
+  </footer>
+
+  <aside class="drawer" id="cart-drawer" aria-label="Shopping cart">
+    <div class="drawer-head">
+      <h3>Your cart</h3>
+      <button class="close-x" id="cart-close">X</button>
+    </div>
+    <div class="drawer-body" id="cart-lines"></div>
+    <div class="drawer-foot">
+      <div class="total"><span>Total</span><span id="cart-total">$0</span></div>
+      <div class="total mono"><span>Ship weight</span><span id="cart-weight">0 lb</span></div>
+      <button class="btn" id="cart-checkout" style="width:100%">Checkout</button>
+      <p class="freight-note">Shipping calculated by a person, slowly. Items over 100 lb ship freight and require a conversation.</p>
+    </div>
+  </aside>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marketing Materials | Perfectly Balanced Dice Co.</title>
+  <meta name="description" content="Official promotional posters for Perfectly Balanced Dice Co.">
+  <link rel="icon" href="images/logo.webp">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <img class="site-logo" src="images/logo.webp" alt="Perfectly Balanced Dice Co. logo">
+      <h1 class="site-title">
+        <a href="index.html">Perfectly Balanced Dice Co.</a>
+        <span class="site-sub">Est. behind the quarry. Zip code disputed.</span>
+      </h1>
+      <nav class="nav" aria-label="Main">
+        <a href="catalog.html">Catalog</a>
+        <a href="gallery.html">Customers</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+      <button class="cart-btn" id="cart-open">Cart [<span id="cart-count">0</span>]</button>
+    </div>
+  </header>
+
+  <section class="band">
+    <p class="kicker">For print shops and true believers</p>
+    <h2>Marketing materials</h2>
+    <p>Our official posters. Print them, frame them, or laminate one for the workshop like we did. The tagline was approved by the founder on the second try.</p>
+    <div class="insta-grid">
+      <figure class="insta" style="margin:0">
+        <img src="images/marketing-portrait.webp" alt="Perfectly Balanced Dice Co. portrait poster" loading="lazy" data-modal style="aspect-ratio:2/3">
+        <p>Portrait. For narrow walls and tall opinions.</p>
+      </figure>
+      <figure class="insta" style="margin:0">
+        <img src="images/marketing-landscape.webp" alt="Perfectly Balanced Dice Co. landscape poster" loading="lazy" data-modal style="aspect-ratio:3/2">
+        <p>Landscape. Fits above most mantels and some doorways.</p>
+      </figure>
+      <figure class="insta" style="margin:0">
+        <img src="images/marketing-square.webp" alt="Perfectly Balanced Dice Co. square poster" loading="lazy" data-modal>
+        <p>Square. The only right angles we sell.</p>
+      </figure>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>Perfectly Balanced Dice Co. All results final, including ours.</span>
+      <span>
+        <a href="catalog.html">Catalog</a> /
+        <a href="gallery.html">Customers</a> /
+        <a href="faq.html">FAQ</a> /
+        <a href="marketing.html">Marketing materials</a> /
+        <a href="../index.html">Directory</a>
+      </span>
+    </div>
+  </footer>
+
+  <aside class="drawer" id="cart-drawer" aria-label="Shopping cart">
+    <div class="drawer-head">
+      <h3>Your cart</h3>
+      <button class="close-x" id="cart-close">X</button>
+    </div>
+    <div class="drawer-body" id="cart-lines"></div>
+    <div class="drawer-foot">
+      <div class="total"><span>Total</span><span id="cart-total">$0</span></div>
+      <div class="total mono"><span>Ship weight</span><span id="cart-weight">0 lb</span></div>
+      <button class="btn" id="cart-checkout" style="width:100%">Checkout</button>
+      <p class="freight-note">Shipping calculated by a person, slowly. Items over 100 lb ship freight and require a conversation.</p>
+    </div>
+  </aside>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
