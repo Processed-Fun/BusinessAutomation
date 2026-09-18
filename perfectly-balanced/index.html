@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfectly Balanced Dice Co.</title>
+  <meta name="description" content="Enormous, lopsided, handmade dice with 2 to 104 sides, in stone, wood, and plastic. None of them are balanced. The name is the warranty's problem.">
+  <link rel="icon" href="images/logo.webp">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <img class="site-logo" src="images/logo.webp" alt="Perfectly Balanced Dice Co. logo">
+      <h1 class="site-title">
+        <a href="index.html">Perfectly Balanced Dice Co.</a>
+        <span class="site-sub">Est. behind the quarry. Zip code disputed.</span>
+      </h1>
+      <nav class="nav" aria-label="Main">
+        <a href="catalog.html">Catalog</a>
+        <a href="gallery.html">Customers</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+      <button class="cart-btn" id="cart-open">Cart [<span id="cart-count">0</span>]</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <span class="stamp">No die alike. No roll repeatable.</span>
+        <h1>Enormous, lopsided dice. Two to 104 sides.</h1>
+        <p class="plain">
+          We make oversized dice by hand from river rock, barn wood, granite, and plastic we found.
+          No two faces are the same size and no two rolls have the same odds.
+          If you want fair, buy a coin. If you want a 40 pound granite d104, you are home.
+        </p>
+        <a class="btn" href="catalog.html">Browse the catalog</a>
+        <a class="btn ghost" href="product.html?d=erratic">Meet the Erratic d104</a>
+      </div>
+      <img class="hero-img" src="images/hero.webp" alt="The Perfectly Balanced workshop, giant stone and wood dice on the floor" data-modal>
+    </div>
+  </section>
+
+  <section class="band">
+    <p class="kicker">The good stuff</p>
+    <h2>Featured dice</h2>
+    <div class="grid" id="featured-grid"></div>
+  </section>
+
+  <section class="band">
+    <p class="kicker">Our word</p>
+    <h2>The Perfectly Balanced guarantee</h2>
+    <div class="grid">
+      <article class="card"><div class="card-body">
+        <h3>Never uniform</h3>
+        <p>Every face is a different size. We measure them after we cut them, out of curiosity, not obligation.</p>
+      </div></article>
+      <article class="card"><div class="card-body">
+        <h3>Never balanced</h3>
+        <p>Each die ships with a Fairness Report. Every report says the same thing. It says No.</p>
+      </div></article>
+      <article class="card"><div class="card-body">
+        <h3>Never sanded</h3>
+        <p>Sanding is how a die learns to lie about what it is. Our founder has not sanded anything since 1987, including this website.</p>
+      </div></article>
+      <article class="card"><div class="card-body">
+        <h3>Always heavy</h3>
+        <p>Dice over 20 pounds should be rolled from a seated position. Dice over 100 pounds are also furniture.</p>
+      </div></article>
+    </div>
+  </section>
+
+  <section class="band">
+    <p class="kicker">Proof</p>
+    <h2>In the wild</h2>
+    <p>Real customers, real floors, real consequences. See the <a href="gallery.html">customer gallery</a> for the full record.</p>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>Perfectly Balanced Dice Co. All results final, including ours.</span>
+      <span>
+        <a href="catalog.html">Catalog</a> /
+        <a href="gallery.html">Customers</a> /
+        <a href="faq.html">FAQ</a> /
+        <a href="marketing.html">Marketing materials</a> /
+        <a href="../index.html">Directory</a>
+      </span>
+    </div>
+  </footer>
+
+  <aside class="drawer" id="cart-drawer" aria-label="Shopping cart">
+    <div class="drawer-head">
+      <h3>Your cart</h3>
+      <button class="close-x" id="cart-close">X</button>
+    </div>
+    <div class="drawer-body" id="cart-lines"></div>
+    <div class="drawer-foot">
+      <div class="total"><span>Total</span><span id="cart-total">$0</span></div>
+      <div class="total mono"><span>Ship weight</span><span id="cart-weight">0 lb</span></div>
+      <button class="btn" id="cart-checkout" style="width:100%">Checkout</button>
+      <p class="freight-note">Shipping calculated by a person, slowly. Items over 100 lb ship freight and require a conversation.</p>
+    </div>
+  </aside>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

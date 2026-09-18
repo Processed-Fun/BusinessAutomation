@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customers | Perfectly Balanced Dice Co.</title>
+  <meta name="description" content="Customer photos of Perfectly Balanced dice in use: game nights, freight deliveries, stadiums, and one lake incident.">
+  <link rel="icon" href="images/logo.webp">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <img class="site-logo" src="images/logo.webp" alt="Perfectly Balanced Dice Co. logo">
+      <h1 class="site-title">
+        <a href="index.html">Perfectly Balanced Dice Co.</a>
+        <span class="site-sub">Est. behind the quarry. Zip code disputed.</span>
+      </h1>
+      <nav class="nav" aria-label="Main">
+        <a href="catalog.html">Catalog</a>
+        <a href="gallery.html" class="active">Customers</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+      <button class="cart-btn" id="cart-open">Cart [<span id="cart-count">0</span>]</button>
+    </div>
+  </header>
+
+  <section class="band">
+    <p class="kicker">Tag us. We will not repost anything flattering.</p>
+    <h2>Customers in the wild</h2>
+    <p>
+      Photos sent in by owners. We publish them as received.
+      If your die does not appear below it is because the photo was blurry, which happens,
+      because the dice are heavy and the hands are shaking.
+    </p>
+    <div class="insta-grid" id="gallery-grid"></div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>Perfectly Balanced Dice Co. All results final, including ours.</span>
+      <span>
+        <a href="catalog.html">Catalog</a> /
+        <a href="gallery.html">Customers</a> /
+        <a href="faq.html">FAQ</a> /
+        <a href="marketing.html">Marketing materials</a> /
+        <a href="../index.html">Directory</a>
+      </span>
+    </div>
+  </footer>
+
+  <aside class="drawer" id="cart-drawer" aria-label="Shopping cart">
+    <div class="drawer-head">
+      <h3>Your cart</h3>
+      <button class="close-x" id="cart-close">X</button>
+    </div>
+    <div class="drawer-body" id="cart-lines"></div>
+    <div class="drawer-foot">
+      <div class="total"><span>Total</span><span id="cart-total">$0</span></div>
+      <div class="total mono"><span>Ship weight</span><span id="cart-weight">0 lb</span></div>
+      <button class="btn" id="cart-checkout" style="width:100%">Checkout</button>
+      <p class="freight-note">Shipping calculated by a person, slowly. Items over 100 lb ship freight and require a conversation.</p>
+    </div>
+  </aside>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
