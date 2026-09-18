@@ -49,6 +49,10 @@ The style is the visual aesthetic: typography, palette, density, era, mood. It i
 18. **americana-roadside**. Diner signage, slab display type, hand-painted small-town warmth.
 19. **academic**. Looks typeset: justified text, footnotes, restraint, LaTeX energy.
 20. **sports-neon**. High-energy athletic branding: neon accents, heavy display sans, action angles.
+21. **fast-food-value**. Primary red and yellow, combo-meal menus, value starbursts, drive-thru glare; the laminated dollar-menu look.
+22. **gas-station-mart**. Convenience store under fluorescent light: shelf price stickers, "2 for $3" tags, lotto and energy-drink clutter.
+23. **grocery-circular**. The weekly supermarket flyer: crammed product grids, giant prices, clip-out coupons, newsprint texture.
+24. **snack-mascot**. Sugary kids' branding: a mascot front and center, blazing colors, "FREE PRIZE INSIDE" bursts, cereal-box logic.
 
 # Choosing a combination
 
