@@ -25,7 +25,7 @@ The master index of every business idea ever created, built or not. One row per 
 | Lint for Nests | A nonprofit that collects donated belly button lint to insulate nests for orphaned songbirds. | built | lint-for-nests | nonprofit | craft-organic |
 | Mist O' Meat | An As-Seen-On-TV aerosol spray that gives any food the flavor of pot roast. | built | mist-o-meat | infomercial | infomercial-max |
 | Acquired Taste Academy | An online academy with a full curriculum for learning to love the world's most upsetting flavors. | built | acquired-taste-academy | education | academic |
-| Fines & Dandy | A premium cereal brand that sells only the crumb dust from the bottom of the bag. | idea | | cpg-brand | |
+| Fines & Dandy | A premium cereal brand that sells only the crumb dust from the bottom of the bag. | built | fines-and-dandy | cpg-brand | craft-organic |
 | The Parting Shot | A high-end photography studio specializing in divorce shoots. | idea | | studio-portfolio | |
 | Twig & Perch Realty | A luxury real-estate brokerage for birdhouses. | idea | | listings | |
 | Perfectly Balanced Dice Co. | A dice maker whose enormous, lopsided dice have anywhere from 2 to 104 sides and are carved from wood, rock, or plastic. | built | perfectly-balanced | ecommerce-catalog | brutalist |
