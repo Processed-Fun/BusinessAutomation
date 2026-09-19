@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monogrape | One grape, delivered on demand</title>
+  <meta name="description" content="Monogrape is the on-demand delivery platform for a single grape. Tap the button and a courier brings you one grape.">
+  <link rel="icon" href="images/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><img src="images/logo.webp" alt="Monogrape logo">Monogrape</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#how">How it works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="cases.html">Case studies</a>
+        <a href="api.html">API</a>
+        <a href="faq.html">FAQ</a>
+        <a href="tracker.html">Track</a>
+        <a href="#pricing" class="cta">Order a grape</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-blob one"></div>
+    <div class="hero-blob two"></div>
+    <div class="wrap hero-inner">
+      <div>
+        <span class="eyebrow">Series C &middot; $140M raised to move one grape</span>
+        <h1>One grape.<br><span class="grad-text">Delivered.</span></h1>
+        <p class="hero-sub">Monogrape is the on-demand delivery platform for a single grape. Tap the button, and within 30 minutes a trained courier hands you one chilled, inspected, individually wrapped grape. That is the whole product. We are very serious about it.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#pricing">Order a grape</a>
+          <a class="btn btn-ghost" href="tracker.html">Track a live demo grape</a>
+        </div>
+        <p class="hero-note">Available in 41 cities. Surge pricing applies during brunch.</p>
+      </div>
+      <div class="phone" aria-hidden="true">
+        <div class="phone-screen">
+          <div class="phone-top">
+            <div class="p-title">Your grape is on its way</div>
+            <div class="p-eta">Arriving in 7 min &middot; Courier: Danielle</div>
+          </div>
+          <div class="phone-map">
+            <div class="phone-route">
+              <div class="phone-dot">&#128690;</div>
+              <div class="phone-pin">&#128205;</div>
+            </div>
+          </div>
+          <div class="phone-status">
+            <div class="phone-step done"><span class="tick">&#10003;</span> Grape selected at fulfillment vineyard</div>
+            <div class="phone-step done"><span class="tick">&#10003;</span> Passed 14-point firmness inspection</div>
+            <div class="phone-step now"><span class="tick">&#9679;</span> Courier en route, grape at 4&deg;C</div>
+            <div class="phone-step"><span class="tick">&#9675;</span> Handoff and tissue ceremony</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="logobar">
+    <div class="wrap">
+      <p>Trusted by teams that could have bought a whole bunch</p>
+      <div class="logo-row">
+        <span>Vestibule Capital</span>
+        <span>Brunchly</span>
+        <span>The Aspen Ideas Snack</span>
+        <span>Hollow &amp; Sons</span>
+        <span>DevGrind</span>
+        <span>Cormorant Labs</span>
+      </div>
+    </div>
+  </div>
+
+  <section id="how">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>How it works</h2>
+        <p>We compressed the entire global produce supply chain into three taps. Then we removed the part where you get a useful amount of produce.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card">
+          <div class="step-num">1</div>
+          <h3>Request</h3>
+          <p>Open the app and tap the grape. There is only one button. Our design team spent eight months removing the others.</p>
+        </div>
+        <div class="card">
+          <div class="step-num">2</div>
+          <h3>Fulfillment</h3>
+          <p>A picker selects your grape by hand at one of our regional micro-vineyards. It is weighed, chilled, photographed for your records, and placed in its cradle.</p>
+        </div>
+        <div class="card">
+          <div class="step-num">3</div>
+          <h3>Delivery</h3>
+          <p>A courier carries your grape in a temperature-controlled single-grape backpack and presents it to you. Average handoff time: 11 seconds. Some customers applaud.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="soft">
+    <div class="wrap split">
+      <div class="split-media">
+        <img src="images/product.webp" alt="An open Monogrape delivery box with a single grape nestled in lavender tissue paper" data-modal>
+      </div>
+      <div class="split-copy">
+        <h2>The unboxing is the point</h2>
+        <p>Every Monogrape arrives in our signature rigid box with four layers of lavender tissue paper, a molded paper cradle, and a card noting your grape's vineyard row and picking time. The grape-to-packaging ratio is 1 to 340 by weight. We consider this our moat.</p>
+        <ul>
+          <li>14-point firmness and gloss inspection</li>
+          <li>Cold chain maintained at 4&deg;C from vine to hand</li>
+          <li>Provenance card with picker's initials</li>
+          <li>Tissue paper is compostable, eventually, somewhere</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap split rev">
+      <div class="split-media">
+        <img src="images/courier.webp" alt="A Monogrape courier in violet uniform presenting a delivery box, wearing a tiny insulated single-grape backpack" data-modal>
+      </div>
+      <div class="split-copy">
+        <h2>A courier network built for one</h2>
+        <p>Our couriers complete a three-week certification covering grape handling, cadence of approach, and the handoff itself, which has choreography. Each carries the G1, our custom insulated backpack with room for exactly one box. Engineers proposed a two-box version in 2024. They no longer work here.</p>
+        <ul>
+          <li>Live GPS tracking down to the grape</li>
+          <li>Photo confirmation of the presented grape</li>
+          <li>In-app tipping, with a suggested 45%</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="soft" id="pricing">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Pricing</h2>
+        <p>Simple, transparent pricing. One grape per order. That part is not negotiable, and honestly it is in the name.</p>
+      </div>
+      <div class="price-grid">
+        <div class="price-card">
+          <h3>Solo</h3>
+          <p class="plan-for">For the grape-curious</p>
+          <p class="price">$7.99<small> / grape</small></p>
+          <p class="price-note">Plus service fee, delivery fee, handling fee, and the small fee</p>
+          <ul>
+            <li>One grape, delivered in under 30 minutes</li>
+            <li>Standard lavender tissue paper</li>
+            <li>Digital provenance card</li>
+            <li>2.1x surge pricing during brunch hours</li>
+          </ul>
+          <button class="btn btn-primary btn-small" data-order="Solo">Order a grape</button>
+        </div>
+        <div class="price-card featured">
+          <span class="badge">Most popular</span>
+          <h3>Monogrape+</h3>
+          <p class="plan-for">For the daily grape habit</p>
+          <p class="price">$24<small> / month</small></p>
+          <p class="price-note">Grapes still billed separately. The subscription is for the feeling.</p>
+          <ul>
+            <li>No surge pricing, even at brunch</li>
+            <li>Priority courier matching</li>
+            <li>Double tissue paper on request</li>
+            <li>Early access to seasonal varietals</li>
+            <li>Annual Year in Grapes recap email</li>
+          </ul>
+          <button class="btn btn-primary btn-small" data-order="Monogrape+">Start membership</button>
+        </div>
+        <div class="price-card">
+          <h3>Enterprise</h3>
+          <p class="plan-for">Weddings, conferences, board retreats</p>
+          <p class="price">Custom</p>
+          <p class="price-note">Volume means many single deliveries. Never a bunch.</p>
+          <ul>
+            <li>Synchronized multi-courier grape drops</li>
+            <li>Dedicated grape success manager</li>
+            <li>White-label tissue paper</li>
+            <li>SLA: 99.9% grape uptime</li>
+            <li>Full API access included</li>
+          </ul>
+          <button class="btn btn-ghost btn-small" data-enterprise>Contact sales</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="cta-band">
+        <h2>Hungry? Sort of? Not really?</h2>
+        <p>Perfect. You are exactly our customer. Order a single grape now and taste the future of hyper-personal logistics.</p>
+        <a class="btn btn-primary" href="#pricing" data-order="Solo">Order your grape</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <div class="foot-brand"><img src="images/logo.webp" alt="">Monogrape</div>
+          <p>The on-demand delivery platform for a single grape. Founded in 2022. Still just the one grape.</p>
+        </div>
+        <div>
+          <h4>Product</h4>
+          <a href="index.html#how">How it works</a>
+          <a href="index.html#pricing">Pricing</a>
+          <a href="tracker.html">Live tracking</a>
+          <a href="api.html">Developer API</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="cases.html">Case studies</a>
+          <a href="sustainability.html">Sustainability</a>
+          <a href="faq.html">FAQ</a>
+          <a href="marketing.html">Marketing gallery</a>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <a href="faq.html">One grape policy</a>
+          <a href="faq.html">Tissue paper terms</a>
+          <a href="../index.html">Business directory</a>
+        </div>
+      </div>
+      <div class="foot-legal">
+        <p>&copy; 2026 Monogrape, Inc. Monogrape is a fictional business. No grapes were delivered in the making of this website. "One grape. Delivered." is a registered promise, not a guarantee.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal-backdrop" id="imgModal" hidden>
+    <img src="" alt="">
+  </div>
+
+  <div class="modal-backdrop" id="orderModal" hidden>
+    <div class="modal-card">
+      <button class="modal-close" data-close>&#10005;</button>
+      <div id="orderForm">
+        <h3 style="margin-top:0">Order one grape</h3>
+        <p style="color:var(--muted);font-size:0.9rem">Plan: <b id="orderPlan">Solo</b></p>
+        <div class="form-grid">
+          <div>
+            <label for="variety">Varietal</label>
+            <select id="variety">
+              <option>Concord Classic</option>
+              <option>Cotton Candy (seasonal)</option>
+              <option>Moon Drop, the long one</option>
+              <option>Mystery Grape (courier's choice)</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <div>
+              <label for="chill">Chill level</label>
+              <select id="chill">
+                <option>Standard 4&deg;C</option>
+                <option>Extra frosty</option>
+                <option>Room temp (why)</option>
+              </select>
+            </div>
+            <div>
+              <label for="tip">Courier tip</label>
+              <select id="tip">
+                <option>45% (suggested)</option>
+                <option>60% (generous)</option>
+                <option>90% (grapefluencer)</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label for="addr">Delivery address</label>
+            <input id="addr" type="text" placeholder="Where should the grape go?">
+          </div>
+          <button class="btn btn-primary" id="placeOrder">Place order &middot; $7.99 + fees</button>
+          <p style="font-size:0.75rem;color:var(--faint);margin:0">By ordering you accept the One Grape Policy and waive the right to request a second grape.</p>
+        </div>
+      </div>
+      <div id="orderDone" hidden>
+        <h3 style="margin-top:0">&#127815; Your grape is moving</h3>
+        <div class="form-ok">Order confirmed. Tracking code <b id="orderCode">MG-000000</b>. A courier named Danielle has accepted your grape and is walking with purpose.</div>
+        <p style="color:var(--muted);font-size:0.9rem">Follow every step on the live tracker. You can also download a commemorative delivery certificate there.</p>
+        <a class="btn btn-primary" id="trackLink" href="tracker.html">Track my grape</a>
+      </div>
+      <div id="enterpriseForm" hidden>
+        <h3 style="margin-top:0">Talk to grape sales</h3>
+        <p style="color:var(--muted);font-size:0.9rem">Tell us about your event. A grape success manager replies within one business hour, usually mid-bite.</p>
+        <div class="form-grid">
+          <div class="form-row">
+            <div>
+              <label for="entName">Name</label>
+              <input id="entName" type="text" placeholder="Your name">
+            </div>
+            <div>
+              <label for="entOrg">Organization</label>
+              <input id="entOrg" type="text" placeholder="Company or couple">
+            </div>
+          </div>
+          <div>
+            <label for="entCount">Estimated attendees</label>
+            <input id="entCount" type="number" min="1" placeholder="Each receives exactly one grape">
+          </div>
+          <div>
+            <label for="entMsg">Your event</label>
+            <textarea id="entMsg" rows="3" placeholder="Wedding, conference, quiet celebration of a merger..."></textarea>
+          </div>
+          <button class="btn btn-primary" id="sendEnterprise">Request a quote</button>
+        </div>
+      </div>
+      <div id="enterpriseDone" hidden>
+        <h3 style="margin-top:0">Request received</h3>
+        <div class="form-ok">Thank you. Your inquiry has been assigned to a grape success manager. Please do not purchase grapes elsewhere while you wait. We will know.</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sustainability | Monogrape</title>
+  <meta name="description" content="Our pledge to reach grape-neutral logistics by 2030.">
+  <link rel="icon" href="images/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><img src="images/logo.webp" alt="Monogrape logo">Monogrape</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html#how">How it works</a>
+        <a href="index.html#pricing">Pricing</a>
+        <a href="cases.html">Case studies</a>
+        <a href="api.html">API</a>
+        <a href="faq.html">FAQ</a>
+        <a href="tracker.html">Track</a>
+        <a href="index.html#pricing" class="cta">Order a grape</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="page-head">
+    <div class="wrap">
+      <h1 style="font-size:clamp(2rem,4vw,2.8rem)">Grape-neutral by 2030</h1>
+      <p>We move one grape at a time, which raises questions. This page answers them with the confidence of a company that has hired three sustainability consultants and listened to one.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Our footprint, honestly measured</h2>
+        <p>An independent auditor reviewed our operations and produced a report we have chosen to summarize rather than publish.</p>
+      </div>
+      <div class="impact-grid">
+        <div class="card"><b>340:1</b><p>packaging-to-grape weight ratio, which the auditor circled twice in red pen</p></div>
+        <div class="card"><b>1.2 kg</b><p>of CO2 per delivered grape, roughly the footprint of the grape's entire home vine for a year</p></div>
+        <div class="card"><b>100%</b><p>of our couriers travel by bicycle, e-bike, or a brisk meaningful walk</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="soft">
+    <div class="wrap split">
+      <div class="split-media">
+        <img src="images/vineyard.webp" alt="A worker in violet uniform picking a single grape with tweezers at a sunny vineyard" data-modal>
+      </div>
+      <div class="split-copy">
+        <h2>Regenerative single-grape agriculture</h2>
+        <p>Our partner micro-vineyards harvest one grape per order, leaving the rest of the bunch to, in the words of our head of agronomy, "keep doing whatever bunches do." This is the gentlest harvesting model in the produce industry, and by volume, the least productive.</p>
+        <ul>
+          <li>Each vine is thanked after picking, per policy</li>
+          <li>Runner-up grapes are returned to the vine unharmed</li>
+          <li>Tweezers are sanitized between every harvest</li>
+          <li>Vineyard dogs are on the payroll as morale officers</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap prose">
+      <h2>The road to 2030</h2>
+      <p style="color:var(--muted)">Our grape-neutral pledge commits us to offsetting every delivered grape by planting, funding, or at minimum sincerely appreciating an equivalent grape elsewhere. Milestones on the road so far:</p>
+      <div style="display:grid;gap:14px;margin-top:24px">
+        <div class="card"><h3>2024: The Tissue Reckoning</h3><p>We reduced tissue layers from six to four after a viral photo of a landfill that was mostly our lavender. The unboxing, customers agreed, still slaps.</p></div>
+        <div class="card"><h3>2025: Offset Vineyard One</h3><p>We purchased a small vineyard in Oregon and instructed it to simply exist. It produces grapes we do not sell, touch, or visit. Our accountants remain uneasy.</p></div>
+        <div class="card"><h3>2026: The Walking Initiative</h3><p>Deliveries within 400 meters are now completed on foot, carbon-free. Couriers describe these as "the long ones."</p></div>
+        <div class="card"><h3>2030: Grape neutrality</h3><p>By 2030, every grape we deliver will be matched by a grape we leave alone. We are already leaving billions of grapes alone, so internally this milestone is considered achieved. Legal has asked us to keep the date anyway.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <div class="foot-brand"><img src="images/logo.webp" alt="">Monogrape</div>
+          <p>The on-demand delivery platform for a single grape. Founded in 2022. Still just the one grape.</p>
+        </div>
+        <div>
+          <h4>Product</h4>
+          <a href="index.html#how">How it works</a>
+          <a href="index.html#pricing">Pricing</a>
+          <a href="tracker.html">Live tracking</a>
+          <a href="api.html">Developer API</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="cases.html">Case studies</a>
+          <a href="sustainability.html">Sustainability</a>
+          <a href="faq.html">FAQ</a>
+          <a href="marketing.html">Marketing gallery</a>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <a href="faq.html">One grape policy</a>
+          <a href="faq.html">Tissue paper terms</a>
+          <a href="../index.html">Business directory</a>
+        </div>
+      </div>
+      <div class="foot-legal">
+        <p>&copy; 2026 Monogrape, Inc. Monogrape is a fictional business. The vineyard dogs, sadly, are also fictional.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal-backdrop" id="imgModal" hidden>
+    <img src="" alt="">
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

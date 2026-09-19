@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Grape Tracking | Monogrape</title>
+  <meta name="description" content="Follow your grape in real time, from vineyard row to tissue ceremony.">
+  <link rel="icon" href="images/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><img src="images/logo.webp" alt="Monogrape logo">Monogrape</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html#how">How it works</a>
+        <a href="index.html#pricing">Pricing</a>
+        <a href="cases.html">Case studies</a>
+        <a href="api.html">API</a>
+        <a href="faq.html">FAQ</a>
+        <a href="tracker.html">Track</a>
+        <a href="index.html#pricing" class="cta">Order a grape</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="page-head">
+    <div class="wrap">
+      <h1 style="font-size:clamp(2rem,4vw,2.8rem)">Live grape tracking</h1>
+      <p>Enter your tracking code to follow your grape in real time. No code? Press the demo button and we will dispatch a simulated grape with real emotions.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="track-panel">
+        <div class="track-input-row">
+          <input type="text" id="trackCode" placeholder="Tracking code, e.g. MG-482910" aria-label="Tracking code">
+          <button class="btn btn-primary btn-small" id="trackBtn">Track</button>
+          <button class="btn btn-ghost btn-small" id="demoBtn">Demo grape</button>
+        </div>
+
+        <div id="trackResult" hidden>
+          <div class="track-meta" style="margin-top:22px">
+            <span>Code: <b id="tCode">MG-000000</b></span>
+            <span>Courier: <b id="tCourier">Danielle</b></span>
+            <span>Grape temp: <b>4&deg;C</b></span>
+            <span>ETA: <b id="tEta">9 min</b></span>
+          </div>
+          <div class="track-map">
+            <div class="track-courier" id="tDot">&#128690;</div>
+            <div class="track-dest">&#128205;</div>
+          </div>
+          <ul class="track-steps" id="tSteps">
+            <li data-step><span class="tick">&#9675;</span> Order received. A vineyard associate begins the walk to row 12.</li>
+            <li data-step><span class="tick">&#9675;</span> Grape selected by hand. Runner-up grapes returned to the vine with thanks.</li>
+            <li data-step><span class="tick">&#9675;</span> Passed 14-point firmness and gloss inspection. Score: 96.</li>
+            <li data-step><span class="tick">&#9675;</span> Nestled in cradle. Tissue paper folded to spec.</li>
+            <li data-step><span class="tick">&#9675;</span> Courier matched and briefed on your grape's story.</li>
+            <li data-step><span class="tick">&#9675;</span> En route. Grape holding steady at 4&deg;C.</li>
+            <li data-step><span class="tick">&#9675;</span> Delivered. Handoff choreography executed cleanly.</li>
+          </ul>
+          <div id="certRow" hidden style="margin-top:22px;text-align:center">
+            <p style="color:var(--muted);font-size:0.9rem;margin:0 0 14px">Your grape has arrived. Commemorate the occasion.</p>
+            <button class="btn btn-primary" id="certBtn">Download delivery certificate</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="soft">
+    <div class="wrap sec-head" style="margin-bottom:0">
+      <h2>Why we track a single grape this closely</h2>
+      <p>Because nobody else would. Our telemetry team streams eleven data points per grape per second, which our data scientists describe as "plenty." The certificate you download is generated locally in your browser, the only part of our stack that has never gone down.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <div class="foot-brand"><img src="images/logo.webp" alt="">Monogrape</div>
+          <p>The on-demand delivery platform for a single grape. Founded in 2022. Still just the one grape.</p>
+        </div>
+        <div>
+          <h4>Product</h4>
+          <a href="index.html#how">How it works</a>
+          <a href="index.html#pricing">Pricing</a>
+          <a href="tracker.html">Live tracking</a>
+          <a href="api.html">Developer API</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="cases.html">Case studies</a>
+          <a href="sustainability.html">Sustainability</a>
+          <a href="faq.html">FAQ</a>
+          <a href="marketing.html">Marketing gallery</a>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <a href="faq.html">One grape policy</a>
+          <a href="faq.html">Tissue paper terms</a>
+          <a href="../index.html">Business directory</a>
+        </div>
+      </div>
+      <div class="foot-legal">
+        <p>&copy; 2026 Monogrape, Inc. Monogrape is a fictional business. Simulated grapes are simulated.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal-backdrop" id="imgModal" hidden>
+    <img src="" alt="">
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer API | Monogrape</title>
+  <meta name="description" content="Programmatic single-grape delivery. REST API, webhooks, and one very focused SDK.">
+  <link rel="icon" href="images/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><img src="images/logo.webp" alt="Monogrape logo">Monogrape</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html#how">How it works</a>
+        <a href="index.html#pricing">Pricing</a>
+        <a href="cases.html">Case studies</a>
+        <a href="api.html">API</a>
+        <a href="faq.html">FAQ</a>
+        <a href="tracker.html">Track</a>
+        <a href="index.html#pricing" class="cta">Order a grape</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="page-head">
+    <div class="wrap">
+      <h1 style="font-size:clamp(2rem,4vw,2.8rem)">Grapes, programmatically</h1>
+      <p>The Monogrape API lets you dispatch a single grape from any codebase. Trigger a grape on deploy, on signup, on your co-founder's birthday, or on a cron schedule you will forget about until the invoices arrive.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap api-layout">
+      <aside class="api-side">
+        <a href="#auth">Authentication</a>
+        <a href="#create">Create a delivery</a>
+        <a href="#get">Get a delivery</a>
+        <a href="#webhooks">Webhooks</a>
+        <a href="#limits">Rate limits</a>
+        <a href="#errors">Errors</a>
+      </aside>
+      <div class="api-main">
+
+        <h2 id="auth">Authentication</h2>
+        <p>Authenticate with a bearer token. Enterprise customers receive keys from their grape success manager, in person, sealed in an envelope inside a slightly larger envelope.</p>
+        <pre><code>curl https://api.monogrape.example/v1/grapes \
+  -H "Authorization: Bearer mg_live_a1b2c3..."</code></pre>
+
+        <h2 id="create"><span class="method post">POST</span>/v1/grapes</h2>
+        <p>Dispatches one grape. The <code>quantity</code> field exists for developer comfort and accepts only the value <code>1</code>.</p>
+        <pre><code>curl -X POST https://api.monogrape.example/v1/grapes \
+  -H "Authorization: Bearer mg_live_a1b2c3..." \
+  -H "Content-Type: application/json" \
+  -d '{
+    "quantity": 1,
+    "varietal": "concord_classic",
+    "chill": "standard",
+    "destination": {
+      "line1": "500 Startup Way, Floor 4",
+      "city": "San Francisco",
+      "notes": "Recipient may cry. This is normal."
+    }
+  }'</code></pre>
+        <p>Response:</p>
+        <pre><code>{
+  "id": "grape_8Xk2mQ",
+  "object": "grape.delivery",
+  "status": "picking",
+  "varietal": "concord_classic",
+  "firmness_score": null,
+  "eta_minutes": 24,
+  "tissue_layers": 4,
+  "tracking_url": "https://monogrape.example/t/MG-482910"
+}</code></pre>
+
+        <h2 id="get"><span class="method get">GET</span>/v1/grapes/{id}</h2>
+        <p>Returns the current state of a grape. States progress through <code>picking</code>, <code>inspecting</code>, <code>nestling</code>, <code>en_route</code>, and <code>delivered</code>. A sixth state, <code>eaten_by_courier</code>, was removed from the schema in v2 following the incident.</p>
+        <pre><code>curl https://api.monogrape.example/v1/grapes/grape_8Xk2mQ \
+  -H "Authorization: Bearer mg_live_a1b2c3..."</code></pre>
+
+        <h2 id="webhooks">Webhooks</h2>
+        <p>Subscribe to grape lifecycle events. Payloads are signed, because someone will absolutely spoof a grape.</p>
+        <table>
+          <thead>
+            <tr><th>Event</th><th>Fires when</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>grape.picked</code></td><td>Your grape leaves the vine</td></tr>
+            <tr><td><code>grape.inspected</code></td><td>Firmness score is recorded</td></tr>
+            <tr><td><code>grape.en_route</code></td><td>Courier begins the journey</td></tr>
+            <tr><td><code>grape.delivered</code></td><td>Handoff choreography completes</td></tr>
+            <tr><td><code>tissue.rustled</code></td><td>Beta. Requires the emotions add-on.</td></tr>
+          </tbody>
+        </table>
+
+        <h2 id="limits">Rate limits</h2>
+        <p>The API accepts 60 requests per minute and, by design, one grape per request. There is no batch endpoint. There will never be a batch endpoint. The CTO has a tattoo about this.</p>
+
+        <h2 id="errors">Errors</h2>
+        <table>
+          <thead>
+            <tr><th>Code</th><th>Meaning</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>422</code></td><td><code>quantity</code> was not 1. Please reflect.</td></tr>
+            <tr><td><code>409</code></td><td>You already have a grape in flight. Savor it.</td></tr>
+            <tr><td><code>451</code></td><td>Destination is inside a vineyard. We found this insulting.</td></tr>
+            <tr><td><code>503</code></td><td>Brunch surge. Retry after mimosas.</td></tr>
+          </tbody>
+        </table>
+
+        <div class="cta-band" style="margin-top:44px">
+          <h2>Ship your first grape today</h2>
+          <p>Enterprise plans include full API access, sandbox grapes, and a Slack channel where our engineers pretend your integration is interesting.</p>
+          <a class="btn btn-primary" href="index.html#pricing">Get API access</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <div class="foot-brand"><img src="images/logo.webp" alt="">Monogrape</div>
+          <p>The on-demand delivery platform for a single grape. Founded in 2022. Still just the one grape.</p>
+        </div>
+        <div>
+          <h4>Product</h4>
+          <a href="index.html#how">How it works</a>
+          <a href="index.html#pricing">Pricing</a>
+          <a href="tracker.html">Live tracking</a>
+          <a href="api.html">Developer API</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="cases.html">Case studies</a>
+          <a href="sustainability.html">Sustainability</a>
+          <a href="faq.html">FAQ</a>
+          <a href="marketing.html">Marketing gallery</a>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <a href="faq.html">One grape policy</a>
+          <a href="faq.html">Tissue paper terms</a>
+          <a href="../index.html">Business directory</a>
+        </div>
+      </div>
+      <div class="foot-legal">
+        <p>&copy; 2026 Monogrape, Inc. Monogrape is a fictional business. The API does not exist, which keeps our uptime perfect.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal-backdrop" id="imgModal" hidden>
+    <img src="" alt="">
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
