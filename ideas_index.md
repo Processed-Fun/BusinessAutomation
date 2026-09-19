@@ -32,6 +32,9 @@ The master index of every business idea ever created, built or not. One row per 
 | Miller & Sons Weather Modification | A family-owned cloud-seeding contractor with the website of a small-town HVAC company. | idea | | local-brochure | |
 | The Standing Invitational | The premier championship of competitive waiting in line, presented like the Masters. | idea | | event | |
 | Monogrape | A venture-backed last-mile delivery platform that delivers exactly one grape. | idea | | saas-product | |
+| The Pothole Preservation Society | A heritage nonprofit fighting to preserve historic potholes. | idea | | nonprofit | |
+| DullMaster Pro | An As-Seen-On-TV knife so safe it cannot cut anything. | idea | | infomercial | |
+| Demands by Design | A boutique design studio for ransom notes. | idea | | studio-portfolio | |
 
 ## Rejected Ideas
 
@@ -49,3 +52,5 @@ Pitched and turned down. Never delete rows, and never pitch these again.
 | Blinkr | A venture-backed startup whose app reminds you to blink. |
 | Vanguard Shovelworks | A hand-forged garden shovel launched and configured like a hypercar. |
 | StandCorp International | The faceless multinational that owns and franchises the world's lemonade stands. |
+| Honest Frank's Bridge Sales | One obsessive page devoted to selling you one specific bridge. |
+| Cone Global | The faceless multinational that manufactures every traffic cone on Earth. |

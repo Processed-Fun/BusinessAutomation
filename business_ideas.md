@@ -59,3 +59,36 @@ When a website is built for an idea, its entry is copied to `business.md` in the
 **Themes and joke:** A useless product run through the full hot-startup ceremony (themes 5 and 7). The joke is a complete DoorDash-grade logistics network, funding story and all, pointed at one grape.
 
 **Archetype:** saas-product
+
+
+## The Pothole Preservation Society
+
+**Short description:** A heritage nonprofit fighting to preserve historic potholes.
+
+**Long description:** The Society maintains an endangered-pothole registry with formal portrait photography, dedicates bronze plaques beside particularly storied craters, and leads guided walking tours of a town's most significant depressions. Restoration projects are documented with before-and-after photos (they add water). Giving tiers run from Gravel Friend to the Adopt-a-Pothole program, where donors receive a certificate and quarterly condition updates on their pothole. The year ends with a black-tie gala held, weather permitting, outdoors near the potholes.
+
+**Themes and joke:** The full historic-preservation apparatus — urgency, plaques, galas, adoption programs — deployed to defend the one piece of heritage everyone wants gone.
+
+**Archetype:** nonprofit
+
+
+## DullMaster Pro
+
+**Short description:** An As-Seen-On-TV knife so safe it cannot cut anything.
+
+**Long description:** DullMaster Pro is sold with every direct-response beat: slow-motion demo footage of the blade failing against a ripe tomato, a jubilant family passing it to a toddler, a comparison chart against "dangerous" knives, and testimonials from nine-fingered converts who wish they'd switched sooner. The countdown timer resets when it hits zero, and the inevitable BUT WAIT doubles your order into the twelve-piece DullMaster Family Block, with knives equally incapable of cutting bread, steak, or anything else.
+
+**Themes and joke:** A useless product (theme 5) in full infomercial regalia. The joke is infomercial urgency celebrating a knife for failing at the one thing a knife must do.
+
+**Archetype:** infomercial
+
+
+## Demands by Design
+
+**Short description:** A boutique design studio for ransom notes.
+
+**Long description:** Demands by Design presents its ransom notes the way a prestige agency presents brand work: a portfolio of framed cut-letter compositions with case-study write-ups ("the client needed urgency without hysteria"), a process page on ethically sourcing magazines, and typography studies on which serifs read most menacing. Client testimonials are enthusiastic and entirely anonymous. There is an awards shelf, a careers page seeking juniors with strong scissor skills, and an inquiry form that promises absolute discretion.
+
+**Themes and joke:** Dubious legality (theme 6) filtered through prestige design-agency portfolio culture. The joke is the full agency ceremony — process, craft, awards — applied to a genre with exactly one client demand.
+
+**Archetype:** studio-portfolio
