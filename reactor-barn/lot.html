@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Lot | Hank &amp; Sons Reactor Barn</title>
+  <meta name="description" content="Every reactor on the lot at Hank &amp; Sons, from the doghouse-sized Pocket Rooster to the County Line. Prices painted right on the units.">
+  <link rel="icon" type="image/webp" href="images/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bitter:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .page-head {
+      background: var(--brown);
+      color: #f5ead6;
+      padding: 54px 0 46px;
+    }
+
+    .page-head h1 {
+      font-size: clamp(1.9rem, 4.5vw, 2.8rem);
+      margin-bottom: 10px;
+    }
+
+    .page-head p { max-width: 640px; color: #e0d2b8; margin: 0; }
+
+    .lot-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 26px; }
+
+    @media (max-width: 760px) {
+      .lot-grid { grid-template-columns: 1fr; }
+    }
+
+    .addons { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+
+    @media (max-width: 760px) {
+      .addons { grid-template-columns: 1fr; }
+    }
+
+    .addon {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 20px 22px;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .addon p { color: var(--muted); font-size: 0.92rem; }
+  </style>
+</head>
+<body>
+  <div class="topbar">Financing available through the First Bank of Prairie Knob. Ask for Gary. <a href="index.html#quote-section">Or just call us &rarr;</a></div>
+
+  <nav class="main">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <img src="images/logo.webp" alt="Hank &amp; Sons Reactor Barn logo">
+        <span>Hank &amp; Sons<br>Reactor Barn</span>
+      </a>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="lot.html" class="active">The Lot</a>
+        <a href="gallery.html">The Corkboard</a>
+        <a href="index.html#quote-section">Get a Quote</a>
+        <button id="wagonBtn" class="btn small ghost" type="button">Wagon (0)</button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-head">
+    <div class="wrap">
+      <h1>The Lot</h1>
+      <p>Every unit we build, priced the way Hank Sr. prices things: once, in paint, on the side of the unit. Walk the lot below. Anything wagon-sized goes straight in your wagon. Anything crane-sized starts with a call.</p>
+    </div>
+  </header>
+
+  <section>
+    <div class="wrap">
+      <div class="lot-grid">
+
+        <div class="card">
+          <img class="zoom" src="images/model-pocket-rooster.webp" alt="The Pocket Rooster microreactor, styled like a tiny red barn with a rooster weathervane" data-caption="The Pocket Rooster. Smallest thing we fission.">
+          <div class="pad">
+            <span class="tag">Backyard</span>
+            <h3>The Pocket Rooster</h3>
+            <p>The smallest unit we make, and the one Hank Sr. calls "the gateway reactor." Doghouse footprint, barn-red panels, working weathervane.</p>
+            <ul class="specs">
+              <li>Output: 0.2 megawatts, more than your house has ever wanted</li>
+              <li>Footprint: 4 ft by 5 ft, fits where the doghouse was</li>
+              <li>Refueling: once every 8 years, Denise brings donuts</li>
+            </ul>
+            <div class="price-row">
+              <span class="price">$9,750</span>
+              <button class="btn small" data-add="pocket-rooster" type="button">Add to Wagon</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="zoom" src="images/model-homestead.webp" alt="The Homestead backyard reactor with a red gambrel roof and picket fence" data-caption="The Homestead, our best seller since 2003.">
+          <div class="pad">
+            <span class="tag">Backyard</span>
+            <h3>The Homestead</h3>
+            <p>Our best seller. Shed-sized with a gambrel roof so it matches the barn, and a dutch door because Hank Jr. insisted. The hum is quieter than your well pump.</p>
+            <ul class="specs">
+              <li>Output: 1.5 megawatts, the house plus the hog barn</li>
+              <li>Footprint: 10 ft by 12 ft, sits nice behind a lilac bush</li>
+              <li>Refueling: once every 12 years, mark your calendar loosely</li>
+            </ul>
+            <div class="price-row">
+              <span class="price">$48,500</span>
+              <button class="btn small" data-add="homestead" type="button">Add to Wagon</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="zoom" src="images/model-grain-silo.webp" alt="The Grain Silo, a reactor disguised as a galvanized steel grain silo" data-caption="The Grain Silo. Your neighbors will assume it's corn.">
+          <div class="pad">
+            <span class="tag">Farm</span>
+            <h3>The Grain Silo</h3>
+            <p>A full farm unit dressed as a galvanized silo. Blends in so well the county assessor has walked past ours twice. The little steam wisp reads as "grain dryer" from the road.</p>
+            <ul class="specs">
+              <li>Output: 8 megawatts, the whole operation with lights on</li>
+              <li>Footprint: one silo pad, ladder included</li>
+              <li>Refueling: every 10 years, or when the flag paint fades</li>
+            </ul>
+            <div class="price-row">
+              <span class="price">$61,500</span>
+              <button class="btn small" data-add="grain-silo" type="button">Add to Wagon</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="zoom" src="images/model-fixer-upper.webp" alt="The Fixer-Upper, a rusty old reactor vessel on a hay wagon with an AS IS sign" data-caption="The Fixer-Upper. Sold as is, and Hank means it.">
+          <div class="pad">
+            <span class="tag sale">As is</span>
+            <h3>The Fixer-Upper</h3>
+            <p>Came off a trade-in and Hank Sr. won't warranty it, which for Hank Sr. is really saying something. Runs, mostly. Comes on the wagon it's strapped to. Cash preferred.</p>
+            <ul class="specs">
+              <li>Output: "around 1 megawatt on a good day"</li>
+              <li>Footprint: wherever the wagon stops rolling</li>
+              <li>Refueling: honestly, check it when you get home</li>
+            </ul>
+            <div class="price-row">
+              <span class="price">$4,000</span>
+              <button class="btn small" data-add="fixer-upper" type="button">Add to Wagon</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="zoom" src="images/model-ol-faithful.webp" alt="Ol' Faithful, a weathered 1987 reactor dome with rocking chairs beside it" data-caption="Ol' Faithful, the first one Hank ever built.">
+          <div class="pad">
+            <span class="tag">Refurbished</span>
+            <h3>Ol' Faithful</h3>
+            <p>The first reactor Hank Sr. ever built, fully refurbished and technically for sale. He repaints the "1987" every spring and sits with it on Thursday evenings. Serious inquiries only.</p>
+            <ul class="specs">
+              <li>Output: 3 megawatts, steady as a heartbeat since Reagan</li>
+              <li>Footprint: comes with its own rocking chair, non-negotiable</li>
+              <li>Refueling: Hank Sr. does it personally, always will</li>
+            </ul>
+            <div class="price-row">
+              <span class="price">$155,000</span>
+              <button class="btn small ghost" data-quote="Ol' Faithful" type="button">Talk to Hank First</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="zoom" src="images/model-denise-dome.webp" alt="A containment dome painted with a colorful barn quilt star pattern" data-caption="A Denise dome with the barn quilt option. Her masterpiece so far.">
+          <div class="pad">
+            <span class="tag">Upgrade</span>
+            <h3>Denise's Dome Deluxe</h3>
+            <p>An upgraded containment dome for any unit on the lot, welded by Denise herself with the seams she's famous for at the fair. Shown with the barn quilt paint option.</p>
+            <ul class="specs">
+              <li>Rated for: hail, tornado, one documented meteorite graze</li>
+              <li>Lead time: about six weekends, she has church stuff</li>
+              <li>Warranty: lifetime. Hers or the dome's, whichever's longer</li>
+            </ul>
+            <div class="price-row">
+              <span class="price">$18,500 <small>installed</small></span>
+              <button class="btn small ghost" data-quote="Not sure yet" type="button">Ask About Fit</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="zoom" src="images/model-church-social.webp" alt="The Church Social, a community reactor styled like a white country church hall with casserole tables out front" data-caption="The Church Social. Bring a casserole to the install.">
+          <div class="pad">
+            <span class="tag">Community</span>
+            <h3>The Church Social</h3>
+            <p>Powers a small town and looks like the fellowship hall while doing it. Clapboard siding, a modest dome where the steeple would go, and room out front for folding tables.</p>
+            <ul class="specs">
+              <li>Output: 45 megawatts, the town plus the time-and-temp sign</li>
+              <li>Footprint: one church lot, bunting included</li>
+              <li>Refueling: every 15 years, scheduled around the potluck</li>
+            </ul>
+            <div class="price-row">
+              <span class="price">$240,000 <small>installed</small></span>
+              <button class="btn small ghost" data-quote="The Church Social" type="button">Get a Quote</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="zoom" src="images/model-county-line.webp" alt="The County Line, twin cooling towers over cornfields with a red barn office at the base" data-caption="The County Line. Hank will want to walk your property.">
+          <div class="pad">
+            <span class="tag">Municipal</span>
+            <h3>The County Line</h3>
+            <p>The big one. Twin towers you can see from four townships, with a barn-style office at the base because some things aren't up for discussion. Our largest install to date, and the reason the punch card exists.</p>
+            <ul class="specs">
+              <li>Output: 1,100 megawatts, the tri-county area and then some</li>
+              <li>Footprint: bring your plat map, and maybe your lawyer</li>
+              <li>Refueling: every 18 months, we bring the crew and the coffee</li>
+            </ul>
+            <div class="price-row">
+              <span class="price"><small>If you have to ask, call anyway</small></span>
+              <button class="btn small" data-quote="The County Line" type="button">Call for Quote</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--paper); border-top:1px solid var(--line);">
+    <div class="wrap">
+      <p class="kicker">By the register</p>
+      <h2>Small stuff and services</h2>
+      <div class="addons" style="margin-top:24px;">
+        <div class="addon">
+          <h3>Annual Neutron Tune-Up</h3>
+          <p>Denise comes out once a year, checks your seals, tightens what needs tightening, and leaves a sticker on the door like the oil change place.</p>
+          <div class="price-row">
+            <span class="price">$180<small>/yr</small></span>
+            <button class="btn small" data-add="tune-up" type="button">Add to Wagon</button>
+          </div>
+        </div>
+        <div class="addon">
+          <h3>Barn Quilt Dome Paint Job</h3>
+          <p>Denise paints a traditional quilt block on your dome. Pick from her pattern book or bring your grandmother's. She will have opinions either way.</p>
+          <div class="price-row">
+            <span class="price">$2,200</span>
+            <button class="btn small" data-add="dome-paint" type="button">Add to Wagon</button>
+          </div>
+        </div>
+        <div class="addon">
+          <h3>Shop Cap</h3>
+          <p>The same cap Hank Jr. wears, with the barn on the front. One size. It shrinks to fit if you sweat enough, and around here you will.</p>
+          <div class="price-row">
+            <span class="price">$18</span>
+            <button class="btn small" data-add="shop-cap" type="button">Add to Wagon</button>
+          </div>
+        </div>
+      </div>
+      <p style="margin-top:26px; color:var(--muted); font-size:0.9rem;">Punch card rule, in writing since 1994: buy nine units at full price and your tenth is half off. Units, not caps. Gary at the bank asked us to clarify that.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="cols">
+        <div>
+          <h3 style="color:#fff6e6;">Hank &amp; Sons Reactor Barn</h3>
+          <p>The old Klabunde feed store, Rural Route 4,<br>Prairie Knob, Nebraska</p>
+          <p>Open Monday through Saturday, 6 a.m. until Hank leaves.<br>Closed Sundays and during refueling.</p>
+        </div>
+        <div>
+          <h3 style="color:#fff6e6;">Around the site</h3>
+          <p><a href="index.html">Home</a><br><a href="gallery.html">The Corkboard</a><br><a href="../index.html">The Business Directory</a></p>
+        </div>
+        <div>
+          <h3 style="color:#fff6e6;">House rules</h3>
+          <p>Coffee's free. Peppermints are free. Neutrons are extra.<br>Punch cards never expire.</p>
+        </div>
+      </div>
+      <p class="fine">Hank &amp; Sons Reactor Barn is a fictional business. No reactors were built, sold, or parallel-parked in the making of this website. Please do not attempt backyard fission; Denise makes it look easier than it is.</p>
+    </div>
+  </footer>
+
+  <!-- Wagon drawer -->
+  <div id="drawerVeil" class="veil" hidden></div>
+  <aside id="wagonDrawer" class="drawer" hidden>
+    <h3>Your Wagon</h3>
+    <p style="color:var(--muted); font-size:0.9rem;">Pull it around back when you're done.</p>
+    <div id="wagonItems"></div>
+    <div class="cart-total"><span>Total</span><span id="wagonTotal">$0</span></div>
+    <button id="checkoutBtn" class="btn" style="width:100%;" type="button">Settle Up</button>
+    <button id="wagonClose" class="btn ghost small" style="width:100%; margin-top:10px;" type="button">Keep Browsing</button>
+  </aside>
+
+  <!-- Order confirmation -->
+  <div id="orderModal" class="modal-box" hidden>
+    <div class="inner" style="text-align:center;">
+      <h3>Order's on the pad</h3>
+      <p>Hank Jr. wrote it on the notepad by the register, which is our order system. Denise will call you about delivery and the paperwork. There is a surprising amount of paperwork.</p>
+      <button id="orderClose" class="btn" type="button">Sounds Right</button>
+    </div>
+  </div>
+
+  <!-- Quote modal -->
+  <div id="quoteModal" class="modal-box" hidden>
+    <div class="inner">
+      <h3>Request a call back</h3>
+      <p style="color:var(--muted); font-size:0.92rem;">Fill this out and Hank will call you. He does these in the order the printer spits them out.</p>
+      <form id="quoteForm">
+        <label for="quoteName">Your name</label>
+        <input id="quoteName" name="name" required>
+        <label for="quotePhone">Phone number</label>
+        <input id="quotePhone" name="phone" type="tel" required>
+        <label for="quoteModel">Unit you're eyeing</label>
+        <select id="quoteModel" name="model">
+          <option>Not sure yet</option>
+          <option>The Pocket Rooster</option>
+          <option>The Homestead</option>
+          <option>The Grain Silo</option>
+          <option>The Church Social</option>
+          <option>The County Line</option>
+          <option>Ol' Faithful</option>
+          <option>The Fixer-Upper</option>
+        </select>
+        <label for="quoteNotes">What are you powering?</label>
+        <textarea id="quoteNotes" name="notes" rows="3" placeholder="Acreage, hog count, that kind of thing"></textarea>
+        <div style="display:flex; gap:10px; margin-top:18px;">
+          <button class="btn" type="submit" style="flex:1;">Send it to the Printer</button>
+          <button class="btn ghost" type="button" id="quoteCancel">Never Mind</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Quote confirmation -->
+  <div id="quoteDone" class="modal-box" hidden>
+    <div class="inner" style="text-align:center;">
+      <h3>The printer made its noise</h3>
+      <p>Your request is on the spike by the phone. Hank calls between chores, usually mid-morning. If you hear cows, that's him.</p>
+      <button id="quoteDoneClose" class="btn" type="button">I'll Be Ready</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Business Directory</title>
+  <style>
+    :root {
+      --bg: #f6f4ef;
+      --card-bg: #ffffff;
+      --text: #2b2b2b;
+      --muted: #6b6b6b;
+      --accent: #1f6f5c;
+      --border: #e3ded4;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, 'Times New Roman', serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 0 16px;
+    }
+
+    header {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 0 24px;
+      text-align: center;
+      border-bottom: 2px solid var(--border);
+    }
+
+    header h1 {
+      margin: 0 0 8px;
+      font-size: 2.2rem;
+      letter-spacing: 0.5px;
+    }
+
+    header p {
+      margin: 0;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 24px 0 64px;
+    }
+
+    ul.directory {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    li.business {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 12px;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px;
+    }
+
+    li.business[hidden] {
+      display: none;
+    }
+
+    .card-main {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .logo {
+      flex: 0 0 auto;
+      width: 56px;
+      height: 56px;
+      object-fit: cover;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #ffffff;
+    }
+
+    .info {
+      flex: 1 1 auto;
+    }
+
+    .info h2 {
+      margin: 0 0 4px;
+      font-size: 1.15rem;
+    }
+
+    .info h2 a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .info h2 a:hover {
+      text-decoration: underline;
+    }
+
+    .info p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+
+    .tags {
+      margin-top: 6px;
+    }
+
+    .tag {
+      display: inline-block;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: var(--accent);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 2px 8px;
+      margin-right: 6px;
+    }
+
+    .promo {
+      flex: 0 0 auto;
+      width: 180px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    details.detail {
+      border-top: 1px solid var(--border);
+      padding-top: 12px;
+    }
+
+    details.detail summary {
+      cursor: pointer;
+      color: var(--accent);
+      font-size: 0.9rem;
+    }
+
+    details.detail summary:hover {
+      text-decoration: underline;
+    }
+
+    .detail-body {
+      padding-top: 10px;
+    }
+
+    .detail-body p {
+      margin: 0 0 10px;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .detail-body .visit {
+      color: var(--accent);
+    }
+
+    .controls {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .controls[hidden] {
+      display: none;
+    }
+
+    .controls input[type="search"] {
+      width: 100%;
+      padding: 10px 14px;
+      font-family: inherit;
+      font-size: 1rem;
+      color: var(--text);
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+
+    .controls input[type="search"]:focus {
+      outline: 2px solid var(--accent);
+      outline-offset: 1px;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .chip {
+      font-family: inherit;
+      font-size: 0.85rem;
+      color: var(--text);
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 6px 14px;
+      cursor: pointer;
+    }
+
+    .chip:hover {
+      border-color: var(--accent);
+    }
+
+    .chip.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #ffffff;
+    }
+
+    .count {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.85rem;
+      font-style: italic;
+    }
+
+    .empty {
+      text-align: center;
+      color: var(--muted);
+      font-style: italic;
+      padding: 32px 0;
+    }
+
+    footer {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 0 32px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 480px) {
+      .card-main {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .promo {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Business Directory</h1>
+    <p>Fine establishments you never knew you needed.</p>
+  </header>
+
+  <main>
+    <div class="controls" id="controls" hidden>
+      <input type="search" id="search" placeholder="Search the directory&hellip;" aria-label="Search businesses">
+      <div class="chips" role="group" aria-label="Filter by site type">
+        <button class="chip active" data-type="all">All</button>
+        <button class="chip" data-type="cpg-brand">CPG brand</button>
+        <button class="chip" data-type="ecommerce-catalog">Ecommerce</button>
+        <button class="chip" data-type="editorial">Editorial</button>
+        <button class="chip" data-type="infomercial">Infomercial</button>
+        <button class="chip" data-type="landing-page">Landing page</button>
+        <button class="chip" data-type="nonprofit">Nonprofit</button>
+        <button class="chip" data-type="professional-services">Professional services</button>
+        <button class="chip" data-type="gov-institutional">Public institution</button>
+        <button class="chip" data-type="studio-portfolio">Studio portfolio</button>
+      </div>
+      <p class="count" id="count"></p>
+    </div>
+
+    <ul class="directory">
+      <li class="business" data-archetype="landing-page">
+        <div class="card-main">
+          <img class="logo" src="full-bird-hydration/images/logo.webp" alt="Full Bird Hydration logo">
+          <div class="info">
+            <h2><a href="full-bird-hydration/">Full Bird Hydration</a></h2>
+            <p>A sports drink company whose entire flavor lineup is Thanksgiving dinner.</p>
+            <p class="tags"><span class="tag">Landing page</span></p>
+          </div>
+          <img class="promo" src="full-bird-hydration/images/hero.webp" alt="Full Bird Hydration promotional image" loading="lazy">
+        </div>
+        <details class="detail">
+          <summary>More about Full Bird Hydration</summary>
+          <div class="detail-body">
+            <p>Full Bird Hydration makes electrolyte drinks for "serious athletes with serious appetites," offering flavors like Turkey &amp; Gravy Surge, Cranberry Stuffing Splash, Green Bean Casserole Chill, and a limited holiday release called Giblet Blast. Every bottle promises "22 grams of electrolytes and the unmistakable essence of a food coma." The company sponsors competitive eaters and one very confused marathon runner.</p>
+            <p class="tags"><span class="tag">Site type: Landing page</span> <span class="tag">Style: Sports neon</span></p>
+            <p><a class="visit" href="full-bird-hydration/">Visit Full Bird Hydration &rarr;</a></p>
+          </div>
+        </details>
+      </li>
+
+      <li class="business" data-archetype="landing-page">
+        <div class="card-main">
+          <img class="logo" src="grudge-granite/images/logo.webp" alt="Grudge Granite logo">
+          <div class="info">
+            <h2><a href="grudge-granite/">Grudge Granite</a></h2>
+            <p>A memorial engraving company that carves the deceased's unresolved grudges into their headstones.</p>
+            <p class="tags"><span class="tag">Landing page</span></p>
+          </div>
+          <img class="promo" src="grudge-granite/images/hero.webp" alt="Grudge Granite promotional image" loading="lazy">
+        </div>
+        <details class="detail">
+          <summary>More about Grudge Granite</summary>
+          <div class="detail-body">
+            <p>Grudge Granite is a family-owned monument company that lets clients pre-register their complaints &mdash; the neighbor who never returned the ladder, the brother-in-law who "knows what he did" &mdash; to be permanently engraved on their tombstone. Premium packages include footnotes, a second-side "continued..." panel, and an annual grave-side reading service so the grudge is never forgotten.</p>
+            <p class="tags"><span class="tag">Site type: Landing page</span> <span class="tag">Style: Elegant serif</span></p>
+            <p><a class="visit" href="grudge-granite/">Visit Grudge Granite &rarr;</a></p>
+          </div>
+        </details>
+      </li>
+
+      <li class="business" data-archetype="landing-page">
+        <div class="card-main">
+          <img class="logo" src="sure-roll-dice/images/logo.webp" alt="Sure Roll Dice Co. logo">
+          <div class="info">
+            <h2><a href="sure-roll-dice/">Sure Roll Dice Co.</a></h2>
+            <p>An artisanal dice maker whose handcrafted dice have the same number on every face.</p>
+            <p class="tags"><span class="tag">Landing page</span></p>
+          </div>
+          <img class="promo" src="sure-roll-dice/images/hero.webp" alt="Sure Roll Dice Co. promotional image" loading="lazy">
+        </div>
+        <details class="detail">
+          <summary>More about Sure Roll Dice Co.</summary>
+          <div class="detail-body">
+            <p>Sure Roll Dice Co. sells premium hardwood and resin dice "for people who hate uncertainty." Every die is hand-polished, individually numbered, and guaranteed to roll the number printed on all six sides. The catalog includes the Confidence Six, the Humble One, and a $200 collector's set of all six values "so you're prepared for any outcome you already chose." Returns are not accepted because "you knew exactly what you were getting."</p>
+            <p class="tags"><span class="tag">Site type: Landing page</span> <span class="tag">Style: Elegant serif</span></p>
+            <p><a class="visit" href="sure-roll-dice/">Visit Sure Roll Dice Co. &rarr;</a></p>
+          </div>
+        </details>
+      </li>
+
+      <li class="business" data-archetype="landing-page">
+        <div class="card-main">
+          <img class="logo" src="second-wind/images/logo.webp" alt="Second Wind Air Cellars logo">
+          <div class="info">
+            <h2><a href="second-wind/">Second Wind Air Cellars</a></h2>
+            <p>A subscription service that ships members a monthly jar of artisanal air from exotic locations.</p>
+            <p class="tags"><span class="tag">Landing page</span></p>
+          </div>
+          <img class="promo" src="second-wind/images/hero.webp" alt="Second Wind Air Cellars promotional image" loading="lazy">
+        </div>
+        <details class="detail">
+          <summary>More about Second Wind Air Cellars</summary>
+          <div class="detail-body">
+            <p>Second Wind Air Cellars is a "boutique atmospheric sommelier house" that bottles air from destinations like a Swiss alpine meadow, a Portland coffee shop at 7 a.m., and the parking lot of a mid-tier casino. Members receive a jar each month with tasting notes ("bold notes of pine, a lingering finish of regret") and access to the Cellar Club, where vintage jars &mdash; including the coveted 2019 Pre-Everything Reserve &mdash; trade at auction. An add-on freshness plan sends a technician to re-tighten your lids quarterly.</p>
+            <p class="tags"><span class="tag">Site type: Landing page</span> <span class="tag">Style: Elegant serif</span></p>
+            <p><a class="visit" href="second-wind/">Visit Second Wind Air Cellars &rarr;</a></p>
+          </div>
+        </details>
+      </li>
+
+      <li class="business" data-archetype="landing-page">
+        <div class="card-main">
+          <img class="logo" src="reactor-barn/images/logo.webp" alt="Hank &amp; Sons Reactor Barn logo">
+          <div class="info">
+            <h2><a href="reactor-barn/">Hank &amp; Sons Reactor Barn</a></h2>
+            <p>A folksy, family-owned small-town shop that designs and builds nuclear reactors.</p>
+            <p class="tags"><span class="tag">Landing page</span></p>
+          </div>
+          <img class="promo" src="reactor-barn/images/hero.webp" alt="Hank &amp; Sons Reactor Barn promotional image" loading="lazy">
+        </div>
+        <details class="detail">
+          <summary>More about Hank &amp; Sons Reactor Barn</summary>
+          <div class="detail-body">
+            <p>Operating out of a converted feed store in rural Nebraska, Hank &amp; Sons Reactor Barn has been "keepin' the neutrons flowin' since 1987." Hank Sr. handles the thermal hydraulics, Hank Jr. runs the front counter, and cousin Denise does containment domes on weekends. The shop offers free coffee, a punch card (tenth reactor is half off), and a hand-painted sign reading "If we can't fission it, it can't be fissioned." They do not have a website; you have to call, and Hank answers.</p>
+            <p class="tags"><span class="tag">Site type: Landing page</span> <span class="tag">Style: Americana roadside</span></p>
+            <p><a class="visit" href="reactor-barn/">Visit Hank &amp; Sons Reactor Barn &rarr;</a></p>
+          </div>
+        </details>
+      </li>
+
+      <li class="business" data-archetype="landing-page">
+        <div class="card-main">
+          <img class="logo" src="murky-springs/images/logo.webp" alt="Murky Springs Soda Co. logo">
+          <div class="info">
+            <h2><a href="murky-springs/">Murky Springs Soda Co.</a></h2>
+            <p>A craft soda company whose small-batch flavors are all liquids nobody ever wanted to drink.</p>
+            <p class="tags"><span class="tag">Landing page</span></p>
+          </div>
+          <img class="promo" src="murky-springs/images/promo.webp" alt="Murky Springs Soda Co. promotional image" loading="lazy">
+        </div>
+        <details class="detail">
+          <summary>More about Murky Springs Soda Co.</summary>
+          <div class="detail-body">
+            <p>Murky Springs Soda Co. is a Pacific Northwest craft soda house offering carbonated takes on Hot Dog Water, Public Pool, Aquarium Gravel, and their best-seller, New Tire Smell. Each bottle is cold-filtered, cane-sugar sweetened, and comes with pairing suggestions ("New Tire pairs beautifully with a long wait at the DMV"). Their seasonal release, Rain Gutter Reserve, sells out every fall to people who insist they're buying it ironically.</p>
+            <p class="tags"><span class="tag">Site type: Landing page</span> <span class="tag">Style: Elegant serif</span></p>
+            <p><a class="visit" href="murky-springs/">Visit Murky Springs Soda Co. &rarr;</a></p>
+          </div>
+        </details>
+      </li>
+
+      <li class="business" data-archetype="landing-page">
+        <div class="card-main">
+          <img class="logo" src="waxing-nostalgic/images/logo.webp" alt="Waxing Nostalgic logo">
+          <div class="info">
+            <h2><a href="waxing-nostalgic/">Waxing Nostalgic</a></h2>
+            <p>An artisanal candle company that makes candles from donated human earwax.</p>
+            <p class="tags"><span class="tag">Landing page</span></p>
+          </div>
+          <img class="promo" src="waxing-nostalgic/images/promo.webp" alt="Waxing Nostalgic promotional image" loading="lazy">
+        </div>
+        <details class="detail">
+          <summary>More about Waxing Nostalgic</summary>
+          <div class="detail-body">
+            <p>Waxing Nostalgic operates donation centers in twelve states where "wax benefactors" contribute their earwax in exchange for store credit. The wax is pooled, filtered, and hand-poured into scented candles with names like Sunday at Grandma's, Locker Room Memories, and Q-Tip Confessional. The company insists the product is "the most personal ambiance on the market" and offers a premium single-origin line sourced from one very committed donor named Gary.</p>
+            <p class="tags"><span class="tag">Site type: Landing page</span> <span class="tag">Style: Elegant serif</span></p>
+            <p><a class="visit" href="waxing-nostalgic/">Visit Waxing Nostalgic &rarr;</a></p>
+          </div>
+        </details>
+      </li>
+
+      <li class="business" data-archetype="landing-page">
+        <div class="card-main">
+          <img class="logo" src="ashes-to-ashtrays/images/logo.webp" alt="Ashes to Ashtrays logo">
+          <div class="info">
+            <h2><a href="ashes-to-ashtrays/">Ashes to Ashtrays</a></h2>
+            <p>A memorial studio that turns your loved one's cremated remains into a decorative ashtray.</p>
+            <p class="tags"><span class="tag">Landing page</span></p>
+          </div>
+          <img class="promo" src="ashes-to-ashtrays/images/promo.webp" alt="Ashes to Ashtrays promotional image" loading="lazy">
+        </div>
+        <details class="detail">
+          <summary>More about Ashes to Ashtrays</summary>
+          <div class="detail-body">
+            <p>Ashes to Ashtrays is a "legacy ceramics studio" that kiln-fires cremains into handsome ashtrays, so the departed can "keep holding your ashes, like they always said they would." Options include the Poetic Justice model for relatives who warned you about smoking, a matching coaster set for the whole estate, and an heirloom program that adds each new generation to the same growing ashtray. The showroom has a wall of testimonials no one has ever read aloud without pausing.</p>
+            <p class="tags"><span class="tag">Site type: Landing page</span> <span class="tag">Style: Elegant serif</span></p>
+            <p><a class="visit" href="ashes-to-ashtrays/">Visit Ashes to Ashtrays &rarr;</a></p>
+          </div>
+        </details>
+      </li>
+
+      <li class="business" data-archetype="landing-page">
+        <div class="card-main">
+          <img class="logo" src="hov-buddy/images/logo.webp" alt="HOV Buddy logo">
+          <div class="info">
+            <h2><a href="hov-buddy/">HOV Buddy</a></h2>
+            <p>A rental service supplying realistic mannequin passengers for carpool-lane commuters.</p>
+            <p class="tags"><span class="tag">Landing page</span></p>
+          </div>
+          <img class="promo" src="hov-buddy/images/promo.webp" alt="HOV Buddy promotional image" loading="lazy">
+        </div>
+        <details class="detail">
+          <summary>More about HOV Buddy</summary>
+          <div class="detail-body">
+            <p>HOV Buddy rents hyper-realistic passengers by the week so solo drivers can "carpool with confidence." The lineup includes Nodding Greg, Sleeping Aunt Carol, and the deluxe Conversational Dave, whose head turns at stoplights. Plans include seasonal outfit swaps, a "traffic stop protection plan" that the terms of service admit protects nothing, and an emergency hotline that only plays hold music. The website's legal page is a single shrug emoticon.</p>
+            <p class="tags"><span class="tag">Site type: Landing page</span> <span class="tag">Style: Startup modern</span></p>
+            <p><a class="visit" href="hov-buddy/">Visit HOV Buddy &rarr;</a></p>
+          </div>
+        </details>
+      </li>
+
+      <li class="business" data-archetype="landing-page">
+        <div class="card-main">
+          <img class="logo" src="marges-orbital/images/logo.webp" alt="Marge's Orbital Launch &amp; Diner logo">
+          <div class="info">
+            <h2><a href="marges-orbital/">Marge's Orbital Launch &amp; Diner</a></h2>
+            <p>A roadside Kansas diner that also provides commercial satellite launch services.</p>
+            <p class="tags"><span class="tag">Landing page</span></p>
+          </div>
+          <img class="promo" src="marges-orbital/images/promo.webp" alt="Marge's Orbital Launch &amp; Diner promotional image" loading="lazy">
+        </div>
+        <details class="detail">
+          <summary>More about Marge's Orbital Launch &amp; Diner</summary>
+          <div class="detail-body">
+            <p>Marge's Orbital Launch &amp; Diner has been serving pie and low-Earth-orbit insertions off Route 56 since 1994. Marge handles trajectory calculations between refilling coffees, her husband Bill runs the launch pad out back behind the grain silo, and Tuesday's special is meatloaf with a free payload inspection. The menu laminate includes a delta-v chart, launches are scheduled "weather and church permitting," and regulars know to ask for booth six, which rattles the least during liftoff.</p>
+            <p class="tags"><span class="tag">Site type: Landing page</span> <span class="tag">Style: Americana roadside</span></p>
+            <p><a class="visit" href="marges-orbital/">Visit Marge's Orbital Launch &amp; Diner &rarr;</a></p>
+          </div>
+        </details>
+      </li>
+
+      <li class="business" data-archetype="infomercial">
+        <div class="card-main">
+          <img class="logo" src="mist-o-meat/images/logo.webp" alt="Mist O' Meat logo">
+          <div class="info">
+            <h2><a href="mist-o-meat/">Mist O' Meat</a></h2>
+            <p>An As-Seen-On-TV aerosol spray that gives any food the flavor of pot roast.</p>
+            <p class="tags"><span class="tag">Infomercial</span></p>
+          </div>
+          <img class="promo" src="mist-o-meat/images/promo.webp" alt="Mist O' Meat promotional image" loading="lazy">
+        </div>
+        <details class="detail">
+          <summary>More about Mist O' Meat</summary>
+          <div class="detail-body">
+            <p>Mist O' Meat is "the flavor revolution grandma never asked for": a pressurized can of concentrated pot roast essence that transforms cereal, fruit salad, or a birthday cake into a hearty meat experience. The pitch hits every direct-response beat: a black-and-white "before" clip of a family staring sadly at unsprayed yogurt, a countdown timer that resets when it hits zero, a testimonial from Doug in Ohio who has misted every meal since March, and the inevitable offer to double your order for just the cost of shipping and handling. Flavors include Original Roast, Breakfast Sausage Fog, and the limited Holiday Ham Cloud.</p>
+            <p class="tags"><span class="tag">Site type: Infomercial</span> <span class="tag">Style: Infomercial max</span></p>
+            <p><a class="visit" href="mist-o-meat/">Visit Mist O' Meat &rarr;</a></p>
+          </div>
+        </details>
+      </li>
+
+      <li class="business" data-archetype="gov-institutional">
+        <div class="card-main">
+          <img class="logo" src="gravy-district/images/logo.webp" alt="Gravy District No. 3 seal">
+          <div class="info">
+            <h2><a href="gravy-district/">Gravy District No. 3</a></h2>
+            <p>The public gravy utility serving three townships in rural Wisconsin.</p>
+            <p class="tags"><span class="tag">Public institution</span></p>
+          </div>
+          <img class="promo" src="gravy-district/images/promo.webp" alt="Gravy District No. 3 promotional image" loading="lazy">
+        </div>
+        <details class="detail">
+          <summary>More about Gravy District No. 3</summary>
+          <div class="detail-body">
+            <p>Established by county referendum in 1962, Gravy District No. 3 delivers municipal gravy to 4,100 households through 61 miles of insulated brown mains. The site offers everything a ratepayer needs: an outage map ("crews are responding to a lump event on County Road H"), seasonal rate schedules with a Thanksgiving surge tariff, annual gravy quality reports, and minutes from the monthly Board of Gravy Commissioners meeting, which routinely runs four hours due to public comment. Residents are reminded that turkey and beef are separate systems and cross-connection is a Class B ordinance violation.</p>
+            <p class="tags"><span class="tag">Site type: Public institution</span> <span class="tag">Style: Government austere</span></p>
+            <p><a class="visit" href="gravy-district/">Visit Gravy District No. 3 &rarr;</a></p>
+          </div>
+        </details>
+      </li>
+
+      <li class="business" data-archetype="editorial">
+        <div class="card-main">
+          <img class="logo" src="cul-de-sac-courant/images/logo.webp" alt="The Cul-de-Sac Courant crest">
+          <div class="info">
+            <h2><a href="cul-de-sac-courant/">The Cul-de-Sac Courant</a></h2>
+            <p>A hard-hitting subscription newspaper covering the eight houses of one suburban cul-de-sac.</p>
+            <p class="tags"><span class="tag">Editorial</span></p>
+          </div>
+          <img class="promo" src="cul-de-sac-courant/images/promo.webp" alt="The Cul-de-Sac Courant promotional image" loading="lazy">
+        </div>
+        <details class="detail">
+          <summary>More about The Cul-de-Sac Courant</summary>
+          <div class="detail-body">
+            <p>The Courant is the paper of record for Butternut Court, delivering fearless investigative journalism about its eight households since 2011. Recent front pages include a five-part series on who keeps moving the Hendersons' gnome, live coverage of the Kowalskis' new mailbox, and an explosive expos&eacute; on the true start time of the Fourth of July potluck. The site has a metered paywall (three articles a month, and everyone on the street has hit it), breaking-news push alerts, an opinion section written entirely by one retiree, and a corrections page longer than most issues.</p>
+            <p class="tags"><span class="tag">Site type: Editorial</span> <span class="tag">Style: Broadsheet</span></p>
+            <p><a class="visit" href="cul-de-sac-courant/">Visit The Cul-de-Sac Courant &rarr;</a></p>
+          </div>
+        </details>
+      </li>
+
+      <li class="business" data-archetype="professional-services">
+        <div class="card-main">
+          <img class="logo" src="alibi-associates/images/logo.webp" alt="Alibi &amp; Associates monogram">
+          <div class="info">
+            <h2><a href="alibi-associates/">Alibi &amp; Associates</a></h2>
+            <p>A white-shoe professional firm that crafts bespoke excuses for getting out of social obligations.</p>
+            <p class="tags"><span class="tag">Professional services</span></p>
+          </div>
+          <img class="promo" src="alibi-associates/images/promo.webp" alt="Alibi &amp; Associates promotional image" loading="lazy">
+        </div>
+        <details class="detail">
+          <summary>More about Alibi &amp; Associates</summary>
+          <div class="detail-body">
+            <p>Alibi &amp; Associates has quietly served discerning clients since 1998, engineering airtight exits from weddings, baby showers, work retreats, and "quick calls that could have been emails." The firm's site features solemn practice-area pages (Weddings &amp; Destination Events, Recurring Obligations, Last-Minute Extractions), partner bios listing decades of experience and signature work ("Margaret pioneered the double-booked dental appointment"), and a confidential intake form. Retainer clients receive a 24-hour excuse hotline and one free corroborating witness per calendar year. The firm never confirms nor denies any engagement.</p>
+            <p class="tags"><span class="tag">Site type: Professional services</span> <span class="tag">Style: Luxury minimal</span></p>
+            <p><a class="visit" href="alibi-associates/">Visit Alibi &amp; Associates &rarr;</a></p>
+          </div>
+        </details>
+      </li>
+
+      <li class="business" data-archetype="nonprofit">
+        <div class="card-main">
+          <img class="logo" src="lint-for-nests/images/logo.webp" alt="Lint for Nests logo">
+          <div class="info">
+            <h2><a href="lint-for-nests/">Lint for Nests</a></h2>
+            <p>A nonprofit that collects donated belly button lint to insulate nests for orphaned songbirds.</p>
+            <p class="tags"><span class="tag">Nonprofit</span></p>
+          </div>
+          <img class="promo" src="lint-for-nests/images/promo.webp" alt="Lint for Nests promotional image" loading="lazy">
+        </div>
+        <details class="detail">
+          <summary>More about Lint for Nests</summary>
+          <div class="detail-body">
+            <p>Lint for Nests is a 501(c)(3) fiber-recovery charity whose volunteers collect, sort, and sanitize donated navel lint at drive-up Lint Drives in church parking lots across the Midwest. The site features an impact thermometer ("41 pounds recovered this quarter"), heartbreaking rescue stories with before-and-after nest photos, and giving tiers from Lint Friend to the prestigious Golden Navel Circle. Monthly sustaining donors receive a newsletter, a window decal, and a personalized certificate naming a warbler after them. The FAQ patiently explains, twice, why the lint must come from a navel.</p>
+            <p class="tags"><span class="tag">Site type: Nonprofit</span> <span class="tag">Style: Craft organic</span></p>
+            <p><a class="visit" href="lint-for-nests/">Visit Lint for Nests &rarr;</a></p>
+          </div>
+        </details>
+      </li>
+      <li class="business" data-archetype="ecommerce-catalog">
+        <div class="card-main">
+          <img class="logo" src="perfectly-balanced/images/logo.webp" alt="Perfectly Balanced Dice Co. logo">
+          <div class="info">
+            <h2><a href="perfectly-balanced/">Perfectly Balanced Dice Co.</a></h2>
+            <p>A dice maker whose enormous, lopsided dice have anywhere from 2 to 104 sides and are carved from wood, rock, or plastic.</p>
+            <p class="tags"><span class="tag">Ecommerce</span></p>
+          </div>
+          <img class="promo" src="perfectly-balanced/images/promo.webp" alt="Perfectly Balanced Dice Co. promotional image" loading="lazy">
+        </div>
+        <details class="detail">
+          <summary>More about Perfectly Balanced Dice Co.</summary>
+          <div class="detail-body">
+            <p>Perfectly Balanced Dice Co. hand-produces "statistically liberated" dice that reject everything dice are supposed to be: uniform, balanced, or holdable in one hand. The catalog runs from the Skipping Stone (a d2 that resolves nothing near water) through the Splinter (a pine d7 that lands on an unnumbered eighth face a third of the time) up to the Erratic d104, a 40-pound granite polyhedron that ships freight and doubles as a doorstop. Every die ships with a Fairness Report that says "No," and dice over 20 pounds should be rolled from a seated position. The name is the company's boldest lie.</p>
+            <p class="tags"><span class="tag">Site type: Ecommerce catalog</span> <span class="tag">Style: Brutalist</span></p>
+            <p><a class="visit" href="perfectly-balanced/">Visit Perfectly Balanced Dice Co. &rarr;</a></p>
+          </div>
+        </details>
+      </li>
+      <li class="business" data-archetype="cpg-brand">
+        <div class="card-main">
+          <img class="logo" src="fines-and-dandy/images/logo.webp" alt="Fines &amp; Dandy logo">
+          <div class="info">
+            <h2><a href="fines-and-dandy/">Fines &amp; Dandy</a></h2>
+            <p>A premium cereal brand that sells only the crumb dust from the bottom of the bag.</p>
+            <p class="tags"><span class="tag">CPG brand</span></p>
+          </div>
+          <img class="promo" src="fines-and-dandy/images/promo.webp" alt="Fines &amp; Dandy promotional image" loading="lazy">
+        </div>
+        <details class="detail">
+          <summary>More about Fines &amp; Dandy</summary>
+          <div class="detail-body">
+            <p>Fines &amp; Dandy harvests the crumb dust that settles at the bottom of every cereal bag, screens it in partner "settling rooms," and jars it in six single-origin varieties with full tasting notes ("forward notes of toasted corn, a lingering finish of bag"). The site offers pairing recipes for milk, yogurt, and dry-by-the-handful, a Bottom Shelf Club subscription, wholesale sweepings by the pail, and a store locator whose every result ends with the bottom shelf. The FAQ addresses the marshmallow question with visible fatigue, and refund requests citing "the dust had settled" are read aloud at company meetings.</p>
+            <p class="tags"><span class="tag">Site type: CPG brand</span> <span class="tag">Style: Craft organic</span></p>
+            <p><a class="visit" href="fines-and-dandy/">Visit Fines &amp; Dandy &rarr;</a></p>
+          </div>
+        </details>
+      </li>
+      <li class="business" data-archetype="studio-portfolio">
+        <div class="card-main">
+          <img class="logo" src="parting-shot/images/logo.webp" alt="The Parting Shot monogram">
+          <div class="info">
+            <h2><a href="parting-shot/">The Parting Shot</a></h2>
+            <p>A high-end photography studio specializing in divorce shoots.</p>
+            <p class="tags"><span class="tag">Studio portfolio</span></p>
+          </div>
+          <img class="promo" src="parting-shot/images/promo.webp" alt="The Parting Shot promotional image" loading="lazy">
+        </div>
+        <details class="detail">
+          <summary>More about The Parting Shot</summary>
+          <div class="detail-body">
+            <p>The Parting Shot brings the full wedding-photography treatment to the other end of the arc: editorial coverage of the signing day, "first look at the paperwork" sessions, courthouse-steps portraiture, and commemorative albums printed in identical duplicate so neither party can claim the original. Package tiers run from the single-session Decree in Golden Hour to The Complete Proceedings, a full day of coverage that poses both attorneys like a small bridal party. The portfolio is presented in the hushed, reverent tone of a fine-art wedding studio, applied without comment to its subject, and the studio's record of two mid-shoot reconciliations is mentioned with quiet pride.</p>
+            <p class="tags"><span class="tag">Site type: Studio portfolio</span> <span class="tag">Style: Dark luxury</span></p>
+            <p><a class="visit" href="parting-shot/">Visit The Parting Shot &rarr;</a></p>
+          </div>
+        </details>
+      </li>
+    </ul>
+
+    <p class="empty" id="empty" hidden>No businesses match. Try a different search, or lower your standards further.</p>
+  </main>
+
+  <footer>
+    <p>All businesses listed here are entirely fictional. Any resemblance to a real reactor barn is coincidental.</p>
+  </footer>
+
+  <script>
+    (function () {
+      var controls = document.getElementById('controls');
+      var input = document.getElementById('search');
+      var count = document.getElementById('count');
+      var empty = document.getElementById('empty');
+      var chips = Array.prototype.slice.call(controls.querySelectorAll('.chip'));
+      var cards = Array.prototype.slice.call(document.querySelectorAll('li.business'));
+      var activeType = 'all';
+
+      function apply() {
+        var query = input.value.trim().toLowerCase();
+        var shown = 0;
+        cards.forEach(function (card) {
+          var matchesType = activeType === 'all' || card.getAttribute('data-archetype') === activeType;
+          var matchesText = !query || card.textContent.toLowerCase().indexOf(query) !== -1;
+          var show = matchesType && matchesText;
+          card.hidden = !show;
+          if (show) shown++;
+        });
+        count.textContent = shown === cards.length
+          ? 'Showing all ' + cards.length + ' businesses'
+          : 'Showing ' + shown + ' of ' + cards.length + ' businesses';
+        empty.hidden = shown !== 0;
+      }
+
+      chips.forEach(function (chip) {
+        chip.addEventListener('click', function () {
+          activeType = chip.getAttribute('data-type');
+          chips.forEach(function (other) {
+            other.classList.toggle('active', other === chip);
+          });
+          apply();
+        });
+      });
+
+      input.addEventListener('input', apply);
+      controls.hidden = false;
+      apply();
+    })();
+  </script>
+</body>
+</html>

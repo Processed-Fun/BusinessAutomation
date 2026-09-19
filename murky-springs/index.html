@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Murky Springs Soda Co.</title>
+  <meta name="description" content="Small-batch craft sodas inspired by liquids nobody asked for. Hot Dog Water, Public Pool, New Tire Smell, and more.">
+  <link rel="icon" href="images/logo.webp">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <img src="images/logo.webp" alt="Murky Springs Soda Co. logo">
+        <strong>Murky Springs Soda Co.</strong>
+      </a>
+      <nav class="site-nav">
+        <a href="#flavors">Flavors</a>
+        <a href="flavors.html">Full Menu</a>
+        <a href="#oracle-section">Pairing Oracle</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#gallery">Fans</a>
+        <button class="cart-btn" id="cartBtn">Crate (0)</button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hero">
+    <img class="hero-bg" src="images/hero.webp" alt="">
+    <div class="wrap">
+      <h1>Bravely Bottled. Regrettably Refreshing.</h1>
+      <p class="tag">Small-batch craft sodas from the Pacific Northwest, inspired by liquids nobody ever wanted to drink. Until now. Sort of.</p>
+      <a class="btn" href="#flavors">Meet the Flavors</a>
+      <a class="btn ghost" href="flavors.html">See the Full Menu</a>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Why We Do This</h2>
+        <p>Nobody knows. But we do it with care.</p>
+      </div>
+      <div class="quotes">
+        <div class="quote">
+          Every Murky Springs soda is cold-filtered, cane-sugar sweetened, and carbonated in batches small enough that we could stop at any time. We choose not to.
+          <footer>Our founders, who are very serious about this</footer>
+        </div>
+        <div class="quote">
+          We start with a simple question: what liquid has humanity spent centuries carefully not drinking? Then we bottle it. Respectfully. With tasting notes.
+          <footer>From our mission statement, page one of one</footer>
+        </div>
+        <div class="quote">
+          Our spring is not technically murky. The murk is added later, by hand, by an artisan named Doug.
+          <footer>A legally required clarification</footer>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="flavors">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>The Core Lineup</h2>
+        <p>Four year-round flavors, each one a question you never thought to ask. Tap a bottle for a closer look, if you dare.</p>
+      </div>
+      <div class="flavor-grid">
+        <div class="flavor-card">
+          <img class="zoom" src="images/bottle-hot-dog-water.webp" alt="Bottle of Hot Dog Water craft soda" data-caption="Hot Dog Water. The flagship. The classic. The reason our lawyer quit.">
+          <div class="body">
+            <span class="badge pond">The Flagship</span>
+            <h3>Hot Dog Water</h3>
+            <p class="notes">Salty, warm on the nose even when chilled. Pairs beautifully with a ballgame you have stopped watching.</p>
+            <div class="row">
+              <span class="price">$6</span>
+              <button class="btn small" data-add="hot-dog-water">Add to Crate</button>
+            </div>
+          </div>
+        </div>
+        <div class="flavor-card">
+          <img class="zoom" src="images/bottle-public-pool.webp" alt="Bottle of Public Pool craft soda" data-caption="Public Pool. Chlorine-forward with a splash of childhood.">
+          <div class="body">
+            <span class="badge pond">Summer Classic</span>
+            <h3>Public Pool</h3>
+            <p class="notes">Chlorine-forward, with mid-palate notes of sunscreen and a lifeguard's whistle. Best enjoyed 30 minutes after eating.</p>
+            <div class="row">
+              <span class="price">$6</span>
+              <button class="btn small" data-add="public-pool">Add to Crate</button>
+            </div>
+          </div>
+        </div>
+        <div class="flavor-card">
+          <img class="zoom" src="images/bottle-new-tire-smell.webp" alt="Bottle of New Tire Smell craft soda" data-caption="New Tire Smell. Our best-seller. We are as troubled by that as you are.">
+          <div class="body">
+            <span class="badge">Best Seller</span>
+            <h3>New Tire Smell</h3>
+            <p class="notes">Bold rubber, hints of showroom carpet, a finish that goes on for 60,000 miles. Pairs beautifully with a long wait at the DMV.</p>
+            <div class="row">
+              <span class="price">$7</span>
+              <button class="btn small" data-add="new-tire-smell">Add to Crate</button>
+            </div>
+          </div>
+        </div>
+        <div class="flavor-card">
+          <img class="zoom" src="images/bottle-rain-gutter-reserve.webp" alt="Wax-dipped bottle of Rain Gutter Reserve craft soda" data-caption="Rain Gutter Reserve. Aged on the roof. Allocated, because we can only make what falls.">
+          <div class="body">
+            <span class="badge gold">Seasonal Reserve</span>
+            <h3>Rain Gutter Reserve</h3>
+            <p class="notes">Leaf-forward and roof-aged, our fall release sells out every year to people who insist they are buying it ironically.</p>
+            <div class="row">
+              <span class="price">$24</span>
+              <button class="btn small" data-add="rain-gutter-reserve">Add to Crate</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p style="text-align:center; margin-top:28px;">
+        <a class="btn" href="flavors.html">Browse All Ten Flavors</a>
+      </p>
+    </div>
+  </section>
+
+  <section id="oracle-section">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>The Pairing Oracle</h2>
+        <p>Every situation in life has a Murky Springs pairing. Tell the Oracle what you are going through.</p>
+      </div>
+      <div class="oracle" id="oracle">
+        <p><strong>Today I am facing...</strong></p>
+        <div class="oracle-choices">
+          <button data-mood="dmv">A long wait at the DMV</button>
+          <button data-mood="family">A family dinner</button>
+          <button data-mood="jury">Jury duty</button>
+          <button data-mood="breakup">A breakup</button>
+          <button data-mood="monday">A Monday</button>
+          <button data-mood="victory">A rare personal victory</button>
+        </div>
+        <div class="oracle-result">
+          <span class="flavor-name">The Oracle awaits.</span>
+          <span class="pairing-note">Choose your circumstance and receive your soda.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>From the Soda House</h2>
+        <p>A look inside the operation. Tap any photo to enlarge your concern.</p>
+      </div>
+      <div class="insta-grid">
+        <figure>
+          <img class="zoom" src="images/scene-soda-house.webp" alt="Inside the Murky Springs soda house" data-caption="The soda house on a typical rainy Tuesday. The chalkboard is load-bearing.">
+          <figcaption>The soda house, rain included at no extra charge.</figcaption>
+        </figure>
+        <figure>
+          <img class="zoom" src="images/scene-bottling.webp" alt="The Murky Springs bottling line" data-caption="Quality control means holding every bottle up to the light and nodding gravely.">
+          <figcaption>Every bottle inspected. Gravely.</figcaption>
+        </figure>
+        <figure>
+          <img class="zoom" src="images/scene-tasting-flight.webp" alt="A tasting flight of Murky Springs sodas" data-caption="The Wednesday flight. Survivors get a sticker.">
+          <figcaption>The tasting flight. Six glasses, zero excuses.</figcaption>
+        </figure>
+        <figure>
+          <img class="zoom" src="images/scene-founders.webp" alt="The founders of Murky Springs Soda Co. at the spring" data-caption="Our founders at the spring, deciding which liquid humanity will regret next.">
+          <figcaption>The founders, mid-decision.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Pricing</h2>
+        <p>Single bottles are $6 to $7 up in the flavor cards. For deeper commitments, we offer the following.</p>
+      </div>
+      <div class="price-grid">
+        <div class="price-card">
+          <h3>The Curiosity Six-Pack</h3>
+          <div class="amount">$30</div>
+          <ul>
+            <li>Six bottles, your choice of flavors</li>
+            <li>Pairing card for each bottle</li>
+            <li>A sticker that says "I Knew What I Was Doing"</li>
+          </ul>
+          <button class="btn" data-add="curiosity-six">Add to Crate</button>
+        </div>
+        <div class="price-card featured">
+          <h3>The Full Murk</h3>
+          <div class="amount">$52</div>
+          <ul>
+            <li>All ten flavors, one of each</li>
+            <li>Collector's wooden crate</li>
+            <li>Doug signs the packing slip</li>
+            <li>Our most popular regret</li>
+          </ul>
+          <button class="btn" data-add="full-murk">Add to Crate</button>
+        </div>
+        <div class="price-card">
+          <h3>Shallow End Club</h3>
+          <div class="amount">$18<span>/month</span></div>
+          <ul>
+            <li>One surprise bottle monthly</li>
+            <li>Tasting notes you will read aloud</li>
+            <li>Cancel anytime, and yet</li>
+          </ul>
+          <button class="btn" data-add="club-shallow">Join Monthly</button>
+        </div>
+        <div class="price-card">
+          <h3>Deep End Club</h3>
+          <div class="amount">$42<span>/month</span></div>
+          <ul>
+            <li>Three bottles monthly</li>
+            <li>Early access to seasonal releases</li>
+            <li>A framed photo of the spring</li>
+            <li>Priority on Rain Gutter allocation</li>
+          </ul>
+          <button class="btn" data-add="club-deep">Join Monthly</button>
+        </div>
+      </div>
+      <p style="text-align:center; color:var(--muted); margin-top:24px;">
+        Restaurants, bars, and haunted attractions: we do wholesale. Call the soda house at (555) 016-MURK and ask for Doug. If Doug answers, that was fast, please tell him the kettle is still on.
+      </p>
+    </div>
+  </section>
+
+  <section class="dark">
+    <div class="wrap">
+      <div class="reserve-box">
+        <h2 style="margin-top:0;">Rain Gutter Reserve Allocation</h2>
+        <p>Our fall release is bottled from a single roof and cannot be rushed. Allocation is limited to what falls. Request yours and we will contact you when the gutters are ready.</p>
+        <form id="reserveForm">
+          <div>
+            <label for="rName">Name</label>
+            <input id="rName" type="text" required autocomplete="name" placeholder="Your name">
+          </div>
+          <div>
+            <label for="rEmail">Email</label>
+            <input id="rEmail" type="email" required autocomplete="email" placeholder="you@example.com">
+          </div>
+          <div>
+            <label for="rQty">Requested bottles</label>
+            <select id="rQty">
+              <option>1 bottle</option>
+              <option>2 bottles</option>
+              <option>3 bottles (subject to roof yield)</option>
+            </select>
+          </div>
+          <div>
+            <label for="rWhy">Why do you deserve the Reserve? (optional, but we do read these at parties)</label>
+            <textarea id="rWhy" rows="3" placeholder="Make your case."></textarea>
+          </div>
+          <button class="btn" type="submit">Request Allocation</button>
+        </form>
+        <div id="reserveDone" hidden>
+          <p><strong>Request received.</strong> You are on the list. When the leaves turn and the gutters give, we will be in touch. Watch the skies, and also your inbox.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Fans of the Murk</h2>
+        <p>Real photos from real customers who made real choices. Tap to enlarge.</p>
+      </div>
+      <div class="insta-grid">
+        <figure>
+          <img class="zoom" src="images/gallery-1.webp" alt="Festival goers trying Public Pool soda" data-caption="@brookelyn_h: first sip of Public Pool. It really is like being eight again, in the worst way. Five stars.">
+          <figcaption>@brookelyn_h took Public Pool to a festival.</figcaption>
+        </figure>
+        <figure>
+          <img class="zoom" src="images/gallery-2.webp" alt="A customer decanting New Tire Smell soda into a wine glass" data-caption="@decant_dan: New Tire Smell needs to breathe for ten minutes. Then it needs to breathe somewhere else.">
+          <figcaption>@decant_dan decants. Obviously.</figcaption>
+        </figure>
+        <figure>
+          <img class="zoom" src="images/gallery-3.webp" alt="A picnic spread featuring Murky Springs sodas" data-caption="@picnic.core: the sandwiches were for morale.">
+          <figcaption>@picnic.core planned ahead.</figcaption>
+        </figure>
+        <figure>
+          <img class="zoom" src="images/gallery-4.webp" alt="A man enjoying Garden Hose soda in his garage" data-caption="@garage_gary: Garden Hose tastes exactly like summer 1987. I have notified my brothers.">
+          <figcaption>@garage_gary, transported.</figcaption>
+        </figure>
+        <figure>
+          <img class="zoom" src="images/gallery-5.webp" alt="Friends doing a blind taste test of Murky Springs sodas" data-caption="@blindtaste.bex: he guessed Mop Bucket in one sip and honestly we are worried about him.">
+          <figcaption>@blindtaste.bex hosts a weekly trial.</figcaption>
+        </figure>
+        <figure>
+          <img class="zoom" src="images/gallery-6.webp" alt="A shrine to a bottle of Rain Gutter Reserve" data-caption="@leafpeeper_pnw: the 2026 Reserve arrived. It has its own shelf now. The family understands.">
+          <figcaption>@leafpeeper_pnw built the shrine.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>
+        <strong style="color:var(--paper);">Murky Springs Soda Co.</strong><br>
+        Bottled at the source. Regretted at the destination.<br>
+        Cascadia Falls, WA
+      </div>
+      <nav>
+        <a href="flavors.html">Full Flavor Menu</a>
+        <a href="marketing.html">Posters &amp; Marketing</a>
+        <a href="../index.html">The Business Directory</a>
+      </nav>
+      <div>
+        Murky Springs is a fictional business.<br>
+        No sodas were harmed, or made.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart drawer -->
+  <div class="drawer-veil" id="drawerVeil" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" hidden aria-label="Shopping crate">
+    <button class="cart-close" id="cartClose" aria-label="Close crate">&times;</button>
+    <h2>Your Crate</h2>
+    <p class="fine">All sales final. You knew what this was.</p>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-total"><span>Total</span><span id="cartTotal">$0</span></div>
+    <button class="btn" id="checkoutBtn">Check Out</button>
+  </aside>
+
+  <!-- Order confirmation -->
+  <div class="order-modal" id="orderModal" hidden>
+    <div class="box">
+      <h3>Order Placed</h3>
+      <p>Your crate is on its way. Chill thoroughly, open outdoors, and remember: the first sip is a choice, the second is a lifestyle.</p>
+      <button class="btn" id="orderClose">Close</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

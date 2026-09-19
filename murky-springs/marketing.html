@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Posters &amp; Marketing | Murky Springs Soda Co.</title>
+  <meta name="description" content="Official Murky Springs Soda Co. marketing posters, for fans, bars, and anyone decorating against their better judgment.">
+  <link rel="icon" href="images/logo.webp">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <img src="images/logo.webp" alt="Murky Springs Soda Co. logo">
+        <strong>Murky Springs Soda Co.</strong>
+      </a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="flavors.html">Full Menu</a>
+        <a href="index.html#pricing">Pricing</a>
+        <button class="cart-btn" id="cartBtn">Crate (0)</button>
+      </nav>
+    </div>
+  </header>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Posters &amp; Marketing</h2>
+        <p>Our official campaign art. Hang one in your bar, your break room, or the hallway where guests can't escape it. Tap any poster to view it full size.</p>
+      </div>
+      <div class="poster-stack">
+        <figure>
+          <img class="zoom" src="images/marketing-portrait.webp" alt="Murky Springs portrait poster: Bravely Bottled. Regrettably Refreshing." data-caption="The flagship poster. Hot Dog Water, presented with the dignity it never earned.">
+          <figcaption>The flagship poster. Suitable for framing, questions optional.</figcaption>
+        </figure>
+        <figure>
+          <img class="zoom" src="images/marketing-landscape.webp" alt="Murky Springs landscape banner: Every Flavor a Poor Decision, Perfected." data-caption="The full lineup banner, as seen behind better-lit bars across Cascadia.">
+          <figcaption>The lineup banner. All ten flavors, one log, zero apologies.</figcaption>
+        </figure>
+        <figure>
+          <img class="zoom" src="images/marketing-square.webp" alt="Murky Springs square social image: Sip the Unthinkable." data-caption="The social square. Post it and watch your follower count do something.">
+          <figcaption>The social square. Free to repost, hard to explain.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>
+        <strong style="color:var(--paper);">Murky Springs Soda Co.</strong><br>
+        Bottled at the source. Regretted at the destination.<br>
+        Cascadia Falls, WA
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="flavors.html">Full Flavor Menu</a>
+        <a href="../index.html">The Business Directory</a>
+      </nav>
+      <div>
+        Murky Springs is a fictional business.<br>
+        No sodas were harmed, or made.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart drawer -->
+  <div class="drawer-veil" id="drawerVeil" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" hidden aria-label="Shopping crate">
+    <button class="cart-close" id="cartClose" aria-label="Close crate">&times;</button>
+    <h2>Your Crate</h2>
+    <p class="fine">All sales final. You knew what this was.</p>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-total"><span>Total</span><span id="cartTotal">$0</span></div>
+    <button class="btn" id="checkoutBtn">Check Out</button>
+  </aside>
+
+  <!-- Order confirmation -->
+  <div class="order-modal" id="orderModal" hidden>
+    <div class="box">
+      <h3>Order Placed</h3>
+      <p>Your crate is on its way. Chill thoroughly, open outdoors, and remember: the first sip is a choice, the second is a lifestyle.</p>
+      <button class="btn" id="orderClose">Close</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

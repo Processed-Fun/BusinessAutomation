@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retainers &amp; Fees | Alibi &amp; Associates</title>
+  <meta name="description" content="Engagement terms of Alibi &amp; Associates: single engagements, standing retainers, and the Chairman's Circle. Confidential intake form.">
+  <link rel="icon" href="images/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.webp" alt="Alibi &amp; Associates monogram">
+        <span>Alibi &amp; Associates</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav class="site-nav" id="nav">
+        <a href="practice-areas.html">Practice Areas</a>
+        <a href="team.html">The Partners</a>
+        <a href="faq.html">FAQ</a>
+        <a class="cta" href="engagement.html">Request a Consultation</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-intro">
+    <p class="kicker">Engagement</p>
+    <h1>Retainers &amp; fees</h1>
+    <p class="lede">The firm publishes its fees, an act of radical transparency it permits itself exactly once per website. All engagements are subject to partner review and a brief, painless conflict check. If your host is also a client, we will represent whoever asked first.</p>
+  </section>
+
+  <section class="band" style="border-top: none; padding-top: 24px;">
+    <div class="tiers">
+      <div class="tier">
+        <h3>Single Engagement</h3>
+        <p class="price">$1,200</p>
+        <p class="per">Flat fee, per obligation</p>
+        <ul>
+          <li>One bespoke excuse, drafted to order</li>
+          <li>Engagement dossier, hand-delivered</li>
+          <li>One rehearsal call with an associate</li>
+          <li>Delivery within five business days</li>
+          <li>Thirty days of post-excuse support</li>
+        </ul>
+        <a class="btn" href="#intake">Begin Intake</a>
+      </div>
+      <div class="tier featured">
+        <h3>The Standing Retainer</h3>
+        <p class="price">$850</p>
+        <p class="per">Monthly, billed discreetly</p>
+        <ul>
+          <li>24-hour excuse hotline, live senior associate</li>
+          <li>Priority drafting on all matters</li>
+          <li>One corroborating witness per calendar year</li>
+          <li>Annual audit of your standing obligations</li>
+          <li>The Taper, where clinically indicated</li>
+        </ul>
+        <a class="btn" href="#intake">Begin Intake</a>
+      </div>
+      <div class="tier">
+        <h3>Chairman's Circle</h3>
+        <p class="price">Inquire</p>
+        <p class="per">By invitation or referral</p>
+        <ul>
+          <li>Partner-led matters exclusively</li>
+          <li>Household and multi-generational coverage</li>
+          <li>Standing witnesses on regional retainer</li>
+          <li>Annual review held wherever you are pretending to be</li>
+          <li>Further terms are not described in writing</li>
+        </ul>
+        <a class="btn" href="#intake">Request a Quote</a>
+      </div>
+    </div>
+    <p class="caption" style="margin-top: 20px;">Fees are quoted in dollars. Invoices arrive labeled "consulting."</p>
+  </section>
+
+  <section class="band" id="assessment">
+    <p class="kicker">Before You Write to Us</p>
+    <h2>Preliminary feasibility assessment</h2>
+    <p class="lede">A courtesy instrument. Adjust the particulars of your obligation and the firm will estimate, without obligation and without judgment, how cleanly you can be removed from it.</p>
+    <div class="assessor" id="assessor">
+      <label for="obligation">The obligation</label>
+      <select id="obligation">
+        <option value="wedding">A wedding</option>
+        <option value="shower">A baby or bridal shower</option>
+        <option value="retreat">A work retreat</option>
+        <option value="call" selected>A quick call that could have been an email</option>
+        <option value="standing">A standing weekly or monthly commitment</option>
+        <option value="reunion">A reunion of any kind</option>
+      </select>
+
+      <label for="notice">Time remaining before the obligation</label>
+      <input type="range" id="notice" min="0" max="6" step="1" value="3">
+      <p class="range-readout" id="notice-readout">This week</p>
+
+      <label for="proximity">Your relation to the host</label>
+      <select id="proximity">
+        <option value="acquaintance">Acquaintance</option>
+        <option value="colleague" selected>Colleague</option>
+        <option value="friend">Close friend</option>
+        <option value="family">Immediate family</option>
+        <option value="inlaws">The in-laws</option>
+      </select>
+
+      <div class="verdict">
+        <p class="score" id="verdict-score">72%</p>
+        <p id="verdict-text">Feasible. Standard engagement, standard discretion.</p>
+        <p class="rec" id="verdict-rec">Recommended practice: Workplace &amp; Corporate.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="intake">
+    <p class="kicker">Confidential Intake</p>
+    <h2>Request a consultation</h2>
+    <p class="lede">Complete the form below. Write plainly; euphemism slows the drafting process. Nothing you disclose here can be discussed with anyone, including you, in public.</p>
+    <form class="intake" id="intake-form">
+      <div class="field">
+        <label for="client-name">Name, or the name you travel under</label>
+        <input type="text" id="client-name" name="name" required autocomplete="name">
+      </div>
+      <div class="field">
+        <label for="client-email">Email</label>
+        <input type="email" id="client-email" name="email" required autocomplete="email">
+      </div>
+      <div class="field">
+        <label for="engagement-type">Engagement sought</label>
+        <select id="engagement-type" name="engagement">
+          <option value="single">Single Engagement ($1,200 flat)</option>
+          <option value="retainer">The Standing Retainer ($850 monthly)</option>
+          <option value="chairman">Chairman's Circle (fees discussed in person)</option>
+          <option value="unsure">Unsure; the obligation is complicated</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="obligation-desc">The obligation, described plainly</label>
+        <textarea id="obligation-desc" name="obligation" placeholder="Example: My cousin's destination wedding. Six days. There is a group chat." required></textarea>
+      </div>
+      <div class="field">
+        <label for="deadline">Date of the obligation, if scheduled</label>
+        <input type="date" id="deadline" name="deadline">
+      </div>
+      <p class="note">By submitting, you acknowledge that the firm never confirms nor denies any engagement, and that you were, as far as anyone can establish, never on this website.</p>
+      <button class="btn solid" type="submit">Submit Confidentially</button>
+    </form>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <h4>Alibi &amp; Associates</h4>
+        <p>Bespoke excuses for the social obligations you cannot attend, for reasons we will think of.</p>
+        <p>4 Pretense Row, Suite 000<br>By appointment only</p>
+      </div>
+      <div>
+        <h4>The Firm</h4>
+        <ul>
+          <li><a href="practice-areas.html">Practice Areas</a></li>
+          <li><a href="team.html">The Partners</a></li>
+          <li><a href="faq.html">Frequently Asked Questions</a></li>
+          <li><a href="engagement.html">Retainers &amp; Fees</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Materials</h4>
+        <ul>
+          <li><a href="marketing.html">Selected Announcements</a></li>
+          <li><a href="../index.html">The Business Directory</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="legal">The firm never confirms nor denies any engagement. This includes yours. Entirely fictional; please keep attending things.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

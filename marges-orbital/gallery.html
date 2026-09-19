@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Counter | Marge's Orbital Launch &amp; Diner</title>
+  <meta name="description" content="Photos from customers and regulars at Marge's Orbital Launch &amp; Diner: launch days, pie, and the parking lot crowd.">
+  <link rel="icon" href="images/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Public+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <img src="images/logo.webp" alt="Marge's Orbital Launch &amp; Diner logo">
+        <strong>Marge's Orbital Launch &amp; Diner</strong>
+      </a>
+      <nav class="site-nav">
+        <a href="index.html#menu">Menu</a>
+        <a href="index.html#launch">Launch Services</a>
+        <a href="index.html#pricing">Pricing</a>
+        <button class="cart-btn" id="cartBtn">Tab (0)</button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="alt">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">The Counter</span>
+        <h2>Launch Days, As Posted</h2>
+        <p>Photos from regulars, customers, and one congregation. Tag us and Marge will print it and tape it by the register, which is the real feed.</p>
+      </div>
+      <div class="insta-grid">
+        <div class="insta-card">
+          <img class="zoom" src="images/gal-launch-lot.webp" alt="Locals with coffee mugs in the diner parking lot watching a night launch" data-caption="Night launch from the gravel lot. Nobody set their coffee down.">
+          <div class="meta">
+            <span class="handle">@wheatstatewatcher</span>
+            <p>T-minus nothing, baby. Third launch this month and Earl still jumps at ignition.</p>
+            <div class="likes">214 likes</div>
+          </div>
+        </div>
+        <div class="insta-card">
+          <img class="zoom" src="images/gal-regulars.webp" alt="Three regulars at the window counter with slices of cherry pie, watching a launch" data-caption="Pie service continued through the entire ascent.">
+          <div class="meta">
+            <span class="handle">@dotfrom56</span>
+            <p>The fellas turned around for exactly one burn and then went right back to the Re-Entry Cherry. Priorities intact.</p>
+            <div class="likes">187 likes</div>
+          </div>
+        </div>
+        <div class="insta-card">
+          <img class="zoom" src="images/gal-church.webp" alt="A church congregation in Sunday best waiting by a fence for a launch after the service" data-caption="Monday makeup launch, after Sunday's scrub. Pastor Dan kept it short.">
+          <div class="meta">
+            <span class="handle">@firstprairiechurch</span>
+            <p>Fellowship hour relocated to the fence line. Marge sent out lemonade. The heavens declared, etc.</p>
+            <div class="likes">156 likes</div>
+          </div>
+        </div>
+        <div class="insta-card">
+          <img class="zoom" src="images/gal-truck.webp" alt="A farmer unloading a satellite crate from a pickup truck at the diner's back door" data-caption="Payload delivery, back door, mind the mop.">
+          <div class="meta">
+            <span class="handle">@hendersonfarmco</span>
+            <p>Dropped off the soil sensor sat on the way to the elevator. Marge signed for it and fed me. Total time: 40 minutes.</p>
+            <div class="likes">98 likes</div>
+          </div>
+        </div>
+        <div class="insta-card">
+          <img class="zoom" src="images/gal-sign.webp" alt="A hand-painted roadside billboard reading Pie and Orbits, Next Exit" data-caption="The sign on 56. Bill repaints the arrow every spring.">
+          <div class="meta">
+            <span class="handle">@route56roadtrips</span>
+            <p>Saw this sign, assumed it was a joke, took the exit anyway. It was not a joke. 10/10 pie, 10/10 orbit.</p>
+            <div class="likes">312 likes</div>
+          </div>
+        </div>
+        <div class="insta-card">
+          <img class="zoom" src="images/gal-contrail.webp" alt="A kid on a truck roof pointing at a launch contrail over a wheat field" data-caption="My kid, somebody's satellite, everybody's sky.">
+          <div class="meta">
+            <span class="handle">@prairiemomof3</span>
+            <p>He asked if we could follow it. I said it's going around the whole world, bud. He said so are we, technically. Can't argue.</p>
+            <div class="likes">241 likes</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>
+        <strong style="color:#eef6f2;">Marge's Orbital Launch &amp; Diner</strong><br>
+        Route 56, just past the water tower.<br>
+        Weather and church permitting since 1994.
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Full Menu &amp; Flight Manifest</a>
+        <a href="marketing.html">Posters &amp; Marketing</a>
+        <a href="../index.html">The Business Directory</a>
+      </nav>
+      <div>
+        Marge's is a fictional business.<br>
+        No pie was harmed in any launch.<br>
+        Booth six is real in our hearts.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Tab drawer -->
+  <div class="drawer-veil" id="drawerVeil" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" hidden aria-label="Your tab">
+    <button class="cart-close" id="cartClose" aria-label="Close tab">&times;</button>
+    <h2>Your Tab</h2>
+    <p class="fine">Marge keeps it on the pad by the register. This is the same tab, only legible.</p>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-total"><span>Total</span><span id="cartTotal">$0</span></div>
+    <button class="btn" id="checkoutBtn">Settle Up</button>
+  </aside>
+
+  <!-- Order confirmation -->
+  <div class="order-modal" id="orderModal" hidden>
+    <div class="box">
+      <h3>Tab Settled</h3>
+      <p>Marge rang it up and wrote your name on the launch calendar in pencil, which around here is binding. Food's up in ten. Orbits take a little longer.</p>
+      <button class="btn" id="orderClose">Close</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

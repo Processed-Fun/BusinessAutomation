@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate | Lint for Nests</title>
+  <meta name="description" content="Support Lint for Nests with a one-time or monthly gift, or inquire about the Golden Navel Circle.">
+  <link rel="icon" href="images/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Karla:wght@400;700&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <img class="header-logo" src="images/logo.webp" alt="Lint for Nests logo">
+      <a class="site-title" href="index.html">Lint for Nests<small>a fiber-recovery charity</small></a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">&#9776;</button>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="stories.html">Rescue Stories</a></li>
+          <li><a href="lint-drives.html">Lint Drives</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a class="nav-donate current" href="donate.html">Donate</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-head wrap">
+      <span class="handwritten">Give money, warm birds</span>
+      <h1>Donate to Lint for Nests</h1>
+      <p style="max-width:640px;">Lint keeps the birds warm, but money keeps the lint moving. Your gift funds sorting tables, sanitation cycles, jar deposits, and the modest stipend of our one part-time driver, Gary.</p>
+    </div>
+
+    <section class="section">
+      <div class="wrap" style="display:grid; grid-template-columns: 1fr 1fr; gap: 36px; align-items:start;" id="give-grid">
+        <div class="form-card">
+          <h2>Make a gift</h2>
+          <form id="donate-form">
+            <label>Amount</label>
+            <div class="amount-row">
+              <button type="button">$5</button>
+              <button type="button" class="selected">$15</button>
+              <button type="button">$40</button>
+              <button type="button">$100</button>
+            </div>
+            <label for="donate-custom">Or enter your own amount</label>
+            <input type="number" id="donate-custom" min="1" placeholder="Any amount warms something">
+            <label for="donate-freq">Frequency</label>
+            <select id="donate-freq">
+              <option>Monthly</option>
+              <option>One-time</option>
+              <option>Every sweater season</option>
+            </select>
+            <label for="donate-name">Name</label>
+            <input type="text" id="donate-name" placeholder="As it should appear in the annual report">
+            <label for="donate-email">Email</label>
+            <input type="email" id="donate-email" placeholder="For The Navel Gazette">
+            <div class="check-row">
+              <input type="checkbox" id="donate-anon">
+              <label for="donate-anon">Make my gift anonymous. I give for the warblers, not the glory.</label>
+            </div>
+            <p style="margin-top:18px;"><button class="btn btn-primary" type="submit">Complete Donation</button></p>
+            <p class="form-note">Monthly donors at $15 and up receive the official window decal. Donors at $40 and up will have a wild warbler named after them within two migration cycles.</p>
+            <div class="form-success" id="donate-success"></div>
+          </form>
+        </div>
+        <div>
+          <img class="zoomable" style="border-radius:14px; border:6px solid var(--cream); box-shadow: var(--shadow);" src="images/warbler.webp" alt="A yellow warbler posing for its official naming portrait" data-caption="Deborah II, named for a Nest Builder donor from Cedar Rapids">
+          <p class="photo-caption">Deborah II. Named for a donor from Cedar Rapids. She does not know this, and that is fine.</p>
+          <div class="card" style="margin-top:20px;">
+            <h3>Where your money goes</h3>
+            <ul style="margin:0; padding-left:20px;">
+              <li>62% sorting, sanitation, and nest installation</li>
+              <li>21% Lint Drive logistics and folding tables</li>
+              <li>9% donor services and certificate calligraphy</li>
+              <li>8% Gary</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="circle">
+      <div class="wrap" style="display:grid; grid-template-columns: 1fr 1fr; gap:36px; align-items:start;">
+        <div>
+          <span class="handwritten">For distinguished navels</span>
+          <h2>The Golden Navel Circle</h2>
+          <p>Our most devoted supporters give $2,500 a year and receive what money can rarely buy: recognition among peers who understand. Members are invited to the annual Sorting Gala in Oskaloosa, receive priority naming rights during warbler season, and are listed, or pointedly not listed, in the annual report according to their wishes.</p>
+          <p>Membership is by inquiry. A senior gift officer will contact you discreetly, as is our way.</p>
+        </div>
+        <div class="form-card">
+          <h3>Inquire about membership</h3>
+          <form id="circle-form">
+            <label for="circle-name">Full name</label>
+            <input type="text" id="circle-name" required>
+            <label for="circle-email">Email</label>
+            <input type="email" id="circle-email" required>
+            <label for="circle-note">Anything we should know</label>
+            <textarea id="circle-note" rows="3" placeholder="Optional. Many members simply write: you know why I am here."></textarea>
+            <p style="margin-top:16px;"><button class="btn btn-primary" type="submit">Request a Quiet Call</button></p>
+            <div class="form-success" id="circle-success"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-cols">
+      <div>
+        <h3>Lint for Nests</h3>
+        <p>A 501(c)(3) fiber-recovery charity serving orphaned songbirds across Iowa, Wisconsin, and most of Minnesota. EIN 47-LINTLINE. Donations are tax deductible. Lint is not, and we have stopped asking.</p>
+      </div>
+      <div>
+        <h3>Get involved</h3>
+        <ul>
+          <li><a href="donate.html">Donate money</a></li>
+          <li><a href="lint-drives.html">Donate lint</a></li>
+          <li><a href="stories.html">Rescue stories</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>More</h3>
+        <ul>
+          <li><a href="marketing.html">Marketing materials</a></li>
+          <li><a href="faq.html#navel-only">Why navel lint only?</a></li>
+          <li><a href="../index.html">Business directory</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer-legal">
+      <p>Lint for Nests is a fictional organization. No lint was collected, no warbler was named, and no tax deduction will survive an audit.</p>
+    </div>
+  </footer>
+
+  <div class="img-modal" id="img-modal" role="dialog" aria-modal="true">
+    <button class="modal-close" aria-label="Close image">&times;</button>
+    <img src="" alt="">
+    <p class="modal-caption"></p>
+  </div>
+
+  <script src="app.js"></script>
+  <style>
+    @media (max-width: 860px) {
+      #give-grid, #circle .wrap { grid-template-columns: 1fr !important; }
+    }
+  </style>
+</body>
+</html>

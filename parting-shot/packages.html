@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Packages &amp; Booking | The Parting Shot</title>
+  <meta name="description" content="Commission The Parting Shot for your divorce: package tiers from a single golden-hour session to full-day coverage including both attorneys.">
+  <link rel="icon" href="images/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.webp" alt="The Parting Shot monogram">
+        <span>The Parting Shot</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav class="site-nav" id="nav">
+        <a href="portfolio.html">Portfolio</a>
+        <a href="studio.html">The Studio</a>
+        <a href="faq.html">FAQ</a>
+        <a class="cta" href="packages.html">Packages &amp; Booking</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <p class="kicker">Packages &amp; Booking</p>
+    <h1>Choose your coverage</h1>
+    <p class="explain">Three tiers, priced per divorce, not per person. Couples splitting the invoice receive two identical receipts, itemized for equitable distribution.</p>
+  </section>
+
+  <section class="band tight">
+    <div class="tiers">
+      <div class="tier">
+        <h3>Decree in Golden Hour</h3>
+        <p class="price">$1,800</p>
+        <ul>
+          <li>One session, timed to the best 90 minutes of light</li>
+          <li>The signing, the steps, the details</li>
+          <li>40 edited photographs, delivered twice</li>
+          <li>One commemorative album, printed in duplicate</li>
+        </ul>
+        <a class="btn" href="#inquire">Reserve This Package</a>
+      </div>
+      <div class="tier featured">
+        <span class="badge">Most Commissioned</span>
+        <h3>The Full Arc</h3>
+        <p class="price">$4,200</p>
+        <ul>
+          <li>Half-day editorial coverage of the signing day</li>
+          <li>First look at the paperwork, unposed</li>
+          <li>Individual portraits, taken separately, hung anywhere</li>
+          <li>The send-off of your choosing, cans provided</li>
+          <li>120 edited photographs and both albums, foil-stamped</li>
+        </ul>
+        <a class="btn solid" href="#inquire">Reserve This Package</a>
+      </div>
+      <div class="tier">
+        <h3>The Complete Proceedings</h3>
+        <p class="price">$9,500</p>
+        <ul>
+          <li>Full-day coverage, morning counsel to evening light</li>
+          <li>Both attorneys, posed formally</li>
+          <li>The division of effects, documented as still life</li>
+          <li>A second shooter for simultaneous exits</li>
+          <li>Heirloom edition albums, slipcased, one per household</li>
+        </ul>
+        <a class="btn" href="#inquire">Reserve This Package</a>
+      </div>
+    </div>
+    <p class="small" style="margin-top: 1.4rem;">Payment is accepted by card, check, or two checks. A 50% retainer holds your signing date; the balance is due when the album ships. If you reconcile before the session, the retainer converts to a vow renewal credit. This has happened twice.</p>
+  </section>
+
+  <section class="band">
+    <div class="widget" id="composer">
+      <p class="kicker">Complimentary Tool</p>
+      <h2>The Album Title Composer</h2>
+      <p class="small">Every album needs a title worthy of its foil. Enter two first names and the studio's house style will do the rest.</p>
+      <div class="field" style="max-width: 420px; margin: 1rem auto;">
+        <label for="composer-a">First name</label>
+        <input id="composer-a" type="text" placeholder="Margaret">
+      </div>
+      <div class="field" style="max-width: 420px; margin: 0 auto 1rem;">
+        <label for="composer-b">Second name</label>
+        <input id="composer-b" type="text" placeholder="Paul">
+      </div>
+      <button class="btn solid" type="button" id="composer-go">Compose a Title</button>
+      <output id="composer-out" aria-live="polite"></output>
+      <a class="btn" id="composer-download" href="#" style="visibility: hidden;">Download for Your Records</a>
+    </div>
+  </section>
+
+  <section class="band" id="inquire">
+    <p class="kicker">Booking</p>
+    <h2>Reserve your date</h2>
+    <p class="lede">Tell us when you sign and how much of it you want remembered. We respond within two business days from an unmarked address, in case you share an inbox.</p>
+    <form class="inquiry" id="inquiry-form">
+      <div class="field">
+        <label for="inq-name">Your name</label>
+        <input id="inq-name" type="text" required>
+      </div>
+      <div class="field">
+        <label for="inq-email">Email</label>
+        <input id="inq-email" type="email" required>
+      </div>
+      <div class="field">
+        <label for="inq-package">Package</label>
+        <select id="inq-package">
+          <option>Decree in Golden Hour, $1,800</option>
+          <option selected>The Full Arc, $4,200</option>
+          <option>The Complete Proceedings, $9,500</option>
+          <option>Undecided, much like the marriage was</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="inq-date">Signing date, if scheduled</label>
+        <input id="inq-date" type="date">
+      </div>
+      <div class="field">
+        <label for="inq-notes">Notes for the studio</label>
+        <textarea id="inq-notes" placeholder="Venue, attorneys expected, whether both parties know about this booking."></textarea>
+      </div>
+      <p class="form-note">Bookings made by one party remain confidential until the session. Bookings made by both parties receive a 10% cooperation discount.</p>
+      <button class="btn solid" type="submit">Submit Inquiry</button>
+      <div class="form-confirm" id="inquiry-confirm" aria-live="polite"></div>
+    </form>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <h4>The Parting Shot</h4>
+        <p>Fine-art photography for the end of your marriage. Studio visits by appointment; we come to the courthouse either way.</p>
+        <p>Suite 9, The Annex Building<br>Appointments only</p>
+      </div>
+      <div>
+        <h4>The Studio</h4>
+        <ul>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="studio.html">The Studio &amp; Process</a></li>
+          <li><a href="packages.html">Packages &amp; Booking</a></li>
+          <li><a href="faq.html">Frequently Asked Questions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Materials</h4>
+        <ul>
+          <li><a href="marketing.html">Campaign Prints</a></li>
+          <li><a href="../index.html">The Business Directory</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="legal">The Parting Shot photographs endings, not causes. We take no sides and both albums. Entirely fictional; please work it out if you can.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

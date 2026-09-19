@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop | Fines &amp; Dandy</title>
+  <meta name="description" content="Buy Fines & Dandy single-origin cereal fines: single jars, the Settler's Flight, the Bottom Shelf Club subscription, and wholesale sweepings.">
+  <link rel="icon" href="images/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Karla:wght@400;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.webp" alt="Fines &amp; Dandy logo">
+        <span>
+          <span class="brand-name">Fines &amp; Dandy</span>
+          <span class="brand-tag">single-origin cereal fines</span>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="varieties.html">The Fines</a></li>
+          <li><a href="recipes.html">Pairings</a></li>
+          <li><a href="shop.html" class="active">Shop</a></li>
+          <li><a href="locator.html">Find Us</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="wrap">
+        <h2 class="section-title">Shop</h2>
+        <p class="section-sub">All jars are 4 oz of pure settled fines. Shipping is padded generously, because we of all people know what happens to food in transit.</p>
+
+        <div class="price-grid">
+          <div class="price-card">
+            <h3>The Single Jar</h3>
+            <p class="price">$18 <span>/ jar</span></p>
+            <ul>
+              <li>One 4 oz jar, any origin</li>
+              <li>Cork sealed at peak settle</li>
+              <li>Tasting card included</li>
+              <li>Ships in 2 to 3 days</li>
+            </ul>
+            <div class="jar-picker">
+              <label for="jar-select">Choose your origin</label>
+              <select id="jar-select">
+                <option value="Toasted Corn">Toasted Corn (Lot 001)</option>
+                <option value="Frosted Flake">Frosted Flake (Lot 002)</option>
+                <option value="Cinnamon Square">Cinnamon Square (Lot 003, allocated)</option>
+                <option value="Honey Oat Ring">Honey Oat Ring (Lot 004)</option>
+                <option value="Chocolate Puff">Chocolate Puff (Lot 005)</option>
+                <option value="Fruit Ring">Fruit Ring (Lot 006)</option>
+              </select>
+            </div>
+            <button class="btn btn-primary add-to-cart" data-name="Single Jar" data-price="18" data-variant="jar-select">Add to cart</button>
+          </div>
+
+          <div class="price-card featured">
+            <span class="ribbon">Most settled upon</span>
+            <h3>The Settler's Flight</h3>
+            <p class="price">$42 <span>/ four minis</span></p>
+            <ul>
+              <li>Four 1.5 oz mini jars</li>
+              <li>You pick, or trust the house</li>
+              <li>Guided tasting mat included</li>
+              <li>The recommended first purchase</li>
+            </ul>
+            <button class="btn btn-primary add-to-cart" data-name="Settler's Flight" data-price="42">Add to cart</button>
+          </div>
+
+          <div class="price-card" id="club">
+            <h3>The Bottom Shelf Club</h3>
+            <p class="price">$29 <span>/ month</span></p>
+            <ul>
+              <li>A new origin jar every month</li>
+              <li>Pairing card and settle report</li>
+              <li>First call on reserve lots</li>
+              <li>Cancel anytime, allegedly</li>
+            </ul>
+            <button class="btn btn-primary add-to-cart" data-name="Bottom Shelf Club (monthly)" data-price="29">Join the club</button>
+          </div>
+        </div>
+
+        <div id="wholesale">
+          <h2 class="section-title">Wholesale sweepings</h2>
+          <p class="section-sub">Cafes, hotels, wedding cereal bars, and one regional airline buy our fines by the pail. Volume pricing starts at five pounds and is quoted by hand.</p>
+          <div class="form-card">
+            <form id="quote-form">
+              <label for="q-name">Name</label>
+              <input id="q-name" type="text" required autocomplete="name">
+              <label for="q-org">Organization</label>
+              <input id="q-org" type="text" required>
+              <label for="q-volume">Estimated monthly volume</label>
+              <select id="q-volume">
+                <option>5 to 25 pounds</option>
+                <option>25 to 100 pounds</option>
+                <option>More than 100 pounds</option>
+                <option>An amount I am not prepared to say out loud</option>
+              </select>
+              <label for="q-notes">Tell us about your dust needs</label>
+              <textarea id="q-notes" placeholder="Origins, volumes, whether the airline thing is you"></textarea>
+              <div class="btn-row">
+                <button class="btn btn-primary" type="submit">Request a quote</button>
+              </div>
+              <p class="form-msg" id="quote-msg" hidden></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <h3 style="color: #fdf9ee;">Fines &amp; Dandy</h3>
+          <p style="max-width: 26em;">Single-origin cereal fines, harvested from the bottom of the bag and jarred with the seriousness the bottom of the bag deserves.</p>
+        </div>
+        <ul>
+          <li><a href="varieties.html">The Fines</a></li>
+          <li><a href="recipes.html">Pairings</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="locator.html">Store locator</a></li>
+        </ul>
+        <ul>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="marketing.html">Marketing gallery</a></li>
+          <li><a href="../index.html">Business directory</a></li>
+        </ul>
+      </div>
+      <p class="fine-print">Fines &amp; Dandy is a fictional business. No bags were harmed, though several were emptied. &copy; 2026 Fines &amp; Dandy Recovery Co.</p>
+    </div>
+  </footer>
+
+  <button class="cart-fab" id="cart-fab" aria-controls="cart-panel">Cart (0)</button>
+
+  <aside class="cart-panel" id="cart-panel" aria-label="Shopping cart">
+    <h3>Your cart <button class="cart-close" id="cart-close" aria-label="Close cart">&times;</button></h3>
+    <div id="cart-lines"></div>
+    <p class="cart-total" id="cart-total">Total: $0</p>
+    <button class="btn btn-primary" id="checkout-btn" style="width: 100%;">Check out</button>
+    <p class="cart-note">Orders ship in kraft boxes packed with shredded cereal boxes, which felt right.</p>
+    <p class="form-msg" id="checkout-msg" hidden></p>
+  </aside>
+
+  <div class="modal" id="img-modal" role="dialog" aria-modal="true" aria-label="Enlarged image">
+    <button class="modal-close" aria-label="Close">&times;</button>
+    <figure>
+      <img src="" alt="">
+      <figcaption class="modal-caption"></figcaption>
+    </figure>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

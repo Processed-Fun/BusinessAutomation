@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marketing Gallery | Fines &amp; Dandy</title>
+  <meta name="description" content="Official Fines & Dandy marketing and campaign imagery.">
+  <link rel="icon" href="images/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Karla:wght@400;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.webp" alt="Fines &amp; Dandy logo">
+        <span>
+          <span class="brand-name">Fines &amp; Dandy</span>
+          <span class="brand-tag">single-origin cereal fines</span>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="varieties.html">The Fines</a></li>
+          <li><a href="recipes.html">Pairings</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="locator.html">Find Us</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="wrap">
+        <h2 class="section-title">Marketing gallery</h2>
+        <p class="section-sub">Campaign imagery from the current season, available for press and retail partners. All posters feature real production jars, photographed at rest.</p>
+
+        <div class="marketing-grid">
+          <img class="zoomable" src="images/marketing-portrait.webp" alt="Fines &amp; Dandy poster featuring the Cinnamon Square jar with the tagline The bottom of the bag, finally on top" data-caption="Campaign poster: The bottom of the bag. Finally on top.">
+          <img class="zoomable" src="images/marketing-landscape.webp" alt="Fines &amp; Dandy banner featuring the Toasted Corn and Chocolate Puff jars with the tagline Sweepings, done properly" data-caption="Campaign banner: Sweepings, done properly.">
+          <img class="zoomable" src="images/marketing-square.webp" alt="Fines &amp; Dandy square poster featuring the Fruit Ring jar with the tagline Every bag ends this way, start there" data-caption="Campaign square: Every bag ends this way. Start there.">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <h3 style="color: #fdf9ee;">Fines &amp; Dandy</h3>
+          <p style="max-width: 26em;">Single-origin cereal fines, harvested from the bottom of the bag and jarred with the seriousness the bottom of the bag deserves.</p>
+        </div>
+        <ul>
+          <li><a href="varieties.html">The Fines</a></li>
+          <li><a href="recipes.html">Pairings</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="locator.html">Store locator</a></li>
+        </ul>
+        <ul>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="marketing.html">Marketing gallery</a></li>
+          <li><a href="../index.html">Business directory</a></li>
+        </ul>
+      </div>
+      <p class="fine-print">Fines &amp; Dandy is a fictional business. No bags were harmed, though several were emptied. &copy; 2026 Fines &amp; Dandy Recovery Co.</p>
+    </div>
+  </footer>
+
+  <div class="modal" id="img-modal" role="dialog" aria-modal="true" aria-label="Enlarged image">
+    <button class="modal-close" aria-label="Close">&times;</button>
+    <figure>
+      <img src="" alt="">
+      <figcaption class="modal-caption"></figcaption>
+    </figure>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

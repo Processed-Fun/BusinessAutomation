@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Store Locator | Fines &amp; Dandy</title>
+  <meta name="description" content="Find Fines & Dandy near you. Wherever we're stocked, we're on the bottom shelf.">
+  <link rel="icon" href="images/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Karla:wght@400;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.webp" alt="Fines &amp; Dandy logo">
+        <span>
+          <span class="brand-name">Fines &amp; Dandy</span>
+          <span class="brand-tag">single-origin cereal fines</span>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="varieties.html">The Fines</a></li>
+          <li><a href="recipes.html">Pairings</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="locator.html" class="active">Find Us</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="wrap" style="max-width: 760px;">
+        <h2 class="section-title">Store locator</h2>
+        <p class="section-sub">Fines &amp; Dandy is stocked in fine grocers nationwide, exclusively on the bottom shelf. This is a brand decision, not a negotiating failure. Enter your ZIP code to find your nearest settle.</p>
+
+        <div class="form-card">
+          <form id="locator-form">
+            <label for="zip">ZIP code</label>
+            <input id="zip" type="text" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" placeholder="e.g. 54301" required>
+            <div class="btn-row">
+              <button class="btn btn-primary" type="submit">Find stores</button>
+            </div>
+          </form>
+        </div>
+
+        <ul class="store-list" id="store-list" hidden></ul>
+        <p class="section-sub" id="locator-note" hidden style="margin-top: 18px;">All locations stock the full lineup unless the Cinnamon Square has already gone, which it has.</p>
+      </div>
+    </section>
+
+    <section class="stripe">
+      <div class="wrap" style="max-width: 760px; text-align: center;">
+        <h2>Why the bottom shelf?</h2>
+        <p>Fines settle. It's what they do, and we honor it. Placing our jars at eye level would betray everything the product stands for, so every retail partner signs an agreement keeping Fines &amp; Dandy within fourteen inches of the floor. Kneel. It's worth it.</p>
+        <p class="handwritten">"If you're not crouching, you're not shopping."</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <h3 style="color: #fdf9ee;">Fines &amp; Dandy</h3>
+          <p style="max-width: 26em;">Single-origin cereal fines, harvested from the bottom of the bag and jarred with the seriousness the bottom of the bag deserves.</p>
+        </div>
+        <ul>
+          <li><a href="varieties.html">The Fines</a></li>
+          <li><a href="recipes.html">Pairings</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="locator.html">Store locator</a></li>
+        </ul>
+        <ul>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="marketing.html">Marketing gallery</a></li>
+          <li><a href="../index.html">Business directory</a></li>
+        </ul>
+      </div>
+      <p class="fine-print">Fines &amp; Dandy is a fictional business. No bags were harmed, though several were emptied. &copy; 2026 Fines &amp; Dandy Recovery Co.</p>
+    </div>
+  </footer>
+
+  <div class="modal" id="img-modal" role="dialog" aria-modal="true" aria-label="Enlarged image">
+    <button class="modal-close" aria-label="Close">&times;</button>
+    <figure>
+      <img src="" alt="">
+      <figcaption class="modal-caption"></figcaption>
+    </figure>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

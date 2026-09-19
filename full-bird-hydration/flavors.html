@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Flavors | Full Bird Hydration</title>
+  <meta name="description" content="All 20 Full Bird Hydration flavors, from Turkey &amp; Gravy Surge to Black Friday Blackout.">
+  <link rel="icon" type="image/webp" href="images/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #0e1a33;
+      --navy-2: #16264a;
+      --orange: #ff6a1f;
+      --orange-hot: #ff8c42;
+      --teal: #2ec8d8;
+      --cream: #f5ecd7;
+      --muted: #a8b3c9;
+      --gold: #e8b64c;
+      --pink: #f2789f;
+      --green: #8bc34a;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--navy);
+      color: var(--cream);
+      font-family: 'Inter', Arial, sans-serif;
+      line-height: 1.5;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Archivo Black', Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      line-height: 1.1;
+    }
+
+    img { max-width: 100%; display: block; }
+
+    .wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Nav */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(14, 26, 51, 0.95);
+      border-bottom: 2px solid var(--orange);
+      backdrop-filter: blur(6px);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 10px 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .nav-inner img { width: 46px; height: 46px; border-radius: 50%; }
+
+    .brand {
+      font-family: 'Archivo Black', Arial, sans-serif;
+      font-size: 1rem;
+      text-transform: uppercase;
+      color: var(--cream);
+      text-decoration: none;
+      line-height: 1.1;
+    }
+
+    .brand span { color: var(--orange); }
+
+    .nav-links {
+      margin-left: auto;
+      display: flex;
+      gap: 18px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .nav-links a:hover { color: var(--cream); }
+
+    .nav-links a.active { color: var(--orange); }
+
+    /* Header */
+    .page-head {
+      padding: 60px 0 30px;
+      text-align: center;
+    }
+
+    .page-head .kicker {
+      color: var(--teal);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.8rem;
+      margin: 0 0 8px;
+    }
+
+    .page-head h1 {
+      font-size: clamp(1.9rem, 5vw, 3rem);
+      margin: 0 0 12px;
+    }
+
+    .page-head p {
+      color: var(--muted);
+      max-width: 620px;
+      margin: 0 auto;
+    }
+
+    /* Grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 30px 0 80px;
+    }
+
+    .card {
+      background: var(--navy-2);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 14px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card .img-btn {
+      display: block;
+      width: 100%;
+      padding: 0;
+      border: none;
+      background: #0a1226;
+      cursor: zoom-in;
+      position: relative;
+    }
+
+    .card .img-btn img {
+      width: 100%;
+      aspect-ratio: 2 / 3;
+      object-fit: cover;
+      transition: transform 0.25s;
+    }
+
+    .card .img-btn:hover img { transform: scale(1.04); }
+
+    .badge {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 1;
+      font-size: 0.68rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 4px 10px;
+      border-radius: 999px;
+      color: var(--navy);
+    }
+
+    .badge.flagship { background: var(--orange); }
+    .badge.core { background: #7f8db0; }
+    .badge.new { background: var(--teal); }
+    .badge.seasonal { background: var(--gold); }
+    .badge.limited { background: var(--pink); }
+    .badge.fan { background: var(--green); }
+    .badge.returning { background: var(--cream); }
+
+    .card-body { padding: 14px 16px 18px; flex: 1; }
+
+    .card-body h3 { font-size: 0.92rem; margin: 0 0 6px; }
+
+    .card-body p {
+      color: var(--muted);
+      font-size: 0.83rem;
+      margin: 0;
+    }
+
+    /* Lightbox modal */
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      background: rgba(5, 10, 22, 0.9);
+      z-index: 200;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .lightbox img {
+      max-height: 82vh;
+      max-width: 92vw;
+      width: auto;
+      border-radius: 12px;
+      box-shadow: 0 10px 60px rgba(0,0,0,0.7);
+    }
+
+    .lightbox .caption {
+      margin-top: 14px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    .lightbox .close {
+      position: absolute;
+      top: 16px;
+      right: 20px;
+      background: none;
+      border: none;
+      color: var(--cream);
+      font-size: 2.2rem;
+      cursor: pointer;
+      line-height: 1;
+    }
+
+    [hidden] { display: none !important; }
+
+    footer.site {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding: 40px 0 50px;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    footer.site a { color: var(--teal); }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <img src="images/logo.webp" alt="Full Bird Hydration logo">
+      <a class="brand" href="index.html">Full Bird<br><span>Hydration</span></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="flavors.html" class="active">Our Flavors</a>
+        <a href="index.html#pricing">Pricing</a>
+        <a href="index.html#contact">Enterprise</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-head">
+    <div class="wrap">
+      <p class="kicker">The full spread</p>
+      <h1>Our Flavors</h1>
+      <p>All 20 of them, from the flagship gravy to the one we sell a single day per year. Click any bottle for a closer look you may regret.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="grid" id="grid"></div>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <p><strong>Full Bird Hydration</strong> is a fictional company. Seasonal flavors return when the bird decides. Elbow macaroni counts vary; one per bottle is a goal, never a promise.</p>
+      <p><a href="index.html">Back to the main site</a> &middot; <a href="../">Business Directory</a></p>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true">
+    <button class="close" id="lbClose" aria-label="Close">&times;</button>
+    <img id="lbImg" src="" alt="">
+    <div class="caption" id="lbCaption"></div>
+  </div>
+
+  <script>
+    const FLAVORS = [
+      { img: 'bottle-turkey-gravy.webp', name: 'Turkey & Gravy Surge', badge: 'Flagship',
+        note: 'The one that started it all. Savory, opaque, and 9% drippings by volume.' },
+      { img: 'bottle-cranberry.webp', name: 'Cranberry Stuffing Splash', badge: 'Core',
+        note: 'Tart cranberry with real bread crumb particles in suspension. Shake well.' },
+      { img: 'bottle-greenbean.webp', name: 'Green Bean Casserole Chill', badge: 'Core',
+        note: 'Cool, murky, and topped with a crispy onion float our lawyers call "sediment."' },
+      { img: 'bottle-giblet.webp', name: 'Giblet Blast', badge: 'Limited',
+        note: 'The amber one. We still won\'t say which giblets, and the collectors prefer it that way.' },
+      { img: 'bottle-mashed-potato.webp', name: 'Mashed Potato Glacier', badge: 'New',
+        note: 'Thick enough that the bottle has a wide mouth and the cap has a warning.' },
+      { img: 'bottle-sweet-potato.webp', name: 'Sweet Potato Casserole Crush', badge: 'Fan favorite',
+        note: 'Bright orange with toasted mini marshmallows that bob when you shake it.' },
+      { img: 'bottle-pumpkin-pie.webp', name: 'Pumpkin Pie Pulse', badge: 'Seasonal',
+        note: 'Spiced pumpkin under a cap of whipped cream. October until we run out, usually October.' },
+      { img: 'bottle-buttered-roll.webp', name: 'Buttered Roll Rush', badge: 'New',
+        note: 'Tastes like the roll you grabbed before anyone said grace.' },
+      { img: 'bottle-mac-cheese.webp', name: 'Mac & Cheese Meltdown', badge: 'Fan favorite',
+        note: 'Neon cheddar with exactly one elbow noodle per bottle. Collectors check.' },
+      { img: 'bottle-candied-yam.webp', name: 'Candied Yam Slam', badge: 'Seasonal',
+        note: 'Caramelized amber with a brown sugar layer at the bottom that you have to earn.' },
+      { img: 'bottle-deviled-egg.webp', name: 'Deviled Egg Endurance', badge: 'Core',
+        note: 'Pale mustard with a paprika dusting. Our most returned flavor, and our proudest.' },
+      { img: 'bottle-brussels.webp', name: 'Brussels Sprout Recovery', badge: 'Core',
+        note: 'Post-workout greens for the people who skipped them at dinner. The leaves are load-bearing.' },
+      { img: 'bottle-cornbread.webp', name: 'Cornbread Comeback', badge: 'Core',
+        note: 'Honey gold with a gentle crumb drift. Regional champion three years running.' },
+      { img: 'bottle-pecan-pie.webp', name: 'Pecan Pie Power', badge: 'Seasonal',
+        note: 'Dark syrup with one candied pecan at the bottom. A prize, or a dare.' },
+      { img: 'bottle-turducken.webp', name: 'Turducken Triple Threat', badge: 'Limited',
+        note: 'Three unmixed layers. Drink them in order or all at once. We are staying out of it.' },
+      { img: 'bottle-moist-maker.webp', name: 'Day-After Sandwich', badge: 'New',
+        note: 'Gravy, cranberry, and bread sediment in one bottle, honoring the leftover sandwich.' },
+      { img: 'bottle-ambrosia.webp', name: 'Ambrosia Salad Rehydrator', badge: 'Returning',
+        note: 'Pastel pink with marshmallows, mandarin, and coconut. Retired in 2023, revived by a write-in campaign.' },
+      { img: 'bottle-creamed-corn.webp', name: 'Creamed Corn Charge', badge: 'Core',
+        note: 'Whole kernels in every bottle. The chewing is part of the workout.' },
+      { img: 'bottle-gravy-zero.webp', name: 'Gravy Zero', badge: 'New',
+        note: 'All the gravy taste at a fraction of the viscosity. Zero sugar, zero body, zero shame.' },
+      { img: 'bottle-black-friday.webp', name: 'Black Friday Blackout', badge: 'Limited',
+        note: 'Pitch black. 400mg of caffeine. Sold one day a year at 4 a.m. Bring a helmet.' }
+    ];
+
+    const BADGE_CLASS = {
+      'Flagship': 'flagship', 'Core': 'core', 'New': 'new', 'Seasonal': 'seasonal',
+      'Limited': 'limited', 'Fan favorite': 'fan', 'Returning': 'returning'
+    };
+
+    const grid = document.getElementById('grid');
+    FLAVORS.forEach((f, i) => {
+      const card = document.createElement('div');
+      card.className = 'card';
+      card.innerHTML =
+        '<button class="img-btn" data-idx="' + i + '" aria-label="View full size image of ' + f.name + '">' +
+          '<span class="badge ' + BADGE_CLASS[f.badge] + '">' + f.badge + '</span>' +
+          '<img src="images/' + f.img + '" alt="' + f.name + ' bottle" loading="lazy">' +
+        '</button>' +
+        '<div class="card-body"><h3>' + f.name + '</h3><p>' + f.note + '</p></div>';
+      grid.appendChild(card);
+    });
+
+    const lightbox = document.getElementById('lightbox');
+    const lbImg = document.getElementById('lbImg');
+    const lbCaption = document.getElementById('lbCaption');
+
+    function openLightbox(i) {
+      const f = FLAVORS[i];
+      lbImg.src = 'images/' + f.img;
+      lbImg.alt = f.name + ' bottle, full size';
+      lbCaption.textContent = f.name + ' · ' + f.badge;
+      lightbox.hidden = false;
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      lightbox.hidden = true;
+      lbImg.src = '';
+      document.body.style.overflow = '';
+    }
+
+    grid.addEventListener('click', e => {
+      const btn = e.target.closest('.img-btn');
+      if (btn) openLightbox(+btn.getAttribute('data-idx'));
+    });
+
+    document.getElementById('lbClose').addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', e => {
+      if (e.target === lightbox) closeLightbox();
+    });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && !lightbox.hidden) closeLightbox();
+    });
+  </script>
+</body>
+</html>
