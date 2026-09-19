@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marketing Gallery | Monogrape</title>
+  <meta name="description" content="Official Monogrape promotional materials.">
+  <link rel="icon" href="images/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><img src="images/logo.webp" alt="Monogrape logo">Monogrape</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html#how">How it works</a>
+        <a href="index.html#pricing">Pricing</a>
+        <a href="cases.html">Case studies</a>
+        <a href="api.html">API</a>
+        <a href="faq.html">FAQ</a>
+        <a href="tracker.html">Track</a>
+        <a href="index.html#pricing" class="cta">Order a grape</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="page-head">
+    <div class="wrap">
+      <h1 style="font-size:clamp(2rem,4vw,2.8rem)">Marketing gallery</h1>
+      <p>Official Monogrape campaign materials, approved by brand, legal, and the CEO's group chat. Click any image to view it properly.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="mkt-grid">
+        <figure>
+          <img src="images/marketing-portrait.webp" alt="Monogrape poster: the delivery box floating on a violet background with the words One Grape, Delivered" data-modal>
+          <figcaption>Campaign poster, subway edition. Ran in 12 stations until the vandalism became a second campaign.</figcaption>
+        </figure>
+        <div style="display:grid;gap:24px">
+          <figure>
+            <img src="images/marketing-landscape.webp" alt="Monogrape banner: the delivery box beside the tagline Never bite off more than you can chew" data-modal>
+            <figcaption>Digital banner, brunch-hour placement. Click-through rate peaks at 11:40 am.</figcaption>
+          </figure>
+          <figure>
+            <img src="images/marketing-square.webp" alt="Monogrape social ad: hands holding the delivery box with the tagline Treat yourself, once" data-modal>
+            <figcaption>Social square. Our most screenshotted asset, which is not the same as clicked.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <div class="foot-brand"><img src="images/logo.webp" alt="">Monogrape</div>
+          <p>The on-demand delivery platform for a single grape. Founded in 2022. Still just the one grape.</p>
+        </div>
+        <div>
+          <h4>Product</h4>
+          <a href="index.html#how">How it works</a>
+          <a href="index.html#pricing">Pricing</a>
+          <a href="tracker.html">Live tracking</a>
+          <a href="api.html">Developer API</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="cases.html">Case studies</a>
+          <a href="sustainability.html">Sustainability</a>
+          <a href="faq.html">FAQ</a>
+          <a href="marketing.html">Marketing gallery</a>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <a href="faq.html">One grape policy</a>
+          <a href="faq.html">Tissue paper terms</a>
+          <a href="../index.html">Business directory</a>
+        </div>
+      </div>
+      <div class="foot-legal">
+        <p>&copy; 2026 Monogrape, Inc. Monogrape is a fictional business. Please do not hang these in real subways.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal-backdrop" id="imgModal" hidden>
+    <img src="" alt="">
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

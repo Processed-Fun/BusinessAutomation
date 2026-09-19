@@ -31,7 +31,7 @@ The master index of every business idea ever created, built or not. One row per 
 | Perfectly Balanced Dice Co. | A dice maker whose enormous, lopsided dice have anywhere from 2 to 104 sides and are carved from wood, rock, or plastic. | built | perfectly-balanced | ecommerce-catalog | brutalist |
 | Miller & Sons Weather Modification | A family-owned cloud-seeding contractor with the website of a small-town HVAC company. | idea | | local-brochure | |
 | The Standing Invitational | The premier championship of competitive waiting in line, presented like the Masters. | idea | | event | |
-| Monogrape | A venture-backed last-mile delivery platform that delivers exactly one grape. | idea | | saas-product | |
+| Monogrape | A venture-backed last-mile delivery platform that delivers exactly one grape. | built | monogrape | saas-product | saas-gradient |
 | The Pothole Preservation Society | A heritage nonprofit fighting to preserve historic potholes. | idea | | nonprofit | |
 | DullMaster Pro | An As-Seen-On-TV knife so safe it cannot cut anything. | idea | | infomercial | |
 | Demands by Design | A boutique design studio for ransom notes. | idea | | studio-portfolio | |
