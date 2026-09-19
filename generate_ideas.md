@@ -27,6 +27,10 @@ The joke must be an engine, not a one-liner.  Before keeping an idea, list at le
 
 Prefer ideas whose funny material is visual.  Every archetype is image-rich, so the joke has to survive being photographed.
 
+# The One-Breath Test
+
+A stranger should get what the business sells, and why it's funny, from the name and one plain sentence, with no setup.  "A luxury real-estate brokerage for birdhouses" lands instantly; "an academy that teaches you to love upsetting flavors" needs a paragraph of explaining before the joke starts, and a lemonade-stand conglomerate needs its business model diagrammed.  If the pitch requires a second sentence to make sense, the idea fails, no matter how deep it goes.
+
 # Retired Formulas
 
 Formulas that have been tried and rejected.  Do not pitch new ideas built on these, even in new costumes.
