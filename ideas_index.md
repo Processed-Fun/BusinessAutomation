@@ -26,7 +26,7 @@ The master index of every business idea ever created, built or not. One row per 
 | Mist O' Meat | An As-Seen-On-TV aerosol spray that gives any food the flavor of pot roast. | built | mist-o-meat | infomercial | infomercial-max |
 | Acquired Taste Academy | An online academy with a full curriculum for learning to love the world's most upsetting flavors. | retired | acquired-taste-academy | education | academic |
 | Fines & Dandy | A premium cereal brand that sells only the crumb dust from the bottom of the bag. | built | fines-and-dandy | cpg-brand | craft-organic |
-| The Parting Shot | A high-end photography studio specializing in divorce shoots. | idea | | studio-portfolio | |
+| The Parting Shot | A high-end photography studio specializing in divorce shoots. | built | parting-shot | studio-portfolio | dark-luxury |
 | Twig & Perch Realty | A luxury real-estate brokerage for birdhouses. | idea | | listings | |
 | Perfectly Balanced Dice Co. | A dice maker whose enormous, lopsided dice have anywhere from 2 to 104 sides and are carved from wood, rock, or plastic. | built | perfectly-balanced | ecommerce-catalog | brutalist |
 | Miller & Sons Weather Modification | A family-owned cloud-seeding contractor with the website of a small-town HVAC company. | idea | | local-brochure | |
