@@ -29,6 +29,9 @@ The master index of every business idea ever created, built or not. One row per 
 | The Parting Shot | A high-end photography studio specializing in divorce shoots. | idea | | studio-portfolio | |
 | Twig & Perch Realty | A luxury real-estate brokerage for birdhouses. | idea | | listings | |
 | Perfectly Balanced Dice Co. | A dice maker whose enormous, lopsided dice have anywhere from 2 to 104 sides and are carved from wood, rock, or plastic. | built | perfectly-balanced | ecommerce-catalog | brutalist |
+| Miller & Sons Weather Modification | A family-owned cloud-seeding contractor with the website of a small-town HVAC company. | idea | | local-brochure | |
+| The Standing Invitational | The premier championship of competitive waiting in line, presented like the Masters. | idea | | event | |
+| Monogrape | A venture-backed last-mile delivery platform that delivers exactly one grape. | idea | | saas-product | |
 
 ## Rejected Ideas
 
@@ -44,3 +47,5 @@ Pitched and turned down. Never delete rows, and never pitch these again.
 | The Rest Stop & Spa | A five-star destination wellness resort that is, physically, an interstate highway rest area. |
 | Grand Culvert Cruises | A small-ship luxury cruise line operating exclusively in the storm drains beneath Des Moines. |
 | Blinkr | A venture-backed startup whose app reminds you to blink. |
+| Vanguard Shovelworks | A hand-forged garden shovel launched and configured like a hypercar. |
+| StandCorp International | The faceless multinational that owns and franchises the world's lemonade stands. |
