@@ -23,6 +23,6 @@ When a website is built for an idea, its entry is copied to `business.md` in the
 
 **Long description:** Twig & Perch Realty is a full-service brokerage whose MLS-style listings are all birdhouses. Each listing has hero photography, square inchage, perch count, sun exposure, and frank disclosure notes ("HOA has an ongoing matter with the neighborhood cat"). Filters cover architectural style from rustic gourd to midcentury modern, and every agent bio ends with a commitment to finding the right fit "for you and your flock." Open house showings are held at dawn.
 
-**Themes and joke:** A large industry played at tiny scale, with a dash of luxury-where-no-market-exists (themes 9 and 4). The joke is the complete machinery of a real-estate site — listings, filters, agents, disclosures — operating at birdhouse scale.
+**Themes and joke:** A large industry played at tiny scale, with a dash of luxury-where-no-market-exists (themes 8 and 4). The joke is the complete machinery of a real-estate site — listings, filters, agents, disclosures — operating at birdhouse scale.
 
 **Archetype:** listings

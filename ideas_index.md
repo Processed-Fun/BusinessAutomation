@@ -5,6 +5,7 @@ The master index of every business idea ever created, built or not. One row per 
 - **Status:** `idea` (no website yet, full detail lives in `business_ideas.md`) or `built` (website exists, full detail lives in `business.md` inside the site directory).
 - **Archetype:** the kind of site the business would have. Assigned at idea generation time. Must be a value from `archetypes.md`.
 - **Directory and Style:** filled in when the website is built. Style is the visual aesthetic, also a value from `archetypes.md`.
+- **Rejected ideas** live in their own table at the bottom: pitched, turned down, and never to be pitched again. Name and one-line description only.
 
 | Name | One-line description | Status | Directory | Archetype | Style |
 |---|---|---|---|---|---|
@@ -17,7 +18,6 @@ The master index of every business idea ever created, built or not. One row per 
 | Waxing Nostalgic | An artisanal candle company that makes candles from donated human earwax. | built | waxing-nostalgic | landing-page | elegant-serif |
 | Ashes to Ashtrays | A memorial studio that turns your loved one's cremated remains into a decorative ashtray. | built | ashes-to-ashtrays | landing-page | elegant-serif |
 | HOV Buddy | A rental service supplying realistic mannequin passengers for carpool-lane commuters. | built | hov-buddy | landing-page | startup-modern |
-| Blinkr | A venture-backed startup whose app reminds you to blink. | idea | | saas-product | |
 | Marge's Orbital Launch & Diner | A roadside Kansas diner that also provides commercial satellite launch services. | built | marges-orbital | landing-page | americana-roadside |
 | Gravy District No. 3 | The public gravy utility serving three townships in rural Wisconsin. | built | gravy-district | gov-institutional | government-austere |
 | The Cul-de-Sac Courant | A hard-hitting subscription newspaper covering the eight houses of one suburban cul-de-sac. | built | cul-de-sac-courant | editorial | broadsheet |
@@ -29,3 +29,18 @@ The master index of every business idea ever created, built or not. One row per 
 | The Parting Shot | A high-end photography studio specializing in divorce shoots. | idea | | studio-portfolio | |
 | Twig & Perch Realty | A luxury real-estate brokerage for birdhouses. | idea | | listings | |
 | Perfectly Balanced Dice Co. | A dice maker whose enormous, lopsided dice have anywhere from 2 to 104 sides and are carved from wood, rock, or plastic. | built | perfectly-balanced | ecommerce-catalog | brutalist |
+
+## Rejected Ideas
+
+Pitched and turned down. Never delete rows, and never pitch these again.
+
+| Name | One-line description |
+|---|---|
+| Unpaired | A luxury hosiery house that sells socks strictly one at a time, never in pairs. |
+| PLU Global Holdings | A faceless multinational conglomerate whose entire empire is the tiny stickers on fruit. |
+| Standard Wedge | A doorstop company whose website is exhaustive developer-style documentation for its one wooden wedge. |
+| ProcrastiCon | The world's premier productivity and time-management conference, on its fourteenth postponement since 2019. |
+| PewPass | A booking platform for reserving church pews, with seat maps and pricing that surges on Christmas and Easter. |
+| The Rest Stop & Spa | A five-star destination wellness resort that is, physically, an interstate highway rest area. |
+| Grand Culvert Cruises | A small-ship luxury cruise line operating exclusively in the storm drains beneath Des Moines. |
+| Blinkr | A venture-backed startup whose app reminds you to blink. |
